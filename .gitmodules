@@ -4,3 +4,6 @@
 [submodule "Network"]
 	path = Network
 	url = git@github.com:NuriaProject/Network.git
+[submodule "tests"]
+	path = tests
+	url = git@github.com:NuriaProject/FrameworkTests.git
