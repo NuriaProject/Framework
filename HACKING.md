@@ -52,7 +52,7 @@ Blocks
 
 * The opening curly-brace ('{') must be on the same line as the expression before it.
 * A opening curly-brace is simply never on its own line.
-* The closing curly-brace ('}') are on their own line. A empty line always follows.
+* The closing curly-braces ('}') are on their own line. A empty line always follows.
 * Prefer a multi-expression body over single expression ones. (E.g. if (...) { ... })
 * Before a opening curly- or round-brace *always* comes a single space. Before '[' there's none.
 * When writing a trivial inline method, and the body is short, you *can* write it like this:
