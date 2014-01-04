@@ -5,9 +5,7 @@ MAKE=make
 WHICH=which
 
 QT_VERSION="4"
-NO_NETWORK=0
-NO_EXTENSION=0
-NURIA_MODULES="core network extension"
+NURIA_MODULES="core network"
 
 # Directory paths
 SOURCE_TREE=`readlink -f $(dirname $0)`
@@ -52,12 +50,8 @@ if [ "$1" == "-h" ] || [ "$1" == "-help" ] || [ "$1" == "--help" ]; then
 	echo "-make-bin <path>   Path to the make binary"
 	echo "-debug             Build library in debug mode"
 	echo "-release           Build library in release mode"
-	echo "-no-extension      Do not build the Extension module"
 	echo "-no-network        Do not build the Network module"
-	echo 
-	echo "Extension specific options:"
-	echo "-no-js             Disable JavaScript support (QtScript)"
-	echo 
+	echo
 	echo "Note: The NuriaFramework is compatible with Qt5.x"
 	echo "      The Qt version as used by qmake will be used to build."
 	
@@ -89,9 +83,6 @@ while (( $# > 0 )); do
     elif [ $1 == "-no-network" ]; then
         echo "NURIA_MODULES -= network" >> $QMAKE_CACHE
         echo "NURIA_MODULES -= network" >> $NURIA_VARS
-    elif [ $1 == "-no-extension" ]; then
-        echo "NURIA_MODULES -= extension" >> $QMAKE_CACHE
-        echo "NURIA_MODULES -= extension" >> $NURIA_VARS
     elif [ $1 == "-prefix" ]; then
         PREFIX="$2"; shift
         PREFIX_SET=1

@@ -1,0 +1,6 @@
+[submodule "Core"]
+	path = Core
+	url = git@github.com:NuriaProject/Core.git
+[submodule "Network"]
+	path = Network
+	url = git@github.com:NuriaProject/Network.git

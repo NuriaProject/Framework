@@ -1,0 +1,32 @@
+# This file is based on the features/qxt.prf of the libQxt project.
+include(nuriavars.prf)
+
+# Add depend and include path..
+DEPENDPATH      += $${NURIA_INSTALL_HEADERS}
+INCLUDEPATH     += $${NURIA_INSTALL_HEADERS}
+
+QMAKE_RPATHDIR  += $${NURIA_INSTALL_LIBS}
+macx:LIBS       += -F$${NURIA_INSTALL_LIBS}
+LIBS            += -L$${NURIA_INSTALL_LIBS}
+
+# The NuriaFramework requires C++11
+CONFIG += c++11
+
+# Modules
+contains(NURIA, network) {
+    contains(NURIA_MODULES, network):DEFINES += NURIA_NETWORK_LIB
+    else:warning(NuriaFramework was built without Network)
+    
+    LIBS += -lNuriaNetworkQt$$QT_MAJOR_VERSION
+    NURIA += core
+    QT += network
+    
+}
+
+contains(NURIA, core) {
+    contains(NURIA_MODULES, core):DEFINES += NURIA_CORE_LIB
+    else:warning(NuriaFramework was built without Core)
+    
+    LIBS += -lNuriaCoreQt$$QT_MAJOR_VERSION
+    
+}
