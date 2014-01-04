@@ -1,0 +1,11 @@
+First make sure that you've also pulled the modules:
+$ git submodule init
+$ git submodule update
+
+To compile the project use the shipped 'configure' script:
+$ mkdir build
+$ ../configure <Your options here>
+$ make -jX
+$ sudo make install
+
+That's pretty much it. Having problems? Read the README for contct details!

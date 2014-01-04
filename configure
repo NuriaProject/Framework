@@ -1,0 +1,261 @@
+#!/bin/bash
+
+QMAKE=qmake
+MAKE=make
+WHICH=which
+
+QT_VERSION="4"
+NO_NETWORK=0
+NO_EXTENSION=0
+NURIA_MODULES="core network extension"
+
+# Directory paths
+SOURCE_TREE=`readlink -f $(dirname $0)`
+BUILD_TREE=`pwd`
+
+mkdir -p $BUILD_TREE/features
+
+# 
+QMAKE_CACHE=$BUILD_TREE/.qmake.cache
+NURIA_VARS=$BUILD_TREE/features/nuriavars.prf
+
+# Default variables
+PREFIX="/usr"
+LIBSDIR="lib"
+HEADERSDIR="include"
+FEATURESDIR="share/qt/mkspecs/features"
+PREFIX_SET=0
+LIBSDIR_SET=0
+HEADERSDIR_SET=0
+FEATURESDIR_SET=0
+LDFLAGS=""
+CFLAGS=""
+Release=1
+
+# Help?
+if [ "$1" == "-h" ] || [ "$1" == "-help" ] || [ "$1" == "--help" ]; then
+	
+	echo "Usage: configure [-prefix <path>] [-libdir <path>]"
+	echo "       [-headerdir <path>] [-featuredir <path> ]"
+	echo "       [-qmake-bin <path>] [-make-bin <path>]"
+	echo "       [-debug|-release] [-no-<module>]"
+	echo 
+	echo "-prefix <path>     Relative install path."
+	echo "                   Default: $PREFIX"
+	echo "-libdir <path>     Library sub-directory"
+	echo "                   Default: PREFIX/$LIBSDIR"
+	echo "-headerdir <path>  Headers sub-directory"
+	echo "                   Default: PREFIX/$HEADERSDIR"
+	echo "-featuredir <path> QMake feature file directory path"
+	echo "                   Default: PREFIX/$FEATURESDIR"
+	echo "-qmake-bin <path>  Path to the qmake binary"
+	echo "-make-bin <path>   Path to the make binary"
+	echo "-debug             Build library in debug mode"
+	echo "-release           Build library in release mode"
+	echo "-no-extension      Do not build the Extension module"
+	echo "-no-network        Do not build the Network module"
+	echo 
+	echo "Extension specific options:"
+	echo "-no-js             Disable JavaScript support (QtScript)"
+	echo 
+	echo "Note: The NuriaFramework is compatible with Qt5.x"
+	echo "      The Qt version as used by qmake will be used to build."
+	
+	exit
+fi
+
+# Init nuriavars.prf
+echo "# NuriaVars.prf - part of the NuriaFramework." > $NURIA_VARS
+echo "# Generated at $(date)" >> $NURIA_VARS
+echo "NURIA_MODULES = $NURIA_MODULES" >> $NURIA_VARS
+
+# Parse arguments
+while (( $# > 0 )); do
+    if [ $1 == "-qmake-bin" ]; then
+        QMAKE=$2
+        shift
+    elif [ $1 == "-make-bin" ]; then
+        MAKE=$2
+        shift
+    elif [ $1 == "-L" ]; then
+        echo "LIBS += -L$2" >> $QMAKE_CACHE
+        shift
+    elif [ $1 == "-l" ]; then
+        echo "LIBS += -l$2" >> $QMAKE_CACHE
+        shift
+    elif [ $1 == "-I" ]; then
+        echo "INCLUDEPATH += $2" >> $QMAKE_CACHE
+        shift
+    elif [ $1 == "-no-network" ]; then
+        echo "NURIA_MODULES -= network" >> $QMAKE_CACHE
+        echo "NURIA_MODULES -= network" >> $NURIA_VARS
+    elif [ $1 == "-no-extension" ]; then
+        echo "NURIA_MODULES -= extension" >> $QMAKE_CACHE
+        echo "NURIA_MODULES -= extension" >> $NURIA_VARS
+    elif [ $1 == "-prefix" ]; then
+        PREFIX="$2"; shift
+        PREFIX_SET=1
+    elif [ $1 == "-libdir" ]; then
+        LIBSDIR="$2"; shift
+        LIBSDIR_SET=1
+    elif [ $1 == "-headerdir" ]; then
+        HEADERSDIR="$2"; shift
+        HEADERSDIR_SET=1
+    elif [ $1 == "-featuredir" ]; then
+        FEATURESDIR="$2"; shift
+        FEATURESDIR_SET=1
+    elif [ $1 == "-debug" ]; then
+        echo "CONFIG += debug" >> $QMAKE_CACHE
+        Release=0
+    elif [ $1 == "-release" ]; then
+        echo "CONFIG += release" >> $QMAKE_CACHE
+        Release=1
+    elif [ $1 == "-no-js" ]; then
+        echo "NO_JAVASCRIPT = 1" >> $QMAKE_CACHE
+    else
+        echo "Unrecognized configure option: $1"
+        exit 2
+    fi
+    shift
+done
+
+# Detect QMake settings. 
+if [ ! -f "$($WHICH $QMAKE)" ]; then
+	echo "Error: QMake binary (${QMAKE}) not found - Abort."
+	exit 3
+fi
+
+# Check Qt version
+Version="$($QMAKE -query QT_VERSION)"
+
+if [ "${Version:0:1}" == "4" ]; then
+	echo "Sorry, no support for Qt4!"
+	exit 2
+elif [ "${Version:0:1}" == "5" ]; then
+	QT_VERSION="5"
+else
+	echo "Error: Unknown Qt version $Version - Abort."
+	exit 1
+fi
+
+# 
+function pathHelper() {
+	VarName="$1"
+	CurrentVal="$2"
+	IsSet="$3"
+	Suffix="$4"
+	
+	if [ "$IsSet" == 0 ]; then
+		
+		if [ -n "$Suffix" ]; then
+			echo "$($QMAKE -query "$VarName")/$Suffix"
+		else
+			echo $($QMAKE -query "$VarName")
+		fi
+		
+		# Is current val a valid absolute path?
+	elif [ "$(readlink -f "$CurrentVal")" == "$CurrentVal" ]; then
+		echo "$CurrentVal"
+		
+		# Prefix?
+	elif [ -d "${PREFIX}/${CurrentVal}" ]; then
+		echo "${PREFIX}/${CurrentVal}"
+	else
+		echo "Error: \"${PREFIX}/${CurrentVal}\" and \"${CurrentVal}\" do not exist - Abort." 1>&2
+		exit 3
+	fi
+	
+}
+
+function checkPath() {
+	if [ "$?" == 3 ]; then
+		echo $*
+		exit 3
+	fi
+	
+}
+
+# Query paths
+[ "$PREFIX_SET" == 0 ] && PREFIX="$($QMAKE -query QT_INSTALL_PREFIX)"
+LIBSDIR="$(pathHelper QT_INSTALL_LIBS "$LIBSDIR" $LIBSDIR_SET)"
+checkPath $LIBSDIR
+
+HEADERSDIR="$(pathHelper QT_INSTALL_PREFIX "$HEADERSDIR" $HEADERSDIR_SET "include")"
+checkPath $HEADERSDIR
+
+FEATURESDIR="$(pathHelper QT_INSTALL_DATA "$FEATURESDIR" $FEATURESDIR_SET "mkspecs/features")"
+checkPath $FEATURESDIR
+
+# Okay, output some data
+echo -n "Configured NuriaFramework, linking to Qt${QT_VERSION} (${Version})"
+if [ "$Release" == 1 ]; then
+	echo " - Release build"
+	echo "NURIA_INSTALL_MODE = release" >> $NURIA_VARS
+else
+	echo " - Debug build"
+	echo "NURIA_INSTALL_MODE = debug" >> $NURIA_VARS
+fi
+
+# Write the features file 'nuriavars.prf'
+echo "NURIA_INSTALL_PREFIX = $PREFIX" >> $NURIA_VARS
+echo "NURIA_INSTALL_LIBS = $LIBSDIR" >> $NURIA_VARS
+echo "NURIA_INSTALL_HEADERS = $HEADERSDIR" >> $NURIA_VARS
+echo "NURIA_INSTALL_FEATURES = $FEATURESDIR" >> $NURIA_VARS
+
+# 
+echo "INCDIR=${BUILD_TREE}/include" >> $QMAKE_CACHE
+
+# Create directories
+mkdir -p lib
+mkdir -p include
+mkdir -p include/nuria
+cp -f ${SOURCE_TREE}/features/nuria.prf features/
+
+# Helper project file
+echo "include(features/nuriavars.prf)" > .helper.pro
+echo 'error($$NURIA_MODULES)' >> .helper.pro
+
+Modules="$($QMAKE .helper.pro 2>&1|sed -e 's/^[^:]*://;s/ ./\U&\E/g')"
+rm .helper.pro
+
+# Run qmake for every to-be-build module in their own sub-directory
+for i in $Modules; do
+	mkdir $i; cd $i
+	cp $QMAKE_CACHE .
+	$QMAKE ${SOURCE_TREE}/${i}
+	cd ..
+done
+
+# Write a simple Makefile
+echo "# Makefile for the NuriaFramework" > Makefile
+echo "# Generated at $(date)" >> Makefile
+echo "# Configured modules: $Modules" >> Makefile
+echo "# Install prefix: $PREFIX" >> Makefile
+echo "" >> Makefile
+echo "MAKE ?= $MAKE" >> Makefile
+echo "COPY ?= cp" >> Makefile
+echo "LIBDIR ?= $LIBSDIR" >> Makefile
+echo "INCDIR ?= $HEADERSDIR" >> Makefile
+echo "FEATUREDIR ?= $FEATURESDIR" >> Makefile
+echo "" >> Makefile
+echo "all: build" >> Makefile
+echo "" >> Makefile
+
+for i in $Modules; do
+	echo ".PHONY: $i" >> Makefile
+	echo "${i}:" >> Makefile
+	echo "	\$(MAKE) -C $i \$(MAKECMDGOALS)" >> Makefile
+	echo "	cd $i; make install" >> Makefile
+	echo "" >> Makefile
+done
+
+echo "build:${Modules}" >> Makefile
+echo "clean:${Modules}" >> Makefile
+echo ".PHONY: install" >> Makefile
+echo "install:" >> Makefile
+echo '	$(COPY) -r lib/* $(LIBDIR)' >> Makefile
+echo '	$(COPY) -r include/nuria $(INCDIR)' >> Makefile
+echo '	$(COPY) features/*.prf $(FEATUREDIR)' >> Makefile
+
+# Done!
+echo "Now run $MAKE to start the build process!"
