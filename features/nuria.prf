@@ -1,4 +1,3 @@
-# This file is based on the features/qxt.prf of the libQxt project.
 include(nuriavars.prf)
 
 # Add depend and include path..
@@ -11,6 +10,15 @@ LIBS            += -L$${NURIA_INSTALL_LIBS}
 
 # The NuriaFramework requires C++11
 CONFIG += c++11
+
+# Let tria run over all headers
+contains(NURIA_MODULES, tria) {
+  tria.output       = tria_${QMAKE_FILE_BASE}.cpp
+  tria.variable_out = SOURCES
+  tria.commands     = tria ${QMAKE_FILE_NAME} -o ${QMAKE_FILE_OUT}
+  tria.input        = HEADERS
+  QMAKE_EXTRA_COMPILERS += tria
+}
 
 # Modules
 contains(NURIA, network) {

@@ -295,6 +295,7 @@ if [ -f "$CLANG" ] && [ -f "$LLVM_CONFIG" ] && [ -f "$CMAKE" ]; then
 	echo "" >> Makefile
 	
 	Modules="Tria $Modules"
+	echo "NURIA_MODULES += tria" >> $NURIA_VARS
 else
 	echo "Tria has been disabled - You won't be able to use the meta system of the Framework!"
 fi
