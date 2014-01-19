@@ -4,7 +4,7 @@ QMAKE=qmake
 MAKE=make
 WHICH=which
 
-QT_VERSION="4"
+QT_VERSION="5"
 NURIA_MODULES="core network"
 
 # Directory paths
@@ -18,11 +18,16 @@ QMAKE_CACHE=$BUILD_TREE/.qmake.cache
 NURIA_VARS=$BUILD_TREE/features/nuriavars.prf
 
 # Default variables
+CLANG="$(which clang++)"
+LLVM_CONFIG="$(which llvm-config)"
+CMAKE="$(which cmake)"
 PREFIX="/usr"
+BINDIR="bin"
 LIBSDIR="lib"
 HEADERSDIR="include"
 FEATURESDIR="share/qt/mkspecs/features"
 PREFIX_SET=0
+BINDIR_SET=0
 LIBSDIR_SET=0
 HEADERSDIR_SET=0
 FEATURESDIR_SET=0
@@ -33,23 +38,31 @@ Release=1
 # Help?
 if [ "$1" == "-h" ] || [ "$1" == "-help" ] || [ "$1" == "--help" ]; then
 	
-	echo "Usage: configure [-prefix <path>] [-libdir <path>]"
+	echo "Usage: configure [-prefix <path>] [-libdir <path>] [-bindir <path>]"
 	echo "       [-headerdir <path>] [-featuredir <path> ]"
-	echo "       [-qmake-bin <path>] [-make-bin <path>]"
+	echo "       [-qmake-bin <path>] [-cmake-bin <path>] [-make-bin <path>]"
 	echo "       [-debug|-release] [-no-<module>]"
+	echo "       [-clang-bin <path>] [-llvm-config-bin <path>]"
 	echo 
 	echo "-prefix <path>     Relative install path."
 	echo "                   Default: $PREFIX"
 	echo "-libdir <path>     Library sub-directory"
 	echo "                   Default: PREFIX/$LIBSDIR"
+	echo "-bindir <path>     Executables sub-directory"
+	echo "                   Default: PREFIX/$BINDIR"
 	echo "-headerdir <path>  Headers sub-directory"
 	echo "                   Default: PREFIX/$HEADERSDIR"
 	echo "-featuredir <path> QMake feature file directory path"
 	echo "                   Default: PREFIX/$FEATURESDIR"
 	echo "-qmake-bin <path>  Path to the qmake binary"
+	echo "-cmake-bin <path>  Path to the cmake binary (Default: $CMAKE)"
+	echo "-cmake-bin <path>  Path to the cmake binary"
 	echo "-make-bin <path>   Path to the make binary"
 	echo "-debug             Build library in debug mode"
 	echo "-release           Build library in release mode"
+	echo "-clang-bin <path>  Path to clang++ (Default: $CLANG)"
+	echo "-llvm-config-bin <path> Path to llvm-config (Default: $LLVM_CONFIG)"
+	echo "-no-tria           Do not build Tria"
 	echo "-no-network        Do not build the Network module"
 	echo
 	echo "Note: The NuriaFramework is compatible with Qt5.x"
@@ -86,6 +99,9 @@ while (( $# > 0 )); do
     elif [ $1 == "-prefix" ]; then
         PREFIX="$2"; shift
         PREFIX_SET=1
+    elif [ $1 == "-bindir" ]; then
+        BINDIR="$2"; shift
+        BINDIR_SET=1
     elif [ $1 == "-libdir" ]; then
         LIBSDIR="$2"; shift
         LIBSDIR_SET=1
@@ -101,6 +117,18 @@ while (( $# > 0 )); do
     elif [ $1 == "-release" ]; then
         echo "CONFIG += release" >> $QMAKE_CACHE
         Release=1
+    elif [ $1 == "-clang-bin" ];  then
+        CLANG="$2"
+        shift
+    elif [ $1 == "-llvm-config-bin" ];  then
+        LLVM_CONFIG="$2"
+        shift
+    elif [ $1 == "-cmake-bin" ];  then
+        CMAKE="$2"
+        shift
+    elif [ $1 == "-no-tria" ];  then
+        CLANG=""
+        LLVM_CONFIG=""
     elif [ $1 == "-no-js" ]; then
         echo "NO_JAVASCRIPT = 1" >> $QMAKE_CACHE
     else
@@ -136,7 +164,7 @@ function pathHelper() {
 	IsSet="$3"
 	Suffix="$4"
 	
-	if [ "$IsSet" == 0 ]; then
+	if [ "$IsSet" == 0 ] && [ -n "$VarName" ]; then
 		
 		if [ -n "$Suffix" ]; then
 			echo "$($QMAKE -query "$VarName")/$Suffix"
@@ -152,7 +180,7 @@ function pathHelper() {
 	elif [ -d "${PREFIX}/${CurrentVal}" ]; then
 		echo "${PREFIX}/${CurrentVal}"
 	else
-		echo "Error: \"${PREFIX}/${CurrentVal}\" and \"${CurrentVal}\" do not exist - Abort." 1>&2
+		echo "Error: Neither \"${PREFIX}/${CurrentVal}\" nor \"${CurrentVal}\" exist - Abort." 1>&2
 		exit 3
 	fi
 	
@@ -168,6 +196,9 @@ function checkPath() {
 
 # Query paths
 [ "$PREFIX_SET" == 0 ] && PREFIX="$($QMAKE -query QT_INSTALL_PREFIX)"
+BINDIR="$(pathHelper "" "$BINDIR" $BINDIR_SET)"
+checkPath $BINDIR
+
 LIBSDIR="$(pathHelper QT_INSTALL_LIBS "$LIBSDIR" $LIBSDIR_SET)"
 checkPath $LIBSDIR
 
@@ -198,6 +229,7 @@ echo "INCDIR=${BUILD_TREE}/include" >> $QMAKE_CACHE
 
 # Create directories
 mkdir -p lib
+mkdir -p bin
 mkdir -p include
 mkdir -p include/nuria
 cp -f ${SOURCE_TREE}/features/nuria.prf features/
@@ -225,6 +257,7 @@ echo "# Install prefix: $PREFIX" >> Makefile
 echo "" >> Makefile
 echo "MAKE ?= $MAKE" >> Makefile
 echo "COPY ?= cp" >> Makefile
+echo "BINDIR ?= $BINDIR" >> Makefile
 echo "LIBDIR ?= $LIBSDIR" >> Makefile
 echo "INCDIR ?= $HEADERSDIR" >> Makefile
 echo "FEATUREDIR ?= $FEATURESDIR" >> Makefile
@@ -236,17 +269,44 @@ for i in $Modules; do
 	echo ".PHONY: $i" >> Makefile
 	echo "${i}:" >> Makefile
 	echo "	\$(MAKE) -C $i \$(MAKECMDGOALS)" >> Makefile
-	echo "	cd $i; make install" >> Makefile
+	echo "	\$(MAKE) -C $i install" >> Makefile
 	echo "" >> Makefile
 done
+
+# Tria special-case
+if [ -f "$CLANG" ] && [ -f "$LLVM_CONFIG" ] && [ -f "$CMAKE" ]; then
+	# Run CMAKE on Tria
+	mkdir Tria
+	cd Tria
+	$CMAKE ${SOURCE_TREE}/Tria -DCMAKE_CXX_COMPILER="$CLANG" \
+		-DLLVM_CONFIG_EXECUTABLE="$LLVM_CONFIG"
+	cd ..
+	
+	if [ $? != 0 ]; then
+		echo "** Failed to run cmake! Aborting ..."
+		exit 2
+	fi
+	
+	# Write makefile part
+	echo ".PHONY: Tria" >> Makefile
+	echo "Tria:" >> Makefile
+	echo "	\$(MAKE) -C Tria \$(MAKECMDGOALS)" >> Makefile
+	echo "	\$(MAKE) -C Tria install" >> Makefile
+	echo "" >> Makefile
+	
+	Modules="Tria $Modules"
+else
+	echo "Tria has been disabled - You won't be able to use the meta system of the Framework!"
+fi
 
 echo "build:${Modules}" >> Makefile
 echo "clean:${Modules}" >> Makefile
 echo ".PHONY: install" >> Makefile
 echo "install:" >> Makefile
-echo '	$(COPY) -r lib/* $(LIBDIR)' >> Makefile
+echo '	$(COPY) lib/* $(LIBDIR)' >> Makefile
 echo '	$(COPY) -r include/nuria $(INCDIR)' >> Makefile
 echo '	$(COPY) features/*.prf $(FEATUREDIR)' >> Makefile
+echo '	$(COPY) bin/tria $(BINDIR)' >> Makefile
 
 # Done!
 echo "Now run $MAKE to start the build process!"
