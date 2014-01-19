@@ -10,7 +10,7 @@ Dependencies and requirements
 Build dependencies:
 * Qt5 including development tools
 * A modern C++ compiler with support for C++11
-* A bash compatible script interpret
+* A bash compatible script interpreter
 
 Runtime dependencies:
 * Qt5
