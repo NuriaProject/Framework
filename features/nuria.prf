@@ -15,7 +15,8 @@ CONFIG += c++11
 contains(NURIA_MODULES, tria) {
   tria.output       = tria_${QMAKE_FILE_BASE}.cpp
   tria.variable_out = SOURCES
-  tria.commands     = tria ${QMAKE_FILE_NAME} -o ${QMAKE_FILE_OUT}
+  tria.variables    = INCLUDEPATH
+  tria.commands     = tria ${QMAKE_FILE_NAME} -o ${QMAKE_FILE_OUT} -- $(INCLUDEPATH)
   tria.input        = HEADERS
   QMAKE_EXTRA_COMPILERS += tria
 }
