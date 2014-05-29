@@ -23,6 +23,19 @@ Thanks to Qt everything should run on all platforms. If you have problems
 compiling and using this framework on a platform which is supported by Qt,
 then please open a bugreport.
 
+Documentation
+-------------
+
+Documentation is written in source through doxygen-style comments.
+You can find the generated output here:
+
+* Core: http://nuriaproject.github.io/Core/annotated.html
+* Network: http://nuriaproject.github.io/Network/annotated.html
+
+Unit-tests can be found in the [tests repository](https://github.com/NuriaProject/FrameworkTests)
+and examples are available in the [examples repository](https://github.com/NuriaProject/FrameworkExamples)
+with explanations in the [examples github wiki](https://github.com/NuriaProject/FrameworkExamples/wiki).
+
 API and ABI
 -----------
 
