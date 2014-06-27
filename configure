@@ -296,7 +296,7 @@ if [ -f "$CLANG" ] && [ -f "$LLVM_CONFIG" ] && [ -f "$CMAKE" ]; then
 	
 	Modules="Tria $Modules"
 	echo "NURIA_MODULES += tria" >> $NURIA_VARS
-	echo "TRIA_BIN = $BUILD_TREE/Tria/src/tria" >> $NURIA_VARS
+	echo "TRIA_BIN = $BINDIR/tria" >> $NURIA_VARS
 else
 	echo "Tria has been disabled - You won't be able to use the meta system of the Framework!"
 fi
