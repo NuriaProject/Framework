@@ -11,12 +11,34 @@ LIBS            += -L$${NURIA_INSTALL_LIBS}
 # The NuriaFramework requires C++11
 CONFIG += c++11
 
+# Generate libc/libc++ include path for tria on Windows
+win32 {
+  !contains(QMAKE_CXX, g++): error("MSVC is not supported at this time.")
+  GCC_VERSION = $$system($$QMAKE_CXX -dumpversion)
+  GCC_MACHINE = $$system($$QMAKE_CXX -dumpmachine)
+  GCC_PATH = $$system(where $$QMAKE_CXX)
+  GCC_PATH = $$split(GCC_PATH, \r\n)
+  GCC_PATH = $$first(GCC_PATH)
+  GCC_PATH = $$dirname(GCC_PATH)
+  GCC_PATH = $$absolute_path($${GCC_PATH}/..)
+ 
+  TRIA_LIB_INCLUDES += \
+    $${GCC_PATH}/lib/gcc/$${GCC_MACHINE}/$${GCC_VERSION}/include \
+    $${GCC_PATH}/lib/gcc/$${GCC_MACHINE}/$${GCC_VERSION}/include-fixed \
+    $${GCC_PATH}/lib/gcc/$${GCC_MACHINE}/$${GCC_VERSION}/include/c++ \
+    $${GCC_PATH}/lib/gcc/$${GCC_MACHINE}/$${GCC_VERSION}/include/c++/$${GCC_MACHINE} \
+    $${GCC_PATH}/$${GCC_MACHINE}/include \
+    $${GCC_PATH}/$${GCC_MACHINE}/include/c++ \
+    $${GCC_PATH}/$${GCC_MACHINE}/include/c++/$${GCC_MACHINE} \
+    $${GCC_PATH}/include
+}
+
 # Let tria run over all headers
 contains(NURIA_MODULES, tria) {
   tria.output       = tria_${QMAKE_FILE_BASE}.cpp
   tria.variable_out = SOURCES
   tria.variables    = INCLUDEPATH TRIA_FLAGS
-  tria.commands     = tria -o${QMAKE_FILE_OUT} $(TRIA_FLAGS) ${QMAKE_FILE_NAME} $(INCLUDEPATH)
+  tria.commands     = $$TRIA_BIN -o${QMAKE_FILE_OUT} $(TRIA_FLAGS) ${QMAKE_FILE_NAME} $(INCLUDEPATH) $${TRIA_LIB_INCLUDES}
   tria.input        = HEADERS
   QMAKE_EXTRA_COMPILERS += tria
 }
