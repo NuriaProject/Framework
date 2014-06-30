@@ -10,8 +10,8 @@ Dependencies and requirements
 Build dependencies:
 * Qt5 including development tools
 * A modern C++ compiler with support for C++11
-* A bash compatible script interpreter
-* LLVM/Clang and CMAKE for [Tria](https://github.com/NuriaProject/Tria/) (Optional)
+* CMake buildsystem (See http://www.cmake.org/) - Minimum version is 2.8.8
+* LLVM/Clang for [Tria](https://github.com/NuriaProject/Tria/) (Optional)
 
 Runtime dependencies:
 * Qt5
