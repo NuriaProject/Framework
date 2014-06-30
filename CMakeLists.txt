@@ -12,7 +12,7 @@ include(cmake/common.cmake)
 
 # All modules of the framework in order of building. Their name match the name
 # of the directory.
-SET(Modules Tria Core Network)
+SET(Modules Tria Core Network Lua)
 
 # Create directory structure for output files
 # make_directory(${CMAKE_BINARY_DIR}/bin)
