@@ -10,3 +10,6 @@
 [submodule "Tria"]
 	path = Tria
 	url = git@github.com:NuriaProject/Tria.git
+[submodule "Lua"]
+	path = Lua
+	url = git@github.com:NuriaProject/Lua.git
