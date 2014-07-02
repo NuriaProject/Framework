@@ -14,11 +14,6 @@ include(cmake/common.cmake)
 # of the directory.
 SET(Modules Tria Core Network Lua)
 
-# Create directory structure for output files
-# make_directory(${CMAKE_BINARY_DIR}/bin)
-# make_directory(${CMAKE_BINARY_DIR}/lib)
-# make_directory(${CMAKE_BINARY_DIR}/include)
-
 # Include Core in all modules
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Core/src)
 
@@ -26,3 +21,41 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Core/src)
 foreach(Module ${Modules})
   add_subdirectory(${Module})
 endforeach(Module)
+
+# 
+FIND_PACKAGE(Qt5Core REQUIRED)
+
+# Create directory for configuration files
+make_directory(${CMAKE_CURRENT_BINARY_DIR}/config)
+
+# get_cmake_property(_variableNames VARIABLES)
+# foreach (_variableName ${_variableNames})
+#     message(STATUS "-> ${_variableName}=${${_variableName}}")
+# endforeach()
+
+# Find qmake(.exe)
+if(WIN32)
+  SET(QMAKE_EXECUTABLE_NAME qmake.exe)
+else()
+  SET(QMAKE_EXECUTABLE_NAME qmake)
+endif()
+find_file(QMAKE_EXECUTABLE ${QMAKE_EXECUTABLE_NAME})
+
+# Find the path to Qt configuration files
+message(STATUS "Found qmake at ${QMAKE_EXECUTABLE}")
+exec_program(${QMAKE_EXECUTABLE} ARGS "-query QT_INSTALL_ARCHDATA" OUTPUT_VARIABLE QMAKE_ARCHPATH)
+SET(QMAKE_FEATURE_PATH ${QMAKE_ARCHPATH}/mkspecs/features)
+
+# Generate nuriavars.prf
+string(REPLACE ";" " " MODULE_NAMES "${Modules}")
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config/nuriavars.prf.in
+               ${CMAKE_CURRENT_BINARY_DIR}/config/nuriavars.prf
+               @ONLY)
+
+# Install the QMake .prf files
+SET(QMAKE_FEATURE_FILES
+    ${CMAKE_CURRENT_BINARY_DIR}/config/nuriavars.prf
+    ${CMAKE_CURRENT_SOURCE_DIR}/config/nuria.prf
+)
+
+INSTALL(FILES ${QMAKE_FEATURE_FILES} DESTINATION ${QMAKE_FEATURE_PATH})
