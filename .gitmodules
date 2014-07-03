@@ -1,15 +1,15 @@
 [submodule "Core"]
 	path = Core
-	url = git@github.com:NuriaProject/Core.git
+	url = https://github.com/NuriaProject/Core.git
 [submodule "Network"]
 	path = Network
-	url = git@github.com:NuriaProject/Network.git
+	url = https://github.com/NuriaProject/Network.git
 [submodule "tests"]
 	path = tests
-	url = git@github.com:NuriaProject/FrameworkTests.git
+	url = https://github.com/NuriaProject/FrameworkTests.git
 [submodule "Tria"]
 	path = Tria
-	url = git@github.com:NuriaProject/Tria.git
+	url = https://github.com/NuriaProject/Tria.git
 [submodule "Lua"]
 	path = Lua
-	url = git@github.com:NuriaProject/Lua.git
+	url = https://github.com/NuriaProject/Lua.git
