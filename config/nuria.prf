@@ -48,9 +48,18 @@ contains(NURIA, network) {
     contains(NURIA_MODULES, Network):DEFINES += NURIA_NETWORK_LIB
     else:warning(NuriaFramework was built without Network)
     
-    LIBS += -lNuriaNetworkQt$$QT_MAJOR_VERSION
+    LIBS += -lNuriaNetwork
     NURIA += core
     QT += network
+    
+}
+
+contains(NURIA, lua) {
+    contains(NURIA_MODULES, Lua):DEFINES += NURIA_LUA_LIB
+    else:warning(NuriaFramework was built without Lua)
+    
+    LIBS += -lNuriaLua
+    NURIA += core
     
 }
 
@@ -58,6 +67,6 @@ contains(NURIA, core) {
     contains(NURIA_MODULES, Core):DEFINES += NURIA_CORE_LIB
     else:warning(NuriaFramework was built without Core)
     
-    LIBS += -lNuriaCoreQt$$QT_MAJOR_VERSION
+    LIBS += -lNuriaCore
     
 }
