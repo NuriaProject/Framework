@@ -28,18 +28,16 @@ FIND_PACKAGE(Qt5Core REQUIRED)
 # Create directory for configuration files
 make_directory(${CMAKE_CURRENT_BINARY_DIR}/config)
 
-# get_cmake_property(_variableNames VARIABLES)
-# foreach (_variableName ${_variableNames})
-#     message(STATUS "-> ${_variableName}=${${_variableName}}")
-# endforeach()
-
 # Find qmake(.exe)
 if(WIN32)
   SET(QMAKE_EXECUTABLE_NAME qmake.exe)
 else()
   SET(QMAKE_EXECUTABLE_NAME qmake)
 endif()
-find_file(QMAKE_EXECUTABLE ${QMAKE_EXECUTABLE_NAME})
+
+# Taken from FindQt.cmake
+find_program(QMAKE_EXECUTABLE NAMES ${QMAKE_EXECUTABLE_NAME}
+             PATHS "${QT_SEARCH_PATH}/bin" "$ENV{QTDIR}/bin")
 
 # Find the path to Qt configuration files
 message(STATUS "Found qmake at ${QMAKE_EXECUTABLE}")
