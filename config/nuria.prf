@@ -34,11 +34,11 @@ win32 {
 }
 
 # Let tria run over all headers
-contains(NURIA_MODULES, tria) {
+contains(NURIA_MODULES, Tria) {
   tria.output       = tria_${QMAKE_FILE_BASE}.cpp
   tria.variable_out = SOURCES
   tria.variables    = INCLUDEPATH TRIA_FLAGS
-  tria.commands     = $$TRIA_BIN -o${QMAKE_FILE_OUT} $(TRIA_FLAGS) ${QMAKE_FILE_NAME} $(INCLUDEPATH) $${TRIA_LIB_INCLUDES}
+  tria.commands     = $$NURIA_TRIA_BIN -o${QMAKE_FILE_OUT} $(TRIA_FLAGS) ${QMAKE_FILE_NAME} $(INCLUDEPATH) $${TRIA_LIB_INCLUDES}
   tria.input        = HEADERS
   QMAKE_EXTRA_COMPILERS += tria
 }
