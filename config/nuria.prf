@@ -63,6 +63,15 @@ contains(NURIA, lua) {
     
 }
 
+contains(NURIA, twig) {
+    contains(NURIA_MODULES, Twig):DEFINES += NURIA_TWIG_LIB
+    else:warning(NuriaFramework was built without Twig)
+    
+    LIBS += -lNuriaTwig
+    NURIA += core
+    
+}
+
 contains(NURIA, core) {
     contains(NURIA_MODULES, Core):DEFINES += NURIA_CORE_LIB
     else:warning(NuriaFramework was built without Core)
