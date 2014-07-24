@@ -3,7 +3,9 @@
 # further details.
 cmake_minimum_required(VERSION 2.8.8)
 PROJECT(NuriaFramework)
+
 include(cmake/common.cmake)
+include(cmake/add_unittest.cmake)
 
 ################################################################################
 #  C O N F I G U R A T I O N
@@ -16,6 +18,9 @@ SET(Modules Tria Core Network Lua)
 
 # Include Core in all modules
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Core/src)
+
+# Enable tests
+enable_testing()
 
 # Add all module directories
 foreach(Module ${Modules})
