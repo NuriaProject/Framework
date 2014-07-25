@@ -4,6 +4,7 @@
 cmake_minimum_required(VERSION 2.8.8)
 PROJECT(NuriaFramework)
 include(cmake/common.cmake)
+include(cmake/add_unittest.cmake)
 
 ################################################################################
 #  C O N F I G U R A T I O N
