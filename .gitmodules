@@ -4,9 +4,6 @@
 [submodule "Network"]
 	path = Network
 	url = https://github.com/NuriaProject/Network.git
-[submodule "tests"]
-	path = tests
-	url = https://github.com/NuriaProject/FrameworkTests.git
 [submodule "Tria"]
 	path = Tria
 	url = https://github.com/NuriaProject/Tria.git
