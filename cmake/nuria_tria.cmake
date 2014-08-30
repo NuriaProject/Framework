@@ -45,7 +45,8 @@ function(nuria_tria Target)
       target_include_directories("${Target}_tria" PUBLIC ${NURIA_INC_DIRS})
     endif()
     
-    target_link_libraries(${Target} "${Target}_tria")
+    # TODO: Won't work with MSVC!
+    target_link_libraries(${Target} -Wl,--whole-archive "${Target}_tria" -Wl,--no-whole-archive)
   endif()
   
 endfunction(nuria_tria)
