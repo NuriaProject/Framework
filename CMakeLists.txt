@@ -5,6 +5,7 @@ cmake_minimum_required(VERSION 2.8.8)
 PROJECT(NuriaFramework)
 
 include(cmake/common.cmake)
+include(cmake/nuria_tria.cmake)
 include(cmake/add_unittest.cmake)
 
 ################################################################################
@@ -21,6 +22,15 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Core/src)
 
 # Enable tests
 enable_testing()
+
+# 
+LIST(FIND Modules Tria TriaModulePos)
+if(NOT TriaModulePos EQUAL -1)
+  message(STATUS "Building with Tria")
+  SET(HasTria 1)
+else()
+  message(STATUS "Building WITHOUT Tria")
+endif()
 
 # Add all module directories
 foreach(Module ${Modules})
