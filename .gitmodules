@@ -4,12 +4,12 @@
 [submodule "Network"]
 	path = Network
 	url = https://github.com/NuriaProject/Network.git
-[submodule "tests"]
-	path = tests
-	url = https://github.com/NuriaProject/FrameworkTests.git
 [submodule "Tria"]
 	path = Tria
 	url = https://github.com/NuriaProject/Tria.git
 [submodule "Lua"]
 	path = Lua
 	url = https://github.com/NuriaProject/Lua.git
+[submodule "Twig"]
+	path = Twig
+	url = https://github.com/NuriaProject/Twig.git
