@@ -15,7 +15,7 @@ include(cmake/add_unittest.cmake)
 
 # All modules of the framework in order of building. Their name match the name
 # of the directory.
-SET(Modules Tria Core Network Lua)
+SET(Modules Tria Core Network Lua Twig)
 
 # Include Core in all modules
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Core/src)

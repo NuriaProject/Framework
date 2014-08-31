@@ -10,3 +10,6 @@
 [submodule "Lua"]
 	path = Lua
 	url = https://github.com/NuriaProject/Lua.git
+[submodule "Twig"]
+	path = Twig
+	url = https://github.com/NuriaProject/Twig.git
