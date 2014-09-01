@@ -17,6 +17,9 @@ include(cmake/add_unittest.cmake)
 # of the directory.
 SET(Modules Tria Core Network Lua Twig)
 
+# Enable C++11
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
 # Include Core in all modules
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Core/src)
 
