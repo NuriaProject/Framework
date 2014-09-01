@@ -20,13 +20,20 @@ function(add_unittest)
     LIST(APPEND TEST_SOURCES ${TEST_PREFIX}/${file})
   endforeach()
   
-  # Build target
+  # Add target
   qt5_add_resources(TEST_RESOURCES ${add_unittest_RESOURCES})
   add_executable(${add_unittest_NAME} ${TEST_SOURCES} ${TEST_RESOURCES})
-  target_include_directories(${add_unittest_NAME} PUBLIC ${CMAKE_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/src)
+  
+  # Include directories
+  get_target_property(NURIA_INC_DIRS ${add_unittest_NAME} INCLUDE_DIRECTORIES)
+  list(APPEND NURIA_INC_DIRS ${CMAKE_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/src)
+  set_target_properties(${add_unittest_NAME} PROPERTIES INCLUDE_DIRECTORIES "${NURIA_INC_DIRS}")
+  
+  # Link against Qt and Nuria modules and run tria if needed
   target_link_libraries(${add_unittest_NAME} NuriaCore ${add_unittest_NURIA})
   QT5_USE_MODULES(${add_unittest_NAME} Core Test ${add_unittest_QT})
   nuria_tria(${add_unittest_NAME})
   
+  # 
   add_test(NAME ${add_unittest_NAME} COMMAND ${add_unittest_NAME})
 endfunction(add_unittest)
