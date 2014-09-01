@@ -42,7 +42,7 @@ function(nuria_tria Target)
     QT5_USE_MODULES("${Target}_tria" Core)
     
     if (NURIA_INC_DIRS)
-      target_include_directories("${Target}_tria" PUBLIC ${NURIA_INC_DIRS})
+      set_target_properties("${Target}_tria" PROPERTIES INCLUDE_DIRECTORIES "${NURIA_INC_DIRS}")
     endif()
     
     # TODO: Won't work with MSVC!
