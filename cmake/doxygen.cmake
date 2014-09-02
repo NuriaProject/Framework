@@ -36,5 +36,4 @@ message(STATUS "Documentation will be installed to ${NURIA_DOCS_PATH}")
 install(
     DIRECTORY ${CMAKE_SOURCE_DIR}/docs/
     DESTINATION ${NURIA_DOCS_PATH}
-    CONFIGURATIONS Release
 )
