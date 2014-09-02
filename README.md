@@ -28,10 +28,7 @@ Documentation
 -------------
 
 Documentation is written in source through doxygen-style comments.
-You can find the generated output here:
-
-* Core: http://nuriaproject.github.io/Core/annotated.html
-* Network: http://nuriaproject.github.io/Network/annotated.html
+You can find an online version of it here: [Online documentation](http://nuriaproject.github.io/Framework/annotated.html)
 
 Examples are available in the [examples repository](https://github.com/NuriaProject/FrameworkExamples)
 with explanations in the [examples github wiki](https://github.com/NuriaProject/FrameworkExamples/wiki).
