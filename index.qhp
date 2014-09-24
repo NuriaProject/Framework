@@ -200,6 +200,20 @@
                 <section title="type" ref="classNuria_1_1Field.html#a87ce048c8baf007914615d0c063f56f0" />
                 <section title="value" ref="classNuria_1_1Field.html#ae2e2d31d911ae52a75ea43e6b98d31d5" />
               </section>
+              <section title="FileTemplateLoader" ref="classNuria_1_1FileTemplateLoader.html">
+                <section title="FileTemplateLoader" ref="classNuria_1_1FileTemplateLoader.html#a8a4f777c88be8cd177242a0ce9a1a5f1" />
+                <section title="FileTemplateLoader" ref="classNuria_1_1FileTemplateLoader.html#a01ac413946e097dd38ee91a4048653fd" />
+                <section title="FileTemplateLoader" ref="classNuria_1_1FileTemplateLoader.html#a75021411ac4a89c8ab7c2ba313f493cf" />
+                <section title="~FileTemplateLoader" ref="classNuria_1_1FileTemplateLoader.html#a62e3e81254ed95a5e502ab5a16c36b21" />
+                <section title="addSearchPath" ref="classNuria_1_1FileTemplateLoader.html#ac0ffb0c9949c4979abd6f74419c8cec5" />
+                <section title="hasTemplate" ref="classNuria_1_1FileTemplateLoader.html#a600be4270001ed4d81090f58d8cd21f7" />
+                <section title="hasTemplateChanged" ref="classNuria_1_1FileTemplateLoader.html#a3a5979279a1a4e1ab90296534ac8a677" />
+                <section title="load" ref="classNuria_1_1FileTemplateLoader.html#ac451e9a26407f7bee55a6d2ead739588" />
+                <section title="searchPaths" ref="classNuria_1_1FileTemplateLoader.html#a8e459aef2a2d2f23cc50ca5b25bea159" />
+                <section title="setSearchPaths" ref="classNuria_1_1FileTemplateLoader.html#ae3509c53663766adb2898d7372683214" />
+                <section title="setSuffix" ref="classNuria_1_1FileTemplateLoader.html#a52bdc69cb8bef59bfb4962c944304d2e" />
+                <section title="suffix" ref="classNuria_1_1FileTemplateLoader.html#a28202e166a9c42d53a103b5966b0a277" />
+              </section>
               <section title="HttpClient" ref="classNuria_1_1HttpClient.html">
                 <section title="Cookies" ref="classNuria_1_1HttpClient.html#a4b0b5b19ed35ad7f46eb15584623fea7" />
                 <section title="HeaderMap" ref="classNuria_1_1HttpClient.html#a8c08e3a1bb7911fd79adaadfc8e38e26" />
@@ -979,6 +993,7 @@
                 <section title="currentCacheSize" ref="classNuria_1_1TemplateEngine.html#a3f519c2a4be9aff55fe7b3d10bf5c831" />
                 <section title="flushCache" ref="classNuria_1_1TemplateEngine.html#af8b931643bd90b41ba42d5c27a2d0f41" />
                 <section title="hasFunction" ref="classNuria_1_1TemplateEngine.html#aa3963f88f9ea2da1e9c7ade7bec84790" />
+                <section title="isProgramOutdated" ref="classNuria_1_1TemplateEngine.html#a7c9d3690e92f4d08e1f9d7655c62eda6" />
                 <section title="isTemplateInCache" ref="classNuria_1_1TemplateEngine.html#aea18684a08291c4f9abf32a75e1e6a02" />
                 <section title="lastError" ref="classNuria_1_1TemplateEngine.html#a29aa7e9bde3946add8fd46308a225688" />
                 <section title="loader" ref="classNuria_1_1TemplateEngine.html#a742de90bc8f8ebf675c57fafb6a76401" />
@@ -1040,6 +1055,7 @@
                 <section title="~TemplateLoader" ref="classNuria_1_1TemplateLoader.html#af9e71d1ae7de1c694c7561be78eec82c" />
                 <section title="allTemplatesChanged" ref="classNuria_1_1TemplateLoader.html#a3a917caec99c66ed5a6561b2e98ed891" />
                 <section title="hasTemplate" ref="classNuria_1_1TemplateLoader.html#a6344476133195e9e1f2d24e2b92bfc72" />
+                <section title="hasTemplateChanged" ref="classNuria_1_1TemplateLoader.html#a1ef1a7af553a22cfa733b1c1c11d66b0" />
                 <section title="load" ref="classNuria_1_1TemplateLoader.html#a1d134645435bd29071203d23874d9543" />
                 <section title="templateChanged" ref="classNuria_1_1TemplateLoader.html#ac6cb73ce1c85c022f4a00d9a93d67e6e" />
               </section>
@@ -1231,6 +1247,7 @@
               <section title="Nuria::MiniLexer" ref="classNuria_1_1MiniLexer.html" />
               <section title="Nuria::TemplateEngine" ref="classNuria_1_1TemplateEngine.html" />
               <section title="Nuria::TemplateLoader" ref="classNuria_1_1TemplateLoader.html">
+                <section title="Nuria::FileTemplateLoader" ref="classNuria_1_1FileTemplateLoader.html" />
                 <section title="Nuria::MemoryTemplateLoader" ref="classNuria_1_1MemoryTemplateLoader.html" />
               </section>
               <section title="Nuria::Tokenizer" ref="classNuria_1_1Tokenizer.html" />
@@ -1318,6 +1335,7 @@
             <section title="debug.hpp" ref="debug_8hpp_source.html" />
             <section title="dependencymanager.hpp" ref="dependencymanager_8hpp_source.html" />
             <section title="essentials.hpp" ref="essentials_8hpp_source.html" />
+            <section title="filetemplateloader.hpp" ref="filetemplateloader_8hpp_source.html" />
             <section title="httpclient.hpp" ref="httpclient_8hpp_source.html" />
             <section title="httpmultipartreader.hpp" ref="httpmultipartreader_8hpp_source.html" />
             <section title="httpnode.hpp" ref="httpnode_8hpp_source.html" />
@@ -1499,6 +1517,23 @@
       <keyword name="Argument" id="Nuria::Field::Argument" ref="classNuria_1_1Field.html#afe6c0594f89ed17062718dbeccd940b0a840dbbf685f46710161889d3042422ce" />
       <keyword name="TestCall" id="Nuria::Field::TestCall" ref="classNuria_1_1Field.html#afe6c0594f89ed17062718dbeccd940b0a3ec338dc495da34502d017834c56454a" />
       <keyword name="Custom" id="Nuria::Field::Custom" ref="classNuria_1_1Field.html#afe6c0594f89ed17062718dbeccd940b0a1f9bf4e9babdac3896a41694f0bfaa44" />
+      <keyword name="Nuria::FileTemplateLoader" id="Nuria::FileTemplateLoader" ref="classNuria_1_1FileTemplateLoader.html" />
+      <keyword name="FileTemplateLoader" id="Nuria::FileTemplateLoader::FileTemplateLoader" ref="classNuria_1_1FileTemplateLoader.html#a8a4f777c88be8cd177242a0ce9a1a5f1" />
+      <keyword name="FileTemplateLoader" id="Nuria::FileTemplateLoader::FileTemplateLoader" ref="classNuria_1_1FileTemplateLoader.html#a01ac413946e097dd38ee91a4048653fd" />
+      <keyword name="FileTemplateLoader" id="Nuria::FileTemplateLoader::FileTemplateLoader" ref="classNuria_1_1FileTemplateLoader.html#a75021411ac4a89c8ab7c2ba313f493cf" />
+      <keyword name="~FileTemplateLoader" id="Nuria::FileTemplateLoader::~FileTemplateLoader" ref="classNuria_1_1FileTemplateLoader.html#a62e3e81254ed95a5e502ab5a16c36b21" />
+      <keyword name="addSearchPath" id="Nuria::FileTemplateLoader::addSearchPath" ref="classNuria_1_1FileTemplateLoader.html#ac0ffb0c9949c4979abd6f74419c8cec5" />
+      <keyword name="hasTemplate" id="Nuria::FileTemplateLoader::hasTemplate" ref="classNuria_1_1FileTemplateLoader.html#a600be4270001ed4d81090f58d8cd21f7" />
+      <keyword name="hasTemplateChanged" id="Nuria::FileTemplateLoader::hasTemplateChanged" ref="classNuria_1_1FileTemplateLoader.html#a3a5979279a1a4e1ab90296534ac8a677" />
+      <keyword name="load" id="Nuria::FileTemplateLoader::load" ref="classNuria_1_1FileTemplateLoader.html#ac451e9a26407f7bee55a6d2ead739588" />
+      <keyword name="searchPaths" id="Nuria::FileTemplateLoader::searchPaths" ref="classNuria_1_1FileTemplateLoader.html#a8e459aef2a2d2f23cc50ca5b25bea159" />
+      <keyword name="setSearchPaths" id="Nuria::FileTemplateLoader::setSearchPaths" ref="classNuria_1_1FileTemplateLoader.html#ae3509c53663766adb2898d7372683214" />
+      <keyword name="setSuffix" id="Nuria::FileTemplateLoader::setSuffix" ref="classNuria_1_1FileTemplateLoader.html#a52bdc69cb8bef59bfb4962c944304d2e" />
+      <keyword name="suffix" id="Nuria::FileTemplateLoader::suffix" ref="classNuria_1_1FileTemplateLoader.html#a28202e166a9c42d53a103b5966b0a277" />
+      <keyword name="TemplateLoader" id="Nuria::TemplateLoader::TemplateLoader" ref="classNuria_1_1TemplateLoader.html#a56d0c2073935f0f318018800be4e032d" />
+      <keyword name="~TemplateLoader" id="Nuria::TemplateLoader::~TemplateLoader" ref="classNuria_1_1TemplateLoader.html#af9e71d1ae7de1c694c7561be78eec82c" />
+      <keyword name="allTemplatesChanged" id="Nuria::TemplateLoader::allTemplatesChanged" ref="classNuria_1_1TemplateLoader.html#a3a917caec99c66ed5a6561b2e98ed891" />
+      <keyword name="templateChanged" id="Nuria::TemplateLoader::templateChanged" ref="classNuria_1_1TemplateLoader.html#ac6cb73ce1c85c022f4a00d9a93d67e6e" />
       <keyword name="Nuria::HttpClient" id="Nuria::HttpClient" ref="classNuria_1_1HttpClient.html" />
       <keyword name="Cookies" id="Nuria::HttpClient::Cookies" ref="classNuria_1_1HttpClient.html#a4b0b5b19ed35ad7f46eb15584623fea7" />
       <keyword name="HeaderMap" id="Nuria::HttpClient::HeaderMap" ref="classNuria_1_1HttpClient.html#a8c08e3a1bb7911fd79adaadfc8e38e26" />
@@ -1874,6 +1909,7 @@
       <keyword name="setMap" id="Nuria::MemoryTemplateLoader::setMap" ref="classNuria_1_1MemoryTemplateLoader.html#abc2f6bf48f9f7c67523f171072d056f3" />
       <keyword name="TemplateLoader" id="Nuria::TemplateLoader::TemplateLoader" ref="classNuria_1_1TemplateLoader.html#a56d0c2073935f0f318018800be4e032d" />
       <keyword name="~TemplateLoader" id="Nuria::TemplateLoader::~TemplateLoader" ref="classNuria_1_1TemplateLoader.html#af9e71d1ae7de1c694c7561be78eec82c" />
+      <keyword name="hasTemplateChanged" id="Nuria::TemplateLoader::hasTemplateChanged" ref="classNuria_1_1TemplateLoader.html#a1ef1a7af553a22cfa733b1c1c11d66b0" />
       <keyword name="allTemplatesChanged" id="Nuria::TemplateLoader::allTemplatesChanged" ref="classNuria_1_1TemplateLoader.html#a3a917caec99c66ed5a6561b2e98ed891" />
       <keyword name="templateChanged" id="Nuria::TemplateLoader::templateChanged" ref="classNuria_1_1TemplateLoader.html#ac6cb73ce1c85c022f4a00d9a93d67e6e" />
       <keyword name="Nuria::MetaAnnotation" id="Nuria::MetaAnnotation" ref="classNuria_1_1MetaAnnotation.html" />
@@ -2223,6 +2259,7 @@
       <keyword name="currentCacheSize" id="Nuria::TemplateEngine::currentCacheSize" ref="classNuria_1_1TemplateEngine.html#a3f519c2a4be9aff55fe7b3d10bf5c831" />
       <keyword name="flushCache" id="Nuria::TemplateEngine::flushCache" ref="classNuria_1_1TemplateEngine.html#af8b931643bd90b41ba42d5c27a2d0f41" />
       <keyword name="hasFunction" id="Nuria::TemplateEngine::hasFunction" ref="classNuria_1_1TemplateEngine.html#aa3963f88f9ea2da1e9c7ade7bec84790" />
+      <keyword name="isProgramOutdated" id="Nuria::TemplateEngine::isProgramOutdated" ref="classNuria_1_1TemplateEngine.html#a7c9d3690e92f4d08e1f9d7655c62eda6" />
       <keyword name="isTemplateInCache" id="Nuria::TemplateEngine::isTemplateInCache" ref="classNuria_1_1TemplateEngine.html#aea18684a08291c4f9abf32a75e1e6a02" />
       <keyword name="lastError" id="Nuria::TemplateEngine::lastError" ref="classNuria_1_1TemplateEngine.html#a29aa7e9bde3946add8fd46308a225688" />
       <keyword name="loader" id="Nuria::TemplateEngine::loader" ref="classNuria_1_1TemplateEngine.html#a742de90bc8f8ebf675c57fafb6a76401" />
@@ -2271,6 +2308,7 @@
       <keyword name="TemplateLoader" id="Nuria::TemplateLoader::TemplateLoader" ref="classNuria_1_1TemplateLoader.html#a56d0c2073935f0f318018800be4e032d" />
       <keyword name="~TemplateLoader" id="Nuria::TemplateLoader::~TemplateLoader" ref="classNuria_1_1TemplateLoader.html#af9e71d1ae7de1c694c7561be78eec82c" />
       <keyword name="hasTemplate" id="Nuria::TemplateLoader::hasTemplate" ref="classNuria_1_1TemplateLoader.html#a6344476133195e9e1f2d24e2b92bfc72" />
+      <keyword name="hasTemplateChanged" id="Nuria::TemplateLoader::hasTemplateChanged" ref="classNuria_1_1TemplateLoader.html#a1ef1a7af553a22cfa733b1c1c11d66b0" />
       <keyword name="load" id="Nuria::TemplateLoader::load" ref="classNuria_1_1TemplateLoader.html#a1d134645435bd29071203d23874d9543" />
       <keyword name="Nuria::TemplateProgram" id="Nuria::TemplateProgram" ref="classNuria_1_1TemplateProgram.html" />
       <keyword name="TemplateProgram" id="Nuria::TemplateProgram::TemplateProgram" ref="classNuria_1_1TemplateProgram.html#a96709737d5d434d7c72c930591ba1f02" />
@@ -2450,6 +2488,7 @@
       <file>debug_8hpp_source.html</file>
       <file>dependencymanager_8hpp_source.html</file>
       <file>essentials_8hpp_source.html</file>
+      <file>filetemplateloader_8hpp_source.html</file>
       <file>httpclient_8hpp_source.html</file>
       <file>httpmultipartreader_8hpp_source.html</file>
       <file>httpnode_8hpp_source.html</file>
@@ -2521,6 +2560,9 @@
       <file>classNuria_1_1DependencyManager-members.html</file>
       <file>classNuria_1_1Field.html</file>
       <file>classNuria_1_1Field-members.html</file>
+      <file>classNuria_1_1FileTemplateLoader.html</file>
+      <file>classNuria_1_1FileTemplateLoader.png</file>
+      <file>classNuria_1_1FileTemplateLoader-members.html</file>
       <file>classNuria_1_1HttpClient.html</file>
       <file>classNuria_1_1HttpClient.png</file>
       <file>classNuria_1_1HttpClient-members.html</file>
@@ -2644,13 +2686,13 @@
       <file>dir_c6310732a22f63c0c2fc5595561e68f1.html</file>
       <file>dir_5fdd3c20ae17bb33a6cac4c5b081e7fb.html</file>
       <file>dir_356d85c7fe3a31f6238a1e4b453e8aed.html</file>
-      <file>dir_4f2f28395902459d2d62b1159371f95d.html</file>
       <file>dir_f0b40c81b8c708e64864ab3bc6f7fb2c.html</file>
       <file>dir_4837702c091dd86f4d011f36950efec0.html</file>
+      <file>dir_4f2f28395902459d2d62b1159371f95d.html</file>
       <file>dir_9862018f116817b3888bd9273847c37c.html</file>
-      <file>dir_30f6c7aaaa7d18ff8a7f76981a710c98.html</file>
       <file>dir_fac47a210e0af8a3b708bd543b43c48e.html</file>
       <file>dir_4bb62adb9b72408a64637345ff5c2e7c.html</file>
+      <file>dir_30f6c7aaaa7d18ff8a7f76981a710c98.html</file>
       <file>dir_6635075fd29d94b1e79ef2060fed20a6.html</file>
       <file>dir_e6572c2c8d6eeed6aaed60800a7ebfd3.html</file>
       <file>index.html</file>

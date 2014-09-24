@@ -1,6 +1,7 @@
 var searchData=
 [
   ['setters',['setters',['../group__Callback.html',1,'']]],
+  ['searchpaths',['searchPaths',['../classNuria_1_1FileTemplateLoader.html#a8e459aef2a2d2f23cc50ca5b25bea159',1,'Nuria::FileTemplateLoader']]],
   ['secureport',['securePort',['../classNuria_1_1HttpServer.html#a4eb94a49d876ff4f41fd1a8f65c52748',1,'Nuria::HttpServer']]],
   ['sendresponseheader',['sendResponseHeader',['../classNuria_1_1HttpClient.html#a2d5ce26add94144169c7dabad566b2a0',1,'Nuria::HttpClient']]],
   ['sendstaticresource',['sendStaticResource',['../classNuria_1_1HttpNode.html#aef64803806d21b4769ad00f0c4f82db5',1,'Nuria::HttpNode::sendStaticResource(const QString &amp;name, HttpClient *client)'],['../classNuria_1_1HttpNode.html#a8ba703d15f0a1909185121872226ffd3',1,'Nuria::HttpNode::sendStaticResource(const QStringList &amp;path, int indexInPath, HttpClient *client)']]],
@@ -54,10 +55,12 @@ var searchData=
   ['setresponseheaders',['setResponseHeaders',['../classNuria_1_1HttpClient.html#afb41f195538362e625a3f4429b860bed',1,'Nuria::HttpClient']]],
   ['setrestfulhandler',['setRestfulHandler',['../classNuria_1_1RestfulHttpNode.html#abbd1fdefa2644539695eed5ed6ba482c',1,'Nuria::RestfulHttpNode::setRestfulHandler(HttpClient::HttpVerbs verbs, const QString &amp;path, const QStringList &amp;argumentNames, const Callback &amp;callback)'],['../classNuria_1_1RestfulHttpNode.html#a4f7e326c78135e8f7d09f848652a2780',1,'Nuria::RestfulHttpNode::setRestfulHandler(const QString &amp;path, const QStringList &amp;argumentNames, const Callback &amp;callback)']]],
   ['setroot',['setRoot',['../classNuria_1_1HttpServer.html#acfbad8065007673d52dff39a3af8c31c',1,'Nuria::HttpServer']]],
+  ['setsearchpaths',['setSearchPaths',['../classNuria_1_1FileTemplateLoader.html#ae3509c53663766adb2898d7372683214',1,'Nuria::FileTemplateLoader']]],
   ['setslotinfo',['setSlotInfo',['../classNuria_1_1HttpClient.html#a7da568503f70bf8cc13b2bde38862129',1,'Nuria::HttpClient']]],
   ['setstaticresourcedir',['setStaticResourceDir',['../classNuria_1_1HttpNode.html#a879a8506bb221c700f605f6a51c6fb05',1,'Nuria::HttpNode']]],
   ['setstaticresourcemode',['setStaticResourceMode',['../classNuria_1_1HttpNode.html#a57e7bb69809bf629d3015d175602da44',1,'Nuria::HttpNode']]],
   ['setstreampostbody',['setStreamPostBody',['../classNuria_1_1SlotInfo.html#a592ba75a1b6b33bfe6731aedd91ed03d',1,'Nuria::SlotInfo']]],
+  ['setsuffix',['setSuffix',['../classNuria_1_1FileTemplateLoader.html#a52bdc69cb8bef59bfb4962c944304d2e',1,'Nuria::FileTemplateLoader']]],
   ['settokenaction',['setTokenAction',['../classNuria_1_1TokenizerRules.html#a6bb186cbaff84197b9a1a29115bca4dd',1,'Nuria::TokenizerRules']]],
   ['setvalue',['setValue',['../classNuria_1_1TemplateEngine.html#a946652e45f7753bedda7f3338734002c',1,'Nuria::TemplateEngine::setValue()'],['../classNuria_1_1TemplateProgram.html#a3dada2c529cf3b197c2048c019335afb',1,'Nuria::TemplateProgram::setValue()']]],
   ['setvalues',['setValues',['../classNuria_1_1TemplateEngine.html#aecf1930ae547c5d22a9ab503baf11a14',1,'Nuria::TemplateEngine']]],
@@ -71,7 +74,7 @@ var searchData=
   ['single',['Single',['../classNuria_1_1LazyCondition.html#a46ebbf6b7225c66c74519f5ac3a58b7daf4fea0ff95cca697c5635b0c1d140193',1,'Nuria::LazyCondition']]],
   ['singlethread',['SingleThread',['../classNuria_1_1DependencyManager.html#a651e3284e1dd41891b4b9fb26233468da0fbd7a11d7198e35d3f05e6af60e52d4',1,'Nuria::DependencyManager']]],
   ['slot',['Slot',['../classNuria_1_1Callback.html#a915a45aceb767d7cd91a895bd18a0df7a9206e7469c9578fd8331f297cdb0ab85',1,'Nuria::Callback']]],
-  ['slotinfo',['SlotInfo',['../classNuria_1_1SlotInfo.html#a10b2e3fefed825826cd95b2fc8bc5654',1,'Nuria::SlotInfo::SlotInfo(const Callback &amp;callback=Callback())'],['../classNuria_1_1SlotInfo.html#ab724e98c216a20cb643ca7aa91eeeb28',1,'Nuria::SlotInfo::SlotInfo(const SlotInfo &amp;other)'],['../classNuria_1_1HttpClient.html#a5728d9b38e3217dbb67119c474634fb3',1,'Nuria::HttpClient::slotInfo()']]],
+  ['slotinfo',['slotInfo',['../classNuria_1_1HttpClient.html#a5728d9b38e3217dbb67119c474634fb3',1,'Nuria::HttpClient::slotInfo()'],['../classNuria_1_1SlotInfo.html#a10b2e3fefed825826cd95b2fc8bc5654',1,'Nuria::SlotInfo::SlotInfo(const Callback &amp;callback=Callback())'],['../classNuria_1_1SlotInfo.html#ab724e98c216a20cb643ca7aa91eeeb28',1,'Nuria::SlotInfo::SlotInfo(const SlotInfo &amp;other)']]],
   ['slotinfo',['SlotInfo',['../classNuria_1_1SlotInfo.html',1,'Nuria']]],
   ['sourcefiles',['sourceFiles',['../classNuria_1_1JsonMetaObjectReader.html#a8cd13ce8c04b963500b3aa696817e060',1,'Nuria::JsonMetaObjectReader']]],
   ['ssl',['SSL',['../classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51a3c03d91e9f0aaa5588ce23be181044cd',1,'Nuria::HttpTransport']]],
@@ -83,9 +86,10 @@ var searchData=
   ['staticresourcesmode',['StaticResourcesMode',['../classNuria_1_1HttpNode.html#aafbf4c4ae9ebf780d6182f6f3590ad81',1,'Nuria::HttpNode']]],
   ['stealinternaldevice',['stealInternalDevice',['../classNuria_1_1TemporaryBufferDevice.html#a19cf21701bda8a0157a48eaeb7e6c053',1,'Nuria::TemporaryBufferDevice']]],
   ['stealpointer',['stealPointer',['../classNuria_1_1Variant.html#accd28ea0460136806f47b3e0f069f0c4',1,'Nuria::Variant']]],
-  ['storagemode',['storageMode',['../classNuria_1_1TemporaryBufferDevice.html#ad3db4be1119b19213d1e52f722f94e62',1,'Nuria::TemporaryBufferDevice::storageMode() const '],['../classNuria_1_1TemporaryBufferDevice.html#af02d7d74dfa8869e8be019279eda6b92',1,'Nuria::TemporaryBufferDevice::StorageMode()']]],
+  ['storagemode',['StorageMode',['../classNuria_1_1TemporaryBufferDevice.html#af02d7d74dfa8869e8be019279eda6b92',1,'Nuria::TemporaryBufferDevice::StorageMode()'],['../classNuria_1_1TemporaryBufferDevice.html#ad3db4be1119b19213d1e52f722f94e62',1,'Nuria::TemporaryBufferDevice::storageMode() const ']]],
   ['storagemodechanged',['storageModeChanged',['../classNuria_1_1TemporaryBufferDevice.html#ad6ceee5166abcca2ec1039532a38f6a2',1,'Nuria::TemporaryBufferDevice']]],
   ['storeobject',['storeObject',['../classNuria_1_1DependencyManager.html#ab7f60e64f8695f111faf28fa094ffe5f',1,'Nuria::DependencyManager::storeObject(const QString &amp;name, void *object, int type, ThreadingPolicy policy=DefaultPolicy)'],['../classNuria_1_1DependencyManager.html#a4e67a075f7db22d845df6a85f5df5d15',1,'Nuria::DependencyManager::storeObject(const QString &amp;name, T *object)']]],
   ['streampostbody',['streamPostBody',['../classNuria_1_1SlotInfo.html#a18676ba5de929baf287ada724e36c107',1,'Nuria::SlotInfo']]],
+  ['suffix',['suffix',['../classNuria_1_1FileTemplateLoader.html#a28202e166a9c42d53a103b5966b0a277',1,'Nuria::FileTemplateLoader']]],
   ['syntaxerror',['SyntaxError',['../classNuria_1_1TemplateError.html#a9ea4ecd305ca65494e72ecf1234a8a12aa819ec04bc2535f07a1f051bf04dd274',1,'Nuria::TemplateError']]]
 ];

@@ -10,7 +10,7 @@ var searchData=
   ['listen',['listen',['../classNuria_1_1HttpServer.html#abf0e481ce441a84b0bde592e0882f3dd',1,'Nuria::HttpServer']]],
   ['listensecure',['listenSecure',['../classNuria_1_1HttpServer.html#a369813cbede4034e80c49c580ae4bcd9',1,'Nuria::HttpServer']]],
   ['listentounixsignal',['listenToUnixSignal',['../classNuria_1_1UnixSignalHandler.html#a80bb70ff70f2c073b82bab33a3295cfb',1,'Nuria::UnixSignalHandler']]],
-  ['load',['load',['../classNuria_1_1MemoryTemplateLoader.html#a85cc7e88fabf21d21298b664bcda1e48',1,'Nuria::MemoryTemplateLoader::load()'],['../classNuria_1_1TemplateLoader.html#a1d134645435bd29071203d23874d9543',1,'Nuria::TemplateLoader::load()']]],
+  ['load',['load',['../classNuria_1_1FileTemplateLoader.html#ac451e9a26407f7bee55a6d2ead739588',1,'Nuria::FileTemplateLoader::load()'],['../classNuria_1_1MemoryTemplateLoader.html#a85cc7e88fabf21d21298b664bcda1e48',1,'Nuria::MemoryTemplateLoader::load()'],['../classNuria_1_1TemplateLoader.html#a1d134645435bd29071203d23874d9543',1,'Nuria::TemplateLoader::load()']]],
   ['loader',['loader',['../classNuria_1_1TemplateEngine.html#a742de90bc8f8ebf675c57fafb6a76401',1,'Nuria::TemplateEngine']]],
   ['localaddress',['localAddress',['../classNuria_1_1HttpClient.html#a44d0bf63f957ca51344ce69d7c50f541',1,'Nuria::HttpClient::localAddress()'],['../classNuria_1_1HttpTcpTransport.html#ae06ea515cd82fdda18fe11d725011214',1,'Nuria::HttpTcpTransport::localAddress()'],['../classNuria_1_1HttpTransport.html#a64dd5edfdd7f4f173eaef8d75dcb450b',1,'Nuria::HttpTransport::localAddress()']]],
   ['localcertificate',['localCertificate',['../classNuria_1_1HttpServer.html#a75b45a56b417579f73638e1ed9ee1afc',1,'Nuria::HttpServer']]],
