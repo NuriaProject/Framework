@@ -1,6 +1,8 @@
 # CMake file for the nuria_tria() helper function.
 # Copyright by the NuriaProject under the zlib license. (See LICENSE)
 
+include(cmake/win32_stdlib_include.cmake)
+
 # Runs tria on all C++ header-files in the target passed as argument.
 # Note: The generated C++ source files will be linked as static library
 #       and then added to the target as dependency.
@@ -14,6 +16,12 @@ function(nuria_tria Target)
   endif()
   
   SET(NURIA_TRIA_FILES )
+  SET(TRIA_EXTRA_INCLUDES )
+  
+  # Fetch libc/libc++ include directories for win32
+  if(WIN32)
+    win32_stdlib_include(TRIA_EXTRA_INCLUDES)
+  endif()
   
   foreach(file ${NURIA_SOURCE_FILES})
     if("${file}" MATCHES "\\.[hH]..$")
@@ -27,7 +35,7 @@ function(nuria_tria Target)
       if(NOT NURIA_HAS_RULE)
         add_custom_command(
             OUTPUT "${OUTFILE}"
-            COMMAND tria -cxx-output=${OUTFILE} ${file} -- ${NURIA_INC_DIRS}
+            COMMAND tria -cxx-output=${OUTFILE} ${file} -- ${NURIA_INC_DIRS} ${TRIA_EXTRA_INCLUDES}
             IMPLICIT_DEPENDS CXX ${file}
             COMMENT "Running tria on ${file}"
             WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
@@ -39,7 +47,10 @@ function(nuria_tria Target)
   # Only add the library if there are matches
   if (NURIA_TRIA_FILES)
     add_library("${Target}_tria" STATIC ${NURIA_TRIA_FILES})
-    QT5_USE_MODULES("${Target}_tria" Core)
+    
+    # Add targets imports to tria target
+    get_target_property(NURIA_LINK_INTERFACES ${Target} INTERFACE_LINK_LIBRARIES)
+    target_link_libraries(${Target}_tria ${NURIA_LINK_INTERFACES})
     
     if (NURIA_INC_DIRS)
       set_target_properties("${Target}_tria" PROPERTIES INCLUDE_DIRECTORIES "${NURIA_INC_DIRS}")
