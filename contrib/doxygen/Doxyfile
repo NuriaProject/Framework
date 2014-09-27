@@ -34,7 +34,7 @@ QUIET                  = YES
 
 INPUT                  = Core/src/nuria Network/src/nuria Lua/src/nuria Twig/src/nuria
 RECURSIVE              = YES
-
+WARN_IF_UNDOCUMENTED   = NO
 
 #USE_MDFILE_AS_MAINPAGE = 
 
