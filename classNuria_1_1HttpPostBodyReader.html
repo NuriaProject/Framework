@@ -108,7 +108,8 @@ Inheritance diagram for Nuria::HttpPostBodyReader:</div>
  <div class="center">
   <img src="classNuria_1_1HttpPostBodyReader.png" usemap="#Nuria::HttpPostBodyReader_map" alt=""/>
   <map id="Nuria::HttpPostBodyReader_map" name="Nuria::HttpPostBodyReader_map">
-<area href="classNuria_1_1HttpMultiPartReader.html" title="Reader for HTTP multi-part formatted data. " alt="Nuria::HttpMultiPartReader" shape="rect" coords="0,112,165,136"/>
+<area href="classNuria_1_1HttpMultiPartReader.html" title="Reader for HTTP multi-part formatted data. " alt="Nuria::HttpMultiPartReader" shape="rect" coords="0,112,178,136"/>
+<area href="classNuria_1_1HttpUrlEncodedReader.html" title="Reader for HTTP url-encoded formatted data. " alt="Nuria::HttpUrlEncodedReader" shape="rect" coords="188,112,366,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -243,7 +244,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the amount of bytes transferred of <em>field</em>. </p>
 
-<p>Implemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#a4e677fa485476364c61781eaba852e39">Nuria::HttpMultiPartReader</a>.</p>
+<p>Implemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#a4e677fa485476364c61781eaba852e39">Nuria::HttpMultiPartReader</a>, and <a class="el" href="classNuria_1_1HttpUrlEncodedReader.html#ab88aaa5a7de33a1e98bb43e359a4b167">Nuria::HttpUrlEncodedReader</a>.</p>
 
 </div>
 </div>
@@ -320,7 +321,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the total length of <em>field</em>. If <em>field</em> is unknown or the length is unknown, returns <code>-1</code>. </p>
 
-<p>Implemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#a1a5d60caa10154240745d3c4241f81cc">Nuria::HttpMultiPartReader</a>.</p>
+<p>Implemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#a1a5d60caa10154240745d3c4241f81cc">Nuria::HttpMultiPartReader</a>, and <a class="el" href="classNuria_1_1HttpUrlEncodedReader.html#ae9792091e3329bc6e79a5e439fe4d6bc">Nuria::HttpUrlEncodedReader</a>.</p>
 
 </div>
 </div>
@@ -347,7 +348,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the MIME-Type of <em>field</em>. If <em>field</em> does not exist or the MIME-Type is unknown, returns an empty string. </p>
 
-<p>Implemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#a7503724e9944e2f9aaa02f2015c4cc5d">Nuria::HttpMultiPartReader</a>.</p>
+<p>Implemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#a7503724e9944e2f9aaa02f2015c4cc5d">Nuria::HttpMultiPartReader</a>, and <a class="el" href="classNuria_1_1HttpUrlEncodedReader.html#a01482268a5e2aad0bcae2ecaf2fb8f41">Nuria::HttpUrlEncodedReader</a>.</p>
 
 </div>
 </div>
@@ -373,7 +374,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the list of known field names. </p>
 
-<p>Implemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#a7b3c70d709de6dec077a9256a1b52c5a">Nuria::HttpMultiPartReader</a>.</p>
+<p>Implemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#a7b3c70d709de6dec077a9256a1b52c5a">Nuria::HttpMultiPartReader</a>, and <a class="el" href="classNuria_1_1HttpUrlEncodedReader.html#a08496c705df8a1bc67f56038a4600ca7">Nuria::HttpUrlEncodedReader</a>.</p>
 
 </div>
 </div>
@@ -405,7 +406,7 @@ There is only one device per <em>field</em>. Subsequent calls return the same de
 <p>If <em>field</em> is a known field but is currently been transferred, then the returned stream will operate upon the already received data and new received data is put into it.</p>
 <dl class="section note"><dt>Note</dt><dd>Ownership of the device belongs to the reader. </dd></dl>
 
-<p>Implemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#a206c67786add9ff4cffd74f5ae8ff0f6">Nuria::HttpMultiPartReader</a>.</p>
+<p>Implemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#a206c67786add9ff4cffd74f5ae8ff0f6">Nuria::HttpMultiPartReader</a>, and <a class="el" href="classNuria_1_1HttpUrlEncodedReader.html#a5016b1bdfaef2a6bbba5ff653e75c3b5">Nuria::HttpUrlEncodedReader</a>.</p>
 
 </div>
 </div>
@@ -434,6 +435,8 @@ There is only one device per <em>field</em>. Subsequent calls return the same de
 <dl class="section warning"><dt>Warning</dt><dd>If you're expecting large amount of data, use <a class="el" href="classNuria_1_1HttpPostBodyReader.html#a8a533d898e82af2954161f17da085aa5">fieldStream()</a> instead.</dd></dl>
 <p>The default implementation uses infoStream() to obtain the device and read all of its content, if <a class="el" href="classNuria_1_1HttpPostBodyReader.html#a83c4f7eb23145d24b82abeadda4c26c4">isFieldComplete()</a> returns <code>true</code>. </p>
 
+<p>Reimplemented in <a class="el" href="classNuria_1_1HttpUrlEncodedReader.html#a8ecdc6c7ce0d28b4175842393b8e10ad">Nuria::HttpUrlEncodedReader</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a564f6e9da3bcdbd20fa8cd5ca17bd958"></a>
@@ -458,7 +461,7 @@ There is only one device per <em>field</em>. Subsequent calls return the same de
 </div><div class="memdoc">
 <p>Returns <code>true</code> if parsing has failed. </p>
 
-<p>Implemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#ab05afcda4f73ad6bd48b5855567de61f">Nuria::HttpMultiPartReader</a>.</p>
+<p>Implemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#ab05afcda4f73ad6bd48b5855567de61f">Nuria::HttpMultiPartReader</a>, and <a class="el" href="classNuria_1_1HttpUrlEncodedReader.html#a21aa20461136fec5a4a44a15d2b4bbe7">Nuria::HttpUrlEncodedReader</a>.</p>
 
 </div>
 </div>
@@ -485,7 +488,7 @@ There is only one device per <em>field</em>. Subsequent calls return the same de
 </div><div class="memdoc">
 <p>Returns <code>true</code> if <em>field</em> exists. The default implementation looks for <em>field</em> in the result of <a class="el" href="classNuria_1_1HttpPostBodyReader.html#a86142069a13300de286b4858c75eba15">fieldNames()</a>. </p>
 
-<p>Reimplemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#a158098c85d4df0cedafedfc696391926">Nuria::HttpMultiPartReader</a>.</p>
+<p>Reimplemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#a158098c85d4df0cedafedfc696391926">Nuria::HttpMultiPartReader</a>, and <a class="el" href="classNuria_1_1HttpUrlEncodedReader.html#a4e026bfbe36fefe549c24e18479fbba7">Nuria::HttpUrlEncodedReader</a>.</p>
 
 </div>
 </div>
@@ -511,7 +514,7 @@ There is only one device per <em>field</em>. Subsequent calls return the same de
 </div><div class="memdoc">
 <p>Returns <code>true</code> if the body has been read completely. Also returns <code>true</code> if parsing has failed. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNuria_1_1HttpPostBodyReader.html#a5ff1442807cdc78abfb5708a85cb7f6f">completed</a> <a class="el" href="classNuria_1_1HttpPostBodyReader.html#a564f6e9da3bcdbd20fa8cd5ca17bd958">hasFailed</a> </dd></dl>
 
-<p>Implemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#aa29019d43a2c1bd6ac41e97780fdb916">Nuria::HttpMultiPartReader</a>.</p>
+<p>Implemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#aa29019d43a2c1bd6ac41e97780fdb916">Nuria::HttpMultiPartReader</a>, and <a class="el" href="classNuria_1_1HttpUrlEncodedReader.html#a39f8c4e7f39ea3d39d506e407884d871">Nuria::HttpUrlEncodedReader</a>.</p>
 
 </div>
 </div>
@@ -539,7 +542,7 @@ There is only one device per <em>field</em>. Subsequent calls return the same de
 <p>Returns <code>true</code> if transfer of <em>field</em> is complete. If it is not, or if <em>field</em> does not exist, <code>false</code> is returned.</p>
 <p>The default implementation compares the result of <a class="el" href="classNuria_1_1HttpPostBodyReader.html#aa9d93e352fa81a2d307e33d7e3b83df5">fieldLength()</a> to the one of <a class="el" href="classNuria_1_1HttpPostBodyReader.html#a1ae5e6f127e24b94e7d82668e3ea305f">fieldBytesTransferred()</a>. </p>
 
-<p>Reimplemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#a58f2ec600443a5796be11d0a8eb712c1">Nuria::HttpMultiPartReader</a>.</p>
+<p>Reimplemented in <a class="el" href="classNuria_1_1HttpMultiPartReader.html#a58f2ec600443a5796be11d0a8eb712c1">Nuria::HttpMultiPartReader</a>, and <a class="el" href="classNuria_1_1HttpUrlEncodedReader.html#a5c37f4b76530652bdb7f8af89f9d8326">Nuria::HttpUrlEncodedReader</a>.</p>
 
 </div>
 </div>
@@ -549,7 +552,7 @@ There is only one device per <em>field</em>. Subsequent calls return the same de
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 24 2014 19:48:54 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 28 2014 00:51:56 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

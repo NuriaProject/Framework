@@ -13,6 +13,6 @@ var searchData=
   ['exclude',['exclude',['../classNuria_1_1Serializer.html#a46f68747fe150b133af5a360090ed04b',1,'Nuria::Serializer']]],
   ['execute',['execute',['../classNuria_1_1LuaRuntime.html#ad63857d6cce46a9a4750f4a8ff84fd94',1,'Nuria::LuaRuntime']]],
   ['executestream',['executeStream',['../classNuria_1_1LuaRuntime.html#a40f597c2f05da2f9e95d34b61133afe9',1,'Nuria::LuaRuntime']]],
-  ['exists',['exists',['../classNuria_1_1AbstractSessionManager.html#a90c171c03fbcdffc25c7842bc354f690',1,'Nuria::AbstractSessionManager::exists()'],['../classNuria_1_1SessionManager.html#ab2fccd5f13dc3981b5f630464bf00039',1,'Nuria::SessionManager::exists()']]],
+  ['exists',['exists',['../classNuria_1_1AbstractSessionManager.html#a96a94eff1249d6ed615c45701956e4a5',1,'Nuria::AbstractSessionManager::exists()'],['../classNuria_1_1SessionManager.html#a60715ac5014a3b011632c949ac094348',1,'Nuria::SessionManager::exists()']]],
   ['extendrange',['extendRange',['../classNuria_1_1ReferenceDevice.html#aa1aa223c6f3730a86ff7cfa2103b773c',1,'Nuria::ReferenceDevice']]]
 ];

@@ -3,8 +3,8 @@ var searchData=
   ['hascookie',['hasCookie',['../classNuria_1_1HttpClient.html#aa8ad44b6f48e5175644c3996666a6f99',1,'Nuria::HttpClient']]],
   ['hasdefinition',['hasDefinition',['../classNuria_1_1MiniLexer.html#ac5c544b1a690b891063e919b4f81e174',1,'Nuria::MiniLexer']]],
   ['haserror',['hasError',['../classNuria_1_1Tokenizer.html#ade1f810d3c4fe6f9481a9ebf7565e16c',1,'Nuria::Tokenizer']]],
-  ['hasfailed',['hasFailed',['../classNuria_1_1HttpMultiPartReader.html#ab05afcda4f73ad6bd48b5855567de61f',1,'Nuria::HttpMultiPartReader::hasFailed()'],['../classNuria_1_1HttpPostBodyReader.html#a564f6e9da3bcdbd20fa8cd5ca17bd958',1,'Nuria::HttpPostBodyReader::hasFailed()'],['../classNuria_1_1TemplateError.html#a93c3744e253debed0db84aaf41b764f9',1,'Nuria::TemplateError::hasFailed()']]],
-  ['hasfield',['hasField',['../classNuria_1_1HttpMultiPartReader.html#a158098c85d4df0cedafedfc696391926',1,'Nuria::HttpMultiPartReader::hasField()'],['../classNuria_1_1HttpPostBodyReader.html#a41d70d8d10d73f330ce3525b18ba0164',1,'Nuria::HttpPostBodyReader::hasField()']]],
+  ['hasfailed',['hasFailed',['../classNuria_1_1HttpMultiPartReader.html#ab05afcda4f73ad6bd48b5855567de61f',1,'Nuria::HttpMultiPartReader::hasFailed()'],['../classNuria_1_1HttpPostBodyReader.html#a564f6e9da3bcdbd20fa8cd5ca17bd958',1,'Nuria::HttpPostBodyReader::hasFailed()'],['../classNuria_1_1HttpUrlEncodedReader.html#a21aa20461136fec5a4a44a15d2b4bbe7',1,'Nuria::HttpUrlEncodedReader::hasFailed()'],['../classNuria_1_1TemplateError.html#a93c3744e253debed0db84aaf41b764f9',1,'Nuria::TemplateError::hasFailed()']]],
+  ['hasfield',['hasField',['../classNuria_1_1HttpMultiPartReader.html#a158098c85d4df0cedafedfc696391926',1,'Nuria::HttpMultiPartReader::hasField()'],['../classNuria_1_1HttpPostBodyReader.html#a41d70d8d10d73f330ce3525b18ba0164',1,'Nuria::HttpPostBodyReader::hasField()'],['../classNuria_1_1HttpUrlEncodedReader.html#a4e026bfbe36fefe549c24e18479fbba7',1,'Nuria::HttpUrlEncodedReader::hasField()']]],
   ['hasfunction',['hasFunction',['../classNuria_1_1TemplateEngine.html#aa3963f88f9ea2da1e9c7ade7bec84790',1,'Nuria::TemplateEngine::hasFunction()'],['../classNuria_1_1TemplateProgram.html#a55f40971f5247bfc79f856d48092b14f',1,'Nuria::TemplateProgram::hasFunction()']]],
   ['hasglobal',['hasGlobal',['../classNuria_1_1LuaRuntime.html#ad1c1686e6fa3a4e7ba4c2f3f2ac6fad4',1,'Nuria::LuaRuntime']]],
   ['hasnode',['hasNode',['../classNuria_1_1HttpNode.html#a2c8cd351cd1ccf3bd51bef84ec243725',1,'Nuria::HttpNode']]],
@@ -28,6 +28,7 @@ var searchData=
   ['httpstatuscodename',['httpStatusCodeName',['../classNuria_1_1HttpClient.html#a40e15a53a174bf27ed05cd8094b06b8b',1,'Nuria::HttpClient']]],
   ['httptcptransport',['HttpTcpTransport',['../classNuria_1_1HttpTcpTransport.html#ad2f90a235ff1b28e0c392f6b66120df6',1,'Nuria::HttpTcpTransport']]],
   ['httptransport',['HttpTransport',['../classNuria_1_1HttpTransport.html#acab90cf90734c4b071b46564f1c8be96',1,'Nuria::HttpTransport']]],
+  ['httpurlencodedreader',['HttpUrlEncodedReader',['../classNuria_1_1HttpUrlEncodedReader.html#a8bd109fcc95431539d0b28e05893a555',1,'Nuria::HttpUrlEncodedReader']]],
   ['httpversiontostring',['httpVersionToString',['../classNuria_1_1HttpWriter.html#a7737c8dcfb9a6782a18a6696e9d01e4a',1,'Nuria::HttpWriter']]],
   ['httpwriter',['HttpWriter',['../classNuria_1_1HttpWriter.html#a47bb0e8ada9c62ef72de7874a4ac6c94',1,'Nuria::HttpWriter']]]
 ];

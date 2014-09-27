@@ -8,5 +8,6 @@ var searchData=
   ['httpserver',['HttpServer',['../classNuria_1_1HttpServer.html',1,'Nuria']]],
   ['httptcptransport',['HttpTcpTransport',['../classNuria_1_1HttpTcpTransport.html',1,'Nuria']]],
   ['httptransport',['HttpTransport',['../classNuria_1_1HttpTransport.html',1,'Nuria']]],
+  ['httpurlencodedreader',['HttpUrlEncodedReader',['../classNuria_1_1HttpUrlEncodedReader.html',1,'Nuria']]],
   ['httpwriter',['HttpWriter',['../classNuria_1_1HttpWriter.html',1,'Nuria']]]
 ];

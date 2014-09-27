@@ -124,78 +124,78 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span>TemplateLoader;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span>TemplateStack;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="classNuria_1_1TemplateEngine.html">  175</a></span>&#160;<span class="keyword">class </span>NURIA_TWIG_EXPORT <a class="code" href="classNuria_1_1TemplateEngine.html">TemplateEngine</a> : <span class="keyword">public</span> QObject {</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        Q_OBJECT</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        </div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classNuria_1_1TemplateEngine.html">TemplateEngine</a> (QObject *parent = 0);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        ~<a class="code" href="classNuria_1_1TemplateEngine.html">TemplateEngine</a> () <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        QLocale locale () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordtype">void</span> setLocale (<span class="keyword">const</span> QLocale &amp;locale);</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        </div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="code" href="classNuria_1_1TemplateLoader.html">TemplateLoader</a> *loader () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordtype">int</span> maxCacheSize () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keywordtype">void</span> setMaxCacheSize (<span class="keywordtype">int</span> size);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        </div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordtype">int</span> currentCacheSize () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        </div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordtype">bool</span> isTemplateInCache (<span class="keyword">const</span> QString &amp;templateName) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        </div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keywordtype">void</span> setLoader (<a class="code" href="classNuria_1_1TemplateLoader.html">TemplateLoader</a> *loader);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        </div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        QVariant value (<span class="keyword">const</span> QString &amp;name) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        </div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        QVariantMap values () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        </div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordtype">void</span> setValues (<span class="keyword">const</span> QVariantMap &amp;map);</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordtype">void</span> mergeValues (<span class="keyword">const</span> QVariantMap &amp;map);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        </div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordtype">void</span> setValue (<span class="keyword">const</span> QString &amp;name, <span class="keyword">const</span> QVariant &amp;value);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        </div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="keywordtype">void</span> addFunction (<span class="keyword">const</span> QString &amp;name, <span class="keyword">const</span> <a class="code" href="classNuria_1_1Callback.html">Callback</a> &amp;<span class="keyword">function</span>, <span class="keywordtype">bool</span> isConstant = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        </div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordtype">bool</span> hasFunction (<span class="keyword">const</span> QString &amp;name);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> program (<span class="keyword">const</span> QString &amp;templateName);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        </div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        QString render (<span class="keyword">const</span> QString &amp;templateName);</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        </div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <a class="code" href="classNuria_1_1TemplateError.html">TemplateError</a> lastError () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        </div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keywordtype">bool</span> isProgramOutdated (<span class="keyword">const</span> <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> &amp;program);</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        </div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordtype">void</span> flushCache ();</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        </div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        </div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        TemplateProgramPrivate *createProgram (<span class="keyword">const</span> QString &amp;templateName);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="keywordtype">void</span> removeChangedTemplateFromCache (<span class="keyword">const</span> QString &amp;templateName);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> updateProgramVariables (<span class="keyword">const</span> QString &amp;templateName, <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> *prog);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordtype">void</span> connectToLoaderSignals ();</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        </div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        TemplateEnginePrivate *d_ptr;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;};</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;}</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor">#endif // NURIA_TEMPLATEENGINE_HPP</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="classNuria_1_1TemplateEngine.html">  176</a></span>&#160;<span class="keyword">class </span>NURIA_TWIG_EXPORT <a class="code" href="classNuria_1_1TemplateEngine.html">TemplateEngine</a> : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        Q_OBJECT</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classNuria_1_1TemplateEngine.html">TemplateEngine</a> (QObject *parent = 0);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        ~<a class="code" href="classNuria_1_1TemplateEngine.html">TemplateEngine</a> () <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        QLocale locale () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordtype">void</span> setLocale (<span class="keyword">const</span> QLocale &amp;locale);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <a class="code" href="classNuria_1_1TemplateLoader.html">TemplateLoader</a> *loader () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordtype">int</span> maxCacheSize () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keywordtype">void</span> setMaxCacheSize (<span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="keywordtype">int</span> currentCacheSize () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordtype">bool</span> isTemplateInCache (<span class="keyword">const</span> QString &amp;templateName) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        </div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordtype">void</span> setLoader (<a class="code" href="classNuria_1_1TemplateLoader.html">TemplateLoader</a> *loader);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        QVariant value (<span class="keyword">const</span> QString &amp;name) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        QVariantMap values () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordtype">void</span> setValues (<span class="keyword">const</span> QVariantMap &amp;map);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordtype">void</span> mergeValues (<span class="keyword">const</span> QVariantMap &amp;map);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordtype">void</span> setValue (<span class="keyword">const</span> QString &amp;name, <span class="keyword">const</span> QVariant &amp;value);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordtype">void</span> addFunction (<span class="keyword">const</span> QString &amp;name, <span class="keyword">const</span> <a class="code" href="classNuria_1_1Callback.html">Callback</a> &amp;<span class="keyword">function</span>, <span class="keywordtype">bool</span> isConstant = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordtype">bool</span> hasFunction (<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        </div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> program (<span class="keyword">const</span> QString &amp;templateName);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        QString render (<span class="keyword">const</span> QString &amp;templateName);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <a class="code" href="classNuria_1_1TemplateError.html">TemplateError</a> lastError () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="keywordtype">bool</span> isProgramOutdated (<span class="keyword">const</span> <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> &amp;program);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordtype">void</span> flushCache ();</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        </div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        TemplateProgramPrivate *createProgram (<span class="keyword">const</span> QString &amp;templateName);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="keywordtype">void</span> removeChangedTemplateFromCache (<span class="keyword">const</span> QString &amp;templateName);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> updateProgramVariables (<span class="keyword">const</span> QString &amp;templateName, <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> *prog);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <span class="keywordtype">void</span> connectToLoaderSignals ();</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        TemplateEnginePrivate *d_ptr;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;};</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor">#endif // NURIA_TEMPLATEENGINE_HPP</span></div>
 <div class="ttc" id="classNuria_1_1Callback_html"><div class="ttname"><a href="classNuria_1_1Callback.html">Nuria::Callback</a></div><div class="ttdoc">A modern style callback mechanism which can be bound to various method types including slots...</div><div class="ttdef"><b>Definition:</b> callback.hpp:141</div></div>
 <div class="ttc" id="classNuria_1_1TemplateLoader_html"><div class="ttname"><a href="classNuria_1_1TemplateLoader.html">Nuria::TemplateLoader</a></div><div class="ttdoc">Loader of template data for TemplateEngine. </div><div class="ttdef"><b>Definition:</b> templateloader.hpp:41</div></div>
 <div class="ttc" id="classNuria_1_1TemplateError_html"><div class="ttname"><a href="classNuria_1_1TemplateError.html">Nuria::TemplateError</a></div><div class="ttdoc">Container for exposing Twig errors to user code. </div><div class="ttdef"><b>Definition:</b> templateerror.hpp:76</div></div>
 <div class="ttc" id="namespaceNuria_html"><div class="ttname"><a href="namespaceNuria.html">Nuria</a></div><div class="ttdef"><b>Definition:</b> abstractsessionmanager.hpp:25</div></div>
-<div class="ttc" id="classNuria_1_1TemplateEngine_html"><div class="ttname"><a href="classNuria_1_1TemplateEngine.html">Nuria::TemplateEngine</a></div><div class="ttdoc">Templating engine for rendering Twig code. </div><div class="ttdef"><b>Definition:</b> templateengine.hpp:175</div></div>
+<div class="ttc" id="classNuria_1_1TemplateEngine_html"><div class="ttname"><a href="classNuria_1_1TemplateEngine.html">Nuria::TemplateEngine</a></div><div class="ttdoc">Templating engine for rendering Twig code. </div><div class="ttdef"><b>Definition:</b> templateengine.hpp:176</div></div>
 <div class="ttc" id="classNuria_1_1TemplateProgram_html"><div class="ttname"><a href="classNuria_1_1TemplateProgram.html">Nuria::TemplateProgram</a></div><div class="ttdoc">Represents a compiled Twig code program. </div><div class="ttdef"><b>Definition:</b> templateprogram.hpp:71</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 24 2014 19:48:54 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Sep 28 2014 00:51:56 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
