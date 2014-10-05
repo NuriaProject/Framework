@@ -1,7 +1,7 @@
 # CMake file for the nuria_tria() helper function.
 # Copyright by the NuriaProject under the zlib license. (See LICENSE)
 
-include(cmake/win32_stdlib_include.cmake)
+include(${CMAKE_CURRENT_LIST_DIR}/win32_stdlib_include.cmake)
 
 # Runs tria on all C++ header-files in the target passed as argument.
 # Note: The generated C++ source files will be linked as static library
@@ -10,7 +10,7 @@ function(nuria_tria Target)
   get_target_property(NURIA_SOURCE_FILES ${Target} SOURCES)
   get_target_property(NURIA_INC_DIRS ${Target} INCLUDE_DIRECTORIES)
   
-  if(NOT HasTria)
+  if(NOT TARGET tria)
     message(WARNING "Tria is not enabled, Target ${Target} won't have runtime information generated.")
     return()
   endif()

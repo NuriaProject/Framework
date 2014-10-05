@@ -4,6 +4,8 @@
 cmake_minimum_required(VERSION 2.8.8)
 PROJECT(NuriaFramework)
 
+cmake_policy(SET CMP0020 NEW)
+
 include(cmake/common.cmake)
 include(cmake/nuria_tria.cmake)
 include(cmake/add_unittest.cmake)
@@ -75,6 +77,20 @@ SET(QMAKE_FEATURE_FILES
 )
 
 INSTALL(FILES ${QMAKE_FEATURE_FILES} DESTINATION ${QMAKE_FEATURE_PATH})
+
+# Generate Framework package
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/cmake/install/NuriaFramework/NuriaFrameworkConfig.cmake.in
+               ${CMAKE_CURRENT_BINARY_DIR}/cmake/install/NuriaFramework/NuriaFrameworkConfig.cmake
+               @ONLY)
+
+# Install cmake modules for external usage
+INSTALL(DIRECTORY cmake/install/ DESTINATION lib/cmake
+        PATTERN "*.in" EXCLUDE)
+INSTALL(FILES ${CMAKE_CURRENT_BINARY_DIR}/cmake/install/NuriaFramework/NuriaFrameworkConfig.cmake DESTINATION lib/cmake/NuriaFramework)
+
+if(HasTria)
+  INSTALL(FILES cmake/nuria_tria.cmake cmake/win32_stdlib_include.cmake DESTINATION lib/cmake/tria)
+endif()
 
 # Doxygen
 include(cmake/doxygen.cmake)
