@@ -8,6 +8,7 @@ var searchData=
   ['maxbodylength',['maxBodyLength',['../classNuria_1_1SlotInfo.html#ad4d38204b8980ab8ce7a355d4711f851',1,'Nuria::SlotInfo']]],
   ['maxcachesize',['maxCacheSize',['../classNuria_1_1TemplateEngine.html#a56b648f64778beabf5248cbe813e8337',1,'Nuria::TemplateEngine']]],
   ['maximummemorysize',['maximumMemorySize',['../classNuria_1_1TemporaryBufferDevice.html#af0450defc7696ccb2d85fe1e96a18081',1,'Nuria::TemporaryBufferDevice']]],
+  ['maxrequests',['maxRequests',['../classNuria_1_1HttpTransport.html#ae40f9780b7dad362d3c6a1b79a5e844c',1,'Nuria::HttpTransport']]],
   ['maxsessions',['maxSessions',['../classNuria_1_1SessionManager.html#a640b5d9784a35abadd6e9a5f57939411',1,'Nuria::SessionManager']]],
   ['memorytemplateloader',['MemoryTemplateLoader',['../classNuria_1_1MemoryTemplateLoader.html#ade44bb7e94bf79f48107d4b4b3651134',1,'Nuria::MemoryTemplateLoader::MemoryTemplateLoader(QObject *parent=0)'],['../classNuria_1_1MemoryTemplateLoader.html#aa4a64128039a0173aab57024473a62ad',1,'Nuria::MemoryTemplateLoader::MemoryTemplateLoader(Map map, QObject *parent=0)']]],
   ['mergevalues',['mergeValues',['../classNuria_1_1TemplateEngine.html#a19ab78ef7eaff718e2401f3c6a036c20',1,'Nuria::TemplateEngine']]],

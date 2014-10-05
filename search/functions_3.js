@@ -2,6 +2,7 @@ var searchData=
 [
   ['datetimetohttpdateheader',['dateTimeToHttpDateHeader',['../classNuria_1_1HttpWriter.html#aad95136f033dd85ec3cbe0a4d9be19fd',1,'Nuria::HttpWriter']]],
   ['debug',['Debug',['../classNuria_1_1Debug.html#ae8a34412adfbf8e01fbf8d7cb6155ff4',1,'Nuria::Debug']]],
+  ['decidetransfermode',['decideTransferMode',['../classNuria_1_1HttpParser.html#a1fcabb9973b7b1efd9df46a7300e52c4',1,'Nuria::HttpParser']]],
   ['defaultinstancecreator',['defaultInstanceCreator',['../classNuria_1_1Serializer.html#a6192f6396c8235bd1dd1b5e510132f26',1,'Nuria::Serializer']]],
   ['defaultmetaobjectfinder',['defaultMetaObjectFinder',['../classNuria_1_1Serializer.html#a9e696233d2048535df8dcecdd41a00fb',1,'Nuria::Serializer']]],
   ['defaultthreadingpolicy',['defaultThreadingPolicy',['../classNuria_1_1DependencyManager.html#a4fd39a40ae14edf2748f282179424790',1,'Nuria::DependencyManager']]],

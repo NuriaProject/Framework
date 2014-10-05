@@ -118,6 +118,10 @@ Inheritance diagram for Nuria::HttpClient:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a0433a5f0b37ee52f7d53319f51260b24"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a0433a5f0b37ee52f7d53319f51260b24">ConnectionMode</a> { <a class="el" href="classNuria_1_1HttpClient.html#a0433a5f0b37ee52f7d53319f51260b24a7244dba0d886a3b894ee13518cf4e87a">ConnectionClose</a> = 0, 
+<a class="el" href="classNuria_1_1HttpClient.html#a0433a5f0b37ee52f7d53319f51260b24a901a7572b2bfe40848fb8c3c3009c05e">ConnectionKeepAlive</a>
+ }</td></tr>
+<tr class="separator:a0433a5f0b37ee52f7d53319f51260b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b0b5b19ed35ad7f46eb15584623fea7"><td class="memItemLeft" align="right" valign="top">typedef QMap&lt; QByteArray, <br class="typebreak" />
 QNetworkCookie &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a4b0b5b19ed35ad7f46eb15584623fea7">Cookies</a></td></tr>
 <tr class="separator:a4b0b5b19ed35ad7f46eb15584623fea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,6 +181,15 @@ QByteArray &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <a class="el" href="classNuria_1_1HttpClient.html#a57e08632db08dd28f009b84fda78ec83a7ec0142b9cfb1132f6a2421c1e019f47">Http1_1</a>
  }</td></tr>
 <tr class="separator:a57e08632db08dd28f009b84fda78ec83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d06914d49c078b8ae6946a8194fe25"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a95d06914d49c078b8ae6946a8194fe25">StandardFilter</a> { <a class="el" href="classNuria_1_1HttpClient.html#a95d06914d49c078b8ae6946a8194fe25a80faed4fe6b4a3376f661656bda8fe1d">DeflateFilter</a> = 0, 
+<a class="el" href="classNuria_1_1HttpClient.html#a95d06914d49c078b8ae6946a8194fe25a53afa553033242a6f7fcd3cf00b40652">GzipFilter</a> = 1
+ }</td></tr>
+<tr class="separator:a95d06914d49c078b8ae6946a8194fe25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2641cce502c011cabbded606d6876f91"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91">TransferMode</a> { <a class="el" href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91a6fff89ebaea12ba6717707d41bbf4c5d">Streaming</a> = 0, 
+<a class="el" href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91af3c2669528c94b04dbcd7e9e454eb75e">Buffered</a>, 
+<a class="el" href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91a757331606cd91028a7755c709cd4aca0">ChunkedStreaming</a>
+ }</td></tr>
+<tr class="separator:a2641cce502c011cabbded606d6876f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
@@ -204,11 +217,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae9520bc47bf6d7271d2e419d787df2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12e6dba2987d54d0110f383881c169c3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a12e6dba2987d54d0110f383881c169c3">~HttpClient</a> ()</td></tr>
 <tr class="separator:a12e6dba2987d54d0110f383881c169c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad91da065ee6737128abe73078199b9b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#ad91da065ee6737128abe73078199b9b4">addFilter</a> (<a class="el" href="classNuria_1_1HttpClient.html#a95d06914d49c078b8ae6946a8194fe25">StandardFilter</a> filter)</td></tr>
+<tr class="separator:ad91da065ee6737128abe73078199b9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca56ce1d5546ba3d77b68a16504d58c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#aca56ce1d5546ba3d77b68a16504d58c9">addFilter</a> (<a class="el" href="classNuria_1_1HttpFilter.html">HttpFilter</a> *filter)</td></tr>
+<tr class="separator:aca56ce1d5546ba3d77b68a16504d58c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dfdae3faf92b0ea34cbfbaa5070fe7e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a0dfdae3faf92b0ea34cbfbaa5070fe7e">atEnd</a> () const override</td></tr>
 <tr class="separator:a0dfdae3faf92b0ea34cbfbaa5070fe7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a349a58ff6d0520bbd23767972329dc86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a349a58ff6d0520bbd23767972329dc86"></a>
 qint64&#160;</td><td class="memItemRight" valign="bottom"><b>bytesAvailable</b> () const override</td></tr>
 <tr class="separator:a349a58ff6d0520bbd23767972329dc86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ec43fecf5355ba334843aafb547748"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNuria_1_1HttpClient.html#a0433a5f0b37ee52f7d53319f51260b24">ConnectionMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a25ec43fecf5355ba334843aafb547748">connectionMode</a> () const </td></tr>
+<tr class="separator:a25ec43fecf5355ba334843aafb547748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23b84eb7c658efc6a8ea0c8936f460cd"><td class="memItemLeft" align="right" valign="top">qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a23b84eb7c658efc6a8ea0c8936f460cd">contentLength</a> () const </td></tr>
 <tr class="separator:a23b84eb7c658efc6a8ea0c8936f460cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2675731e7c9b7ffc3ff6ff7d110b6408"><td class="memItemLeft" align="right" valign="top">QNetworkCookie&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a2675731e7c9b7ffc3ff6ff7d110b6408">cookie</a> (const QByteArray &amp;name)</td></tr>
@@ -266,6 +285,14 @@ qint64&#160;</td><td class="memItemRight" valign="bottom"><b>pos</b> () const ov
 <tr class="separator:a5563131a5a172eb1c74ed49ecdf0beca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd497a706724211065232876236b12fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#abd497a706724211065232876236b12fc">removeCookie</a> (const QByteArray &amp;name)</td></tr>
 <tr class="separator:abd497a706724211065232876236b12fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae56772adbb8f755ecb3a6d9020c2b501"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#ae56772adbb8f755ecb3a6d9020c2b501">removeFilter</a> (<a class="el" href="classNuria_1_1HttpClient.html#a95d06914d49c078b8ae6946a8194fe25">StandardFilter</a> filter)</td></tr>
+<tr class="separator:ae56772adbb8f755ecb3a6d9020c2b501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72c7fbcb45579d9102c55075c536f059"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a72c7fbcb45579d9102c55075c536f059">removeFilter</a> (<a class="el" href="classNuria_1_1HttpFilter.html">HttpFilter</a> *filter)</td></tr>
+<tr class="separator:a72c7fbcb45579d9102c55075c536f059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46eeaef4eb472a8072e05cf97d388574"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a46eeaef4eb472a8072e05cf97d388574">requestCompletelyReceived</a> () const </td></tr>
+<tr class="separator:a46eeaef4eb472a8072e05cf97d388574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a415418b1173745c4824c0c6005030797"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a415418b1173745c4824c0c6005030797">requestHasPostBody</a> () const </td></tr>
+<tr class="separator:a415418b1173745c4824c0c6005030797"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4683ddf99f27153799ab88e842cc7d2e"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a4683ddf99f27153799ab88e842cc7d2e">requestHeader</a> (const QByteArray &amp;key) const </td></tr>
 <tr class="separator:a4683ddf99f27153799ab88e842cc7d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a025013b07e419ca3fee0fc8c0d26ff97"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a025013b07e419ca3fee0fc8c0d26ff97">requestHeader</a> (<a class="el" href="classNuria_1_1HttpClient.html#a091ed7b9482c2a6678dc8fd5980475db">HttpHeader</a> header) const </td></tr>
@@ -316,11 +343,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>seek</b> (qint64 pos)
 <tr class="separator:afb41f195538362e625a3f4429b860bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7da568503f70bf8cc13b2bde38862129"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a7da568503f70bf8cc13b2bde38862129">setSlotInfo</a> (const <a class="el" href="classNuria_1_1SlotInfo.html">SlotInfo</a> &amp;info)</td></tr>
 <tr class="separator:a7da568503f70bf8cc13b2bde38862129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ec63d2591e3105df1f2aed8288c3e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a30ec63d2591e3105df1f2aed8288c3e6">setTransferMode</a> (<a class="el" href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91">TransferMode</a> mode)</td></tr>
+<tr class="separator:a30ec63d2591e3105df1f2aed8288c3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfc94dcef4633950aa744e1607d18bf4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfc94dcef4633950aa744e1607d18bf4"></a>
 qint64&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const override</td></tr>
 <tr class="separator:abfc94dcef4633950aa744e1607d18bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5728d9b38e3217dbb67119c474634fb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNuria_1_1SlotInfo.html">SlotInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a5728d9b38e3217dbb67119c474634fb3">slotInfo</a> () const </td></tr>
 <tr class="separator:a5728d9b38e3217dbb67119c474634fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aece9636969a74a9bb76f82269d2b81c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91">TransferMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#aece9636969a74a9bb76f82269d2b81c1">transferMode</a> () const </td></tr>
+<tr class="separator:aece9636969a74a9bb76f82269d2b81c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac645724cc9cae1249ee4cb04f7de7e7d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNuria_1_1HttpTransport.html">HttpTransport</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#ac645724cc9cae1249ee4cb04f7de7e7d">transport</a> () const </td></tr>
 <tr class="separator:ac645724cc9cae1249ee4cb04f7de7e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0118450368717733f0013faa8276884"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNuria_1_1HttpClient.html#a47878d81d933a0f4b50c97a11c343456">HttpVerb</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#ad0118450368717733f0013faa8276884">verb</a> () const </td></tr>
@@ -335,8 +366,8 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a54881b3ffaaa2bf89204b19214c6887e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a54881b3ffaaa2bf89204b19214c6887e">bufferPostBody</a> ()</td></tr>
-<tr class="separator:a54881b3ffaaa2bf89204b19214c6887e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a029948903aae309751e67a63b41691e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a029948903aae309751e67a63b41691e2">bufferPostBody</a> (QByteArray &amp;data)</td></tr>
+<tr class="separator:a029948903aae309751e67a63b41691e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7515ef64f547a19b4af1314c73a00e10"><td class="memItemLeft" align="right" valign="top">virtual qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a7515ef64f547a19b4af1314c73a00e10">readData</a> (char *data, qint64 maxlen)</td></tr>
 <tr class="separator:a7515ef64f547a19b4af1314c73a00e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c581557124cd665f9f4a176c1bf8b9e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a6c581557124cd665f9f4a176c1bf8b9e">resolveUrl</a> (const QUrl &amp;url)</td></tr>
@@ -352,6 +383,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpNode</b></td></t
 <tr class="memitem:a7ef68af4cc3915e661d6bb0255d265d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ef68af4cc3915e661d6bb0255d265d2"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpServer</b></td></tr>
 <tr class="separator:a7ef68af4cc3915e661d6bb0255d265d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abead0a82da0ccbcb75c2dc73b466f88b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abead0a82da0ccbcb75c2dc73b466f88b"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpTransport</b></td></tr>
+<tr class="separator:abead0a82da0ccbcb75c2dc73b466f88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classNuria_1_1HttpClient.html" title="The HttpClient class represents a connection to a client. ">HttpClient</a> class represents a connection to a client. </p>
@@ -366,7 +400,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpServer</b></td><
 <dl class="section see"><dt>See also</dt><dd>pipe pipeBody</dd></dl>
 <dl class="section user"><dt>Closing and errors</dt><dd>Use <a class="el" href="classNuria_1_1HttpClient.html#afebff9199061db17d7db41e5951d99fc">close()</a> to close the connection to the client. If an error occurs you're free to use killConnection.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>As of now <a class="el" href="classNuria_1_1HttpClient.html" title="The HttpClient class represents a connection to a client. ">HttpClient</a> is self-contained. This means that it will use deleteLater() on itself when the connection is closed by any side. Do not do this on your own. Never <code>delete</code> or deleteLater a <a class="el" href="classNuria_1_1HttpClient.html" title="The HttpClient class represents a connection to a client. ">HttpClient</a> instance! Use close instead!</dd></dl>
-<dl class="section user"><dt>Range request and responses</dt><dd>If you want to support requests with 'Range' headers use <a class="el" href="classNuria_1_1HttpClient.html#a5563131a5a172eb1c74ed49ecdf0beca">rangeStart()</a> and <a class="el" href="classNuria_1_1HttpClient.html#ac574e868f3bd5a28e2803156822fc5a4">rangeEnd()</a> to get the range the client requested. Use <a class="el" href="classNuria_1_1HttpClient.html#a236885b3abe8384e393617748f2363da">setContentLength()</a> to set the length of the <b>complete</b> response. </dd></dl>
+<dl class="section user"><dt>Range request and responses</dt><dd>If you want to support requests with 'Range' headers use <a class="el" href="classNuria_1_1HttpClient.html#a5563131a5a172eb1c74ed49ecdf0beca">rangeStart()</a> and <a class="el" href="classNuria_1_1HttpClient.html#ac574e868f3bd5a28e2803156822fc5a4">rangeEnd()</a> to get the range the client requested. Use <a class="el" href="classNuria_1_1HttpClient.html#a236885b3abe8384e393617748f2363da">setContentLength()</a> to set the length of the <b>complete</b> response.</dd></dl>
+<dl class="section user"><dt>Compression and filtering</dt><dd>Transparent compression is provided by filters. Filters are small classes which can hook themselves into the outgoing stream and e.g. compress or otherwise modify streams and HTTP headers.</dd></dl>
+<p>Filters are invoked in the order they were added, except for those two "standard" filters, which are always invoked last.</p>
+<p>Support for "gzip" (RFC 1952) and "deflate" (RFCs 1951, 1950) compressions schemes are provided by the framework. Custom filters can be written by sub-classing <a class="el" href="classNuria_1_1HttpFilter.html" title="A filter can modify a HttpClients outgoing stream. ">HttpFilter</a>.</p>
+<dl class="section warning"><dt>Warning</dt><dd>You should be aware of the BREACH attack, which targets SSL encrypted and compressed transmissions. Please see: <a href="http://en.wikipedia.org/wiki/BREACH_%28security_exploit%29">http://en.wikipedia.org/wiki/BREACH_%28security_exploit%29</a></dd></dl>
+<dl class="section note"><dt>Note</dt><dd>It is recommended to use "gzip" over "deflate" as deflate has severe browser compatibility issues.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Filters are <b>not</b> owned by the <a class="el" href="classNuria_1_1HttpClient.html" title="The HttpClient class represents a connection to a client. ">HttpClient</a> instance.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classNuria_1_1HttpFilter.html" title="A filter can modify a HttpClients outgoing stream. ">HttpFilter</a> <a class="el" href="classNuria_1_1HttpClient.html#ad91da065ee6737128abe73078199b9b4">addFilter</a> <a class="el" href="classNuria_1_1HttpClient.html#ae56772adbb8f755ecb3a6d9020c2b501">removeFilter</a> </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a4b0b5b19ed35ad7f46eb15584623fea7"></a>
 <div class="memitem">
@@ -395,6 +436,27 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpServer</b></td><
 </div>
 </div>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a0433a5f0b37ee52f7d53319f51260b24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNuria_1_1HttpClient.html#a0433a5f0b37ee52f7d53319f51260b24">Nuria::HttpClient::ConnectionMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Connection modes. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a0433a5f0b37ee52f7d53319f51260b24a7244dba0d886a3b894ee13518cf4e87a"></a>ConnectionClose&#160;</td><td class="fielddoc">
+<p>The connection will be closed after this request. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0433a5f0b37ee52f7d53319f51260b24a901a7572b2bfe40848fb8c3c3009c05e"></a>ConnectionKeepAlive&#160;</td><td class="fielddoc">
+<p>The connection will be kept alive after this request. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a class="anchor" id="a091ed7b9482c2a6678dc8fd5980475db"></a>
 <div class="memitem">
 <div class="memproto">
@@ -473,6 +535,52 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpServer</b></td><
 
 </div>
 </div>
+<a class="anchor" id="a95d06914d49c078b8ae6946a8194fe25"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNuria_1_1HttpClient.html#a95d06914d49c078b8ae6946a8194fe25">Nuria::HttpClient::StandardFilter</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enumeration of standard filters. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a95d06914d49c078b8ae6946a8194fe25a80faed4fe6b4a3376f661656bda8fe1d"></a>DeflateFilter&#160;</td><td class="fielddoc">
+<p>Deflate filter. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a95d06914d49c078b8ae6946a8194fe25a53afa553033242a6f7fcd3cf00b40652"></a>GzipFilter&#160;</td><td class="fielddoc">
+<p>GZIP filter. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a2641cce502c011cabbded606d6876f91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91">Nuria::HttpClient::TransferMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Transfer modes for responses. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a2641cce502c011cabbded606d6876f91a6fff89ebaea12ba6717707d41bbf4c5d"></a>Streaming&#160;</td><td class="fielddoc">
+<p>Default for "Connection: close" requests. The response will be streamed to the remote peer. It is not possible to send additional response HTTP headers after the first write() call. This mode doesn't support reusing the same connection for other requests. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2641cce502c011cabbded606d6876f91af3c2669528c94b04dbcd7e9e454eb75e"></a>Buffered&#160;</td><td class="fielddoc">
+<p>Support for both "Connection" 'close' and 'keep-alive' connections. All calls to write() will be buffered until <a class="el" href="classNuria_1_1HttpClient.html#afebff9199061db17d7db41e5951d99fc">close()</a> is called on the <a class="el" href="classNuria_1_1HttpClient.html" title="The HttpClient class represents a connection to a client. ">HttpClient</a> instance, after which all buffered data will be sent. It is possible to change response headers until that at all times. The Content-Type and Content-Length response headers will be set automatically.</p>
+<dl class="section note"><dt>Note</dt><dd>Internally a <a class="el" href="classNuria_1_1TemporaryBufferDevice.html" title="In-memory buffer device with fallback to a temporary file. ">TemporaryBufferDevice</a> is used. </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a2641cce502c011cabbded606d6876f91a757331606cd91028a7755c709cd4aca0"></a>ChunkedStreaming&#160;</td><td class="fielddoc">
+<p>Default for "Connection: keep-alive" requests. The response will be streamed with a transfer-encoding of 'chunked'. This mode supports reusing the same connection for further requests. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae9520bc47bf6d7271d2e419d787df2ad"></a>
 <div class="memitem">
@@ -505,7 +613,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpServer</b></td><
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructs a new <a class="el" href="classNuria_1_1HttpClient.html" title="The HttpClient class represents a connection to a client. ">HttpClient</a> instance which uses <em>transport</em> as communication back-end. Ownership of <em>transport</em> is transferred to the <a class="el" href="classNuria_1_1HttpClient.html" title="The HttpClient class represents a connection to a client. ">HttpClient</a> instance. </p>
+<p>Constructs a new <a class="el" href="classNuria_1_1HttpClient.html" title="The HttpClient class represents a connection to a client. ">HttpClient</a> instance which uses <em>transport</em> as communication back-end.</p>
+<p>Ownership of the <a class="el" href="classNuria_1_1HttpClient.html" title="The HttpClient class represents a connection to a client. ">HttpClient</a> will be transferred to <em>transport</em>. </p>
 
 </div>
 </div>
@@ -534,6 +643,40 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpServer</b></td><
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ad91da065ee6737128abe73078199b9b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Nuria::HttpClient::addFilter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNuria_1_1HttpClient.html#a95d06914d49c078b8ae6946a8194fe25">StandardFilter</a>&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds <em>filter</em> to the filter chain. There can only be the DeflateFilter or the GzipFilter active at the same time. If one is already added before calling this method, it will be replaced. </p>
+
+</div>
+</div>
+<a class="anchor" id="aca56ce1d5546ba3d77b68a16504d58c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Nuria::HttpClient::addFilter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNuria_1_1HttpFilter.html">HttpFilter</a> *&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds <em>filter</em> to the filter chain. </p>
+
+</div>
+</div>
 <a class="anchor" id="a0dfdae3faf92b0ea34cbfbaa5070fe7e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -558,7 +701,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpServer</b></td><
 
 </div>
 </div>
-<a class="anchor" id="a54881b3ffaaa2bf89204b19214c6887e"></a>
+<a class="anchor" id="a029948903aae309751e67a63b41691e2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -568,7 +711,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpServer</b></td><
         <tr>
           <td class="memname">bool Nuria::HttpClient::bufferPostBody </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -605,6 +749,22 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpServer</b></td><
 <dl class="section note"><dt>Note</dt><dd><a class="el" href="classNuria_1_1HttpClient.html#afebff9199061db17d7db41e5951d99fc">close()</a> will make sure that all data that is in the write buffer will be sent to the client before the socket is closed.</dd></dl>
 <p>If no data has been sent yet, but a request header has been received, a appropriate response header will be sent.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classNuria_1_1HttpClient.html#a4a65aeaf3f41cf87d40badad8424a45c">forceClose</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a25ec43fecf5355ba334843aafb547748"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNuria_1_1HttpClient.html#a0433a5f0b37ee52f7d53319f51260b24">ConnectionMode</a> Nuria::HttpClient::connectionMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the connection mode of this client. </p>
 
 </div>
 </div>
@@ -703,7 +863,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpServer</b></td><
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Closes the socket without caring about the write buffer. </p><dl class="section warning"><dt>Warning</dt><dd>This may cause data-loss! </dd></dl>
+<p>Tells the transport to immediately close the connection, without trying to send data in the send buffers. </p><dl class="section warning"><dt>Warning</dt><dd>This may cause data-loss! </dd></dl>
 
 </div>
 </div>
@@ -1301,6 +1461,72 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpServer</b></td><
 
 </div>
 </div>
+<a class="anchor" id="ae56772adbb8f755ecb3a6d9020c2b501"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Nuria::HttpClient::removeFilter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNuria_1_1HttpClient.html#a95d06914d49c078b8ae6946a8194fe25">StandardFilter</a>&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Removes <em>filter</em> from the filter chain. </p>
+
+</div>
+</div>
+<a class="anchor" id="a72c7fbcb45579d9102c55075c536f059"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Nuria::HttpClient::removeFilter </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNuria_1_1HttpFilter.html">HttpFilter</a> *&#160;</td>
+          <td class="paramname"><em>filter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Removes <em>filter</em> from the filter chain. </p>
+
+</div>
+</div>
+<a class="anchor" id="a46eeaef4eb472a8072e05cf97d388574"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Nuria::HttpClient::requestCompletelyReceived </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns <code>true</code> if the request has been completely received. This includes the POST/PUT body if one exists. </p>
+
+</div>
+</div>
+<a class="anchor" id="a415418b1173745c4824c0c6005030797"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Nuria::HttpClient::requestHasPostBody </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns <code>true</code> if the request has a POST/PUT body. </p>
+
+</div>
+</div>
 <a class="anchor" id="a4683ddf99f27153799ab88e842cc7d2e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1805,6 +2031,23 @@ Do not combine this with pipe(). </dd></dl>
 
 </div>
 </div>
+<a class="anchor" id="a30ec63d2591e3105df1f2aed8288c3e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Nuria::HttpClient::setTransferMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91">TransferMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the transfer <em>mode</em>. This is only possible to do before anything has been sent. On success, <code>true</code> is returned. </p>
+
+</div>
+</div>
 <a class="anchor" id="a5728d9b38e3217dbb67119c474634fb3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1818,6 +2061,22 @@ Do not combine this with pipe(). </dd></dl>
       </table>
 </div><div class="memdoc">
 <p>Returns the associated slot info of the client. </p>
+
+</div>
+</div>
+<a class="anchor" id="aece9636969a74a9bb76f82269d2b81c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91">TransferMode</a> Nuria::HttpClient::transferMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the used transfer mode. </p>
 
 </div>
 </div>
@@ -1894,7 +2153,7 @@ Do not combine this with pipe(). </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 28 2014 00:51:56 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 5 2014 20:26:24 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

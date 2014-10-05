@@ -1,6 +1,7 @@
 var searchData=
 [
   ['httpclient',['HttpClient',['../classNuria_1_1HttpClient.html',1,'Nuria']]],
+  ['httpfilter',['HttpFilter',['../classNuria_1_1HttpFilter.html',1,'Nuria']]],
   ['httpmultipartreader',['HttpMultiPartReader',['../classNuria_1_1HttpMultiPartReader.html',1,'Nuria']]],
   ['httpnode',['HttpNode',['../classNuria_1_1HttpNode.html',1,'Nuria']]],
   ['httpparser',['HttpParser',['../classNuria_1_1HttpParser.html',1,'Nuria']]],

@@ -5,6 +5,7 @@ var searchData=
   ['_7edependencymanager',['~DependencyManager',['../classNuria_1_1DependencyManager.html#ac9c74a4e71746c54bc410eb2be6dfe9c',1,'Nuria::DependencyManager']]],
   ['_7efiletemplateloader',['~FileTemplateLoader',['../classNuria_1_1FileTemplateLoader.html#a62e3e81254ed95a5e502ab5a16c36b21',1,'Nuria::FileTemplateLoader']]],
   ['_7ehttpclient',['~HttpClient',['../classNuria_1_1HttpClient.html#a12e6dba2987d54d0110f383881c169c3',1,'Nuria::HttpClient']]],
+  ['_7ehttpfilter',['~HttpFilter',['../classNuria_1_1HttpFilter.html#aad735e7c0b410934753a5f91ed8926a7',1,'Nuria::HttpFilter']]],
   ['_7ehttpmultipartreader',['~HttpMultiPartReader',['../classNuria_1_1HttpMultiPartReader.html#a285ee5b42bd5f23862ab71c29d4f5176',1,'Nuria::HttpMultiPartReader']]],
   ['_7ehttpnode',['~HttpNode',['../classNuria_1_1HttpNode.html#a222a3903be87f3f4ca261a1874e79461',1,'Nuria::HttpNode']]],
   ['_7ehttpparser',['~HttpParser',['../classNuria_1_1HttpParser.html#a1b2b0a249745119463c829ee6eca01a7',1,'Nuria::HttpParser']]],

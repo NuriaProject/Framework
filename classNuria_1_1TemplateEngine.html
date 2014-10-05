@@ -227,9 +227,8 @@ Public Member Functions</h2></td></tr>
 <p>It's possible to register custom functions using the <a class="el" href="classNuria_1_1TemplateEngine.html#abf682634c52e1967eb7006157e89805b">addFunction()</a> method. It's also possible for the <a class="el" href="classNuria_1_1TemplateEngine.html" title="Templating engine for rendering Twig code. ">TemplateEngine</a> version to define a function as constant, meaning that for the same arguments they produce the same result. This will enable the internal compiler to optimize functions, which are constant, meaning they'll be invoked at compile-time.</p>
 <p>This can also be used to register custom filters. A filter will simply be passed the result of the previous statement as first argument. All additional arguments are then passed after that.</p>
 <p>Example: "foo|bar(1,2)" is equivalent to "bar(foo,1,2)".</p>
-<dl class="section user"><dt>Locale and translations</dt><dd></dd></dl>
-<p>Locale-dependent functions will use the application locale by default. You can also set this using <a class="el" href="classNuria_1_1TemplateEngine.html#aa5ace60798d5e8ecc32f64d3c2ab9544">setLocale()</a> on the template engine or program.</p>
-<p>The engine supports compile-time translations by using a translator.</p>
+<dl class="section user"><dt>Locale</dt><dd></dd></dl>
+<p>Locale-dependent functions will use the application-wide default locale by default. You can also set this using <a class="el" href="classNuria_1_1TemplateEngine.html#aa5ace60798d5e8ecc32f64d3c2ab9544">setLocale()</a> on the template engine or program.</p>
 <dl class="section warning"><dt>Warning</dt><dd><a class="el" href="classNuria_1_1TemplateEngine.html#aa5ace60798d5e8ecc32f64d3c2ab9544">setLocale()</a> has no effect on cached programs. To force this, call <a class="el" href="classNuria_1_1TemplateEngine.html#af8b931643bd90b41ba42d5c27a2d0f41">flushCache()</a> afterwards. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a021a5301b092a65f7118aafb9dc2955c"></a>
@@ -495,10 +494,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Loads and compiles a Twig template called <em>templateName</em> and returns a <a class="el" href="classNuria_1_1TemplateProgram.html" title="Represents a compiled Twig code program. ">TemplateProgram</a>, which can be cached by the user if wanted. The program will be prepopulated with the variables set to the engine.</p>
-<p>If a translator is used, the program will use <em>locale</em> to look up translations.</p>
 <dl class="section note"><dt>Note</dt><dd>A <a class="el" href="classNuria_1_1TemplateProgram.html" title="Represents a compiled Twig code program. ">TemplateProgram</a> is <b>not</b> dependent on a <a class="el" href="classNuria_1_1TemplateEngine.html" title="Templating engine for rendering Twig code. ">TemplateEngine</a>. </dd>
 <dd>
-Caching does not interfer with variables being passed on to the program! </dd></dl>
+Caching does not interfer with the variable being passed on to the program! </dd></dl>
 
 </div>
 </div>
@@ -654,7 +652,7 @@ Caching does not interfer with variables being passed on to the program! </dd></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 28 2014 00:51:56 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 5 2014 20:26:24 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

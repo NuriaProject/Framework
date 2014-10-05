@@ -18,6 +18,7 @@ var searchData=
   ['islisteningto',['isListeningTo',['../classNuria_1_1UnixSignalHandler.html#a8cdab8caae7b239fd7d1ec69ebaf3a61',1,'Nuria::UnixSignalHandler']]],
   ['ismoduledisabled',['isModuleDisabled',['../classNuria_1_1Debug.html#a5007ae983bffb4efeb6b187d2efb222b',1,'Nuria::Debug::isModuleDisabled(const char *module, Type level)'],['../classNuria_1_1Debug.html#a67617dcd642bcad3bba010e5d2a3232d',1,'Nuria::Debug::isModuleDisabled(uint32_t module, Type level)']]],
   ['isnative',['isNative',['../classNuria_1_1TestCall.html#a61a61f308613b96c58d4aff98a28f2c3',1,'Nuria::TestCall']]],
+  ['isopen',['isOpen',['../classNuria_1_1HttpTcpTransport.html#af3d190da23d4bd5eb5269c7a5118826c',1,'Nuria::HttpTcpTransport::isOpen()'],['../classNuria_1_1HttpTransport.html#a66f5a78ede0ee71954a9ab8867bbca99',1,'Nuria::HttpTransport::isOpen()']]],
   ['isoutputdisabled',['isOutputDisabled',['../classNuria_1_1Debug.html#a0a8db4af435cbf97794cf9537a52e8d9',1,'Nuria::Debug']]],
   ['isprogramoutdated',['isProgramOutdated',['../classNuria_1_1TemplateEngine.html#a7c9d3690e92f4d08e1f9d7655c62eda6',1,'Nuria::TemplateEngine']]],
   ['issecure',['isSecure',['../classNuria_1_1HttpTcpTransport.html#abb1d028f311eba422ca60907e9c5a689',1,'Nuria::HttpTcpTransport::isSecure()'],['../classNuria_1_1HttpTransport.html#ad0ecd9ac49a79b67ffb0a12802198b1c',1,'Nuria::HttpTransport::isSecure()']]],

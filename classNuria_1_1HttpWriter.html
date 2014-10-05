@@ -108,6 +108,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a47bb0e8ada9c62ef72de7874a4ac6c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ce495e5cfcab290afad83dcf5836aae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpWriter.html#a5ce495e5cfcab290afad83dcf5836aae">addComplianceHeaders</a> (<a class="el" href="classNuria_1_1HttpClient.html#a57e08632db08dd28f009b84fda78ec83">HttpClient::HttpVersion</a> version, <a class="el" href="classNuria_1_1HttpClient.html#a8c08e3a1bb7911fd79adaadfc8e38e26">HttpClient::HeaderMap</a> &amp;headers)</td></tr>
 <tr class="separator:a5ce495e5cfcab290afad83dcf5836aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadb202511041f1c49957befbdce27730"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpWriter.html#aadb202511041f1c49957befbdce27730">addConnectionHeader</a> (<a class="el" href="classNuria_1_1HttpClient.html#a0433a5f0b37ee52f7d53319f51260b24">HttpClient::ConnectionMode</a> mode, int count, int max, <a class="el" href="classNuria_1_1HttpClient.html#a8c08e3a1bb7911fd79adaadfc8e38e26">HttpClient::HeaderMap</a> &amp;headers)</td></tr>
+<tr class="separator:aadb202511041f1c49957befbdce27730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ad73e7329a1ed994da59d95b32c877"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpWriter.html#ab8ad73e7329a1ed994da59d95b32c877">addTransferEncodingHeader</a> (<a class="el" href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91">HttpClient::TransferMode</a> mode, <a class="el" href="classNuria_1_1HttpClient.html#a8c08e3a1bb7911fd79adaadfc8e38e26">HttpClient::HeaderMap</a> &amp;headers)</td></tr>
+<tr class="separator:ab8ad73e7329a1ed994da59d95b32c877"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a878b010cafce03708710b5db4f68cdea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpWriter.html#a878b010cafce03708710b5db4f68cdea">applyRangeHeaders</a> (qint64 begin, qint64 end, qint64 totalLength, <a class="el" href="classNuria_1_1HttpClient.html#a8c08e3a1bb7911fd79adaadfc8e38e26">HttpClient::HeaderMap</a> &amp;headers)</td></tr>
 <tr class="separator:a878b010cafce03708710b5db4f68cdea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07a4fe39d10b3d880e051c17c3a053e6"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpWriter.html#a07a4fe39d10b3d880e051c17c3a053e6">buildRangeHeader</a> (qint64 begin, qint64 end, qint64 totalLength)</td></tr>
@@ -169,6 +173,72 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Adds missing HTTP headers to <em>headers</em> to make it compliant to <em>version</em>. </p>
+
+</div>
+</div>
+<a class="anchor" id="aadb202511041f1c49957befbdce27730"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Nuria::HttpWriter::addConnectionHeader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNuria_1_1HttpClient.html#a0433a5f0b37ee52f7d53319f51260b24">HttpClient::ConnectionMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>max</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNuria_1_1HttpClient.html#a8c08e3a1bb7911fd79adaadfc8e38e26">HttpClient::HeaderMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>headers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds <em>connectionValue</em> to <em>headers</em>, if it is not empty, <em>count</em> is less than <em>max</em> and <em>max</em> is not <code>-1</code>. If the that condition is false, the function will add "Connection: close" instead. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab8ad73e7329a1ed994da59d95b32c877"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Nuria::HttpWriter::addTransferEncodingHeader </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91">HttpClient::TransferMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNuria_1_1HttpClient.html#a8c08e3a1bb7911fd79adaadfc8e38e26">HttpClient::HeaderMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>headers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds a Transfer-Encoding header to <em>headers</em> if <em>mode</em> and <em>encoding</em> indicate chunked transfer. If there's already a Transfer-Encoding header, it will be modified accordingly. </p>
 
 </div>
 </div>
@@ -371,7 +441,7 @@ As of Qt5.3, QNetworkCookie::toRawForm() is buggy which is the reason we're doin
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 28 2014 00:51:56 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 5 2014 20:26:24 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

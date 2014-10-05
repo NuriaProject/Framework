@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['post',['POST',['../classNuria_1_1HttpClient.html#a47878d81d933a0f4b50c97a11c343456acfc90853aa6bd03ae0186fea4bfad71c',1,'Nuria::HttpClient']]],
-  ['put',['PUT',['../classNuria_1_1HttpClient.html#a47878d81d933a0f4b50c97a11c343456a934ae585a09893c6913f3751d6b11aa5',1,'Nuria::HttpClient']]]
+  ['ownedbycpp',['OwnedByCpp',['../classNuria_1_1LuaRuntime.html#a56fc87ab26e8f5d460d2b3cfd34b92d0a4b1d0cacb62572b2ac267e4ec668dcc1',1,'Nuria::LuaRuntime']]],
+  ['ownedbylua',['OwnedByLua',['../classNuria_1_1LuaRuntime.html#a56fc87ab26e8f5d460d2b3cfd34b92d0a20ef42f35e6712b7cfe1e27cb3935633',1,'Nuria::LuaRuntime']]]
 ];

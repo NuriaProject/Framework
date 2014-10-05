@@ -139,22 +139,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordtype">void</span> applyRangeHeaders (qint64 begin, qint64 end, qint64 totalLength,</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                <a class="code" href="classNuria_1_1HttpClient.html#a8c08e3a1bb7911fd79adaadfc8e38e26">HttpClient::HeaderMap</a> &amp;headers);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif // NURIA_HTTPWRITER_HPP</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">void</span> addTransferEncodingHeader (<a class="code" href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91">HttpClient::TransferMode</a> mode, <a class="code" href="classNuria_1_1HttpClient.html#a8c08e3a1bb7911fd79adaadfc8e38e26">HttpClient::HeaderMap</a> &amp;headers);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordtype">void</span> addConnectionHeader (<a class="code" href="classNuria_1_1HttpClient.html#a0433a5f0b37ee52f7d53319f51260b24">HttpClient::ConnectionMode</a> mode, <span class="keywordtype">int</span> count, <span class="keywordtype">int</span> max,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                  <a class="code" href="classNuria_1_1HttpClient.html#a8c08e3a1bb7911fd79adaadfc8e38e26">HttpClient::HeaderMap</a> &amp;headers);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif // NURIA_HTTPWRITER_HPP</span></div>
+<div class="ttc" id="classNuria_1_1HttpClient_html_a2641cce502c011cabbded606d6876f91"><div class="ttname"><a href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91">Nuria::HttpClient::TransferMode</a></div><div class="ttdeci">TransferMode</div><div class="ttdef"><b>Definition:</b> httpclient.hpp:195</div></div>
 <div class="ttc" id="classNuria_1_1HttpWriter_html"><div class="ttname"><a href="classNuria_1_1HttpWriter.html">Nuria::HttpWriter</a></div><div class="ttdoc">Writer for HTTP data. </div><div class="ttdef"><b>Definition:</b> httpwriter.hpp:29</div></div>
-<div class="ttc" id="classNuria_1_1HttpClient_html_a57e08632db08dd28f009b84fda78ec83"><div class="ttname"><a href="classNuria_1_1HttpClient.html#a57e08632db08dd28f009b84fda78ec83">Nuria::HttpClient::HttpVersion</a></div><div class="ttdeci">HttpVersion</div><div class="ttdef"><b>Definition:</b> httpclient.hpp:102</div></div>
+<div class="ttc" id="classNuria_1_1HttpClient_html_a57e08632db08dd28f009b84fda78ec83"><div class="ttname"><a href="classNuria_1_1HttpClient.html#a57e08632db08dd28f009b84fda78ec83">Nuria::HttpClient::HttpVersion</a></div><div class="ttdeci">HttpVersion</div><div class="ttdef"><b>Definition:</b> httpclient.hpp:125</div></div>
+<div class="ttc" id="classNuria_1_1HttpClient_html_a0433a5f0b37ee52f7d53319f51260b24"><div class="ttname"><a href="classNuria_1_1HttpClient.html#a0433a5f0b37ee52f7d53319f51260b24">Nuria::HttpClient::ConnectionMode</a></div><div class="ttdeci">ConnectionMode</div><div class="ttdef"><b>Definition:</b> httpclient.hpp:229</div></div>
 <div class="ttc" id="namespaceNuria_html"><div class="ttname"><a href="namespaceNuria.html">Nuria</a></div><div class="ttdef"><b>Definition:</b> abstractsessionmanager.hpp:25</div></div>
-<div class="ttc" id="classNuria_1_1HttpClient_html_a8c08e3a1bb7911fd79adaadfc8e38e26"><div class="ttname"><a href="classNuria_1_1HttpClient.html#a8c08e3a1bb7911fd79adaadfc8e38e26">Nuria::HttpClient::HeaderMap</a></div><div class="ttdeci">QMultiMap&lt; QByteArray, QByteArray &gt; HeaderMap</div><div class="ttdef"><b>Definition:</b> httpclient.hpp:172</div></div>
-<div class="ttc" id="classNuria_1_1HttpClient_html_a4b0b5b19ed35ad7f46eb15584623fea7"><div class="ttname"><a href="classNuria_1_1HttpClient.html#a4b0b5b19ed35ad7f46eb15584623fea7">Nuria::HttpClient::Cookies</a></div><div class="ttdeci">QMap&lt; QByteArray, QNetworkCookie &gt; Cookies</div><div class="ttdef"><b>Definition:</b> httpclient.hpp:420</div></div>
+<div class="ttc" id="classNuria_1_1HttpClient_html_a8c08e3a1bb7911fd79adaadfc8e38e26"><div class="ttname"><a href="classNuria_1_1HttpClient.html#a8c08e3a1bb7911fd79adaadfc8e38e26">Nuria::HttpClient::HeaderMap</a></div><div class="ttdeci">QMultiMap&lt; QByteArray, QByteArray &gt; HeaderMap</div><div class="ttdef"><b>Definition:</b> httpclient.hpp:250</div></div>
+<div class="ttc" id="classNuria_1_1HttpClient_html_a4b0b5b19ed35ad7f46eb15584623fea7"><div class="ttname"><a href="classNuria_1_1HttpClient.html#a4b0b5b19ed35ad7f46eb15584623fea7">Nuria::HttpClient::Cookies</a></div><div class="ttdeci">QMap&lt; QByteArray, QNetworkCookie &gt; Cookies</div><div class="ttdef"><b>Definition:</b> httpclient.hpp:497</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 28 2014 00:51:56 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 5 2014 20:26:24 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

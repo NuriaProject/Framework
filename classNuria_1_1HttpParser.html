@@ -110,6 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1b2b0a249745119463c829ee6eca01a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0760544624ecca7d4703e9595631a25a"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpParser.html#a0760544624ecca7d4703e9595631a25a">correctHeaderKeyCase</a> (QByteArray key)</td></tr>
 <tr class="separator:a0760544624ecca7d4703e9595631a25a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fcabb9973b7b1efd9df46a7300e52c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91">HttpClient::TransferMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpParser.html#a1fcabb9973b7b1efd9df46a7300e52c4">decideTransferMode</a> (<a class="el" href="classNuria_1_1HttpClient.html#a57e08632db08dd28f009b84fda78ec83">HttpClient::HttpVersion</a> version, const QByteArray &amp;connectionHeader)</td></tr>
+<tr class="separator:a1fcabb9973b7b1efd9df46a7300e52c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc780529bbf8884ec7eed9b3a02050c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpParser.html#adc780529bbf8884ec7eed9b3a02050c1">parseCookies</a> (const QByteArray &amp;data, <a class="el" href="classNuria_1_1HttpClient.html#a4b0b5b19ed35ad7f46eb15584623fea7">HttpClient::Cookies</a> &amp;target)</td></tr>
 <tr class="separator:adc780529bbf8884ec7eed9b3a02050c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af34178c1a07e110a07412f71c3e14d1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpParser.html#af34178c1a07e110a07412f71c3e14d1d">parseFirstLine</a> (const QByteArray &amp;data, QByteArray &amp;verb, QByteArray &amp;path, QByteArray &amp;version)</td></tr>
@@ -177,6 +179,33 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Takes a key name of a http header and 'corrects' the case, so 'content-length' becomes 'Content-Length'. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1fcabb9973b7b1efd9df46a7300e52c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91">HttpClient::TransferMode</a> Nuria::HttpParser::decideTransferMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNuria_1_1HttpClient.html#a57e08632db08dd28f009b84fda78ec83">HttpClient::HttpVersion</a>&#160;</td>
+          <td class="paramname"><em>version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>connectionHeader</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the appropriate <a class="el" href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91">HttpClient::TransferMode</a> for <em>connectionHeader</em>. Defaults to <a class="el" href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91a6fff89ebaea12ba6717707d41bbf4c5d">HttpClient::Streaming</a>. </p>
 
 </div>
 </div>
@@ -408,7 +437,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 28 2014 00:51:56 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Oct 5 2014 20:26:24 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
