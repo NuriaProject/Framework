@@ -2,13 +2,13 @@
 # Copyright by the NuriaProject under the zlib license. (See LICENSE)
 
 # Adds a unit-test to the project.
-#  Usage: add_unittest(NAME <tst_name> NURIA <NuriaX> .. QT .. SOURCES .. RESOURCES ..)
+#  Usage: add_unittest(NAME <tst_name> NURIA <NuriaX> .. QT .. SOURCES .. RESOURCES .. DEFINES .. EMBED_TARGETS ..)
 #  Nuria modules must have Nuria prepended, Qt modules do not.
 #  By default, NuriaCore, QtCore and QtTestLib are imported.
 #  The unit-test code must be called <tst_name>.cpp
 #  Unneeded options can be omitted.
 function(add_unittest)
-  cmake_parse_arguments(add_unittest "" NAME "QT;NURIA;RESOURCES;SOURCES" ${ARGN})
+  cmake_parse_arguments(add_unittest "" NAME "QT;NURIA;RESOURCES;SOURCES;DEFINES;EMBED_TARGETS" ${ARGN})
   
   message(STATUS "Adding unit-test ${add_unittest_NAME}")
   
@@ -20,9 +20,18 @@ function(add_unittest)
     LIST(APPEND TEST_SOURCES ${TEST_PREFIX}/${file})
   endforeach()
   
+  # Fetch sources from embedded targets.
+  foreach(embed_target ${add_unittest_EMBED_TARGETS})
+    get_target_property(embed_sources ${embed_target} SOURCES)
+    LIST(APPEND TEST_SOURCES ${embed_sources})
+  endforeach(embed_target)
+  
   # Add target
   qt5_add_resources(TEST_RESOURCES ${add_unittest_RESOURCES})
   add_executable(${add_unittest_NAME} ${TEST_SOURCES} ${TEST_RESOURCES})
+  
+  # Add defines to target
+  set_target_properties(${add_unittest_NAME} PROPERTIES COMPILE_DEFINITIONS "${add_unittest_DEFINES}")
   
   # Include directories
   get_target_property(NURIA_INC_DIRS ${add_unittest_NAME} INCLUDE_DIRECTORIES)
