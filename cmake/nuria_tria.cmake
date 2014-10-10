@@ -9,6 +9,13 @@ include(${CMAKE_CURRENT_LIST_DIR}/win32_stdlib_include.cmake)
 function(nuria_tria Target)
   get_target_property(NURIA_SOURCE_FILES ${Target} SOURCES)
   get_target_property(NURIA_INC_DIRS ${Target} INCLUDE_DIRECTORIES)
+  get_target_property(NURIA_TARGET_DEPENDS ${Target} INTERFACE_LINK_LIBRARIES)
+  foreach (dependency ${NURIA_TARGET_DEPENDS})
+    get_target_property(dependency_inc_dir ${dependency} INTERFACE_INCLUDE_DIRECTORIES)
+	LIST(APPEND NURIA_INC_DIRS ${dependency_inc_dir})
+  endforeach(dependency)
+  LIST(REMOVE_DUPLICATES NURIA_INC_DIRS)
+  # Note that the list may still contain duplicates due to generator statements which will be parsed at a later time.
   
   if(NOT TARGET tria)
     message(WARNING "Tria is not enabled, Target ${Target} won't have runtime information generated.")

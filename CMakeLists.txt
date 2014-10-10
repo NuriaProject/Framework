@@ -19,11 +19,38 @@ include(cmake/add_unittest.cmake)
 # of the directory.
 SET(Modules Tria Core Network Lua Twig)
 
+# Fetch Module List set from outside (overrides above definition)
+if(NURIA_MODULES)
+  SET(Modules ${NURIA_MODULES})
+endif()
+
+# Remove specific Modules (overrides any of the above definitions)
+if(NURIA_NO_TRIA)
+  LIST(REMOVE_ITEM Modules "Tria")
+endif()
+
+if(NURIA_NO_CORE)
+  LIST(REMOVE_ITEM Modules "Core")
+endif()
+
+if(NURIA_NO_NETWORK)
+  LIST(REMOVE_ITEM Modules "Network")
+endif()
+
+if(NURIA_NO_LUA)
+  LIST(REMOVE_ITEM Modules "Lua")
+endif()
+
+if(NURIA_NO_TWIG)
+  LIST(REMOVE_ITEM Modules "Twig")
+endif()
+
 # Enable C++11
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-# Include Core in all modules
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Core/src)
+# Set location for Nuria modules (in-build)
+SET(NURIA_CMAKE_PREFIX "${CMAKE_CURRENT_BINARY_DIR}/cmake/modules")
+LIST(APPEND CMAKE_PREFIX_PATH "${NURIA_CMAKE_PREFIX}")
 
 # Enable tests
 enable_testing()
@@ -31,10 +58,16 @@ enable_testing()
 # 
 LIST(FIND Modules Tria TriaModulePos)
 if(NOT TriaModulePos EQUAL -1)
-  message(STATUS "Building with Tria")
+  message(STATUS "Building with Tria (in-source)")
   SET(HasTria 1)
 else()
-  message(STATUS "Building WITHOUT Tria")
+  find_package(tria)
+  if(TARGET tria)
+    SET(HasTria 1)
+    message(STATUS "Building with Tria (imported)")
+  else()
+    message(STATUS "Building WITHOUT Tria")
+  endif()
 endif()
 
 # Add all module directories
