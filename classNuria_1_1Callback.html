@@ -139,8 +139,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac46b48e07140e78940b7c9ca81e6dba0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1Callback.html#ac46b48e07140e78940b7c9ca81e6dba0">Callback</a> ()</td></tr>
 <tr class="separator:ac46b48e07140e78940b7c9ca81e6dba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ea2394ec6ba2b49bd190ff8a4d3db53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1Callback.html#a9ea2394ec6ba2b49bd190ff8a4d3db53">Callback</a> (QObject *receiver, const char *slot, bool variadic=false)</td></tr>
-<tr class="separator:a9ea2394ec6ba2b49bd190ff8a4d3db53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef74867d0a05b11f744f3ac103c27ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1Callback.html#afef74867d0a05b11f744f3ac103c27ec">Callback</a> (QObject *receiver, const char *slot, bool variadic=false, Qt::ConnectionType connectionType=Qt::AutoConnection)</td></tr>
+<tr class="separator:afef74867d0a05b11f744f3ac103c27ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0bfaae91b23d2d8a30ba7947d19bcf9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1Callback.html#ae0bfaae91b23d2d8a30ba7947d19bcf9">Callback</a> (const <a class="el" href="classNuria_1_1Callback.html">Callback</a> &amp;other)</td></tr>
 <tr class="separator:ae0bfaae91b23d2d8a30ba7947d19bcf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20c239958376f47c64af7e28f8796bba"><td class="memTemplParams" colspan="2">template&lt;typename Ret , typename... Args&gt; </td></tr>
@@ -195,9 +195,8 @@ template&lt;typename Class , typename Ret , typename... Args&gt; </td></tr>
 template&lt;typename Ret , typename... Args&gt; </td></tr>
 <tr class="memitem:gafa8f924b53f24d61ab96f4782bade2a0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setCallback</b> (std::function&lt; Ret(Args...) &gt; func)</td></tr>
 <tr class="separator:gafa8f924b53f24d61ab96f4782bade2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga708e73f4475d85b82938069b384a85d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga708e73f4475d85b82938069b384a85d8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>setCallback</b> (QObject *receiver, const char *slot)</td></tr>
-<tr class="separator:ga708e73f4475d85b82938069b384a85d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3014a2e9fceb9213edd74a86683d1de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Callback.html#gab3014a2e9fceb9213edd74a86683d1de">setCallback</a> (QObject *receiver, const char *slot, Qt::ConnectionType connectionType=Qt::AutoConnection)</td></tr>
+<tr class="separator:gab3014a2e9fceb9213edd74a86683d1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada9f079ded31f8dc562e198707066e96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1Callback.html#ada9f079ded31f8dc562e198707066e96">setVariadic</a> (bool variadic)</td></tr>
 <tr class="separator:ada9f079ded31f8dc562e198707066e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5499dfdefc72ac3f6c773531c9a920fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNuria_1_1Callback.html#a915a45aceb767d7cd91a895bd18a0df7">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1Callback.html#a5499dfdefc72ac3f6c773531c9a920fe">type</a> () const </td></tr>
@@ -296,12 +295,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbackPrivate</b><
 
 </div>
 </div>
-<a class="anchor" id="a9ea2394ec6ba2b49bd190ff8a4d3db53"></a>
+<a class="anchor" id="afef74867d0a05b11f744f3ac103c27ec"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Nuria::Callback::Callback </td>
@@ -319,7 +315,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbackPrivate</b><
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>variadic</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>variadic</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::ConnectionType&#160;</td>
+          <td class="paramname"><em>connectionType</em> = <code>Qt::AutoConnection</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -327,13 +329,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>CallbackPrivate</b><
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Constructs a callback out of a slot. </p>
+<p>Constructs a callback out of a slot.</p>
+<dl class="section warning"><dt>Warning</dt><dd>If you want to set the <em>connectionType</em> manually make sure you pass a value for <em>variadic</em>. Else, the compiler may choose to implicitly cast the Qt::ConnectionType to bool! </dd></dl>
 
 </div>
 </div>
@@ -776,7 +774,7 @@ template&lt;typename... Args&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 5 2014 20:26:24 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 15 2014 23:25:11 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

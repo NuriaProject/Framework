@@ -18,6 +18,8 @@ var searchData=
   ['deflatefilter',['DeflateFilter',['../classNuria_1_1HttpClient.html#a95d06914d49c078b8ae6946a8194fe25a80faed4fe6b4a3376f661656bda8fe1d',1,'Nuria::HttpClient']]],
   ['delete',['DELETE',['../classNuria_1_1HttpClient.html#a47878d81d933a0f4b50c97a11c343456acade7b25a6781ba6cc5cc970c33af5c2',1,'Nuria::HttpClient']]],
   ['dependencies',['dependencies',['../classNuria_1_1TemplateProgram.html#aad6609d9c8edafdb4230e6def5ab992f',1,'Nuria::TemplateProgram']]],
+  ['dependency',['Dependency',['../classNuria_1_1Dependency.html#abc1635ffe29550f9d7637ef739b0dd46',1,'Nuria::Dependency']]],
+  ['dependency',['Dependency',['../classNuria_1_1Dependency.html',1,'Nuria']]],
   ['dependencymanager',['DependencyManager',['../classNuria_1_1DependencyManager.html',1,'Nuria']]],
   ['deserialize',['deserialize',['../classNuria_1_1Serializer.html#a838b6f7a15937fffc6a635291e62b7cf',1,'Nuria::Serializer::deserialize(const QVariantMap &amp;data, MetaObject *meta)'],['../classNuria_1_1Serializer.html#a4200a905a762d5d6a9cbc6b632aad766',1,'Nuria::Serializer::deserialize(const QVariantMap &amp;data, const QByteArray &amp;typeName)'],['../classNuria_1_1Serializer.html#a601f5b4979cc2f8e2ea0854d8ad281cb',1,'Nuria::Serializer::deserialize(const QVariantMap &amp;data)']]],
   ['destroyinstance',['destroyInstance',['../classNuria_1_1MetaObject.html#ab3f9be58b3abf55cab4cf648c46729d0',1,'Nuria::MetaObject']]],

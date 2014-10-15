@@ -7,7 +7,7 @@ var searchData=
   ['error',['error',['../classNuria_1_1TemplateError.html#a5b48dc24365ab400922f33aeb536a97f',1,'Nuria::TemplateError']]],
   ['errorcolumn',['errorColumn',['../classNuria_1_1Tokenizer.html#a8cddd9bef3f71bf4830700fddc1343e2',1,'Nuria::Tokenizer']]],
   ['errorname',['errorName',['../classNuria_1_1TemplateError.html#a83e51c5cb5c9d0ea11e4e72a7330f5cb',1,'Nuria::TemplateError::errorName() const '],['../classNuria_1_1TemplateError.html#a2962a58d5d6d9101ef1ddf4cbfb5852d',1,'Nuria::TemplateError::errorName(Error error)']]],
-  ['errorposition',['errorPosition',['../classNuria_1_1MiniLexer.html#a439827c353784af5cc852cb92c8035f1',1,'Nuria::MiniLexer::errorPosition()'],['../classNuria_1_1Tokenizer.html#a3db2b0f88beb7d96da67c5c2cdae3474',1,'Nuria::Tokenizer::errorPosition()']]],
+  ['errorposition',['errorPosition',['../classNuria_1_1Tokenizer.html#a3db2b0f88beb7d96da67c5c2cdae3474',1,'Nuria::Tokenizer']]],
   ['errorrow',['errorRow',['../classNuria_1_1Tokenizer.html#af003e0f84c26c8cb8669f25452cfe147',1,'Nuria::Tokenizer']]],
   ['evaluate',['evaluate',['../classNuria_1_1LazyCondition.html#acf67e51c69d808091ee9350b2bd89800',1,'Nuria::LazyCondition']]],
   ['exclude',['exclude',['../classNuria_1_1Serializer.html#a46f68747fe150b133af5a360090ed04b',1,'Nuria::Serializer']]],

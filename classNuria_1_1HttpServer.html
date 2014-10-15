@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classNuria_1_1HttpServer-members.html">List of all members</a>  </div>
@@ -98,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classNuria_1_1HttpServer.html" title="The HttpServer class provides a simple HTTP server. This server is directed at providing interactive ...">HttpServer</a> class provides a simple HTTP server. This server is directed at providing interactive content, but it also may serve static content.  
+<p>Server for the HyperText Transfer Protocol.  
  <a href="classNuria_1_1HttpServer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="httpserver_8hpp_source.html">httpserver.hpp</a>&gt;</code></p>
@@ -111,36 +112,41 @@ Inheritance diagram for Nuria::HttpServer:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a0741111f60388cbc27e102384b686889"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#a0741111f60388cbc27e102384b686889">ThreadingMode</a> { <a class="el" href="classNuria_1_1HttpServer.html#a0741111f60388cbc27e102384b686889ac00b9f040a2110d706a5cfc627d9b4e6">NoThreading</a> = 0, 
+<a class="el" href="classNuria_1_1HttpServer.html#a0741111f60388cbc27e102384b686889ab6dc911fdcaa0f9185242f70594db370">OneThreadPerCore</a> = -1
+ }</td></tr>
+<tr class="separator:a0741111f60388cbc27e102384b686889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aad443792df4231f987606e93b88f8c5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#aad443792df4231f987606e93b88f8c5b">HttpServer</a> (bool supportSsl=true, QObject *parent=0)</td></tr>
-<tr class="separator:aad443792df4231f987606e93b88f8c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b471e3924979236a148c1ef8beafc4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#a11b471e3924979236a148c1ef8beafc4">HttpServer</a> (QObject *parent=0)</td></tr>
+<tr class="separator:a11b471e3924979236a148c1ef8beafc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcec725ad271622f9d5cd6d88ae082e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#afcec725ad271622f9d5cd6d88ae082e2">~HttpServer</a> ()</td></tr>
 <tr class="separator:afcec725ad271622f9d5cd6d88ae082e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40e48e9aed9dee880396c34f4876fec9"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#a40e48e9aed9dee880396c34f4876fec9">fqdn</a> () const </td></tr>
-<tr class="separator:a40e48e9aed9dee880396c34f4876fec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf0e481ce441a84b0bde592e0882f3dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#abf0e481ce441a84b0bde592e0882f3dd">listen</a> (const QHostAddress &amp;interface=QHostAddress::Any, quint16 <a class="el" href="classNuria_1_1HttpServer.html#a8cb4b73c6fd3240009bbf379b3e1466d">port</a>=80)</td></tr>
+<tr class="memitem:a51eb1ea41db2b31e4cdc86d614798ddd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#a51eb1ea41db2b31e4cdc86d614798ddd">addBackend</a> (<a class="el" href="classNuria_1_1HttpBackend.html">HttpBackend</a> *backend)</td></tr>
+<tr class="separator:a51eb1ea41db2b31e4cdc86d614798ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd6bc3b678fded2cab31cd5753c0aa1"><td class="memItemLeft" align="right" valign="top">QVector&lt; <a class="el" href="classNuria_1_1HttpBackend.html">HttpBackend</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#aebd6bc3b678fded2cab31cd5753c0aa1">backends</a> () const </td></tr>
+<tr class="separator:aebd6bc3b678fded2cab31cd5753c0aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb869aa45d29452d9fe36123e0507a8"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#a0bb869aa45d29452d9fe36123e0507a8">fqdn</a> () const </td></tr>
+<tr class="separator:a0bb869aa45d29452d9fe36123e0507a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf0e481ce441a84b0bde592e0882f3dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#abf0e481ce441a84b0bde592e0882f3dd">listen</a> (const QHostAddress &amp;interface=QHostAddress::Any, quint16 port=80)</td></tr>
 <tr class="separator:abf0e481ce441a84b0bde592e0882f3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a369813cbede4034e80c49c580ae4bcd9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#a369813cbede4034e80c49c580ae4bcd9">listenSecure</a> (const QHostAddress &amp;interface=QHostAddress::Any, quint16 <a class="el" href="classNuria_1_1HttpServer.html#a8cb4b73c6fd3240009bbf379b3e1466d">port</a>=443)</td></tr>
-<tr class="separator:a369813cbede4034e80c49c580ae4bcd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75b45a56b417579f73638e1ed9ee1afc"><td class="memItemLeft" align="right" valign="top">QSslCertificate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#a75b45a56b417579f73638e1ed9ee1afc">localCertificate</a> () const </td></tr>
-<tr class="separator:a75b45a56b417579f73638e1ed9ee1afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cb4b73c6fd3240009bbf379b3e1466d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#a8cb4b73c6fd3240009bbf379b3e1466d">port</a> () const </td></tr>
-<tr class="separator:a8cb4b73c6fd3240009bbf379b3e1466d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27e0518c9c7ca23abb60bb996ee40dfc"><td class="memItemLeft" align="right" valign="top">QSslKey&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#a27e0518c9c7ca23abb60bb996ee40dfc">privateKey</a> () const </td></tr>
-<tr class="separator:a27e0518c9c7ca23abb60bb996ee40dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab36b4c4eb467b045c3fc1d93c6508e28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#ab36b4c4eb467b045c3fc1d93c6508e28">listenSecure</a> (const QSslCertificate &amp;certificate, const QSslKey &amp;privateKey, const QHostAddress &amp;interface=QHostAddress::Any, quint16 port=443)</td></tr>
+<tr class="separator:ab36b4c4eb467b045c3fc1d93c6508e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1709bc06d36811257da0e21430d11230"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#a1709bc06d36811257da0e21430d11230">maxThreads</a> () const </td></tr>
+<tr class="separator:a1709bc06d36811257da0e21430d11230"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaad029987b2c02a4f51e1c8f9137a3d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNuria_1_1HttpNode.html">HttpNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#aaad029987b2c02a4f51e1c8f9137a3d8">root</a> () const </td></tr>
 <tr class="separator:aaad029987b2c02a4f51e1c8f9137a3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eb94a49d876ff4f41fd1a8f65c52748"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#a4eb94a49d876ff4f41fd1a8f65c52748">securePort</a> () const </td></tr>
-<tr class="separator:a4eb94a49d876ff4f41fd1a8f65c52748"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afee4a9d6bb4560a122290c17a9f82a50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#afee4a9d6bb4560a122290c17a9f82a50">setFqdn</a> (const QString &amp;<a class="el" href="classNuria_1_1HttpServer.html#a40e48e9aed9dee880396c34f4876fec9">fqdn</a>)</td></tr>
+<tr class="memitem:afee4a9d6bb4560a122290c17a9f82a50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#afee4a9d6bb4560a122290c17a9f82a50">setFqdn</a> (const QString &amp;<a class="el" href="classNuria_1_1HttpServer.html#a0bb869aa45d29452d9fe36123e0507a8">fqdn</a>)</td></tr>
 <tr class="separator:afee4a9d6bb4560a122290c17a9f82a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a003c529a2769a9c3c80bdae9291c8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#a2a003c529a2769a9c3c80bdae9291c8f">setLocalCertificate</a> (const QSslCertificate &amp;cert)</td></tr>
-<tr class="separator:a2a003c529a2769a9c3c80bdae9291c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b61a80b0d4b33b810fd1d045f4e2f35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#a6b61a80b0d4b33b810fd1d045f4e2f35">setPrivateKey</a> (const QSslKey &amp;key)</td></tr>
-<tr class="separator:a6b61a80b0d4b33b810fd1d045f4e2f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02658cd53de44b5b721ee1b3bce216a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#a02658cd53de44b5b721ee1b3bce216a6">setMaxThreads</a> (int amount)</td></tr>
+<tr class="separator:a02658cd53de44b5b721ee1b3bce216a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfbad8065007673d52dff39a3af8c31c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#acfbad8065007673d52dff39a3af8c31c">setRoot</a> (<a class="el" href="classNuria_1_1HttpNode.html">HttpNode</a> *node)</td></tr>
 <tr class="separator:acfbad8065007673d52dff39a3af8c31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadad28634a3486b983bd3b9ae8d6ab33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpServer.html#aadad28634a3486b983bd3b9ae8d6ab33">stopListening</a> (int port)</td></tr>
+<tr class="separator:aadad28634a3486b983bd3b9ae8d6ab33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -150,34 +156,59 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpClient</b></td><
 <tr class="memitem:a497f8c6d0d0361fa9ea9f19e3cc53a11"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a497f8c6d0d0361fa9ea9f19e3cc53a11"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpNode</b></td></tr>
 <tr class="separator:a497f8c6d0d0361fa9ea9f19e3cc53a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abead0a82da0ccbcb75c2dc73b466f88b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abead0a82da0ccbcb75c2dc73b466f88b"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpTransport</b></td></tr>
+<tr class="separator:abead0a82da0ccbcb75c2dc73b466f88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classNuria_1_1HttpServer.html" title="The HttpServer class provides a simple HTTP server. This server is directed at providing interactive ...">HttpServer</a> class provides a simple HTTP server. This server is directed at providing interactive content, but it also may serve static content. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aad443792df4231f987606e93b88f8c5b"></a>
+<div class="textblock"><p>Server for the HyperText Transfer Protocol. </p>
+<p>This is a implementation of a server for HTTP. The server class itself is responsible for managing the "root node" (The equivalent to the document root in other HTTP servers).</p>
+<p>Please see <a class="el" href="classNuria_1_1HttpNode.html" title="Virtual directory for HttpServer. ">HttpNode</a> and <a class="el" href="classNuria_1_1HttpClient.html" title="The HttpClient class represents a connection to a client. ">HttpClient</a></p>
+<dl class="section note"><dt>Note</dt><dd>For redirections to work properly, you should set the fully qualified domain name of the server using <a class="el" href="classNuria_1_1HttpServer.html#afee4a9d6bb4560a122290c17a9f82a50">setFqdn()</a>.</dd></dl>
+<dl class="section user"><dt>Usage</dt><dd>After creating an instance of <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a>, you can change the node hierarchy using <a class="el" href="classNuria_1_1HttpServer.html#aaad029987b2c02a4f51e1c8f9137a3d8">root()</a> or set your own using <a class="el" href="classNuria_1_1HttpServer.html#acfbad8065007673d52dff39a3af8c31c">setRoot()</a>. After that, you'll want to start listening. For TCP, there's <a class="el" href="classNuria_1_1HttpServer.html#abf0e481ce441a84b0bde592e0882f3dd">listen()</a> and for SSL there's <a class="el" href="classNuria_1_1HttpServer.html#ab36b4c4eb467b045c3fc1d93c6508e28">listenSecure()</a>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>A single <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a> can listen on multiple back-ends (TCP, SSL, ...) at the same time.</dd></dl>
+<p>Please see <a class="el" href="classNuria_1_1HttpNode.html" title="Virtual directory for HttpServer. ">HttpNode</a> for further information.</p>
+<dl class="section user"><dt>Multithreading</dt><dd></dd></dl>
+<p>A <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a> can either do all request execution in the thread it lifes in, which is the default setting, or use threading to offload requests. If threading is active (By using setMaxThreads), all request handling will be done in threads and none will be handled in the <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a> thread.</p>
+<dl class="section warning"><dt>Warning</dt><dd>When using multi-threading, be aware that your code is also thread-safe.</dd></dl>
+<p>Tip: You can use <a class="el" href="classNuria_1_1DependencyManager.html" title="Dependency injection manager. ">DependencyManager</a> to manage resources </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a0741111f60388cbc27e102384b686889"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNuria_1_1HttpServer.html#a0741111f60388cbc27e102384b686889">Nuria::HttpServer::ThreadingMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Additional threading options for <a class="el" href="classNuria_1_1HttpServer.html#a02658cd53de44b5b721ee1b3bce216a6">setMaxThreads()</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a0741111f60388cbc27e102384b686889ac00b9f040a2110d706a5cfc627d9b4e6"></a>NoThreading&#160;</td><td class="fielddoc">
+<p>Uses no threads. All processing is done in the thread of the <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a> instance. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0741111f60388cbc27e102384b686889ab6dc911fdcaa0f9185242f70594db370"></a>OneThreadPerCore&#160;</td><td class="fielddoc">
+<p>When passed to <a class="el" href="classNuria_1_1HttpServer.html#a02658cd53de44b5b721ee1b3bce216a6">setMaxThreads()</a>, one thread per CPU core will be created. <a class="el" href="classNuria_1_1HttpServer.html#a1709bc06d36811257da0e21430d11230">maxThreads()</a> will return the chosen value instead of OneThreadPerCore. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a11b471e3924979236a148c1ef8beafc4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">Nuria::HttpServer::HttpServer </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>supportSsl</em> = <code>true</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">QObject *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor. If you pass <code>false</code> for <em>supportSsl</em>, the HTTP server won't support SSL connections. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNuria_1_1HttpServer.html#abf0e481ce441a84b0bde592e0882f3dd">listen</a> <a class="el" href="classNuria_1_1HttpServer.html#a369813cbede4034e80c49c580ae4bcd9">listenSecure</a> </dd></dl>
+<p>Constructor. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNuria_1_1HttpServer.html#abf0e481ce441a84b0bde592e0882f3dd">listen</a> <a class="el" href="classNuria_1_1HttpServer.html#ab36b4c4eb467b045c3fc1d93c6508e28">listenSecure</a> </dd></dl>
 
 </div>
 </div>
@@ -198,12 +229,45 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpNode</b></td></t
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a40e48e9aed9dee880396c34f4876fec9"></a>
+<a class="anchor" id="a51eb1ea41db2b31e4cdc86d614798ddd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const QString&amp; Nuria::HttpServer::fqdn </td>
+          <td class="memname">void Nuria::HttpServer::addBackend </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNuria_1_1HttpBackend.html">HttpBackend</a> *&#160;</td>
+          <td class="paramname"><em>backend</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds <em>server</em> to the list of back-ends. Use this when you write a server implementation. Ownership of <em>server</em> is transferred to the <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="aebd6bc3b678fded2cab31cd5753c0aa1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt; <a class="el" href="classNuria_1_1HttpBackend.html">HttpBackend</a> * &gt; Nuria::HttpServer::backends </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a list of currently installed back-ends. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0bb869aa45d29452d9fe36123e0507a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Nuria::HttpServer::fqdn </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -237,17 +301,29 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpNode</b></td></t
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Starts the HTTP server. Returns <code>true</code> on success. </p>
+<p>Adds a TCP server, listening on <em>interface</em> and <em>port</em>. Returns <code>true</code> on success. </p>
 
 </div>
 </div>
-<a class="anchor" id="a369813cbede4034e80c49c580ae4bcd9"></a>
+<a class="anchor" id="ab36b4c4eb467b045c3fc1d93c6508e28"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool Nuria::HttpServer::listenSecure </td>
           <td>(</td>
+          <td class="paramtype">const QSslCertificate &amp;&#160;</td>
+          <td class="paramname"><em>certificate</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QSslKey &amp;&#160;</td>
+          <td class="paramname"><em>privateKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const QHostAddress &amp;&#160;</td>
           <td class="paramname"><em>interface</em> = <code>QHostAddress::Any</code>, </td>
         </tr>
@@ -264,55 +340,23 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpNode</b></td></t
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Lets the HTTP server listen on a SSL encrypted port. Returns <code>on</code> success. </p><dl class="section note"><dt>Note</dt><dd>For this to work you have to pass <code>true</code> for the <em>supportSsl</em> parameter in the constructor! </dd></dl>
+<p>Adds a SSL server, listening on <em>interface</em> and <em>port</em>. Returns <code>true</code> on success. </p>
 
 </div>
 </div>
-<a class="anchor" id="a75b45a56b417579f73638e1ed9ee1afc"></a>
+<a class="anchor" id="a1709bc06d36811257da0e21430d11230"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QSslCertificate Nuria::HttpServer::localCertificate </td>
+          <td class="memname">int Nuria::HttpServer::maxThreads </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the local SSL certificate. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNuria_1_1HttpServer.html#a2a003c529a2769a9c3c80bdae9291c8f">setLocalCertificate</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a8cb4b73c6fd3240009bbf379b3e1466d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Nuria::HttpServer::port </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the HTTP port the server is listening on. If the server isn't listening <code>-1</code> is returned. </p>
-
-</div>
-</div>
-<a class="anchor" id="a27e0518c9c7ca23abb60bb996ee40dfc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QSslKey Nuria::HttpServer::privateKey </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the SSL private key. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNuria_1_1HttpServer.html#a6b61a80b0d4b33b810fd1d045f4e2f35">setPrivateKey</a> </dd></dl>
+<p>Returns the amount of threads used to process requests. The default result is <code>NoThreading</code>. </p>
 
 </div>
 </div>
@@ -332,22 +376,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpNode</b></td></t
 
 </div>
 </div>
-<a class="anchor" id="a4eb94a49d876ff4f41fd1a8f65c52748"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Nuria::HttpServer::securePort </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the HTTPS port the server is listening on. If the server isn't listening <code>-1</code> is returned. </p>
-
-</div>
-</div>
 <a class="anchor" id="afee4a9d6bb4560a122290c17a9f82a50"></a>
 <div class="memitem">
 <div class="memproto">
@@ -361,41 +389,25 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpNode</b></td></t
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the fully-qualified domain name of this server. The server will fall-back using the 'Host' header value from clients if no value is set (default). </p>
+<p>Sets the fully-qualified domain name of this server. </p>
 
 </div>
 </div>
-<a class="anchor" id="a2a003c529a2769a9c3c80bdae9291c8f"></a>
+<a class="anchor" id="a02658cd53de44b5b721ee1b3bce216a6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Nuria::HttpServer::setLocalCertificate </td>
+          <td class="memname">void Nuria::HttpServer::setMaxThreads </td>
           <td>(</td>
-          <td class="paramtype">const QSslCertificate &amp;&#160;</td>
-          <td class="paramname"><em>cert</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>amount</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the local SSL certificate. <b>Needed</b> if you want to use SSL encryption. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNuria_1_1HttpServer.html#a6b61a80b0d4b33b810fd1d045f4e2f35">setPrivateKey</a> </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a6b61a80b0d4b33b810fd1d045f4e2f35"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Nuria::HttpServer::setPrivateKey </td>
-          <td>(</td>
-          <td class="paramtype">const QSslKey &amp;&#160;</td>
-          <td class="paramname"><em>key</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sets the SSL private key. <b>Needed</b> if you want to use SSL encryption. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classNuria_1_1HttpServer.html#a2a003c529a2769a9c3c80bdae9291c8f">setLocalCertificate</a> </dd></dl>
+<p>Sets the <em>amount</em> of threads to be used for processing requests. See ThreadingMode for other values that can be passed.</p>
+<p>If the new value is less than the current one, requests running in the affected will be processed, after which they're destroyed. </p>
 
 </div>
 </div>
@@ -412,7 +424,24 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpNode</b></td></t
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Replaces the current root node with <em>node</em>. The old root node will be deleted. <a class="el" href="classNuria_1_1HttpServer.html" title="The HttpServer class provides a simple HTTP server. This server is directed at providing interactive ...">HttpServer</a> will take ownership of <em>node</em>. </p>
+<p>Replaces the current root node with <em>node</em>. The old root node will be deleted. <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a> will take ownership of <em>node</em>. </p>
+
+</div>
+</div>
+<a class="anchor" id="aadad28634a3486b983bd3b9ae8d6ab33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Nuria::HttpServer::stopListening </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Removes the back-end which is listening on <em>port</em>. </p>
 
 </div>
 </div>
@@ -422,7 +451,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpNode</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 5 2014 20:26:24 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 15 2014 23:25:11 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

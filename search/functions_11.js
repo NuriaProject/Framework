@@ -7,6 +7,7 @@ var searchData=
   ['readdata',['readData',['../classNuria_1_1HttpClient.html#a7515ef64f547a19b4af1314c73a00e10',1,'Nuria::HttpClient']]],
   ['readfromremote',['readFromRemote',['../classNuria_1_1HttpTransport.html#a900acd9d07249d2d9c84374794eb290b',1,'Nuria::HttpTransport']]],
   ['recursiondepth',['recursionDepth',['../classNuria_1_1Serializer.html#af2edf15c80ac7b57268988acf960ff77',1,'Nuria::Serializer']]],
+  ['redirectclient',['redirectClient',['../classNuria_1_1HttpClient.html#aa49c58cd3eb01178f4ea766c03f7bf67',1,'Nuria::HttpClient::redirectClient(const QString &amp;localPath, RedirectMode mode=RedirectMode::Keep, int statusCode=307)'],['../classNuria_1_1HttpClient.html#a344bf2c25f7e7876b93c9170e9487391',1,'Nuria::HttpClient::redirectClient(const QUrl &amp;remoteUrl, int statusCode=307)']]],
   ['refcount',['refCount',['../classNuria_1_1Session.html#ad8fcc43e18ebd32befc213b7fc0e26f6',1,'Nuria::Session']]],
   ['reference',['reference',['../classNuria_1_1LuaObject.html#a9b89e8b73c37357e92ea264b0dfde56d',1,'Nuria::LuaObject']]],
   ['referenceddevice',['referencedDevice',['../classNuria_1_1ReferenceDevice.html#add932f16067725c51d9b9502f12b25bf',1,'Nuria::ReferenceDevice']]],

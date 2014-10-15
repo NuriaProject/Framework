@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classNuria_1_1HttpNode.html" title="The HttpNode class represents a virtual directory (or a virtual file) HttpServer uses these nodes to ...">HttpNode</a> class represents a virtual directory (or a virtual file) <a class="el" href="classNuria_1_1HttpServer.html" title="The HttpServer class provides a simple HTTP server. This server is directed at providing interactive ...">HttpServer</a> uses these nodes to call the correct method. Use <a class="el" href="classNuria_1_1HttpNode.html#ae8166db7665717e8fa2e9d62dbeba31d">connectSlot()</a> to connect a resource to a slot. You can host static resources by using setStaticResourceDir.  
+<p>Virtual directory for <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a>.  
  <a href="classNuria_1_1HttpNode.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="httpnode_8hpp_source.html">httpnode.hpp</a>&gt;</code></p>
@@ -182,12 +182,23 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>setResourceName</b> (
 <tr class="separator:a8ba703d15f0a1909185121872226ffd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classNuria_1_1HttpNode.html" title="The HttpNode class represents a virtual directory (or a virtual file) HttpServer uses these nodes to ...">HttpNode</a> class represents a virtual directory (or a virtual file) <a class="el" href="classNuria_1_1HttpServer.html" title="The HttpServer class provides a simple HTTP server. This server is directed at providing interactive ...">HttpServer</a> uses these nodes to call the correct method. Use <a class="el" href="classNuria_1_1HttpNode.html#ae8166db7665717e8fa2e9d62dbeba31d">connectSlot()</a> to connect a resource to a slot. You can host static resources by using setStaticResourceDir. </p>
+<div class="textblock"><p>Virtual directory for <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a>. </p>
+<p>A node is the equivalent to a directory of other HTTP servers and provides a hierarchical system to manage resources. They may contain other nodes or slots, all of which are named.</p>
+<p>Slots may be invokable <a class="el" href="classNuria_1_1Callback.html" title="A modern style callback mechanism which can be bound to various method types including slots...">Callback</a>'s or static files.</p>
+<dl class="section user"><dt>Usage</dt><dd></dd></dl>
+<p>To add a node as child node, just call <a class="el" href="classNuria_1_1HttpNode.html#addc6d282f4c68a6d07f339dc14766935">addNode()</a>. This will make the node available to HTTP requests. If you want to invoke a C++ function when a certain path was requested, use <a class="el" href="classNuria_1_1HttpNode.html#ae8166db7665717e8fa2e9d62dbeba31d">connectSlot()</a>, which accepts a <a class="el" href="classNuria_1_1Callback.html" title="A modern style callback mechanism which can be bound to various method types including slots...">Nuria::Callback</a> and will work with any callback of this sort.</p>
+<dl class="section note"><dt>Note</dt><dd>Slots are only invoked if it's the last element in the requested path.</dd></dl>
+<p>For example, if you have a slot called "foo", it will <b>only</b> be called, if "foo" is at the end of the path, like "/stuff/foo". It won't be invoked if the request path would be "/foo/stuff".</p>
+<dl class="section note"><dt>Note</dt><dd>It's possible to have a child node and a slot with the same name in a single <a class="el" href="classNuria_1_1HttpNode.html" title="Virtual directory for HttpServer. ">HttpNode</a> instance.</dd></dl>
+<p>It's also possible to easily serve static files from the file-system. See <a class="el" href="classNuria_1_1HttpNode.html#a879a8506bb221c700f605f6a51c6fb05">setStaticResourceDir()</a> and <a class="el" href="classNuria_1_1HttpNode.html#a57e7bb69809bf629d3015d175602da44">setStaticResourceMode()</a> for more information.</p>
+<dl class="section user"><dt>How a path is invoked</dt><dd></dd></dl>
+<p>Nodes are hierarchical, meaning you can put nodes into other nodes to build paths. When a HTTP request was made and the request header has been parsed, the <a class="el" href="classNuria_1_1HttpClient.html" title="The HttpClient class represents a connection to a client. ">HttpClient</a> instance will try to "invoke" the path. It does this by calling <a class="el" href="classNuria_1_1HttpNode.html#a74c80bdaab1954ecb01558bf6db6a628">invokePath()</a> on the <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a>'s root node. The root node will, in the default implementation, look for a matching slot if it's at the last part of the path, or else, try to find a child node with a matching name, which if found will be invoked recursively.</p>
+<p>Other <a class="el" href="classNuria_1_1HttpNode.html" title="Virtual directory for HttpServer. ">HttpNode</a> implementations may change this behaviour significantly by re-implementing <a class="el" href="classNuria_1_1HttpNode.html#a74c80bdaab1954ecb01558bf6db6a628">invokePath()</a>. <a class="el" href="classNuria_1_1RestfulHttpNode.html" title="The RestfulHttpNode class makes it easy to write RESTful APIs. ">RestfulHttpNode</a> is a good example, which allows to write RESTful services easily by parsing the requested path for variables passed to the call.</p>
 <dl class="section user"><dt>Advanced usage</dt><dd></dd></dl>
-<p>It can happen that the default <a class="el" href="classNuria_1_1HttpNode.html" title="The HttpNode class represents a virtual directory (or a virtual file) HttpServer uses these nodes to ...">HttpNode</a> doesn't satisfy your needs. In this case you can subclass <a class="el" href="classNuria_1_1HttpNode.html" title="The HttpNode class represents a virtual directory (or a virtual file) HttpServer uses these nodes to ...">HttpNode</a> and reimplement one of the protected virtual methods.</p>
-<p>If all you want to do is session management, re-implement <a class="el" href="classNuria_1_1HttpNode.html#a604d35d461750156d57dcd92f8f32a05">allowAccessToClient()</a>. Want to enhance <a class="el" href="classNuria_1_1HttpNode.html" title="The HttpNode class represents a virtual directory (or a virtual file) HttpServer uses these nodes to ...">HttpNode</a>'s slot invocation mechanism? Re-implement <a class="el" href="classNuria_1_1HttpNode.html#a6a8e99dc598b06d0ae8d6c2a9359a79b">callSlotByName()</a>. And if you want to have as much control over everything as possible, you can also re-implement <a class="el" href="classNuria_1_1HttpNode.html#a74c80bdaab1954ecb01558bf6db6a628">invokePath()</a>. Please bear in mind that doing this is more complex as it involves checking for permissions, finding a slot to be called and handing the request over to another <a class="el" href="classNuria_1_1HttpNode.html" title="The HttpNode class represents a virtual directory (or a virtual file) HttpServer uses these nodes to ...">HttpNode</a> for processing.</p>
+<p>It can happen that the default <a class="el" href="classNuria_1_1HttpNode.html" title="Virtual directory for HttpServer. ">HttpNode</a> doesn't satisfy your needs. In this case you can subclass <a class="el" href="classNuria_1_1HttpNode.html" title="Virtual directory for HttpServer. ">HttpNode</a> and reimplement one of the protected virtual methods.</p>
+<p>If all you want to do is session management, re-implement <a class="el" href="classNuria_1_1HttpNode.html#a604d35d461750156d57dcd92f8f32a05">allowAccessToClient()</a>. Want to enhance <a class="el" href="classNuria_1_1HttpNode.html" title="Virtual directory for HttpServer. ">HttpNode</a>'s slot invocation mechanism? Re-implement <a class="el" href="classNuria_1_1HttpNode.html#a6a8e99dc598b06d0ae8d6c2a9359a79b">callSlotByName()</a>. And if you want to have as much control over everything as possible, you can also re-implement <a class="el" href="classNuria_1_1HttpNode.html#a74c80bdaab1954ecb01558bf6db6a628">invokePath()</a>. Please bear in mind that doing this is more complex as it involves checking for permissions, finding a slot to be called and handing the request over to another <a class="el" href="classNuria_1_1HttpNode.html" title="Virtual directory for HttpServer. ">HttpNode</a> for processing.</p>
 <p>Please note that if you want to use clients in a non-streamed fashion (Which is the default), that you'll need to create a <a class="el" href="classNuria_1_1SlotInfo.html">SlotInfo</a> for each method and use <a class="el" href="classNuria_1_1HttpClient.html#a7da568503f70bf8cc13b2bde38862129">HttpClient::setSlotInfo</a> to assign one to any client.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classNuria_1_1HttpServer.html" title="The HttpServer class provides a simple HTTP server. This server is directed at providing interactive ...">HttpServer</a> <a class="el" href="classNuria_1_1HttpNode.html#a74c80bdaab1954ecb01558bf6db6a628">invokePath</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a> <a class="el" href="classNuria_1_1HttpNode.html#a74c80bdaab1954ecb01558bf6db6a628">invokePath</a> </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="aafbf4c4ae9ebf780d6182f6f3590ad81"></a>
 <div class="memitem">
@@ -237,7 +248,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>setResourceName</b> (
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructs a node. If <em>parent</em> points to a <a class="el" href="classNuria_1_1HttpNode.html" title="The HttpNode class represents a virtual directory (or a virtual file) HttpServer uses these nodes to ...">HttpNode</a>, this node will be added to <em>parent</em>. You can check if this was successful by calling <a class="el" href="classNuria_1_1HttpNode.html#ad3cca5adec83d49bf83b879d7ef2f32c">isChild()</a>. </p>
+<p>Constructs a node. If <em>parent</em> points to a <a class="el" href="classNuria_1_1HttpNode.html" title="Virtual directory for HttpServer. ">HttpNode</a>, this node will be added to <em>parent</em>. You can check if this was successful by calling <a class="el" href="classNuria_1_1HttpNode.html#ad3cca5adec83d49bf83b879d7ef2f32c">isChild()</a>. </p>
 
 </div>
 </div>
@@ -338,9 +349,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>setResourceName</b> (
 <p>This method is used by <a class="el" href="classNuria_1_1HttpNode.html#a74c80bdaab1954ecb01558bf6db6a628">invokePath()</a> to check if <em>client</em> is allowed to access the resource as specified by <em>path</em> or by <em>parts</em> and <em>index</em> (As they're used in <a class="el" href="classNuria_1_1HttpNode.html#a74c80bdaab1954ecb01558bf6db6a628">invokePath()</a>). If access is not granted, you may use <a class="el" href="classNuria_1_1HttpClient.html#a5a2dcb3e316f492bcfe43b62a6d34f1c">HttpClient::killConnection()</a> to use a custom status code. If you don't do this and disallow access, then the client will receive a 403 (Forbidden) reply.</p>
 <p>If access is allowed, this method must <b>not</b> send data to the client. This is the job of <a class="el" href="classNuria_1_1HttpNode.html#a74c80bdaab1954ecb01558bf6db6a628">invokePath()</a>.</p>
 <p>The default implementation always returns <code>true</code>.</p>
-<dl class="section note"><dt>Note</dt><dd>This method is not here to check if the path actually exists! Its purpose is to check whether or not the client is allowed to go through the current <a class="el" href="classNuria_1_1HttpNode.html" title="The HttpNode class represents a virtual directory (or a virtual file) HttpServer uses these nodes to ...">HttpNode</a>.</dd>
+<dl class="section note"><dt>Note</dt><dd>This method is not here to check if the path actually exists! Its purpose is to check whether or not the client is allowed to go through the current <a class="el" href="classNuria_1_1HttpNode.html" title="Virtual directory for HttpServer. ">HttpNode</a>.</dd>
 <dd>
-As this method is called for every <a class="el" href="classNuria_1_1HttpNode.html" title="The HttpNode class represents a virtual directory (or a virtual file) HttpServer uses these nodes to ...">HttpNode</a> the request recurses to, make sure to not do expensive calculations. If you need to do this, consider caching the result. This can be easily done by e.g. doing:  client-&gt;setProperty("accessGranted", true);</dd></dl>
+As this method is called for every <a class="el" href="classNuria_1_1HttpNode.html" title="Virtual directory for HttpServer. ">HttpNode</a> the request recurses to, make sure to not do expensive calculations. If you need to do this, consider caching the result. This can be easily done by e.g. doing:  client-&gt;setProperty("accessGranted", true);</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the access should be allowed, otherwise <code>false</code>. </dd></dl>
 
 </div>
@@ -560,13 +571,13 @@ The slot 'index' is called when the user attempts to access this node directly. 
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Recurses into the <a class="el" href="classNuria_1_1HttpNode.html" title="The HttpNode class represents a virtual directory (or a virtual file) HttpServer uses these nodes to ...">HttpNode</a> structure to invoke the requested slot. The default implementation checks for the following:</p><ul>
+<p>Recurses into the <a class="el" href="classNuria_1_1HttpNode.html" title="Virtual directory for HttpServer. ">HttpNode</a> structure to invoke the requested slot. The default implementation checks for the following:</p><ul>
 <li>First it tries to find a matching node. If it finds one it calls <a class="el" href="classNuria_1_1HttpNode.html#a74c80bdaab1954ecb01558bf6db6a628">invokePath()</a> on it.</li>
 <li>If that fails it tries to call a slot with the name if <em>index</em> points to the last item in <em>parts</em>.</li>
 <li>Last it tries to deliver a static resource file.</li>
 <li>When everything fails it returns <code>false</code>.</li>
 </ul>
-<p>If you need a more flexible approach than the default node/slot mechanism, subclass <a class="el" href="classNuria_1_1HttpNode.html" title="The HttpNode class represents a virtual directory (or a virtual file) HttpServer uses these nodes to ...">HttpNode</a> and reimplement this method. Please note that if you're looking for a way to have session management, you can also re-implement <a class="el" href="classNuria_1_1HttpNode.html#a604d35d461750156d57dcd92f8f32a05">allowAccessToClient()</a> which was designed for this purpose.</p>
+<p>If you need a more flexible approach than the default node/slot mechanism, subclass <a class="el" href="classNuria_1_1HttpNode.html" title="Virtual directory for HttpServer. ">HttpNode</a> and reimplement this method. Please note that if you're looking for a way to have session management, you can also re-implement <a class="el" href="classNuria_1_1HttpNode.html#a604d35d461750156d57dcd92f8f32a05">allowAccessToClient()</a> which was designed for this purpose.</p>
 <dl class="section note"><dt>Note</dt><dd>Consider re-implementing <a class="el" href="classNuria_1_1HttpNode.html#a6a8e99dc598b06d0ae8d6c2a9359a79b">callSlotByName()</a> instead, as implementing <a class="el" href="classNuria_1_1HttpNode.html#a74c80bdaab1954ecb01558bf6db6a628">invokePath()</a> can be a complex task.</dd>
 <dd>
 If <em>index</em> is equal to <code>parts.length()</code> the user requested the index page of this node.</dd></dl>
@@ -783,7 +794,7 @@ If <em>index</em> is equal to <code>parts.length()</code> the user requested the
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 5 2014 20:26:24 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 15 2014 23:25:11 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

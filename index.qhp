@@ -18,7 +18,9 @@
           <section title="json-type checks." ref="group__Enum-level.html" />
           <section title="json-type checks." ref="group__Type-level.html" />
           <section title="operators" ref="group__Debug.html" />
-          <section title="setters" ref="group__Callback.html" />
+          <section title="setters" ref="group__Callback.html">
+            <section title="setCallback" ref="group__Callback.html#gab3014a2e9fceb9213edd74a86683d1de" />
+          </section>
         </section>
         <section title="Namespaces">
           <section title="Namespace List" ref="namespaces.html">
@@ -91,7 +93,7 @@
                   <section title="Lambda" ref="classNuria_1_1Callback.html#a915a45aceb767d7cd91a895bd18a0df7aae3df39dc33c42fb524968a9a2bf37aa" />
                 </section>
                 <section title="Callback" ref="classNuria_1_1Callback.html#ac46b48e07140e78940b7c9ca81e6dba0" />
-                <section title="Callback" ref="classNuria_1_1Callback.html#a9ea2394ec6ba2b49bd190ff8a4d3db53" />
+                <section title="Callback" ref="classNuria_1_1Callback.html#afef74867d0a05b11f744f3ac103c27ec" />
                 <section title="Callback" ref="classNuria_1_1Callback.html#ae0bfaae91b23d2d8a30ba7947d19bcf9" />
                 <section title="Callback" ref="classNuria_1_1Callback.html#a20c239958376f47c64af7e28f8796bba" />
                 <section title="Callback" ref="classNuria_1_1Callback.html#a012ee6d38b486c7c0ef6101668259b58" />
@@ -114,7 +116,7 @@
                 <section title="setCallback" ref="group__Callback.html#gabe1309175a8aa8ad4f4a85cfb2db66b2" />
                 <section title="setCallback" ref="group__Callback.html#gabe12d7422e440d4f384027fb4c753974" />
                 <section title="setCallback" ref="group__Callback.html#gafa8f924b53f24d61ab96f4782bade2a0" />
-                <section title="setCallback" ref="group__Callback.html#ga708e73f4475d85b82938069b384a85d8" />
+                <section title="setCallback" ref="group__Callback.html#gab3014a2e9fceb9213edd74a86683d1de" />
                 <section title="setVariadic" ref="classNuria_1_1Callback.html#ada9f079ded31f8dc562e198707066e96" />
                 <section title="type" ref="classNuria_1_1Callback.html#a5499dfdefc72ac3f6c773531c9a920fe" />
                 <section title="CallbackPrivate" ref="classNuria_1_1Callback.html#a907937e574dea23673de8e7f990f1262" />
@@ -154,6 +156,14 @@
               <section title="DebugIgnore" ref="classNuria_1_1DebugIgnore.html">
                 <section title="operator&lt;&lt;" ref="classNuria_1_1DebugIgnore.html#a512ad6a49bb73c8c1b6dbc4e9b340de6" />
               </section>
+              <section title="Dependency" ref="classNuria_1_1Dependency.html">
+                <section title="Dependency" ref="classNuria_1_1Dependency.html#abc1635ffe29550f9d7637ef739b0dd46" />
+                <section title="get" ref="classNuria_1_1Dependency.html#aba0238bb4e2b4ce2e605add4ecf3a72f" />
+                <section title="operator bool" ref="classNuria_1_1Dependency.html#a672c7ab4d19b2d744b3dbe36f51c2ddb" />
+                <section title="operator!=" ref="classNuria_1_1Dependency.html#a8d051c3627c4733dbc1fc93bccc31659" />
+                <section title="operator-&gt;" ref="classNuria_1_1Dependency.html#a9f7d9e4cee7e495bd81bdb6d208ee121" />
+                <section title="operator==" ref="classNuria_1_1Dependency.html#a89fed17e4a2078310461b9e711f9a6d3" />
+              </section>
               <section title="DependencyManager" ref="classNuria_1_1DependencyManager.html">
                 <section title="ThreadingPolicy" ref="classNuria_1_1DependencyManager.html#a651e3284e1dd41891b4b9fb26233468d">
                   <section title="DefaultPolicy" ref="classNuria_1_1DependencyManager.html#a651e3284e1dd41891b4b9fb26233468da7918a9b1b3fb1a55591c2eec6a0d4768" />
@@ -163,14 +173,15 @@
                 </section>
                 <section title="~DependencyManager" ref="classNuria_1_1DependencyManager.html#ac9c74a4e71746c54bc410eb2be6dfe9c" />
                 <section title="defaultThreadingPolicy" ref="classNuria_1_1DependencyManager.html#a4fd39a40ae14edf2748f282179424790" />
-                <section title="get" ref="classNuria_1_1DependencyManager.html#a8210b2f243a077581b415a76d2d6da6c" />
-                <section title="hasObject" ref="classNuria_1_1DependencyManager.html#a9ccb1c769f9e7116f7c073f77bb4b1db" />
+                <section title="get" ref="classNuria_1_1DependencyManager.html#af609c9e9c463d1f6d5f970d94972b278" />
+                <section title="hasObject" ref="classNuria_1_1DependencyManager.html#a23e6bb99225aed585c3d56a0340445c4" />
                 <section title="instance" ref="classNuria_1_1DependencyManager.html#ad29d92dc41f1590063b82f4f2e631f39" />
-                <section title="objectByName" ref="classNuria_1_1DependencyManager.html#a2e8de42be217dbee0abefaecce69f8a8" />
-                <section title="objectType" ref="classNuria_1_1DependencyManager.html#a6119611fc00c0275b533917a67de481b" />
+                <section title="objectByName" ref="classNuria_1_1DependencyManager.html#a0985056d32cfd73ae64b6cebd0c586f9" />
+                <section title="objectType" ref="classNuria_1_1DependencyManager.html#ad4c39cb7d6b8e4019f29c22c0d5f9b1b" />
+                <section title="setCreator" ref="classNuria_1_1DependencyManager.html#a186ed6710839e4df3b5b16649c6e1355" />
                 <section title="setDefaultThreadingPolicy" ref="classNuria_1_1DependencyManager.html#a0794f7b00ffbe3c42f2afb5952e0aa70" />
-                <section title="storeObject" ref="classNuria_1_1DependencyManager.html#ab7f60e64f8695f111faf28fa094ffe5f" />
-                <section title="storeObject" ref="classNuria_1_1DependencyManager.html#a4e67a075f7db22d845df6a85f5df5d15" />
+                <section title="storeObject" ref="classNuria_1_1DependencyManager.html#a801034cc66a22f7669cc97a61dadc958" />
+                <section title="storeObject" ref="classNuria_1_1DependencyManager.html#a48365c0ee9bb1d4c932226b386e80c0e" />
               </section>
               <section title="Field" ref="classNuria_1_1Field.html">
                 <section title="Type" ref="classNuria_1_1Field.html#afe6c0594f89ed17062718dbeccd940b0">
@@ -213,6 +224,14 @@
                 <section title="setSearchPaths" ref="classNuria_1_1FileTemplateLoader.html#ae3509c53663766adb2898d7372683214" />
                 <section title="setSuffix" ref="classNuria_1_1FileTemplateLoader.html#a52bdc69cb8bef59bfb4962c944304d2e" />
                 <section title="suffix" ref="classNuria_1_1FileTemplateLoader.html#a28202e166a9c42d53a103b5966b0a277" />
+              </section>
+              <section title="HttpBackend" ref="classNuria_1_1HttpBackend.html">
+                <section title="HttpBackend" ref="classNuria_1_1HttpBackend.html#ad68f457304668b80c1f646084b2e0187" />
+                <section title="~HttpBackend" ref="classNuria_1_1HttpBackend.html#a96f858ddb75ace1c45543d14c4de3a68" />
+                <section title="httpServer" ref="classNuria_1_1HttpBackend.html#aa2a90a6f88af4dad22fe59963330f8bb" />
+                <section title="isListening" ref="classNuria_1_1HttpBackend.html#a8e2a59dc095341477846f36df398b60b" />
+                <section title="isSecure" ref="classNuria_1_1HttpBackend.html#a1a364e72b8e3daba7f2c7dbe8493cfbc" />
+                <section title="port" ref="classNuria_1_1HttpBackend.html#a20f089bb9731ba2eddc195398ffb0a2d" />
               </section>
               <section title="HttpClient" ref="classNuria_1_1HttpClient.html">
                 <section title="Cookies" ref="classNuria_1_1HttpClient.html#a4b0b5b19ed35ad7f46eb15584623fea7" />
@@ -262,6 +281,11 @@
                   <section title="HttpUnknown" ref="classNuria_1_1HttpClient.html#a57e08632db08dd28f009b84fda78ec83a564e8f06fa31bec9159515a414c60c0a" />
                   <section title="Http1_0" ref="classNuria_1_1HttpClient.html#a57e08632db08dd28f009b84fda78ec83a802398b082dc0cd2d2aeaba19507413d" />
                   <section title="Http1_1" ref="classNuria_1_1HttpClient.html#a57e08632db08dd28f009b84fda78ec83a7ec0142b9cfb1132f6a2421c1e019f47" />
+                </section>
+                <section title="RedirectMode" ref="classNuria_1_1HttpClient.html#a18ac02163d325710c5f3ffec56078575">
+                  <section title="Keep" ref="classNuria_1_1HttpClient.html#a18ac02163d325710c5f3ffec56078575a02bce93bff905887ad2233110bf9c49e" />
+                  <section title="ForceSecure" ref="classNuria_1_1HttpClient.html#a18ac02163d325710c5f3ffec56078575ad60c37455d29319090c93628a41686b3" />
+                  <section title="ForceUnsecure" ref="classNuria_1_1HttpClient.html#a18ac02163d325710c5f3ffec56078575ab49568af239a505359224262fe4eaad0" />
                 </section>
                 <section title="StandardFilter" ref="classNuria_1_1HttpClient.html#a95d06914d49c078b8ae6946a8194fe25">
                   <section title="DeflateFilter" ref="classNuria_1_1HttpClient.html#a95d06914d49c078b8ae6946a8194fe25a80faed4fe6b4a3376f661656bda8fe1d" />
@@ -316,6 +340,8 @@
                 <section title="rangeEnd" ref="classNuria_1_1HttpClient.html#ac574e868f3bd5a28e2803156822fc5a4" />
                 <section title="rangeStart" ref="classNuria_1_1HttpClient.html#a5563131a5a172eb1c74ed49ecdf0beca" />
                 <section title="readData" ref="classNuria_1_1HttpClient.html#a7515ef64f547a19b4af1314c73a00e10" />
+                <section title="redirectClient" ref="classNuria_1_1HttpClient.html#aa49c58cd3eb01178f4ea766c03f7bf67" />
+                <section title="redirectClient" ref="classNuria_1_1HttpClient.html#a344bf2c25f7e7876b93c9170e9487391" />
                 <section title="removeCookie" ref="classNuria_1_1HttpClient.html#abd497a706724211065232876236b12fc" />
                 <section title="removeFilter" ref="classNuria_1_1HttpClient.html#ae56772adbb8f755ecb3a6d9020c2b501" />
                 <section title="removeFilter" ref="classNuria_1_1HttpClient.html#a72c7fbcb45579d9102c55075c536f059" />
@@ -444,38 +470,26 @@
                 <section title="isFieldComplete" ref="classNuria_1_1HttpPostBodyReader.html#a83c4f7eb23145d24b82abeadda4c26c4" />
               </section>
               <section title="HttpServer" ref="classNuria_1_1HttpServer.html">
-                <section title="HttpServer" ref="classNuria_1_1HttpServer.html#aad443792df4231f987606e93b88f8c5b" />
+                <section title="ThreadingMode" ref="classNuria_1_1HttpServer.html#a0741111f60388cbc27e102384b686889">
+                  <section title="NoThreading" ref="classNuria_1_1HttpServer.html#a0741111f60388cbc27e102384b686889ac00b9f040a2110d706a5cfc627d9b4e6" />
+                  <section title="OneThreadPerCore" ref="classNuria_1_1HttpServer.html#a0741111f60388cbc27e102384b686889ab6dc911fdcaa0f9185242f70594db370" />
+                </section>
+                <section title="HttpServer" ref="classNuria_1_1HttpServer.html#a11b471e3924979236a148c1ef8beafc4" />
                 <section title="~HttpServer" ref="classNuria_1_1HttpServer.html#afcec725ad271622f9d5cd6d88ae082e2" />
-                <section title="fqdn" ref="classNuria_1_1HttpServer.html#a40e48e9aed9dee880396c34f4876fec9" />
+                <section title="addBackend" ref="classNuria_1_1HttpServer.html#a51eb1ea41db2b31e4cdc86d614798ddd" />
+                <section title="backends" ref="classNuria_1_1HttpServer.html#aebd6bc3b678fded2cab31cd5753c0aa1" />
+                <section title="fqdn" ref="classNuria_1_1HttpServer.html#a0bb869aa45d29452d9fe36123e0507a8" />
                 <section title="listen" ref="classNuria_1_1HttpServer.html#abf0e481ce441a84b0bde592e0882f3dd" />
-                <section title="listenSecure" ref="classNuria_1_1HttpServer.html#a369813cbede4034e80c49c580ae4bcd9" />
-                <section title="localCertificate" ref="classNuria_1_1HttpServer.html#a75b45a56b417579f73638e1ed9ee1afc" />
-                <section title="port" ref="classNuria_1_1HttpServer.html#a8cb4b73c6fd3240009bbf379b3e1466d" />
-                <section title="privateKey" ref="classNuria_1_1HttpServer.html#a27e0518c9c7ca23abb60bb996ee40dfc" />
+                <section title="listenSecure" ref="classNuria_1_1HttpServer.html#ab36b4c4eb467b045c3fc1d93c6508e28" />
+                <section title="maxThreads" ref="classNuria_1_1HttpServer.html#a1709bc06d36811257da0e21430d11230" />
                 <section title="root" ref="classNuria_1_1HttpServer.html#aaad029987b2c02a4f51e1c8f9137a3d8" />
-                <section title="securePort" ref="classNuria_1_1HttpServer.html#a4eb94a49d876ff4f41fd1a8f65c52748" />
                 <section title="setFqdn" ref="classNuria_1_1HttpServer.html#afee4a9d6bb4560a122290c17a9f82a50" />
-                <section title="setLocalCertificate" ref="classNuria_1_1HttpServer.html#a2a003c529a2769a9c3c80bdae9291c8f" />
-                <section title="setPrivateKey" ref="classNuria_1_1HttpServer.html#a6b61a80b0d4b33b810fd1d045f4e2f35" />
+                <section title="setMaxThreads" ref="classNuria_1_1HttpServer.html#a02658cd53de44b5b721ee1b3bce216a6" />
                 <section title="setRoot" ref="classNuria_1_1HttpServer.html#acfbad8065007673d52dff39a3af8c31c" />
+                <section title="stopListening" ref="classNuria_1_1HttpServer.html#aadad28634a3486b983bd3b9ae8d6ab33" />
                 <section title="HttpClient" ref="classNuria_1_1HttpServer.html#af9fb1dee08b92179888741433b8357c4" />
                 <section title="HttpNode" ref="classNuria_1_1HttpServer.html#a497f8c6d0d0361fa9ea9f19e3cc53a11" />
-              </section>
-              <section title="HttpTcpTransport" ref="classNuria_1_1HttpTcpTransport.html">
-                <section title="HttpTcpTransport" ref="classNuria_1_1HttpTcpTransport.html#a00acdb251bf7952bbe1f5940d5287550" />
-                <section title="~HttpTcpTransport" ref="classNuria_1_1HttpTcpTransport.html#a76b3afc684e2a539523fddfe3b931145" />
-                <section title="close" ref="classNuria_1_1HttpTcpTransport.html#a21945f525530c62f80f753033dea3943" />
-                <section title="flush" ref="classNuria_1_1HttpTcpTransport.html#a8bc0756dbe2d01e7c3a134935323257f" />
-                <section title="forceClose" ref="classNuria_1_1HttpTcpTransport.html#a88ce87dabae8fc6a25e3d591e578ab3f" />
-                <section title="isOpen" ref="classNuria_1_1HttpTcpTransport.html#af3d190da23d4bd5eb5269c7a5118826c" />
-                <section title="isSecure" ref="classNuria_1_1HttpTcpTransport.html#abb1d028f311eba422ca60907e9c5a689" />
-                <section title="localAddress" ref="classNuria_1_1HttpTcpTransport.html#ae06ea515cd82fdda18fe11d725011214" />
-                <section title="localPort" ref="classNuria_1_1HttpTcpTransport.html#a2cdb86603e77d04088673e7c707d3f6b" />
-                <section title="peerAddress" ref="classNuria_1_1HttpTcpTransport.html#aa897e5489c5fba0fbbec1c62ce091a2e" />
-                <section title="peerPort" ref="classNuria_1_1HttpTcpTransport.html#aced90d1658ef43035ac7f5f1d0a47481" />
-                <section title="sendToRemote" ref="classNuria_1_1HttpTcpTransport.html#a6af2b5578a4cb93af65370b3fda731bf" />
-                <section title="timerEvent" ref="classNuria_1_1HttpTcpTransport.html#a3d893ad786fc727c920ad62352ebb99e" />
-                <section title="type" ref="classNuria_1_1HttpTcpTransport.html#adaad49cb8894cf31f119d152b60a6db8" />
+                <section title="HttpTransport" ref="classNuria_1_1HttpServer.html#abead0a82da0ccbcb75c2dc73b466f88b" />
               </section>
               <section title="HttpTransport" ref="classNuria_1_1HttpTransport.html">
                 <section title="MaxRequestsDefault" ref="classNuria_1_1HttpTransport.html#add8a3a456073e88dd34dcdaca4ee6342a3ee8c0d819490f3aac184b66d003908a" />
@@ -494,14 +508,17 @@
                   <section title="Memory" ref="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51a626b2ae71fdbcc5a90007e644dc48624" />
                   <section title="Custom" ref="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51afdc6ae0d5537cf7556ea2543091ddda7" />
                 </section>
-                <section title="HttpTransport" ref="classNuria_1_1HttpTransport.html#acab90cf90734c4b071b46564f1c8be96" />
+                <section title="HttpTransport" ref="classNuria_1_1HttpTransport.html#a7a9250532677c06f65593de4e379b9a4" />
                 <section title="~HttpTransport" ref="classNuria_1_1HttpTransport.html#a374c5779fdfd934f4b0014703bc3ae7a" />
+                <section title="addToServer" ref="classNuria_1_1HttpTransport.html#ac9d5f866f1b6a250da0934bf9702147c" />
+                <section title="backend" ref="classNuria_1_1HttpTransport.html#a74212794f503d8b453aa17b748897d07" />
                 <section title="bytesSent" ref="classNuria_1_1HttpTransport.html#a8a760cf6eae3aeb0b6d0bd063f115349" />
                 <section title="close" ref="classNuria_1_1HttpTransport.html#a359198de90e7ec33de89e135c822cb86" />
                 <section title="connectionLost" ref="classNuria_1_1HttpTransport.html#a06b008ce4b5b3db6c8583e7831306fc4" />
                 <section title="currentRequestCount" ref="classNuria_1_1HttpTransport.html#ad5d617f2e79c6d0370b481f48f6280bd" />
                 <section title="flush" ref="classNuria_1_1HttpTransport.html#a7362421df6438ad8aed5750200bf187e" />
                 <section title="forceClose" ref="classNuria_1_1HttpTransport.html#a08d96a532ae9a717447447857050ab19" />
+                <section title="init" ref="classNuria_1_1HttpTransport.html#ae2cd952e7478dbbfb565e097012176b0" />
                 <section title="isOpen" ref="classNuria_1_1HttpTransport.html#a66f5a78ede0ee71954a9ab8867bbca99" />
                 <section title="isSecure" ref="classNuria_1_1HttpTransport.html#ad0ecd9ac49a79b67ffb0a12802198b1c" />
                 <section title="localAddress" ref="classNuria_1_1HttpTransport.html#a64dd5edfdd7f4f173eaef8d75dcb450b" />
@@ -628,18 +645,6 @@
                 <section title="onVariant" ref="classNuria_1_1LazyConditionWalker.html#afa451dcbb5253774f9b1e12291ae3ed4" />
                 <section title="operator=" ref="classNuria_1_1LazyConditionWalker.html#a5a35ef83c1e3dfdc5cfdc6610d4a9274" />
                 <section title="walk" ref="classNuria_1_1LazyConditionWalker.html#af5b378b4ac4fbf7476a73213b72d6726" />
-              </section>
-              <section title="LexerDefinition" ref="classNuria_1_1LexerDefinition.html">
-                <section title="LexerDefinition" ref="classNuria_1_1LexerDefinition.html#a30f82c0c516ae7da0b09437ed7b50cce" />
-                <section title="LexerDefinition" ref="classNuria_1_1LexerDefinition.html#aa017e5312c12af6549bed849e9825620" />
-                <section title="name" ref="classNuria_1_1LexerDefinition.html#a2e8a11b2289d789486995b936cd95cc0" />
-                <section title="setName" ref="classNuria_1_1LexerDefinition.html#af3725906227add89e542fc6f50521ec3" />
-              </section>
-              <section title="LexerRule" ref="classNuria_1_1LexerRule.html">
-                <section title="LexerRule" ref="classNuria_1_1LexerRule.html#ad3170a74508fea97828c2c8262bc7ed9" />
-                <section title="LexerRule" ref="classNuria_1_1LexerRule.html#a8f93208641fd14a119295462f67f148a" />
-                <section title="name" ref="classNuria_1_1LexerRule.html#abcd4408e01642b1020bf88eab4b75a6c" />
-                <section title="setName" ref="classNuria_1_1LexerRule.html#aba30c35941c18d59cbfccb34615f674e" />
               </section>
               <section title="LuaObject" ref="classNuria_1_1LuaObject.html">
                 <section title="LuaObject" ref="classNuria_1_1LuaObject.html#ab32e2490cfdff7d22b3039998aca2102" />
@@ -877,30 +882,6 @@
                 <section title="MetaEnum" ref="classNuria_1_1MetaObject.html#ad67daea96ae7bf1b043aedbd3d03b347" />
                 <section title="MetaField" ref="classNuria_1_1MetaObject.html#a41b1f71e5e0f0464ab08270e596fe727" />
                 <section title="MetaMethod" ref="classNuria_1_1MetaObject.html#a38b8707e06af8c49103fee88fd57e979" />
-              </section>
-              <section title="MiniLexer" ref="classNuria_1_1MiniLexer.html">
-                <section title="TokenValue" ref="classNuria_1_1MiniLexer.html#a1f51b2117dfb431e3315772cf485f993" />
-                <section title="TokenValueList" ref="classNuria_1_1MiniLexer.html#a52ccc650d3b025df8fa0075a362c7582" />
-                <section title="MiniLexer" ref="classNuria_1_1MiniLexer.html#a8668edb7b592c77564b97515a3e46743" />
-                <section title="~MiniLexer" ref="classNuria_1_1MiniLexer.html#a8ea462dd45e301b44295b4b9baa2ebd6" />
-                <section title="addDefinition" ref="classNuria_1_1MiniLexer.html#ad760a9826197cf3028a3b99141a65f7c" />
-                <section title="addRule" ref="classNuria_1_1MiniLexer.html#ad4ce1612c9d600726894b1dec788c710" />
-                <section title="addRule" ref="classNuria_1_1MiniLexer.html#ab0a631325910ee71850fa4238c6a96a5" />
-                <section title="addRule" ref="classNuria_1_1MiniLexer.html#ace4d7c900cc562cb738d3599bc1264c8" />
-                <section title="createInstanceFromDefinition" ref="classNuria_1_1MiniLexer.html#a11fc279c50979ddd249f229530b80dec" />
-                <section title="errorPosition" ref="classNuria_1_1MiniLexer.html#a439827c353784af5cc852cb92c8035f1" />
-                <section title="hasDefinition" ref="classNuria_1_1MiniLexer.html#ac5c544b1a690b891063e919b4f81e174" />
-                <section title="hasRule" ref="classNuria_1_1MiniLexer.html#a906c12301b9d90fb0f34837e38ca8062" />
-                <section title="hasStartDefinition" ref="classNuria_1_1MiniLexer.html#a201dddc1c3e0d67215aebed5871cfa61" />
-                <section title="lastError" ref="classNuria_1_1MiniLexer.html#a9c00ca84a5f02e196b6ea13711aaf31d" />
-                <section title="length" ref="classNuria_1_1MiniLexer.html#a7317d92211c550627847ce731002d804" />
-                <section title="lex" ref="classNuria_1_1MiniLexer.html#abb169395fc29d7fd5e66abfac1089273" />
-                <section title="matchSensitivity" ref="classNuria_1_1MiniLexer.html#a09a32a3b3c0df83a04a007abc96576c9" />
-                <section title="setMatchSensitivity" ref="classNuria_1_1MiniLexer.html#ad2e3061f2103f67206c78898c00d2531" />
-                <section title="token" ref="classNuria_1_1MiniLexer.html#ac469366e31196987042cc4b443b615da" />
-                <section title="tokenValue" ref="classNuria_1_1MiniLexer.html#a91f19faea60a1c31965f071d45171652" />
-                <section title="tokenValueList" ref="classNuria_1_1MiniLexer.html#ad71c264e96c9c178122e0ef2b288f120" />
-                <section title="value" ref="classNuria_1_1MiniLexer.html#abe8923bf35d5bb29bf932cd35c870225" />
               </section>
               <section title="QtMetaObjectWrapper" ref="classNuria_1_1QtMetaObjectWrapper.html">
                 <section title="QtMetaObjectWrapper" ref="classNuria_1_1QtMetaObjectWrapper.html#a61347ee14549a2544d25be6427546c71" />
@@ -1259,14 +1240,13 @@
             <section title="Nuria::CallbackHelper::CreateIndexTuple&lt; Size &gt;" ref="structNuria_1_1CallbackHelper_1_1CreateIndexTuple.html" />
             <section title="Nuria::CallbackHelper::CreateIndexTuple&lt; 1 &gt;" ref="structNuria_1_1CallbackHelper_1_1CreateIndexTuple_3_011_01_4.html" />
             <section title="Nuria::DebugIgnore" ref="classNuria_1_1DebugIgnore.html" />
+            <section title="Nuria::Dependency&lt; T &gt;" ref="classNuria_1_1Dependency.html" />
             <section title="Nuria::Field" ref="classNuria_1_1Field.html" />
             <section title="Nuria::HttpParser" ref="classNuria_1_1HttpParser.html" />
             <section title="Nuria::HttpWriter" ref="classNuria_1_1HttpWriter.html" />
             <section title="Nuria::CallbackHelper::IndexTuple&lt; Index &gt;" ref="structNuria_1_1CallbackHelper_1_1IndexTuple.html" />
             <section title="Nuria::LazyCondition" ref="classNuria_1_1LazyCondition.html" />
             <section title="Nuria::LazyConditionWalker" ref="classNuria_1_1LazyConditionWalker.html" />
-            <section title="Nuria::LexerDefinition" ref="classNuria_1_1LexerDefinition.html" />
-            <section title="Nuria::LexerRule" ref="classNuria_1_1LexerRule.html" />
             <section title="Nuria::Template::Location" ref="structNuria_1_1Template_1_1Location.html" />
             <section title="Nuria::LuaObject" ref="classNuria_1_1LuaObject.html" />
             <section title="Nuria::LuaValue" ref="classNuria_1_1LuaValue.html" />
@@ -1293,6 +1273,7 @@
               </section>
               <section title="Nuria::ArgumentManager" ref="classNuria_1_1ArgumentManager.html" />
               <section title="Nuria::DependencyManager" ref="classNuria_1_1DependencyManager.html" />
+              <section title="Nuria::HttpBackend" ref="classNuria_1_1HttpBackend.html" />
               <section title="Nuria::HttpFilter" ref="classNuria_1_1HttpFilter.html" />
               <section title="Nuria::HttpNode" ref="classNuria_1_1HttpNode.html">
                 <section title="Nuria::RestfulHttpNode" ref="classNuria_1_1RestfulHttpNode.html" />
@@ -1302,12 +1283,9 @@
                 <section title="Nuria::HttpUrlEncodedReader" ref="classNuria_1_1HttpUrlEncodedReader.html" />
               </section>
               <section title="Nuria::HttpServer" ref="classNuria_1_1HttpServer.html" />
-              <section title="Nuria::HttpTransport" ref="classNuria_1_1HttpTransport.html">
-                <section title="Nuria::HttpTcpTransport" ref="classNuria_1_1HttpTcpTransport.html" />
-              </section>
+              <section title="Nuria::HttpTransport" ref="classNuria_1_1HttpTransport.html" />
               <section title="Nuria::JsonMetaObjectReader" ref="classNuria_1_1JsonMetaObjectReader.html" />
               <section title="Nuria::LuaRuntime" ref="classNuria_1_1LuaRuntime.html" />
-              <section title="Nuria::MiniLexer" ref="classNuria_1_1MiniLexer.html" />
               <section title="Nuria::TemplateEngine" ref="classNuria_1_1TemplateEngine.html" />
               <section title="Nuria::TemplateLoader" ref="classNuria_1_1TemplateLoader.html">
                 <section title="Nuria::FileTemplateLoader" ref="classNuria_1_1FileTemplateLoader.html" />
@@ -1399,6 +1377,7 @@
             <section title="dependencymanager.hpp" ref="dependencymanager_8hpp_source.html" />
             <section title="essentials.hpp" ref="essentials_8hpp_source.html" />
             <section title="filetemplateloader.hpp" ref="filetemplateloader_8hpp_source.html" />
+            <section title="httpbackend.hpp" ref="httpbackend_8hpp_source.html" />
             <section title="httpclient.hpp" ref="httpclient_8hpp_source.html" />
             <section title="httpfilter.hpp" ref="httpfilter_8hpp_source.html" />
             <section title="httpmultipartreader.hpp" ref="httpmultipartreader_8hpp_source.html" />
@@ -1406,7 +1385,6 @@
             <section title="httpparser.hpp" ref="httpparser_8hpp_source.html" />
             <section title="httppostbodyreader.hpp" ref="httppostbodyreader_8hpp_source.html" />
             <section title="httpserver.hpp" ref="httpserver_8hpp_source.html" />
-            <section title="httptcptransport.hpp" ref="httptcptransport_8hpp_source.html" />
             <section title="httptransport.hpp" ref="httptransport_8hpp_source.html" />
             <section title="httpurlencodedreader.hpp" ref="httpurlencodedreader_8hpp_source.html" />
             <section title="httpwriter.hpp" ref="httpwriter_8hpp_source.html" />
@@ -1419,7 +1397,6 @@
             <section title="luavalue.hpp" ref="luavalue_8hpp_source.html" />
             <section title="memorytemplateloader.hpp" ref="memorytemplateloader_8hpp_source.html" />
             <section title="metaobject.hpp" ref="metaobject_8hpp_source.html" />
-            <section title="minilexer.hpp" ref="minilexer_8hpp_source.html" />
             <section title="network_global.hpp" ref="network__global_8hpp_source.html" />
             <section title="qtmetaobjectwrapper.hpp" ref="qtmetaobjectwrapper_8hpp_source.html" />
             <section title="referencedevice.hpp" ref="referencedevice_8hpp_source.html" />
@@ -1450,7 +1427,7 @@
       <keyword name="setCallback" id="Callback::setCallback" ref="group__Callback.html#gabe1309175a8aa8ad4f4a85cfb2db66b2" />
       <keyword name="setCallback" id="Callback::setCallback" ref="group__Callback.html#gabe12d7422e440d4f384027fb4c753974" />
       <keyword name="setCallback" id="Callback::setCallback" ref="group__Callback.html#gafa8f924b53f24d61ab96f4782bade2a0" />
-      <keyword name="setCallback" id="Callback::setCallback" ref="group__Callback.html#ga708e73f4475d85b82938069b384a85d8" />
+      <keyword name="setCallback" id="Callback::setCallback" ref="group__Callback.html#gab3014a2e9fceb9213edd74a86683d1de" />
       <keyword name="json-type checks." id="json-type checks." ref="group__Type-level.html" />
       <keyword name="json-type checks." id="json-type checks." ref="group__Annotation-level.html" />
       <keyword name="json-type checks." id="json-type checks." ref="group__Method-level.html" />
@@ -1490,7 +1467,7 @@
       <keyword name="getValue" id="Nuria::ArgumentManager::getValue" ref="classNuria_1_1ArgumentManager.html#ab0a7a292887051e96640a2ed5bdeda2e" />
       <keyword name="Nuria::Callback" id="Nuria::Callback" ref="classNuria_1_1Callback.html" />
       <keyword name="Callback" id="Nuria::Callback::Callback" ref="classNuria_1_1Callback.html#ac46b48e07140e78940b7c9ca81e6dba0" />
-      <keyword name="Callback" id="Nuria::Callback::Callback" ref="classNuria_1_1Callback.html#a9ea2394ec6ba2b49bd190ff8a4d3db53" />
+      <keyword name="Callback" id="Nuria::Callback::Callback" ref="classNuria_1_1Callback.html#afef74867d0a05b11f744f3ac103c27ec" />
       <keyword name="Callback" id="Nuria::Callback::Callback" ref="classNuria_1_1Callback.html#ae0bfaae91b23d2d8a30ba7947d19bcf9" />
       <keyword name="Callback" id="Nuria::Callback::Callback" ref="classNuria_1_1Callback.html#a20c239958376f47c64af7e28f8796bba" />
       <keyword name="Callback" id="Nuria::Callback::Callback" ref="classNuria_1_1Callback.html#a012ee6d38b486c7c0ef6101668259b58" />
@@ -1511,7 +1488,7 @@
       <keyword name="setCallback" id="Nuria::Callback::setCallback" ref="classNuria_1_1Callback.html#gabe1309175a8aa8ad4f4a85cfb2db66b2" />
       <keyword name="setCallback" id="Nuria::Callback::setCallback" ref="classNuria_1_1Callback.html#gabe12d7422e440d4f384027fb4c753974" />
       <keyword name="setCallback" id="Nuria::Callback::setCallback" ref="classNuria_1_1Callback.html#gafa8f924b53f24d61ab96f4782bade2a0" />
-      <keyword name="setCallback" id="Nuria::Callback::setCallback" ref="classNuria_1_1Callback.html#ga708e73f4475d85b82938069b384a85d8" />
+      <keyword name="setCallback" id="Nuria::Callback::setCallback" ref="classNuria_1_1Callback.html#gab3014a2e9fceb9213edd74a86683d1de" />
       <keyword name="setVariadic" id="Nuria::Callback::setVariadic" ref="classNuria_1_1Callback.html#ada9f079ded31f8dc562e198707066e96" />
       <keyword name="type" id="Nuria::Callback::type" ref="classNuria_1_1Callback.html#a5499dfdefc72ac3f6c773531c9a920fe" />
       <keyword name="boundLambda" id="Nuria::Callback::boundLambda" ref="classNuria_1_1Callback.html#aa638f5c9491ef1b498a439ccb78f26cd" />
@@ -1542,16 +1519,24 @@
       <keyword name="uninstallOutputHandler" id="Nuria::Debug::uninstallOutputHandler" ref="classNuria_1_1Debug.html#a44839e9f02c88ba8d9b8ee21fee2361b" />
       <keyword name="Nuria::DebugIgnore" id="Nuria::DebugIgnore" ref="classNuria_1_1DebugIgnore.html" />
       <keyword name="operator&lt;&lt;" id="Nuria::DebugIgnore::operator&lt;&lt;" ref="classNuria_1_1DebugIgnore.html#a512ad6a49bb73c8c1b6dbc4e9b340de6" />
+      <keyword name="Nuria::Dependency" id="Nuria::Dependency" ref="classNuria_1_1Dependency.html" />
+      <keyword name="Dependency" id="Nuria::Dependency::Dependency" ref="classNuria_1_1Dependency.html#abc1635ffe29550f9d7637ef739b0dd46" />
+      <keyword name="get" id="Nuria::Dependency::get" ref="classNuria_1_1Dependency.html#aba0238bb4e2b4ce2e605add4ecf3a72f" />
+      <keyword name="operator bool" id="Nuria::Dependency::operator bool" ref="classNuria_1_1Dependency.html#a672c7ab4d19b2d744b3dbe36f51c2ddb" />
+      <keyword name="operator!=" id="Nuria::Dependency::operator!=" ref="classNuria_1_1Dependency.html#a8d051c3627c4733dbc1fc93bccc31659" />
+      <keyword name="operator-&gt;" id="Nuria::Dependency::operator-&gt;" ref="classNuria_1_1Dependency.html#a9f7d9e4cee7e495bd81bdb6d208ee121" />
+      <keyword name="operator==" id="Nuria::Dependency::operator==" ref="classNuria_1_1Dependency.html#a89fed17e4a2078310461b9e711f9a6d3" />
       <keyword name="Nuria::DependencyManager" id="Nuria::DependencyManager" ref="classNuria_1_1DependencyManager.html" />
       <keyword name="~DependencyManager" id="Nuria::DependencyManager::~DependencyManager" ref="classNuria_1_1DependencyManager.html#ac9c74a4e71746c54bc410eb2be6dfe9c" />
       <keyword name="defaultThreadingPolicy" id="Nuria::DependencyManager::defaultThreadingPolicy" ref="classNuria_1_1DependencyManager.html#a4fd39a40ae14edf2748f282179424790" />
-      <keyword name="hasObject" id="Nuria::DependencyManager::hasObject" ref="classNuria_1_1DependencyManager.html#a9ccb1c769f9e7116f7c073f77bb4b1db" />
-      <keyword name="objectByName" id="Nuria::DependencyManager::objectByName" ref="classNuria_1_1DependencyManager.html#a2e8de42be217dbee0abefaecce69f8a8" />
-      <keyword name="objectType" id="Nuria::DependencyManager::objectType" ref="classNuria_1_1DependencyManager.html#a6119611fc00c0275b533917a67de481b" />
+      <keyword name="hasObject" id="Nuria::DependencyManager::hasObject" ref="classNuria_1_1DependencyManager.html#a23e6bb99225aed585c3d56a0340445c4" />
+      <keyword name="objectByName" id="Nuria::DependencyManager::objectByName" ref="classNuria_1_1DependencyManager.html#a0985056d32cfd73ae64b6cebd0c586f9" />
+      <keyword name="objectType" id="Nuria::DependencyManager::objectType" ref="classNuria_1_1DependencyManager.html#ad4c39cb7d6b8e4019f29c22c0d5f9b1b" />
+      <keyword name="setCreator" id="Nuria::DependencyManager::setCreator" ref="classNuria_1_1DependencyManager.html#a186ed6710839e4df3b5b16649c6e1355" />
       <keyword name="setDefaultThreadingPolicy" id="Nuria::DependencyManager::setDefaultThreadingPolicy" ref="classNuria_1_1DependencyManager.html#a0794f7b00ffbe3c42f2afb5952e0aa70" />
-      <keyword name="storeObject" id="Nuria::DependencyManager::storeObject" ref="classNuria_1_1DependencyManager.html#ab7f60e64f8695f111faf28fa094ffe5f" />
-      <keyword name="storeObject" id="Nuria::DependencyManager::storeObject" ref="classNuria_1_1DependencyManager.html#a4e67a075f7db22d845df6a85f5df5d15" />
-      <keyword name="get" id="Nuria::DependencyManager::get" ref="classNuria_1_1DependencyManager.html#a8210b2f243a077581b415a76d2d6da6c" />
+      <keyword name="storeObject" id="Nuria::DependencyManager::storeObject" ref="classNuria_1_1DependencyManager.html#a801034cc66a22f7669cc97a61dadc958" />
+      <keyword name="storeObject" id="Nuria::DependencyManager::storeObject" ref="classNuria_1_1DependencyManager.html#a48365c0ee9bb1d4c932226b386e80c0e" />
+      <keyword name="get" id="Nuria::DependencyManager::get" ref="classNuria_1_1DependencyManager.html#af609c9e9c463d1f6d5f970d94972b278" />
       <keyword name="instance" id="Nuria::DependencyManager::instance" ref="classNuria_1_1DependencyManager.html#ad29d92dc41f1590063b82f4f2e631f39" />
       <keyword name="DefaultPolicy" id="Nuria::DependencyManager::DefaultPolicy" ref="classNuria_1_1DependencyManager.html#a651e3284e1dd41891b4b9fb26233468da7918a9b1b3fb1a55591c2eec6a0d4768" />
       <keyword name="ApplicationGlobal" id="Nuria::DependencyManager::ApplicationGlobal" ref="classNuria_1_1DependencyManager.html#a651e3284e1dd41891b4b9fb26233468dafca1d23d25b7d1e567f562b4fb2ec628" />
@@ -1599,6 +1584,13 @@
       <keyword name="~TemplateLoader" id="Nuria::TemplateLoader::~TemplateLoader" ref="classNuria_1_1TemplateLoader.html#af9e71d1ae7de1c694c7561be78eec82c" />
       <keyword name="allTemplatesChanged" id="Nuria::TemplateLoader::allTemplatesChanged" ref="classNuria_1_1TemplateLoader.html#a3a917caec99c66ed5a6561b2e98ed891" />
       <keyword name="templateChanged" id="Nuria::TemplateLoader::templateChanged" ref="classNuria_1_1TemplateLoader.html#ac6cb73ce1c85c022f4a00d9a93d67e6e" />
+      <keyword name="Nuria::HttpBackend" id="Nuria::HttpBackend" ref="classNuria_1_1HttpBackend.html" />
+      <keyword name="HttpBackend" id="Nuria::HttpBackend::HttpBackend" ref="classNuria_1_1HttpBackend.html#ad68f457304668b80c1f646084b2e0187" />
+      <keyword name="~HttpBackend" id="Nuria::HttpBackend::~HttpBackend" ref="classNuria_1_1HttpBackend.html#a96f858ddb75ace1c45543d14c4de3a68" />
+      <keyword name="httpServer" id="Nuria::HttpBackend::httpServer" ref="classNuria_1_1HttpBackend.html#aa2a90a6f88af4dad22fe59963330f8bb" />
+      <keyword name="isListening" id="Nuria::HttpBackend::isListening" ref="classNuria_1_1HttpBackend.html#a8e2a59dc095341477846f36df398b60b" />
+      <keyword name="isSecure" id="Nuria::HttpBackend::isSecure" ref="classNuria_1_1HttpBackend.html#a1a364e72b8e3daba7f2c7dbe8493cfbc" />
+      <keyword name="port" id="Nuria::HttpBackend::port" ref="classNuria_1_1HttpBackend.html#a20f089bb9731ba2eddc195398ffb0a2d" />
       <keyword name="Nuria::HttpClient" id="Nuria::HttpClient" ref="classNuria_1_1HttpClient.html" />
       <keyword name="Cookies" id="Nuria::HttpClient::Cookies" ref="classNuria_1_1HttpClient.html#a4b0b5b19ed35ad7f46eb15584623fea7" />
       <keyword name="HeaderMap" id="Nuria::HttpClient::HeaderMap" ref="classNuria_1_1HttpClient.html#a8c08e3a1bb7911fd79adaadfc8e38e26" />
@@ -1643,6 +1635,8 @@
       <keyword name="postBodyTransferred" id="Nuria::HttpClient::postBodyTransferred" ref="classNuria_1_1HttpClient.html#aeed15fc59cbc42bdb25daeec1fe131fc" />
       <keyword name="rangeEnd" id="Nuria::HttpClient::rangeEnd" ref="classNuria_1_1HttpClient.html#ac574e868f3bd5a28e2803156822fc5a4" />
       <keyword name="rangeStart" id="Nuria::HttpClient::rangeStart" ref="classNuria_1_1HttpClient.html#a5563131a5a172eb1c74ed49ecdf0beca" />
+      <keyword name="redirectClient" id="Nuria::HttpClient::redirectClient" ref="classNuria_1_1HttpClient.html#aa49c58cd3eb01178f4ea766c03f7bf67" />
+      <keyword name="redirectClient" id="Nuria::HttpClient::redirectClient" ref="classNuria_1_1HttpClient.html#a344bf2c25f7e7876b93c9170e9487391" />
       <keyword name="removeCookie" id="Nuria::HttpClient::removeCookie" ref="classNuria_1_1HttpClient.html#abd497a706724211065232876236b12fc" />
       <keyword name="removeFilter" id="Nuria::HttpClient::removeFilter" ref="classNuria_1_1HttpClient.html#ae56772adbb8f755ecb3a6d9020c2b501" />
       <keyword name="removeFilter" id="Nuria::HttpClient::removeFilter" ref="classNuria_1_1HttpClient.html#a72c7fbcb45579d9102c55075c536f059" />
@@ -1700,6 +1694,9 @@
       <keyword name="AllVerbs" id="Nuria::HttpClient::AllVerbs" ref="classNuria_1_1HttpClient.html#a47878d81d933a0f4b50c97a11c343456a890c32ed120582ff52764b09d6f90730" />
       <keyword name="Http1_0" id="Nuria::HttpClient::Http1_0" ref="classNuria_1_1HttpClient.html#a57e08632db08dd28f009b84fda78ec83a802398b082dc0cd2d2aeaba19507413d" />
       <keyword name="Http1_1" id="Nuria::HttpClient::Http1_1" ref="classNuria_1_1HttpClient.html#a57e08632db08dd28f009b84fda78ec83a7ec0142b9cfb1132f6a2421c1e019f47" />
+      <keyword name="Keep" id="Nuria::HttpClient::Keep" ref="classNuria_1_1HttpClient.html#a18ac02163d325710c5f3ffec56078575a02bce93bff905887ad2233110bf9c49e" />
+      <keyword name="ForceSecure" id="Nuria::HttpClient::ForceSecure" ref="classNuria_1_1HttpClient.html#a18ac02163d325710c5f3ffec56078575ad60c37455d29319090c93628a41686b3" />
+      <keyword name="ForceUnsecure" id="Nuria::HttpClient::ForceUnsecure" ref="classNuria_1_1HttpClient.html#a18ac02163d325710c5f3ffec56078575ab49568af239a505359224262fe4eaad0" />
       <keyword name="DeflateFilter" id="Nuria::HttpClient::DeflateFilter" ref="classNuria_1_1HttpClient.html#a95d06914d49c078b8ae6946a8194fe25a80faed4fe6b4a3376f661656bda8fe1d" />
       <keyword name="GzipFilter" id="Nuria::HttpClient::GzipFilter" ref="classNuria_1_1HttpClient.html#a95d06914d49c078b8ae6946a8194fe25a53afa553033242a6f7fcd3cf00b40652" />
       <keyword name="Streaming" id="Nuria::HttpClient::Streaming" ref="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91a6fff89ebaea12ba6717707d41bbf4c5d" />
@@ -1790,58 +1787,33 @@
       <keyword name="isComplete" id="Nuria::HttpPostBodyReader::isComplete" ref="classNuria_1_1HttpPostBodyReader.html#ae641c581d592a07b6c126909f683bd19" />
       <keyword name="isFieldComplete" id="Nuria::HttpPostBodyReader::isFieldComplete" ref="classNuria_1_1HttpPostBodyReader.html#a83c4f7eb23145d24b82abeadda4c26c4" />
       <keyword name="Nuria::HttpServer" id="Nuria::HttpServer" ref="classNuria_1_1HttpServer.html" />
-      <keyword name="HttpServer" id="Nuria::HttpServer::HttpServer" ref="classNuria_1_1HttpServer.html#aad443792df4231f987606e93b88f8c5b" />
+      <keyword name="HttpServer" id="Nuria::HttpServer::HttpServer" ref="classNuria_1_1HttpServer.html#a11b471e3924979236a148c1ef8beafc4" />
       <keyword name="~HttpServer" id="Nuria::HttpServer::~HttpServer" ref="classNuria_1_1HttpServer.html#afcec725ad271622f9d5cd6d88ae082e2" />
-      <keyword name="fqdn" id="Nuria::HttpServer::fqdn" ref="classNuria_1_1HttpServer.html#a40e48e9aed9dee880396c34f4876fec9" />
+      <keyword name="addBackend" id="Nuria::HttpServer::addBackend" ref="classNuria_1_1HttpServer.html#a51eb1ea41db2b31e4cdc86d614798ddd" />
+      <keyword name="backends" id="Nuria::HttpServer::backends" ref="classNuria_1_1HttpServer.html#aebd6bc3b678fded2cab31cd5753c0aa1" />
+      <keyword name="fqdn" id="Nuria::HttpServer::fqdn" ref="classNuria_1_1HttpServer.html#a0bb869aa45d29452d9fe36123e0507a8" />
       <keyword name="listen" id="Nuria::HttpServer::listen" ref="classNuria_1_1HttpServer.html#abf0e481ce441a84b0bde592e0882f3dd" />
-      <keyword name="listenSecure" id="Nuria::HttpServer::listenSecure" ref="classNuria_1_1HttpServer.html#a369813cbede4034e80c49c580ae4bcd9" />
-      <keyword name="localCertificate" id="Nuria::HttpServer::localCertificate" ref="classNuria_1_1HttpServer.html#a75b45a56b417579f73638e1ed9ee1afc" />
-      <keyword name="port" id="Nuria::HttpServer::port" ref="classNuria_1_1HttpServer.html#a8cb4b73c6fd3240009bbf379b3e1466d" />
-      <keyword name="privateKey" id="Nuria::HttpServer::privateKey" ref="classNuria_1_1HttpServer.html#a27e0518c9c7ca23abb60bb996ee40dfc" />
+      <keyword name="listenSecure" id="Nuria::HttpServer::listenSecure" ref="classNuria_1_1HttpServer.html#ab36b4c4eb467b045c3fc1d93c6508e28" />
+      <keyword name="maxThreads" id="Nuria::HttpServer::maxThreads" ref="classNuria_1_1HttpServer.html#a1709bc06d36811257da0e21430d11230" />
       <keyword name="root" id="Nuria::HttpServer::root" ref="classNuria_1_1HttpServer.html#aaad029987b2c02a4f51e1c8f9137a3d8" />
-      <keyword name="securePort" id="Nuria::HttpServer::securePort" ref="classNuria_1_1HttpServer.html#a4eb94a49d876ff4f41fd1a8f65c52748" />
       <keyword name="setFqdn" id="Nuria::HttpServer::setFqdn" ref="classNuria_1_1HttpServer.html#afee4a9d6bb4560a122290c17a9f82a50" />
-      <keyword name="setLocalCertificate" id="Nuria::HttpServer::setLocalCertificate" ref="classNuria_1_1HttpServer.html#a2a003c529a2769a9c3c80bdae9291c8f" />
-      <keyword name="setPrivateKey" id="Nuria::HttpServer::setPrivateKey" ref="classNuria_1_1HttpServer.html#a6b61a80b0d4b33b810fd1d045f4e2f35" />
+      <keyword name="setMaxThreads" id="Nuria::HttpServer::setMaxThreads" ref="classNuria_1_1HttpServer.html#a02658cd53de44b5b721ee1b3bce216a6" />
       <keyword name="setRoot" id="Nuria::HttpServer::setRoot" ref="classNuria_1_1HttpServer.html#acfbad8065007673d52dff39a3af8c31c" />
+      <keyword name="stopListening" id="Nuria::HttpServer::stopListening" ref="classNuria_1_1HttpServer.html#aadad28634a3486b983bd3b9ae8d6ab33" />
       <keyword name="HttpClient" id="Nuria::HttpServer::HttpClient" ref="classNuria_1_1HttpServer.html#af9fb1dee08b92179888741433b8357c4" />
       <keyword name="HttpNode" id="Nuria::HttpServer::HttpNode" ref="classNuria_1_1HttpServer.html#a497f8c6d0d0361fa9ea9f19e3cc53a11" />
-      <keyword name="Nuria::HttpTcpTransport" id="Nuria::HttpTcpTransport" ref="classNuria_1_1HttpTcpTransport.html" />
-      <keyword name="flush" id="Nuria::HttpTcpTransport::flush" ref="classNuria_1_1HttpTcpTransport.html#a8bc0756dbe2d01e7c3a134935323257f" />
-      <keyword name="forceClose" id="Nuria::HttpTcpTransport::forceClose" ref="classNuria_1_1HttpTcpTransport.html#a88ce87dabae8fc6a25e3d591e578ab3f" />
-      <keyword name="flush" id="Nuria::HttpTransport::flush" ref="classNuria_1_1HttpTransport.html#a7362421df6438ad8aed5750200bf187e" />
-      <keyword name="forceClose" id="Nuria::HttpTransport::forceClose" ref="classNuria_1_1HttpTransport.html#a08d96a532ae9a717447447857050ab19" />
-      <keyword name="HttpTcpTransport" id="Nuria::HttpTcpTransport::HttpTcpTransport" ref="classNuria_1_1HttpTcpTransport.html#a00acdb251bf7952bbe1f5940d5287550" />
-      <keyword name="~HttpTcpTransport" id="Nuria::HttpTcpTransport::~HttpTcpTransport" ref="classNuria_1_1HttpTcpTransport.html#a76b3afc684e2a539523fddfe3b931145" />
-      <keyword name="isOpen" id="Nuria::HttpTcpTransport::isOpen" ref="classNuria_1_1HttpTcpTransport.html#af3d190da23d4bd5eb5269c7a5118826c" />
-      <keyword name="isSecure" id="Nuria::HttpTcpTransport::isSecure" ref="classNuria_1_1HttpTcpTransport.html#abb1d028f311eba422ca60907e9c5a689" />
-      <keyword name="localAddress" id="Nuria::HttpTcpTransport::localAddress" ref="classNuria_1_1HttpTcpTransport.html#ae06ea515cd82fdda18fe11d725011214" />
-      <keyword name="localPort" id="Nuria::HttpTcpTransport::localPort" ref="classNuria_1_1HttpTcpTransport.html#a2cdb86603e77d04088673e7c707d3f6b" />
-      <keyword name="peerAddress" id="Nuria::HttpTcpTransport::peerAddress" ref="classNuria_1_1HttpTcpTransport.html#aa897e5489c5fba0fbbec1c62ce091a2e" />
-      <keyword name="peerPort" id="Nuria::HttpTcpTransport::peerPort" ref="classNuria_1_1HttpTcpTransport.html#aced90d1658ef43035ac7f5f1d0a47481" />
-      <keyword name="type" id="Nuria::HttpTcpTransport::type" ref="classNuria_1_1HttpTcpTransport.html#adaad49cb8894cf31f119d152b60a6db8" />
-      <keyword name="HttpTransport" id="Nuria::HttpTransport::HttpTransport" ref="classNuria_1_1HttpTransport.html#acab90cf90734c4b071b46564f1c8be96" />
-      <keyword name="~HttpTransport" id="Nuria::HttpTransport::~HttpTransport" ref="classNuria_1_1HttpTransport.html#a374c5779fdfd934f4b0014703bc3ae7a" />
-      <keyword name="currentRequestCount" id="Nuria::HttpTransport::currentRequestCount" ref="classNuria_1_1HttpTransport.html#ad5d617f2e79c6d0370b481f48f6280bd" />
-      <keyword name="maxRequests" id="Nuria::HttpTransport::maxRequests" ref="classNuria_1_1HttpTransport.html#ae40f9780b7dad362d3c6a1b79a5e844c" />
-      <keyword name="setMaxRequests" id="Nuria::HttpTransport::setMaxRequests" ref="classNuria_1_1HttpTransport.html#a11d505a2beb523188f79088ac29c7268" />
-      <keyword name="setTimeout" id="Nuria::HttpTransport::setTimeout" ref="classNuria_1_1HttpTransport.html#a35cf2e9d0d0740135fb629b959369760" />
-      <keyword name="timeout" id="Nuria::HttpTransport::timeout" ref="classNuria_1_1HttpTransport.html#a6a4dfe8d2ab657006e9bee880922bc1b" />
-      <keyword name="close" id="Nuria::HttpTcpTransport::close" ref="classNuria_1_1HttpTcpTransport.html#a21945f525530c62f80f753033dea3943" />
-      <keyword name="sendToRemote" id="Nuria::HttpTcpTransport::sendToRemote" ref="classNuria_1_1HttpTcpTransport.html#a6af2b5578a4cb93af65370b3fda731bf" />
-      <keyword name="timerEvent" id="Nuria::HttpTcpTransport::timerEvent" ref="classNuria_1_1HttpTcpTransport.html#a3d893ad786fc727c920ad62352ebb99e" />
-      <keyword name="bytesSent" id="Nuria::HttpTransport::bytesSent" ref="classNuria_1_1HttpTransport.html#a8a760cf6eae3aeb0b6d0bd063f115349" />
-      <keyword name="readFromRemote" id="Nuria::HttpTransport::readFromRemote" ref="classNuria_1_1HttpTransport.html#a900acd9d07249d2d9c84374794eb290b" />
-      <keyword name="setCurrentRequestCount" id="Nuria::HttpTransport::setCurrentRequestCount" ref="classNuria_1_1HttpTransport.html#a7d1e72f0660dbb1fac1becb3581cbab0" />
-      <keyword name="connectionLost" id="Nuria::HttpTransport::connectionLost" ref="classNuria_1_1HttpTransport.html#a06b008ce4b5b3db6c8583e7831306fc4" />
-      <keyword name="timeoutChanged" id="Nuria::HttpTransport::timeoutChanged" ref="classNuria_1_1HttpTransport.html#ab554b83236d1970209735bb0a95c14c0" />
+      <keyword name="HttpTransport" id="Nuria::HttpServer::HttpTransport" ref="classNuria_1_1HttpServer.html#abead0a82da0ccbcb75c2dc73b466f88b" />
+      <keyword name="NoThreading" id="Nuria::HttpServer::NoThreading" ref="classNuria_1_1HttpServer.html#a0741111f60388cbc27e102384b686889ac00b9f040a2110d706a5cfc627d9b4e6" />
+      <keyword name="OneThreadPerCore" id="Nuria::HttpServer::OneThreadPerCore" ref="classNuria_1_1HttpServer.html#a0741111f60388cbc27e102384b686889ab6dc911fdcaa0f9185242f70594db370" />
       <keyword name="Nuria::HttpTransport" id="Nuria::HttpTransport" ref="classNuria_1_1HttpTransport.html" />
       <keyword name="flush" id="Nuria::HttpTransport::flush" ref="classNuria_1_1HttpTransport.html#a7362421df6438ad8aed5750200bf187e" />
       <keyword name="forceClose" id="Nuria::HttpTransport::forceClose" ref="classNuria_1_1HttpTransport.html#a08d96a532ae9a717447447857050ab19" />
+      <keyword name="init" id="Nuria::HttpTransport::init" ref="classNuria_1_1HttpTransport.html#ae2cd952e7478dbbfb565e097012176b0" />
       <keyword name="connectionLost" id="Nuria::HttpTransport::connectionLost" ref="classNuria_1_1HttpTransport.html#a06b008ce4b5b3db6c8583e7831306fc4" />
       <keyword name="timeoutChanged" id="Nuria::HttpTransport::timeoutChanged" ref="classNuria_1_1HttpTransport.html#ab554b83236d1970209735bb0a95c14c0" />
-      <keyword name="HttpTransport" id="Nuria::HttpTransport::HttpTransport" ref="classNuria_1_1HttpTransport.html#acab90cf90734c4b071b46564f1c8be96" />
+      <keyword name="HttpTransport" id="Nuria::HttpTransport::HttpTransport" ref="classNuria_1_1HttpTransport.html#a7a9250532677c06f65593de4e379b9a4" />
       <keyword name="~HttpTransport" id="Nuria::HttpTransport::~HttpTransport" ref="classNuria_1_1HttpTransport.html#a374c5779fdfd934f4b0014703bc3ae7a" />
+      <keyword name="backend" id="Nuria::HttpTransport::backend" ref="classNuria_1_1HttpTransport.html#a74212794f503d8b453aa17b748897d07" />
       <keyword name="currentRequestCount" id="Nuria::HttpTransport::currentRequestCount" ref="classNuria_1_1HttpTransport.html#ad5d617f2e79c6d0370b481f48f6280bd" />
       <keyword name="isOpen" id="Nuria::HttpTransport::isOpen" ref="classNuria_1_1HttpTransport.html#a66f5a78ede0ee71954a9ab8867bbca99" />
       <keyword name="isSecure" id="Nuria::HttpTransport::isSecure" ref="classNuria_1_1HttpTransport.html#ad0ecd9ac49a79b67ffb0a12802198b1c" />
@@ -1854,6 +1826,7 @@
       <keyword name="setTimeout" id="Nuria::HttpTransport::setTimeout" ref="classNuria_1_1HttpTransport.html#a35cf2e9d0d0740135fb629b959369760" />
       <keyword name="timeout" id="Nuria::HttpTransport::timeout" ref="classNuria_1_1HttpTransport.html#a6a4dfe8d2ab657006e9bee880922bc1b" />
       <keyword name="type" id="Nuria::HttpTransport::type" ref="classNuria_1_1HttpTransport.html#ad5a0b9ef8fad484d8fbe2c7b321007ae" />
+      <keyword name="addToServer" id="Nuria::HttpTransport::addToServer" ref="classNuria_1_1HttpTransport.html#ac9d5f866f1b6a250da0934bf9702147c" />
       <keyword name="bytesSent" id="Nuria::HttpTransport::bytesSent" ref="classNuria_1_1HttpTransport.html#a8a760cf6eae3aeb0b6d0bd063f115349" />
       <keyword name="close" id="Nuria::HttpTransport::close" ref="classNuria_1_1HttpTransport.html#a359198de90e7ec33de89e135c822cb86" />
       <keyword name="readFromRemote" id="Nuria::HttpTransport::readFromRemote" ref="classNuria_1_1HttpTransport.html#a900acd9d07249d2d9c84374794eb290b" />
@@ -1953,16 +1926,6 @@
       <keyword name="onVariant" id="Nuria::LazyConditionWalker::onVariant" ref="classNuria_1_1LazyConditionWalker.html#afa451dcbb5253774f9b1e12291ae3ed4" />
       <keyword name="operator=" id="Nuria::LazyConditionWalker::operator=" ref="classNuria_1_1LazyConditionWalker.html#a5a35ef83c1e3dfdc5cfdc6610d4a9274" />
       <keyword name="walk" id="Nuria::LazyConditionWalker::walk" ref="classNuria_1_1LazyConditionWalker.html#af5b378b4ac4fbf7476a73213b72d6726" />
-      <keyword name="Nuria::LexerDefinition" id="Nuria::LexerDefinition" ref="classNuria_1_1LexerDefinition.html" />
-      <keyword name="LexerDefinition" id="Nuria::LexerDefinition::LexerDefinition" ref="classNuria_1_1LexerDefinition.html#a30f82c0c516ae7da0b09437ed7b50cce" />
-      <keyword name="LexerDefinition" id="Nuria::LexerDefinition::LexerDefinition" ref="classNuria_1_1LexerDefinition.html#aa017e5312c12af6549bed849e9825620" />
-      <keyword name="name" id="Nuria::LexerDefinition::name" ref="classNuria_1_1LexerDefinition.html#a2e8a11b2289d789486995b936cd95cc0" />
-      <keyword name="setName" id="Nuria::LexerDefinition::setName" ref="classNuria_1_1LexerDefinition.html#af3725906227add89e542fc6f50521ec3" />
-      <keyword name="Nuria::LexerRule" id="Nuria::LexerRule" ref="classNuria_1_1LexerRule.html" />
-      <keyword name="LexerRule" id="Nuria::LexerRule::LexerRule" ref="classNuria_1_1LexerRule.html#ad3170a74508fea97828c2c8262bc7ed9" />
-      <keyword name="LexerRule" id="Nuria::LexerRule::LexerRule" ref="classNuria_1_1LexerRule.html#a8f93208641fd14a119295462f67f148a" />
-      <keyword name="name" id="Nuria::LexerRule::name" ref="classNuria_1_1LexerRule.html#abcd4408e01642b1020bf88eab4b75a6c" />
-      <keyword name="setName" id="Nuria::LexerRule::setName" ref="classNuria_1_1LexerRule.html#aba30c35941c18d59cbfccb34615f674e" />
       <keyword name="Nuria::LuaObject" id="Nuria::LuaObject" ref="classNuria_1_1LuaObject.html" />
       <keyword name="LuaObject" id="Nuria::LuaObject::LuaObject" ref="classNuria_1_1LuaObject.html#ab32e2490cfdff7d22b3039998aca2102" />
       <keyword name="LuaObject" id="Nuria::LuaObject::LuaObject" ref="classNuria_1_1LuaObject.html#a0c6d18f467b41d75498d8850a8a9bbfc" />
@@ -2132,28 +2095,6 @@
       <keyword name="MetaEnum" id="Nuria::MetaObject::MetaEnum" ref="classNuria_1_1MetaObject.html#ad67daea96ae7bf1b043aedbd3d03b347" />
       <keyword name="MetaField" id="Nuria::MetaObject::MetaField" ref="classNuria_1_1MetaObject.html#a41b1f71e5e0f0464ab08270e596fe727" />
       <keyword name="MetaMethod" id="Nuria::MetaObject::MetaMethod" ref="classNuria_1_1MetaObject.html#a38b8707e06af8c49103fee88fd57e979" />
-      <keyword name="Nuria::MiniLexer" id="Nuria::MiniLexer" ref="classNuria_1_1MiniLexer.html" />
-      <keyword name="TokenValue" id="Nuria::MiniLexer::TokenValue" ref="classNuria_1_1MiniLexer.html#a1f51b2117dfb431e3315772cf485f993" />
-      <keyword name="TokenValueList" id="Nuria::MiniLexer::TokenValueList" ref="classNuria_1_1MiniLexer.html#a52ccc650d3b025df8fa0075a362c7582" />
-      <keyword name="MiniLexer" id="Nuria::MiniLexer::MiniLexer" ref="classNuria_1_1MiniLexer.html#a8668edb7b592c77564b97515a3e46743" />
-      <keyword name="addDefinition" id="Nuria::MiniLexer::addDefinition" ref="classNuria_1_1MiniLexer.html#ad760a9826197cf3028a3b99141a65f7c" />
-      <keyword name="addRule" id="Nuria::MiniLexer::addRule" ref="classNuria_1_1MiniLexer.html#ad4ce1612c9d600726894b1dec788c710" />
-      <keyword name="addRule" id="Nuria::MiniLexer::addRule" ref="classNuria_1_1MiniLexer.html#ab0a631325910ee71850fa4238c6a96a5" />
-      <keyword name="addRule" id="Nuria::MiniLexer::addRule" ref="classNuria_1_1MiniLexer.html#ace4d7c900cc562cb738d3599bc1264c8" />
-      <keyword name="errorPosition" id="Nuria::MiniLexer::errorPosition" ref="classNuria_1_1MiniLexer.html#a439827c353784af5cc852cb92c8035f1" />
-      <keyword name="hasDefinition" id="Nuria::MiniLexer::hasDefinition" ref="classNuria_1_1MiniLexer.html#ac5c544b1a690b891063e919b4f81e174" />
-      <keyword name="hasRule" id="Nuria::MiniLexer::hasRule" ref="classNuria_1_1MiniLexer.html#a906c12301b9d90fb0f34837e38ca8062" />
-      <keyword name="hasStartDefinition" id="Nuria::MiniLexer::hasStartDefinition" ref="classNuria_1_1MiniLexer.html#a201dddc1c3e0d67215aebed5871cfa61" />
-      <keyword name="lastError" id="Nuria::MiniLexer::lastError" ref="classNuria_1_1MiniLexer.html#a9c00ca84a5f02e196b6ea13711aaf31d" />
-      <keyword name="length" id="Nuria::MiniLexer::length" ref="classNuria_1_1MiniLexer.html#a7317d92211c550627847ce731002d804" />
-      <keyword name="lex" id="Nuria::MiniLexer::lex" ref="classNuria_1_1MiniLexer.html#abb169395fc29d7fd5e66abfac1089273" />
-      <keyword name="matchSensitivity" id="Nuria::MiniLexer::matchSensitivity" ref="classNuria_1_1MiniLexer.html#a09a32a3b3c0df83a04a007abc96576c9" />
-      <keyword name="setMatchSensitivity" id="Nuria::MiniLexer::setMatchSensitivity" ref="classNuria_1_1MiniLexer.html#ad2e3061f2103f67206c78898c00d2531" />
-      <keyword name="token" id="Nuria::MiniLexer::token" ref="classNuria_1_1MiniLexer.html#ac469366e31196987042cc4b443b615da" />
-      <keyword name="tokenValue" id="Nuria::MiniLexer::tokenValue" ref="classNuria_1_1MiniLexer.html#a91f19faea60a1c31965f071d45171652" />
-      <keyword name="tokenValueList" id="Nuria::MiniLexer::tokenValueList" ref="classNuria_1_1MiniLexer.html#ad71c264e96c9c178122e0ef2b288f120" />
-      <keyword name="value" id="Nuria::MiniLexer::value" ref="classNuria_1_1MiniLexer.html#abe8923bf35d5bb29bf932cd35c870225" />
-      <keyword name="createInstanceFromDefinition" id="Nuria::MiniLexer::createInstanceFromDefinition" ref="classNuria_1_1MiniLexer.html#a11fc279c50979ddd249f229530b80dec" />
       <keyword name="Nuria::QtMetaObjectWrapper" id="Nuria::QtMetaObjectWrapper" ref="classNuria_1_1QtMetaObjectWrapper.html" />
       <keyword name="QtMetaObjectWrapper" id="Nuria::QtMetaObjectWrapper::QtMetaObjectWrapper" ref="classNuria_1_1QtMetaObjectWrapper.html#a61347ee14549a2544d25be6427546c71" />
       <keyword name="~QtMetaObjectWrapper" id="Nuria::QtMetaObjectWrapper::~QtMetaObjectWrapper" ref="classNuria_1_1QtMetaObjectWrapper.html#ac9d187438d57fa18f5ce654c31aca10f" />
@@ -2620,6 +2561,7 @@
       <file>dependencymanager_8hpp_source.html</file>
       <file>essentials_8hpp_source.html</file>
       <file>filetemplateloader_8hpp_source.html</file>
+      <file>httpbackend_8hpp_source.html</file>
       <file>httpclient_8hpp_source.html</file>
       <file>httpfilter_8hpp_source.html</file>
       <file>httpmultipartreader_8hpp_source.html</file>
@@ -2627,7 +2569,6 @@
       <file>httpparser_8hpp_source.html</file>
       <file>httppostbodyreader_8hpp_source.html</file>
       <file>httpserver_8hpp_source.html</file>
-      <file>httptcptransport_8hpp_source.html</file>
       <file>httptransport_8hpp_source.html</file>
       <file>httpurlencodedreader_8hpp_source.html</file>
       <file>httpwriter_8hpp_source.html</file>
@@ -2640,7 +2581,6 @@
       <file>luavalue_8hpp_source.html</file>
       <file>memorytemplateloader_8hpp_source.html</file>
       <file>metaobject_8hpp_source.html</file>
-      <file>minilexer_8hpp_source.html</file>
       <file>network__global_8hpp_source.html</file>
       <file>qtmetaobjectwrapper_8hpp_source.html</file>
       <file>referencedevice_8hpp_source.html</file>
@@ -2688,6 +2628,8 @@
       <file>classNuria_1_1Debug-members.html</file>
       <file>classNuria_1_1DebugIgnore.html</file>
       <file>classNuria_1_1DebugIgnore-members.html</file>
+      <file>classNuria_1_1Dependency.html</file>
+      <file>classNuria_1_1Dependency-members.html</file>
       <file>classNuria_1_1DependencyManager.html</file>
       <file>classNuria_1_1DependencyManager.png</file>
       <file>classNuria_1_1DependencyManager-members.html</file>
@@ -2696,6 +2638,9 @@
       <file>classNuria_1_1FileTemplateLoader.html</file>
       <file>classNuria_1_1FileTemplateLoader.png</file>
       <file>classNuria_1_1FileTemplateLoader-members.html</file>
+      <file>classNuria_1_1HttpBackend.html</file>
+      <file>classNuria_1_1HttpBackend.png</file>
+      <file>classNuria_1_1HttpBackend-members.html</file>
       <file>classNuria_1_1HttpClient.html</file>
       <file>classNuria_1_1HttpClient.png</file>
       <file>classNuria_1_1HttpClient-members.html</file>
@@ -2716,9 +2661,6 @@
       <file>classNuria_1_1HttpServer.html</file>
       <file>classNuria_1_1HttpServer.png</file>
       <file>classNuria_1_1HttpServer-members.html</file>
-      <file>classNuria_1_1HttpTcpTransport.html</file>
-      <file>classNuria_1_1HttpTcpTransport.png</file>
-      <file>classNuria_1_1HttpTcpTransport-members.html</file>
       <file>classNuria_1_1HttpTransport.html</file>
       <file>classNuria_1_1HttpTransport.png</file>
       <file>classNuria_1_1HttpTransport-members.html</file>
@@ -2734,10 +2676,6 @@
       <file>classNuria_1_1LazyCondition-members.html</file>
       <file>classNuria_1_1LazyConditionWalker.html</file>
       <file>classNuria_1_1LazyConditionWalker-members.html</file>
-      <file>classNuria_1_1LexerDefinition.html</file>
-      <file>classNuria_1_1LexerDefinition-members.html</file>
-      <file>classNuria_1_1LexerRule.html</file>
-      <file>classNuria_1_1LexerRule-members.html</file>
       <file>classNuria_1_1LuaObject.html</file>
       <file>classNuria_1_1LuaObject-members.html</file>
       <file>classNuria_1_1LuaRuntime.html</file>
@@ -2759,9 +2697,6 @@
       <file>classNuria_1_1MetaObject.html</file>
       <file>classNuria_1_1MetaObject.png</file>
       <file>classNuria_1_1MetaObject-members.html</file>
-      <file>classNuria_1_1MiniLexer.html</file>
-      <file>classNuria_1_1MiniLexer.png</file>
-      <file>classNuria_1_1MiniLexer-members.html</file>
       <file>classNuria_1_1QtMetaObjectWrapper.html</file>
       <file>classNuria_1_1QtMetaObjectWrapper.png</file>
       <file>classNuria_1_1QtMetaObjectWrapper-members.html</file>
@@ -2900,6 +2835,7 @@
       <file>functions_type.html</file>
       <file>functions_type.html</file>
       <file>functions_type.html</file>
+      <file>functions_enum.html</file>
       <file>functions_enum.html</file>
       <file>functions_enum.html</file>
       <file>functions_enum.html</file>

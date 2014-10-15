@@ -112,7 +112,6 @@ Inheritance diagram for Nuria::HttpTransport:</div>
  <div class="center">
   <img src="classNuria_1_1HttpTransport.png" usemap="#Nuria::HttpTransport_map" alt=""/>
   <map id="Nuria::HttpTransport_map" name="Nuria::HttpTransport_map">
-<area href="classNuria_1_1HttpTcpTransport.html" title="HttpClient transport for TCP with or without SSL connections. " alt="Nuria::HttpTcpTransport" shape="rect" coords="0,112,146,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -146,6 +145,8 @@ Public Slots</h2></td></tr>
 <tr class="separator:a7362421df6438ad8aed5750200bf187e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08d96a532ae9a717447447857050ab19"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpTransport.html#a08d96a532ae9a717447447857050ab19">forceClose</a> ()=0</td></tr>
 <tr class="separator:a08d96a532ae9a717447447857050ab19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2cd952e7478dbbfb565e097012176b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpTransport.html#ae2cd952e7478dbbfb565e097012176b0">init</a> ()</td></tr>
+<tr class="separator:ae2cd952e7478dbbfb565e097012176b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signals</h2></td></tr>
@@ -156,10 +157,12 @@ Signals</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acab90cf90734c4b071b46564f1c8be96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpTransport.html#acab90cf90734c4b071b46564f1c8be96">HttpTransport</a> (QObject *parent=0)</td></tr>
-<tr class="separator:acab90cf90734c4b071b46564f1c8be96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a9250532677c06f65593de4e379b9a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpTransport.html#a7a9250532677c06f65593de4e379b9a4">HttpTransport</a> (<a class="el" href="classNuria_1_1HttpBackend.html">HttpBackend</a> *<a class="el" href="classNuria_1_1HttpTransport.html#a74212794f503d8b453aa17b748897d07">backend</a>, <a class="el" href="classNuria_1_1HttpServer.html">HttpServer</a> *server)</td></tr>
+<tr class="separator:a7a9250532677c06f65593de4e379b9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a374c5779fdfd934f4b0014703bc3ae7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpTransport.html#a374c5779fdfd934f4b0014703bc3ae7a">~HttpTransport</a> ()</td></tr>
 <tr class="separator:a374c5779fdfd934f4b0014703bc3ae7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74212794f503d8b453aa17b748897d07"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNuria_1_1HttpBackend.html">HttpBackend</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpTransport.html#a74212794f503d8b453aa17b748897d07">backend</a> ()</td></tr>
+<tr class="separator:a74212794f503d8b453aa17b748897d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5d617f2e79c6d0370b481f48f6280bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpTransport.html#ad5d617f2e79c6d0370b481f48f6280bd">currentRequestCount</a> () const </td></tr>
 <tr class="separator:ad5d617f2e79c6d0370b481f48f6280bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66f5a78ede0ee71954a9ab8867bbca99"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpTransport.html#a66f5a78ede0ee71954a9ab8867bbca99">isOpen</a> () const =0</td></tr>
@@ -187,6 +190,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:ac9d5f866f1b6a250da0934bf9702147c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpTransport.html#ac9d5f866f1b6a250da0934bf9702147c">addToServer</a> ()</td></tr>
+<tr class="separator:ac9d5f866f1b6a250da0934bf9702147c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a760cf6eae3aeb0b6d0bd063f115349"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpTransport.html#a8a760cf6eae3aeb0b6d0bd063f115349">bytesSent</a> (<a class="el" href="classNuria_1_1HttpClient.html">HttpClient</a> *client, qint64 bytes)</td></tr>
 <tr class="separator:a8a760cf6eae3aeb0b6d0bd063f115349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a359198de90e7ec33de89e135c822cb86"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpTransport.html#a359198de90e7ec33de89e135c822cb86">close</a> (<a class="el" href="classNuria_1_1HttpClient.html">HttpClient</a> *client)=0</td></tr>
@@ -209,7 +214,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpClient</b></td><
 <p>A transport is responsible to receive data from and send data back to a HTTP client through a specific connection. The connection can be anything which can be represented as <a class="el" href="classNuria_1_1HttpTransport.html" title="Abstract data transport for HttpClient. ">HttpTransport</a>, e.g. TCP, SSL or a memory buffer.</p>
 <dl class="section user"><dt>Implementing a transport</dt><dd></dd></dl>
 <p>To implement a transport, you first sub-class <a class="el" href="classNuria_1_1HttpTransport.html" title="Abstract data transport for HttpClient. ">HttpTransport</a>. When you receive a new request, you instantiate <a class="el" href="classNuria_1_1HttpClient.html" title="The HttpClient class represents a connection to a client. ">HttpClient</a> and use <a class="el" href="classNuria_1_1HttpTransport.html#a900acd9d07249d2d9c84374794eb290b">readFromRemote()</a> to push HTTP data into the client instance. The client will eventually write a response by calling <a class="el" href="classNuria_1_1HttpTransport.html#abbb97ec5fb87b2593eb1c85e233fcd34">sendToRemote()</a> and later call <a class="el" href="classNuria_1_1HttpTransport.html#a359198de90e7ec33de89e135c822cb86">close()</a> when the response has been sent.</p>
-<p>The transport is responsible for keeping track of its <a class="el" href="classNuria_1_1HttpClient.html" title="The HttpClient class represents a connection to a client. ">HttpClient</a> instances. </p>
+<p>The transport is responsible for keeping track of its <a class="el" href="classNuria_1_1HttpClient.html" title="The HttpClient class represents a connection to a client. ">HttpClient</a> instances.</p>
+<dl class="section note"><dt>Note</dt><dd>The <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a> may choose to move a <a class="el" href="classNuria_1_1HttpTransport.html" title="Abstract data transport for HttpClient. ">HttpTransport</a> to another thread for parallel execution. This means that the <a class="el" href="classNuria_1_1HttpTransport.html" title="Abstract data transport for HttpClient. ">HttpTransport</a> must be able to be run in another thread than its <a class="el" href="classNuria_1_1HttpBackend.html" title="Base class for HttpServer back-ends. ">HttpBackend</a>. </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="add8a3a456073e88dd34dcdaca4ee6342"></a>
 <div class="memitem">
@@ -292,7 +298,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpClient</b></td><
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="acab90cf90734c4b071b46564f1c8be96"></a>
+<a class="anchor" id="a7a9250532677c06f65593de4e379b9a4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -302,9 +308,19 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpClient</b></td><
         <tr>
           <td class="memname">Nuria::HttpTransport::HttpTransport </td>
           <td>(</td>
-          <td class="paramtype">QObject *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>0</code></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classNuria_1_1HttpBackend.html">HttpBackend</a> *&#160;</td>
+          <td class="paramname"><em>backend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classNuria_1_1HttpServer.html">HttpServer</a> *&#160;</td>
+          <td class="paramname"><em>server</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -313,7 +329,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpClient</b></td><
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Constructor. <em>parent</em> is expected to be the HTTP server instance. </p>
+<p>Constructor. <em>server</em> will be automatically the owner. </p>
 
 </div>
 </div>
@@ -334,6 +350,47 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpClient</b></td><
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac9d5f866f1b6a250da0934bf9702147c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Nuria::HttpTransport::addToServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Called by <b>implementations</b> after their initialization routine to tell the <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a> that the transport can now be moved to a processing thread. Returns <code>true</code> if the instance has been moved.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classNuria_1_1HttpTransport.html#ae2cd952e7478dbbfb565e097012176b0">init</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a74212794f503d8b453aa17b748897d07"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classNuria_1_1HttpBackend.html">HttpBackend</a>* Nuria::HttpTransport::backend </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the <a class="el" href="classNuria_1_1HttpBackend.html" title="Base class for HttpServer back-ends. ">HttpBackend</a> associated with this transport. </p>
+
+</div>
+</div>
 <a class="anchor" id="a8a760cf6eae3aeb0b6d0bd063f115349"></a>
 <div class="memitem">
 <div class="memproto">
@@ -391,8 +448,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpClient</b></td><
 </table>
 </div><div class="memdoc">
 <p>Used by <em>client</em> to tell the implementation that it's done. </p>
-
-<p>Implemented in <a class="el" href="classNuria_1_1HttpTcpTransport.html#a21945f525530c62f80f753033dea3943">Nuria::HttpTcpTransport</a>.</p>
 
 </div>
 </div>
@@ -485,6 +540,30 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpClient</b></td><
 
 </div>
 </div>
+<a class="anchor" id="ae2cd952e7478dbbfb565e097012176b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Nuria::HttpTransport::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Called by the <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a> when the <a class="el" href="classNuria_1_1HttpTransport.html" title="Abstract data transport for HttpClient. ">HttpTransport</a> was moved by <a class="el" href="classNuria_1_1HttpTransport.html#ac9d5f866f1b6a250da0934bf9702147c">addToServer()</a>. If the server didn't move the transport, <a class="el" href="classNuria_1_1HttpTransport.html#ac9d5f866f1b6a250da0934bf9702147c">addToServer()</a> will call this function. The default implementation does nothing. </p>
+
+</div>
+</div>
 <a class="anchor" id="a66f5a78ede0ee71954a9ab8867bbca99"></a>
 <div class="memitem">
 <div class="memproto">
@@ -506,8 +585,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpClient</b></td><
 </table>
 </div><div class="memdoc">
 <p>Returns <code>true</code> if the transport is open. </p>
-
-<p>Implemented in <a class="el" href="classNuria_1_1HttpTcpTransport.html#af3d190da23d4bd5eb5269c7a5118826c">Nuria::HttpTcpTransport</a>.</p>
 
 </div>
 </div>
@@ -533,8 +610,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpClient</b></td><
 </div><div class="memdoc">
 <p>Returns <code>true</code> if the connection is somehow protected against external eavesdropping, e.g. through encryption. The default implementation returns <code>false</code>. </p>
 
-<p>Reimplemented in <a class="el" href="classNuria_1_1HttpTcpTransport.html#abb1d028f311eba422ca60907e9c5a689">Nuria::HttpTcpTransport</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a64dd5edfdd7f4f173eaef8d75dcb450b"></a>
@@ -559,8 +634,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpClient</b></td><
 </div><div class="memdoc">
 <p>Returns the local address to which the peer is connected. The default implementation returns QHostAddress::Null. </p>
 
-<p>Reimplemented in <a class="el" href="classNuria_1_1HttpTcpTransport.html#ae06ea515cd82fdda18fe11d725011214">Nuria::HttpTcpTransport</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="a7dfe4ab9dfa153201751c0a2c7bacae9"></a>
@@ -584,8 +657,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpClient</b></td><
 </table>
 </div><div class="memdoc">
 <p>Returns the local port to which the peer is connected. The default implementation returns 0. </p>
-
-<p>Reimplemented in <a class="el" href="classNuria_1_1HttpTcpTransport.html#a2cdb86603e77d04088673e7c707d3f6b">Nuria::HttpTcpTransport</a>.</p>
 
 </div>
 </div>
@@ -627,8 +698,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpClient</b></td><
 </div><div class="memdoc">
 <p>Returns the address of the connected peer. The default implementation returns QHostAddress::Null. </p>
 
-<p>Reimplemented in <a class="el" href="classNuria_1_1HttpTcpTransport.html#aa897e5489c5fba0fbbec1c62ce091a2e">Nuria::HttpTcpTransport</a>.</p>
-
 </div>
 </div>
 <a class="anchor" id="aeb9d6b995670eb60895a2c1a5ed33704"></a>
@@ -652,8 +721,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpClient</b></td><
 </table>
 </div><div class="memdoc">
 <p>Returns the port of the connected peer. The default implementation returns 0. </p>
-
-<p>Reimplemented in <a class="el" href="classNuria_1_1HttpTcpTransport.html#aced90d1658ef43035ac7f5f1d0a47481">Nuria::HttpTcpTransport</a>.</p>
 
 </div>
 </div>
@@ -724,8 +791,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpClient</b></td><
 </table>
 </div><div class="memdoc">
 <p>Used by <em>client</em> to send <em>data</em> to the remote party. </p>
-
-<p>Implemented in <a class="el" href="classNuria_1_1HttpTcpTransport.html#a6af2b5578a4cb93af65370b3fda731bf">Nuria::HttpTcpTransport</a>.</p>
 
 </div>
 </div>
@@ -872,8 +937,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpClient</b></td><
 </div><div class="memdoc">
 <p>Returns the type of the transport. The default implementation returns <code>Custom</code>. </p>
 
-<p>Reimplemented in <a class="el" href="classNuria_1_1HttpTcpTransport.html#adaad49cb8894cf31f119d152b60a6db8">Nuria::HttpTcpTransport</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -882,7 +945,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpClient</b></td><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 5 2014 20:26:24 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 15 2014 23:25:11 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

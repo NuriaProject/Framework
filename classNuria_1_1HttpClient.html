@@ -181,6 +181,11 @@ QByteArray &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <a class="el" href="classNuria_1_1HttpClient.html#a57e08632db08dd28f009b84fda78ec83a7ec0142b9cfb1132f6a2421c1e019f47">Http1_1</a>
  }</td></tr>
 <tr class="separator:a57e08632db08dd28f009b84fda78ec83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ac02163d325710c5f3ffec56078575"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a18ac02163d325710c5f3ffec56078575">RedirectMode</a> { <a class="el" href="classNuria_1_1HttpClient.html#a18ac02163d325710c5f3ffec56078575a02bce93bff905887ad2233110bf9c49e">RedirectMode::Keep</a> = 0, 
+<a class="el" href="classNuria_1_1HttpClient.html#a18ac02163d325710c5f3ffec56078575ad60c37455d29319090c93628a41686b3">RedirectMode::ForceSecure</a>, 
+<a class="el" href="classNuria_1_1HttpClient.html#a18ac02163d325710c5f3ffec56078575ab49568af239a505359224262fe4eaad0">RedirectMode::ForceUnsecure</a>
+ }</td></tr>
+<tr class="separator:a18ac02163d325710c5f3ffec56078575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95d06914d49c078b8ae6946a8194fe25"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a95d06914d49c078b8ae6946a8194fe25">StandardFilter</a> { <a class="el" href="classNuria_1_1HttpClient.html#a95d06914d49c078b8ae6946a8194fe25a80faed4fe6b4a3376f661656bda8fe1d">DeflateFilter</a> = 0, 
 <a class="el" href="classNuria_1_1HttpClient.html#a95d06914d49c078b8ae6946a8194fe25a53afa553033242a6f7fcd3cf00b40652">GzipFilter</a> = 1
  }</td></tr>
@@ -283,6 +288,10 @@ qint64&#160;</td><td class="memItemRight" valign="bottom"><b>pos</b> () const ov
 <tr class="separator:ac574e868f3bd5a28e2803156822fc5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5563131a5a172eb1c74ed49ecdf0beca"><td class="memItemLeft" align="right" valign="top">qint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a5563131a5a172eb1c74ed49ecdf0beca">rangeStart</a> () const </td></tr>
 <tr class="separator:a5563131a5a172eb1c74ed49ecdf0beca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49c58cd3eb01178f4ea766c03f7bf67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#aa49c58cd3eb01178f4ea766c03f7bf67">redirectClient</a> (const QString &amp;localPath, <a class="el" href="classNuria_1_1HttpClient.html#a18ac02163d325710c5f3ffec56078575">RedirectMode</a> mode=<a class="el" href="classNuria_1_1HttpClient.html#a18ac02163d325710c5f3ffec56078575a02bce93bff905887ad2233110bf9c49e">RedirectMode::Keep</a>, int statusCode=307)</td></tr>
+<tr class="separator:aa49c58cd3eb01178f4ea766c03f7bf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344bf2c25f7e7876b93c9170e9487391"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a344bf2c25f7e7876b93c9170e9487391">redirectClient</a> (const QUrl &amp;remoteUrl, int statusCode=307)</td></tr>
+<tr class="separator:a344bf2c25f7e7876b93c9170e9487391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd497a706724211065232876236b12fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#abd497a706724211065232876236b12fc">removeCookie</a> (const QByteArray &amp;name)</td></tr>
 <tr class="separator:abd497a706724211065232876236b12fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae56772adbb8f755ecb3a6d9020c2b501"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#ae56772adbb8f755ecb3a6d9020c2b501">removeFilter</a> (<a class="el" href="classNuria_1_1HttpClient.html#a95d06914d49c078b8ae6946a8194fe25">StandardFilter</a> filter)</td></tr>
@@ -530,6 +539,38 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpTransport</b></t
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a57e08632db08dd28f009b84fda78ec83a7ec0142b9cfb1132f6a2421c1e019f47"></a>Http1_1&#160;</td><td class="fielddoc">
 <p>Http 1.1. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a18ac02163d325710c5f3ffec56078575"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classNuria_1_1HttpClient.html#a18ac02163d325710c5f3ffec56078575">Nuria::HttpClient::RedirectMode</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Modes which decide to which specific URL the client is redirected to. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a18ac02163d325710c5f3ffec56078575a02bce93bff905887ad2233110bf9c49e"></a>Keep&#160;</td><td class="fielddoc">
+<p>Don't change the protocol encryption. Keeps the secure or unsecure connection. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a18ac02163d325710c5f3ffec56078575ad60c37455d29319090c93628a41686b3"></a>ForceSecure&#160;</td><td class="fielddoc">
+<p>Redirect the client to the SSL secured path. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a18ac02163d325710c5f3ffec56078575ab49568af239a505359224262fe4eaad0"></a>ForceUnsecure&#160;</td><td class="fielddoc">
+<p>Redirect the client to the unsecured path. </p>
 </td></tr>
 </table>
 
@@ -1444,6 +1485,70 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpTransport</b></t
 
 </div>
 </div>
+<a class="anchor" id="aa49c58cd3eb01178f4ea766c03f7bf67"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Nuria::HttpClient::redirectClient </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>localPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNuria_1_1HttpClient.html#a18ac02163d325710c5f3ffec56078575">RedirectMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em> = <code><a class="el" href="classNuria_1_1HttpClient.html#a18ac02163d325710c5f3ffec56078575a02bce93bff905887ad2233110bf9c49e">RedirectMode::Keep</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>statusCode</em> = <code>307</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sends a HTTP redirect response, telling the client to go to <em>localPath</em>. Returns <code>true</code> if no headers has been sent yet.</p>
+<p>Use this version of this function when you're redirecting to a URL which is served by this server.</p>
+<p>For redirections to work properly, the Nuria::Server instance must have been told the FQDN ("fully qualified domain name").</p>
+<dl class="section note"><dt>Note</dt><dd>HTTP/1.0 clients will receive a status code of 301 instead of 307. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a344bf2c25f7e7876b93c9170e9487391"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Nuria::HttpClient::redirectClient </td>
+          <td>(</td>
+          <td class="paramtype">const QUrl &amp;&#160;</td>
+          <td class="paramname"><em>remoteUrl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>statusCode</em> = <code>307</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sends a HTTP redirect response, telling the client to go to <em>remoteUrl</em>. This should only be used for URLs not served by this server. Returns <code>true</code> if no headers has been sent yet.</p>
+<dl class="section note"><dt>Note</dt><dd>HTTP/1.0 clients will receive a status code of 301 instead of 307. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="abd497a706724211065232876236b12fc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2027,7 +2132,7 @@ Do not combine this with pipe(). </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets a <a class="el" href="classNuria_1_1SlotInfo.html">SlotInfo</a> for this client. This is needed when you're sub-classing <a class="el" href="classNuria_1_1HttpNode.html" title="The HttpNode class represents a virtual directory (or a virtual file) HttpServer uses these nodes to ...">HttpNode</a> with non-streaming clients. </p>
+<p>Sets a <a class="el" href="classNuria_1_1SlotInfo.html">SlotInfo</a> for this client. This is needed when you're sub-classing <a class="el" href="classNuria_1_1HttpNode.html" title="Virtual directory for HttpServer. ">HttpNode</a> with non-streaming clients. </p>
 
 </div>
 </div>
@@ -2153,7 +2258,7 @@ Do not combine this with pipe(). </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 5 2014 20:26:24 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 15 2014 23:25:11 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

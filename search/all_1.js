@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['backend',['backend',['../classNuria_1_1HttpTransport.html#a74212794f503d8b453aa17b748897d07',1,'Nuria::HttpTransport']]],
+  ['backends',['backends',['../classNuria_1_1HttpServer.html#aebd6bc3b678fded2cab31cd5753c0aa1',1,'Nuria::HttpServer']]],
   ['badendblockname',['BadEndblockName',['../classNuria_1_1TemplateError.html#a9ea4ecd305ca65494e72ecf1234a8a12a4cde0e9fd78dd67917c69530cbc44fb8',1,'Nuria::TemplateError']]],
   ['bind',['bind',['../classNuria_1_1Callback.html#a95ee8208a9e76e924768cc57ab3ebbc2',1,'Nuria::Callback']]],
   ['bindlist',['bindList',['../classNuria_1_1Callback.html#a928f630d8eab16fc4f75680bd54d76aa',1,'Nuria::Callback']]],

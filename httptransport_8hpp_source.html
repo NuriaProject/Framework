@@ -117,120 +117,130 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceNuria.html">Nuria</a> {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span>HttpTransportPrivate;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span>HttpClient;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html">   47</a></span>&#160;<span class="keyword">class </span>NURIA_NETWORK_EXPORT <a class="code" href="classNuria_1_1HttpTransport.html">HttpTransport</a> : <span class="keyword">public</span> QObject {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        Q_OBJECT</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        Q_ENUMS(<a class="code" href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51">Type</a> <a class="code" href="classNuria_1_1HttpTransport.html#a92cb544dcc00154bab30811ab0d7e675">Timeout</a>)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// Default configuration</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#add8a3a456073e88dd34dcdaca4ee6342a3ee8c0d819490f3aac184b66d003908a">   56</a></span>&#160;                MaxRequestsDefault = 10,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#add8a3a456073e88dd34dcdaca4ee6342ae3557a8773316dde57e16b94c55b5cb9">   59</a></span>&#160;                DefaultConnectTimeout = 2000,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#add8a3a456073e88dd34dcdaca4ee6342a8e1e1d75344128f4c5900f2bd7eed004">   62</a></span>&#160;                DefaultDataTimeout = 5000,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#add8a3a456073e88dd34dcdaca4ee6342af1ea7d70446bfb9d68b705b0868da803">   65</a></span>&#160;                DefaultKeepAliveTimeout = 30000,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        };</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        </div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51">   70</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51">Type</a> {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51a379ef6b8b95290123d1f866aa907a0a5">   73</a></span>&#160;                Unknown = 0,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51a0be1a96f68aa1a44b10377f0b2ccfbd0">   76</a></span>&#160;                TCP = 1,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                </div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51a3c03d91e9f0aaa5588ce23be181044cd">   79</a></span>&#160;                SSL = 2,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51a626b2ae71fdbcc5a90007e644dc48624">   82</a></span>&#160;                Memory = 3,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                </div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51afdc6ae0d5537cf7556ea2543091ddda7">   85</a></span>&#160;                Custom = 4</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        };</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        </div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a92cb544dcc00154bab30811ab0d7e675">   92</a></span>&#160;        <span class="keyword">enum</span> Timeout {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                </div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a92cb544dcc00154bab30811ab0d7e675afbb613d76310e888d16395f9ceacc9b8">   95</a></span>&#160;                ConnectTimeout = 0,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                </div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a92cb544dcc00154bab30811ab0d7e675abd54d3d57612bf135362eb03215bf904">  101</a></span>&#160;                DataTimeout = 1,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                </div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a92cb544dcc00154bab30811ab0d7e675af0099919831e7b6d18ebffeb5043995d">  108</a></span>&#160;                KeepAliveTimeout = 2</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        };</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classNuria_1_1HttpTransport.html">HttpTransport</a> (QObject *parent = 0);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        ~<a class="code" href="classNuria_1_1HttpTransport.html">HttpTransport</a> ();</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keyword">virtual</span> Type type () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isSecure () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span>HttpBackend;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>HttpClient;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span>HttpServer;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html">   54</a></span>&#160;<span class="keyword">class </span>NURIA_NETWORK_EXPORT <a class="code" href="classNuria_1_1HttpTransport.html">HttpTransport</a> : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        Q_OBJECT</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        Q_ENUMS(<a class="code" href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51">Type</a> <a class="code" href="classNuria_1_1HttpTransport.html#a92cb544dcc00154bab30811ab0d7e675">Timeout</a>)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">// Default configuration</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#add8a3a456073e88dd34dcdaca4ee6342a3ee8c0d819490f3aac184b66d003908a">   63</a></span>&#160;                MaxRequestsDefault = 10,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#add8a3a456073e88dd34dcdaca4ee6342ae3557a8773316dde57e16b94c55b5cb9">   66</a></span>&#160;                DefaultConnectTimeout = 2000,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#add8a3a456073e88dd34dcdaca4ee6342a8e1e1d75344128f4c5900f2bd7eed004">   69</a></span>&#160;                DefaultDataTimeout = 5000,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#add8a3a456073e88dd34dcdaca4ee6342af1ea7d70446bfb9d68b705b0868da803">   72</a></span>&#160;                DefaultKeepAliveTimeout = 30000,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        };</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51">   77</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51">Type</a> {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51a379ef6b8b95290123d1f866aa907a0a5">   80</a></span>&#160;                Unknown = 0,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51a0be1a96f68aa1a44b10377f0b2ccfbd0">   83</a></span>&#160;                TCP = 1,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51a3c03d91e9f0aaa5588ce23be181044cd">   86</a></span>&#160;                SSL = 2,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51a626b2ae71fdbcc5a90007e644dc48624">   89</a></span>&#160;                Memory = 3,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51afdc6ae0d5537cf7556ea2543091ddda7">   92</a></span>&#160;                Custom = 4</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        };</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a92cb544dcc00154bab30811ab0d7e675">   99</a></span>&#160;        <span class="keyword">enum</span> Timeout {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a92cb544dcc00154bab30811ab0d7e675afbb613d76310e888d16395f9ceacc9b8">  102</a></span>&#160;                ConnectTimeout = 0,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a92cb544dcc00154bab30811ab0d7e675abd54d3d57612bf135362eb03215bf904">  108</a></span>&#160;                DataTimeout = 1,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classNuria_1_1HttpTransport.html#a92cb544dcc00154bab30811ab0d7e675af0099919831e7b6d18ebffeb5043995d">  115</a></span>&#160;                KeepAliveTimeout = 2</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        };</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classNuria_1_1HttpTransport.html">HttpTransport</a> (<a class="code" href="classNuria_1_1HttpBackend.html">HttpBackend</a> *backend, <a class="code" href="classNuria_1_1HttpServer.html">HttpServer</a> *server);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        ~<a class="code" href="classNuria_1_1HttpTransport.html">HttpTransport</a> ();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keyword">virtual</span> Type type () <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keyword">virtual</span> QHostAddress localAddress () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keyword">virtual</span> quint16 localPort () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keyword">virtual</span> QHostAddress peerAddress () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keyword">virtual</span> quint16 peerPort () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isOpen () <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordtype">int</span> currentRequestCount () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordtype">int</span> maxRequests () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordtype">void</span> setMaxRequests (<span class="keywordtype">int</span> count);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordtype">int</span> timeout (Timeout which);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordtype">void</span> setTimeout (Timeout which, <span class="keywordtype">int</span> msec);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        </div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> flush (<a class="code" href="classNuria_1_1HttpClient.html">HttpClient</a> *client);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> forceClose () = 0;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        </div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;signals:</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isSecure () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keyword">virtual</span> QHostAddress localAddress () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keyword">virtual</span> quint16 localPort () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keyword">virtual</span> QHostAddress peerAddress () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keyword">virtual</span> quint16 peerPort () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> isOpen () <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordtype">int</span> currentRequestCount () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordtype">int</span> maxRequests () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordtype">void</span> setMaxRequests (<span class="keywordtype">int</span> count);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordtype">int</span> timeout (Timeout which);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordtype">void</span> setTimeout (Timeout which, <span class="keywordtype">int</span> msec);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <a class="code" href="classNuria_1_1HttpBackend.html">HttpBackend</a> *backend ();</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> flush (<a class="code" href="classNuria_1_1HttpClient.html">HttpClient</a> *client);</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordtype">void</span> connectionLost ();</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordtype">void</span> timeoutChanged (Timeout timeout, <span class="keywordtype">int</span> msec);</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        </div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> forceClose () = 0;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classNuria_1_1HttpClient.html">HttpClient</a>;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordtype">void</span> setCurrentRequestCount (<span class="keywordtype">int</span> count);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> close (<a class="code" href="classNuria_1_1HttpClient.html">HttpClient</a> *client) = 0;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> init ();</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;signals:</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        </div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> sendToRemote (<a class="code" href="classNuria_1_1HttpClient.html">HttpClient</a> *client, <span class="keyword">const</span> QByteArray &amp;data) = 0;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        </div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordtype">void</span> readFromRemote (<a class="code" href="classNuria_1_1HttpClient.html">HttpClient</a> *client, QByteArray &amp;data);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordtype">void</span> connectionLost ();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordtype">void</span> timeoutChanged (Timeout timeout, <span class="keywordtype">int</span> msec);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classNuria_1_1HttpClient.html">HttpClient</a>;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordtype">void</span> setCurrentRequestCount (<span class="keywordtype">int</span> count);</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordtype">void</span> bytesSent (<a class="code" href="classNuria_1_1HttpClient.html">HttpClient</a> *client, qint64 bytes);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        </div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        HttpTransportPrivate *d_ptr;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;};</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classNuria_1_1HttpTransport.html#a92cb544dcc00154bab30811ab0d7e675">Nuria::HttpTransport::Timeout</a>)</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">#endif // NURIA_HTTPTRANSPORT_HPP</span></div>
-<div class="ttc" id="classNuria_1_1HttpTransport_html_a92cb544dcc00154bab30811ab0d7e675"><div class="ttname"><a href="classNuria_1_1HttpTransport.html#a92cb544dcc00154bab30811ab0d7e675">Nuria::HttpTransport::Timeout</a></div><div class="ttdeci">Timeout</div><div class="ttdef"><b>Definition:</b> httptransport.hpp:92</div></div>
-<div class="ttc" id="classNuria_1_1HttpTransport_html_a6692eceb55cabc1706bee24e49104a51"><div class="ttname"><a href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51">Nuria::HttpTransport::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> httptransport.hpp:70</div></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> close (<a class="code" href="classNuria_1_1HttpClient.html">HttpClient</a> *client) = 0;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> sendToRemote (<a class="code" href="classNuria_1_1HttpClient.html">HttpClient</a> *client, <span class="keyword">const</span> QByteArray &amp;data) = 0;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordtype">void</span> readFromRemote (<a class="code" href="classNuria_1_1HttpClient.html">HttpClient</a> *client, QByteArray &amp;data);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordtype">void</span> bytesSent (<a class="code" href="classNuria_1_1HttpClient.html">HttpClient</a> *client, qint64 bytes);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordtype">bool</span> addToServer ();</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        HttpTransportPrivate *d_ptr;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;};</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;}</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classNuria_1_1HttpTransport.html#a92cb544dcc00154bab30811ab0d7e675">Nuria::HttpTransport::Timeout</a>)</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor">#endif // NURIA_HTTPTRANSPORT_HPP</span></div>
+<div class="ttc" id="classNuria_1_1HttpTransport_html_a92cb544dcc00154bab30811ab0d7e675"><div class="ttname"><a href="classNuria_1_1HttpTransport.html#a92cb544dcc00154bab30811ab0d7e675">Nuria::HttpTransport::Timeout</a></div><div class="ttdeci">Timeout</div><div class="ttdef"><b>Definition:</b> httptransport.hpp:99</div></div>
+<div class="ttc" id="classNuria_1_1HttpTransport_html_a6692eceb55cabc1706bee24e49104a51"><div class="ttname"><a href="classNuria_1_1HttpTransport.html#a6692eceb55cabc1706bee24e49104a51">Nuria::HttpTransport::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> httptransport.hpp:77</div></div>
 <div class="ttc" id="namespaceNuria_html"><div class="ttname"><a href="namespaceNuria.html">Nuria</a></div><div class="ttdef"><b>Definition:</b> abstractsessionmanager.hpp:25</div></div>
-<div class="ttc" id="classNuria_1_1HttpTransport_html"><div class="ttname"><a href="classNuria_1_1HttpTransport.html">Nuria::HttpTransport</a></div><div class="ttdoc">Abstract data transport for HttpClient. </div><div class="ttdef"><b>Definition:</b> httptransport.hpp:47</div></div>
+<div class="ttc" id="classNuria_1_1HttpTransport_html"><div class="ttname"><a href="classNuria_1_1HttpTransport.html">Nuria::HttpTransport</a></div><div class="ttdoc">Abstract data transport for HttpClient. </div><div class="ttdef"><b>Definition:</b> httptransport.hpp:54</div></div>
+<div class="ttc" id="classNuria_1_1HttpServer_html"><div class="ttname"><a href="classNuria_1_1HttpServer.html">Nuria::HttpServer</a></div><div class="ttdoc">Server for the HyperText Transfer Protocol. </div><div class="ttdef"><b>Definition:</b> httpserver.hpp:72</div></div>
+<div class="ttc" id="classNuria_1_1HttpBackend_html"><div class="ttname"><a href="classNuria_1_1HttpBackend.html">Nuria::HttpBackend</a></div><div class="ttdoc">Base class for HttpServer back-ends. </div><div class="ttdef"><b>Definition:</b> httpbackend.hpp:33</div></div>
 <div class="ttc" id="classNuria_1_1HttpClient_html"><div class="ttname"><a href="classNuria_1_1HttpClient.html">Nuria::HttpClient</a></div><div class="ttdoc">The HttpClient class represents a connection to a client. </div><div class="ttdef"><b>Definition:</b> httpclient.hpp:116</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 5 2014 20:26:24 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 15 2014 23:25:11 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

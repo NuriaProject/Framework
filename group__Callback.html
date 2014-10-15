@@ -102,15 +102,49 @@ template&lt;typename Class , typename Ret , typename... Args&gt; </td></tr>
 template&lt;typename Ret , typename... Args&gt; </td></tr>
 <tr class="memitem:gafa8f924b53f24d61ab96f4782bade2a0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Nuria::Callback::setCallback</b> (std::function&lt; Ret(Args...) &gt; func)</td></tr>
 <tr class="separator:gafa8f924b53f24d61ab96f4782bade2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga708e73f4475d85b82938069b384a85d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga708e73f4475d85b82938069b384a85d8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Nuria::Callback::setCallback</b> (QObject *receiver, const char *slot)</td></tr>
-<tr class="separator:ga708e73f4475d85b82938069b384a85d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab3014a2e9fceb9213edd74a86683d1de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Callback.html#gab3014a2e9fceb9213edd74a86683d1de">Nuria::Callback::setCallback</a> (QObject *receiver, const char *slot, Qt::ConnectionType connectionType=Qt::AutoConnection)</td></tr>
+<tr class="separator:gab3014a2e9fceb9213edd74a86683d1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="gab3014a2e9fceb9213edd74a86683d1de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Nuria::Callback::setCallback </td>
+          <td>(</td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>receiver</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>slot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Qt::ConnectionType&#160;</td>
+          <td class="paramname"><em>connectionType</em> = <code>Qt::AutoConnection</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lets the callback point to <em>slot</em> in <em>receiver</em>. Use the SLOT() macro for <em>receiver</em>.</p>
+<p>If <em>connectionType</em> is <code>Qt::AutoConnection</code> (The default value), then the connection type will be chosen at invocation-time. It will be <code>Qt::DirectConnection</code> if <em>receiver</em> lives in the current thread. If it lives in another thread, <code>Qt::BlockingQueuedConnection</code> is chosen when the callback returns something (as in, is non-void), else <code>Qt::QueuedConnection</code> is used. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 5 2014 20:26:24 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 15 2014 23:25:11 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
