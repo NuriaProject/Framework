@@ -13,3 +13,6 @@
 [submodule "Twig"]
 	path = Twig
 	url = https://github.com/NuriaProject/Twig.git
+[submodule "3rdparty/luajit"]
+	path = 3rdparty/luajit
+	url = http://luajit.org/git/luajit-2.0.git
