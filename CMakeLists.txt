@@ -9,6 +9,7 @@ cmake_policy(SET CMP0020 NEW)
 include(cmake/common.cmake)
 include(cmake/nuria_tria.cmake)
 include(cmake/add_unittest.cmake)
+include(3rdparty/3rdparty.cmake)
 
 ################################################################################
 #  C O N F I G U R A T I O N

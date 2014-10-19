@@ -1,7 +1,7 @@
 # 3rdparty module CMake integration
 
 ###### LuaJit (Source: http://luajit.org/git/luajit-2.0.git )
-SET(LUAJIT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../3rdparty/luajit)
+SET(LUAJIT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/luajit)
 
 # Build LuaJit
 add_custom_target(build_luajit ALL
