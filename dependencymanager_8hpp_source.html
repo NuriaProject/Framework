@@ -181,7 +181,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        {</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                <span class="keywordflow">if</span> (objectName.isEmpty ()) {</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span> *name = QMetaType::typeName (qMetaTypeId&lt; T * &gt; ());</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                        this-&gt;m_name.setRawData (name, ::qstrlen (name));</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                        this-&gt;m_name.setRawData (name, ::qstrlen (name) - 1);</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                }</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                </div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        }</div>
@@ -227,7 +227,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 16 2014 19:28:14 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 20 2014 17:20:09 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

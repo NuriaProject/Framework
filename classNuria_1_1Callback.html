@@ -149,6 +149,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a012ee6d38b486c7c0ef6101668259b58"><td class="memTemplParams" colspan="2">template&lt;typename Class , typename Ret , typename... Args&gt; </td></tr>
 <tr class="memitem:a012ee6d38b486c7c0ef6101668259b58"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classNuria_1_1Callback.html#a012ee6d38b486c7c0ef6101668259b58">Callback</a> (Class *instance, Ret(Class::*func)(Args...), bool variadic=false)</td></tr>
 <tr class="separator:a012ee6d38b486c7c0ef6101668259b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5612cd5341ae1b389ade6dd5f591f894"><td class="memTemplParams" colspan="2">template&lt;typename Class , typename Ret , typename... Args&gt; </td></tr>
+<tr class="memitem:a5612cd5341ae1b389ade6dd5f591f894"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classNuria_1_1Callback.html#a5612cd5341ae1b389ade6dd5f591f894">Callback</a> (Class *instance, Ret(Class::*func)(Args...) const, bool variadic=false)</td></tr>
+<tr class="separator:a5612cd5341ae1b389ade6dd5f591f894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c7c7d6021b4a1130dbfa1bf14581bd0"><td class="memTemplParams" colspan="2"><a class="anchor" id="a2c7c7d6021b4a1130dbfa1bf14581bd0"></a>
 template&lt;typename Ret , typename... Args&gt; </td></tr>
 <tr class="memitem:a2c7c7d6021b4a1130dbfa1bf14581bd0"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Callback</b> (const std::function&lt; Ret(Args...) &gt; &amp;func, bool variadic=false)</td></tr>
@@ -187,10 +190,14 @@ template&lt;typename Ret , typename... Args&gt; </td></tr>
 template&lt;typename Ret , typename... Args&gt; </td></tr>
 <tr class="memitem:gabe1309175a8aa8ad4f4a85cfb2db66b2"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setCallback</b> (Ret(*func)(Args...))</td></tr>
 <tr class="separator:gabe1309175a8aa8ad4f4a85cfb2db66b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabe12d7422e440d4f384027fb4c753974"><td class="memTemplParams" colspan="2"><a class="anchor" id="gabe12d7422e440d4f384027fb4c753974"></a>
+<tr class="memitem:ga2562514784ca74fdc97a5aeb7b791df7"><td class="memTemplParams" colspan="2"><a class="anchor" id="ga2562514784ca74fdc97a5aeb7b791df7"></a>
 template&lt;typename Class , typename Ret , typename... Args&gt; </td></tr>
-<tr class="memitem:gabe12d7422e440d4f384027fb4c753974"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setCallback</b> (Class *instance, Ret(Class::*func)(Args...))</td></tr>
-<tr class="separator:gabe12d7422e440d4f384027fb4c753974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2562514784ca74fdc97a5aeb7b791df7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setCallback</b> (Class *instance, Ret(Class::*func)(Args...) const)</td></tr>
+<tr class="separator:ga2562514784ca74fdc97a5aeb7b791df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2562514784ca74fdc97a5aeb7b791df7"><td class="memTemplParams" colspan="2"><a class="anchor" id="ga2562514784ca74fdc97a5aeb7b791df7"></a>
+template&lt;typename Class , typename Ret , typename... Args&gt; </td></tr>
+<tr class="memitem:ga2562514784ca74fdc97a5aeb7b791df7"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setCallback</b> (Class *instance, Ret(Class::*func)(Args...))</td></tr>
+<tr class="separator:ga2562514784ca74fdc97a5aeb7b791df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafa8f924b53f24d61ab96f4782bade2a0"><td class="memTemplParams" colspan="2"><a class="anchor" id="gafa8f924b53f24d61ab96f4782bade2a0"></a>
 template&lt;typename Ret , typename... Args&gt; </td></tr>
 <tr class="memitem:gafa8f924b53f24d61ab96f4782bade2a0"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>setCallback</b> (std::function&lt; Ret(Args...) &gt; func)</td></tr>
@@ -429,6 +436,49 @@ template&lt;typename Class , typename Ret , typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Constructs a callback from a member method. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5612cd5341ae1b389ade6dd5f591f894"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Class , typename Ret , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Nuria::Callback::Callback </td>
+          <td>(</td>
+          <td class="paramtype">Class *&#160;</td>
+          <td class="paramname"><em>instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Ret(Class::*)(Args...) const&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>variadic</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a callback from a constant member method. </p>
 
 </div>
 </div>
@@ -774,7 +824,7 @@ template&lt;typename... Args&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 16 2014 19:28:14 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 20 2014 17:20:09 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

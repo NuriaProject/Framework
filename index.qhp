@@ -97,6 +97,7 @@
                 <section title="Callback" ref="classNuria_1_1Callback.html#ae0bfaae91b23d2d8a30ba7947d19bcf9" />
                 <section title="Callback" ref="classNuria_1_1Callback.html#a20c239958376f47c64af7e28f8796bba" />
                 <section title="Callback" ref="classNuria_1_1Callback.html#a012ee6d38b486c7c0ef6101668259b58" />
+                <section title="Callback" ref="classNuria_1_1Callback.html#a5612cd5341ae1b389ade6dd5f591f894" />
                 <section title="Callback" ref="classNuria_1_1Callback.html#a2c7c7d6021b4a1130dbfa1bf14581bd0" />
                 <section title="~Callback" ref="classNuria_1_1Callback.html#a4442cd596a983564756fab1629da40a7" />
                 <section title="argumentTypes" ref="classNuria_1_1Callback.html#ac6055ce5d87825cd74892db6ab36a787" />
@@ -114,7 +115,8 @@
                 <section title="operator==" ref="classNuria_1_1Callback.html#a45a1fe3db6ed9a277ccce7608b8d69b1" />
                 <section title="returnType" ref="classNuria_1_1Callback.html#a4391f485c9956bcc9c4fa1d5c8392721" />
                 <section title="setCallback" ref="group__Callback.html#gabe1309175a8aa8ad4f4a85cfb2db66b2" />
-                <section title="setCallback" ref="group__Callback.html#gabe12d7422e440d4f384027fb4c753974" />
+                <section title="setCallback" ref="group__Callback.html#ga2562514784ca74fdc97a5aeb7b791df7" />
+                <section title="setCallback" ref="classNuria_1_1Callback.html#ga2562514784ca74fdc97a5aeb7b791df7" />
                 <section title="setCallback" ref="group__Callback.html#gafa8f924b53f24d61ab96f4782bade2a0" />
                 <section title="setCallback" ref="group__Callback.html#gab3014a2e9fceb9213edd74a86683d1de" />
                 <section title="setVariadic" ref="classNuria_1_1Callback.html#ada9f079ded31f8dc562e198707066e96" />
@@ -1425,7 +1427,7 @@
       <keyword name="setters" id="setters" ref="group__Callback.html" />
       <keyword name="operator=" id="Callback::operator=" ref="group__Callback.html#gadf3b5e41c4f1b85acbeaa1b9e6510b97" />
       <keyword name="setCallback" id="Callback::setCallback" ref="group__Callback.html#gabe1309175a8aa8ad4f4a85cfb2db66b2" />
-      <keyword name="setCallback" id="Callback::setCallback" ref="group__Callback.html#gabe12d7422e440d4f384027fb4c753974" />
+      <keyword name="setCallback" id="Callback::setCallback" ref="group__Callback.html#ga2562514784ca74fdc97a5aeb7b791df7" />
       <keyword name="setCallback" id="Callback::setCallback" ref="group__Callback.html#gafa8f924b53f24d61ab96f4782bade2a0" />
       <keyword name="setCallback" id="Callback::setCallback" ref="group__Callback.html#gab3014a2e9fceb9213edd74a86683d1de" />
       <keyword name="json-type checks." id="json-type checks." ref="group__Type-level.html" />
@@ -1471,6 +1473,7 @@
       <keyword name="Callback" id="Nuria::Callback::Callback" ref="classNuria_1_1Callback.html#ae0bfaae91b23d2d8a30ba7947d19bcf9" />
       <keyword name="Callback" id="Nuria::Callback::Callback" ref="classNuria_1_1Callback.html#a20c239958376f47c64af7e28f8796bba" />
       <keyword name="Callback" id="Nuria::Callback::Callback" ref="classNuria_1_1Callback.html#a012ee6d38b486c7c0ef6101668259b58" />
+      <keyword name="Callback" id="Nuria::Callback::Callback" ref="classNuria_1_1Callback.html#a5612cd5341ae1b389ade6dd5f591f894" />
       <keyword name="Callback" id="Nuria::Callback::Callback" ref="classNuria_1_1Callback.html#a2c7c7d6021b4a1130dbfa1bf14581bd0" />
       <keyword name="~Callback" id="Nuria::Callback::~Callback" ref="classNuria_1_1Callback.html#a4442cd596a983564756fab1629da40a7" />
       <keyword name="argumentTypes" id="Nuria::Callback::argumentTypes" ref="classNuria_1_1Callback.html#ac6055ce5d87825cd74892db6ab36a787" />
@@ -1486,7 +1489,8 @@
       <keyword name="operator==" id="Nuria::Callback::operator==" ref="classNuria_1_1Callback.html#a45a1fe3db6ed9a277ccce7608b8d69b1" />
       <keyword name="returnType" id="Nuria::Callback::returnType" ref="classNuria_1_1Callback.html#a4391f485c9956bcc9c4fa1d5c8392721" />
       <keyword name="setCallback" id="Nuria::Callback::setCallback" ref="classNuria_1_1Callback.html#gabe1309175a8aa8ad4f4a85cfb2db66b2" />
-      <keyword name="setCallback" id="Nuria::Callback::setCallback" ref="classNuria_1_1Callback.html#gabe12d7422e440d4f384027fb4c753974" />
+      <keyword name="setCallback" id="Nuria::Callback::setCallback" ref="classNuria_1_1Callback.html#ga2562514784ca74fdc97a5aeb7b791df7" />
+      <keyword name="setCallback" id="Nuria::Callback::setCallback" ref="classNuria_1_1Callback.html#ga2562514784ca74fdc97a5aeb7b791df7" />
       <keyword name="setCallback" id="Nuria::Callback::setCallback" ref="classNuria_1_1Callback.html#gafa8f924b53f24d61ab96f4782bade2a0" />
       <keyword name="setCallback" id="Nuria::Callback::setCallback" ref="classNuria_1_1Callback.html#gab3014a2e9fceb9213edd74a86683d1de" />
       <keyword name="setVariadic" id="Nuria::Callback::setVariadic" ref="classNuria_1_1Callback.html#ada9f079ded31f8dc562e198707066e96" />
