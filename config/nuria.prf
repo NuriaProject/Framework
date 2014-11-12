@@ -38,7 +38,7 @@ contains(NURIA_MODULES, Tria) {
   tria.output       = tria_${QMAKE_FILE_BASE}.cpp
   tria.variable_out = GENERATED_SOURCES
   tria.variables    = INCLUDEPATH TRIA_FLAGS
-  tria.commands     = $$NURIA_TRIA_BIN -o${QMAKE_FILE_OUT} $(TRIA_FLAGS) ${QMAKE_FILE_NAME} $$join(INCLUDEPATH, " -I", "-I") $${TRIA_LIB_INCLUDES}
+  tria.commands     = $$NURIA_TRIA_BIN -o${QMAKE_FILE_OUT} $(TRIA_FLAGS) ${QMAKE_FILE_NAME} $(INCPATH) $${TRIA_LIB_INCLUDES}
   tria.input        = HEADERS
   QMAKE_EXTRA_COMPILERS += tria
 }
