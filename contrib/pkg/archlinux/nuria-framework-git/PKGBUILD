@@ -31,21 +31,19 @@ pkgver() {
 build() {
 	cd ${_gitname}
 	
-	# 
+	# Nuria modules
 	git submodule init
 	for i in Core Network Lua Twig Tria; do
 		git config --local submodule.$i.url $srcdir/$i
 	done
 	
-	# 
-	git submodule update
+	# 3rdparty modules
+	for i in luajit-2.0; do
+		git config --local submodule.3rdparty/$i.url $srcdir/$i
+	done
 	
 	# 
-	cd Lua
-	git submodule init
-	git config --local submodule.luajit.url $srcdir/luajit-2.0
 	git submodule update
-	cd ..
 	
 	# 
 	mkdir build
