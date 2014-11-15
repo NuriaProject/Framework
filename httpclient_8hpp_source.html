@@ -366,105 +366,108 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        </div>
 <div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;        <span class="keywordtype">bool</span> atEnd () <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;        </div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;        <span class="comment">// </span></div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;        qint64 bytesAvailable () <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;        qint64 pos () <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;        qint64 size () <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;        <span class="keywordtype">bool</span> seek (qint64 pos) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;        <span class="keywordtype">bool</span> reset () <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;        </div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;signals:</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;        </div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;        <span class="keywordtype">void</span> disconnected ();</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;        </div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        <span class="keywordtype">void</span> headerReady ();</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;        </div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;        <span class="keywordtype">void</span> postBodyComplete ();</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;        </div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;<span class="keyword">public</span> slots:</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;        </div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        <span class="keywordtype">bool</span> killConnection (<span class="keywordtype">int</span> error, <span class="keyword">const</span> QString &amp;cause = QString());</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        </div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;        <span class="keywordtype">bool</span> sendResponseHeader ();</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;        </div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;        <span class="keywordtype">void</span> close () <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;        </div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        <span class="keywordtype">void</span> forceClose ();</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        </div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;<span class="keyword">private</span> slots:</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        </div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;        <span class="keywordtype">void</span> clientDisconnected ();</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;        </div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;        <span class="keywordtype">void</span> pipeToClientReadyRead ();</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;        </div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;        <span class="keywordtype">bool</span> manualInit (<a class="code" href="classNuria_1_1HttpClient.html#a47878d81d933a0f4b50c97a11c343456">HttpVerb</a> verb, <a class="code" href="classNuria_1_1HttpClient.html#a57e08632db08dd28f009b84fda78ec83">HttpVersion</a> version, <span class="keyword">const</span> QByteArray &amp;path, <span class="keyword">const</span> HeaderMap &amp;headers);</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;        </div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;        <span class="comment">// </span></div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;        qint64 bytesAvailable () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;        qint64 pos () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;        qint64 size () <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;        <span class="keywordtype">bool</span> seek (qint64 pos) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        <span class="keywordtype">bool</span> reset () <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        </div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;signals:</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;        </div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;        <span class="keywordtype">void</span> disconnected ();</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        </div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        <span class="keywordtype">void</span> headerReady ();</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;        </div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;        <span class="keywordtype">void</span> postBodyComplete ();</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;        </div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;<span class="keyword">public</span> slots:</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;        </div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;        <span class="keywordtype">bool</span> killConnection (<span class="keywordtype">int</span> error, <span class="keyword">const</span> QString &amp;cause = QString());</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        </div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        <span class="keywordtype">bool</span> sendResponseHeader ();</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        </div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;        <span class="keywordtype">void</span> close () <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;        </div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;        <span class="keyword">virtual</span> qint64 readData (<span class="keywordtype">char</span> *data, qint64 maxlen);</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        </div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        <span class="keyword">virtual</span> qint64 writeData (<span class="keyword">const</span> <span class="keywordtype">char</span> *data, qint64 len);</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        </div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        <span class="keywordtype">bool</span> resolveUrl (<span class="keyword">const</span> QUrl &amp;url);</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;        </div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;        <span class="keywordtype">bool</span> bufferPostBody (QByteArray &amp;data);</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;        </div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classNuria_1_1HttpTransport.html">HttpTransport</a>;</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classNuria_1_1HttpServer.html">HttpServer</a>;</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classNuria_1_1HttpNode.html">HttpNode</a>;</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        <span class="keywordtype">void</span> forceClose ();</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;        </div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;<span class="keyword">private</span> slots:</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;        </div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;        <span class="keywordtype">void</span> clientDisconnected ();</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;        </div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;        <span class="keywordtype">void</span> pipeToClientReadyRead ();</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;        </div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;        </div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;        <span class="keyword">virtual</span> qint64 readData (<span class="keywordtype">char</span> *data, qint64 maxlen);</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;        </div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;        <span class="keyword">virtual</span> qint64 writeData (<span class="keyword">const</span> <span class="keywordtype">char</span> *data, qint64 len);</div>
 <div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;        </div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        <span class="keywordtype">bool</span> readRangeRequestHeader ();</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;        </div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;        <span class="keywordtype">void</span> readRequestCookies ();</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;        </div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        <span class="keywordtype">bool</span> sendRedirectResponse (<span class="keyword">const</span> QByteArray &amp;location, <span class="keyword">const</span> QByteArray &amp;display, <span class="keywordtype">int</span> code);</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        <span class="keywordtype">void</span> updateRequestedUrl ();</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        </div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        <span class="keywordtype">void</span> bytesSent (qint64 bytes);</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;        <span class="keywordtype">void</span> processData (QByteArray &amp;data);</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        </div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        <span class="keywordtype">bool</span> sendChunkedData (<span class="keyword">const</span> QByteArray &amp;data);</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;        qint64 parseIntegerHeaderValue (<span class="keyword">const</span> QByteArray &amp;value);</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;        <span class="keywordtype">bool</span> readPostBodyContentLength ();</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;        <span class="keywordtype">bool</span> send100ContinueIfClientExpectsIt ();</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;        <span class="keywordtype">bool</span> readAllAvailableHeaderLines (QByteArray &amp;data);</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;        <span class="keywordtype">bool</span> readFirstLine (<span class="keyword">const</span> QByteArray &amp;line);</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;        <span class="keywordtype">bool</span> readHeader (<span class="keyword">const</span> QByteArray &amp;line);</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;        <span class="keywordtype">bool</span> isReceivedHeaderHttp11Compliant ();</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;        <span class="keywordtype">bool</span> verifyPostRequestCompliance ();</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;        <span class="keywordtype">bool</span> verifyCompleteHeader ();</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        <span class="keywordtype">bool</span> invokeRequestedPath ();</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        <span class="keywordtype">bool</span> readConnectionHeader ();</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        <span class="keywordtype">bool</span> closeConnectionIfNoLongerNeeded ();</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        <span class="keywordtype">bool</span> postProcessRequestHeader ();</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        <span class="keywordtype">bool</span> contentTypeIsMultipart (<span class="keyword">const</span> QByteArray &amp;value) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        <span class="keywordtype">bool</span> contentTypeIsUrlEncoded (<span class="keyword">const</span> QByteArray &amp;value) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;        <a class="code" href="classNuria_1_1HttpPostBodyReader.html">HttpPostBodyReader</a> *createHttpMultiPartReader (<span class="keyword">const</span> QByteArray &amp;header);</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        <a class="code" href="classNuria_1_1HttpPostBodyReader.html">HttpPostBodyReader</a> *createUrlEncodedPartReader (<span class="keyword">const</span> QByteArray &amp;header);</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;        qint64 writeDataInternal (QByteArray data);</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        <span class="keywordtype">bool</span> sendData (<span class="keyword">const</span> QByteArray &amp;data);</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        <span class="keywordtype">void</span> closeInternal ();</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        QByteArray filterInit ();</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        QByteArray filterDeinit ();</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        <span class="keywordtype">bool</span> filterData (QByteArray &amp;data);</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        <span class="keywordtype">bool</span> filterHeaders (HeaderMap &amp;headers);</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        <span class="keywordtype">void</span> addNameToTransferEncoding (HeaderMap &amp;headers, <span class="keyword">const</span> QByteArray &amp;name);</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;        </div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;        <span class="keywordtype">bool</span> sendPipeChunkToClient ();</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;        </div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;        <span class="comment">// </span></div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;        HttpClientPrivate *d_ptr;</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;        </div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;};</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;}</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;Q_DECLARE_OPERATORS_FOR_FLAGS(Nuria::HttpClient::HttpVerbs)</div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespaceNuria.html">Nuria</a>::HttpClient::HttpVersion)</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespaceNuria.html">Nuria</a>::HttpClient::HttpVerbs)</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespaceNuria.html">Nuria</a>::HttpClient::HttpVerb)</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespaceNuria.html">Nuria</a>::HttpClient*)</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;<span class="preprocessor">#endif // NURIA_HTTPCLIENT_HPP</span></div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;        <span class="keywordtype">bool</span> resolveUrl (<span class="keyword">const</span> QUrl &amp;url);</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;        </div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;        <span class="keywordtype">bool</span> bufferPostBody (QByteArray &amp;data);</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;        </div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classNuria_1_1HttpTransport.html">HttpTransport</a>;</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classNuria_1_1HttpServer.html">HttpServer</a>;</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classNuria_1_1HttpNode.html">HttpNode</a>;</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        </div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;        <span class="keywordtype">bool</span> readRangeRequestHeader ();</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;        </div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;        <span class="keywordtype">void</span> readRequestCookies ();</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;        </div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        <span class="keywordtype">bool</span> sendRedirectResponse (<span class="keyword">const</span> QByteArray &amp;location, <span class="keyword">const</span> QByteArray &amp;display, <span class="keywordtype">int</span> code);</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        <span class="keywordtype">void</span> updateRequestedUrl ();</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;        </div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        <span class="keywordtype">void</span> bytesSent (qint64 bytes);</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;        <span class="keywordtype">void</span> processData (QByteArray &amp;data);</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;        </div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;        <span class="keywordtype">bool</span> sendChunkedData (<span class="keyword">const</span> QByteArray &amp;data);</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;        qint64 parseIntegerHeaderValue (<span class="keyword">const</span> QByteArray &amp;value);</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        <span class="keywordtype">bool</span> readPostBodyContentLength ();</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;        <span class="keywordtype">bool</span> send100ContinueIfClientExpectsIt ();</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;        <span class="keywordtype">bool</span> readAllAvailableHeaderLines (QByteArray &amp;data);</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        <span class="keywordtype">bool</span> readFirstLine (<span class="keyword">const</span> QByteArray &amp;line);</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        <span class="keywordtype">bool</span> readHeader (<span class="keyword">const</span> QByteArray &amp;line);</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;        <span class="keywordtype">bool</span> isReceivedHeaderHttp11Compliant ();</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;        <span class="keywordtype">bool</span> verifyPostRequestCompliance ();</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;        <span class="keywordtype">bool</span> verifyCompleteHeader ();</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;        <span class="keywordtype">bool</span> invokeRequestedPath ();</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;        <span class="keywordtype">bool</span> readConnectionHeader ();</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;        <span class="keywordtype">bool</span> closeConnectionIfNoLongerNeeded ();</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;        <span class="keywordtype">bool</span> postProcessRequestHeader ();</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;        <span class="keywordtype">bool</span> contentTypeIsMultipart (<span class="keyword">const</span> QByteArray &amp;value) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;        <span class="keywordtype">bool</span> contentTypeIsUrlEncoded (<span class="keyword">const</span> QByteArray &amp;value) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;        <a class="code" href="classNuria_1_1HttpPostBodyReader.html">HttpPostBodyReader</a> *createHttpMultiPartReader (<span class="keyword">const</span> QByteArray &amp;header);</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;        <a class="code" href="classNuria_1_1HttpPostBodyReader.html">HttpPostBodyReader</a> *createUrlEncodedPartReader (<span class="keyword">const</span> QByteArray &amp;header);</div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;        qint64 writeDataInternal (QByteArray data);</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;        <span class="keywordtype">bool</span> sendData (<span class="keyword">const</span> QByteArray &amp;data);</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;        <span class="keywordtype">void</span> closeInternal ();</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;        QByteArray filterInit ();</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;        QByteArray filterDeinit ();</div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;        <span class="keywordtype">bool</span> filterData (QByteArray &amp;data);</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;        <span class="keywordtype">bool</span> filterHeaders (HeaderMap &amp;headers);</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;        <span class="keywordtype">void</span> addNameToTransferEncoding (HeaderMap &amp;headers, <span class="keyword">const</span> QByteArray &amp;name);</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;        <span class="keywordtype">void</span> initPath (QByteArray path);</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;        </div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;        <span class="keywordtype">bool</span> sendPipeChunkToClient ();</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;        </div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;        <span class="comment">// </span></div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;        HttpClientPrivate *d_ptr;</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;        </div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;};</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;}</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;Q_DECLARE_OPERATORS_FOR_FLAGS(Nuria::HttpClient::HttpVerbs)</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespaceNuria.html">Nuria</a>::HttpClient::HttpVersion)</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespaceNuria.html">Nuria</a>::HttpClient::HttpVerbs)</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespaceNuria.html">Nuria</a>::HttpClient::HttpVerb)</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="namespaceNuria.html">Nuria</a>::HttpClient*)</div>
+<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;</div>
+<div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;<span class="preprocessor">#endif // NURIA_HTTPCLIENT_HPP</span></div>
 <div class="ttc" id="classNuria_1_1HttpClient_html_a2641cce502c011cabbded606d6876f91"><div class="ttname"><a href="classNuria_1_1HttpClient.html#a2641cce502c011cabbded606d6876f91">Nuria::HttpClient::TransferMode</a></div><div class="ttdeci">TransferMode</div><div class="ttdef"><b>Definition:</b> httpclient.hpp:195</div></div>
 <div class="ttc" id="classNuria_1_1HttpClient_html_a57e08632db08dd28f009b84fda78ec83a802398b082dc0cd2d2aeaba19507413d"><div class="ttname"><a href="classNuria_1_1HttpClient.html#a57e08632db08dd28f009b84fda78ec83a802398b082dc0cd2d2aeaba19507413d">Nuria::HttpClient::Http1_0</a></div><div class="ttdoc">Http 1.0. </div><div class="ttdef"><b>Definition:</b> httpclient.hpp:127</div></div>
 <div class="ttc" id="classNuria_1_1HttpClient_html_a091ed7b9482c2a6678dc8fd5980475dba16a341e957933831b6d03c5575077cf1"><div class="ttname"><a href="classNuria_1_1HttpClient.html#a091ed7b9482c2a6678dc8fd5980475dba16a341e957933831b6d03c5575077cf1">Nuria::HttpClient::HeaderUserAgent</a></div><div class="ttdoc">User-Agent, must be present in a HTTP/1.1 session. </div><div class="ttdef"><b>Definition:</b> httpclient.hpp:169</div></div>
@@ -488,7 +491,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 26 2014 15:36:52 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 15 2014 17:21:37 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

@@ -1,11 +1,14 @@
 var searchData=
 [
   ['manager',['manager',['../classNuria_1_1Session.html#a188f0808cfaa00c12f6ac44f12e95ca9',1,'Nuria::Session']]],
+  ['manualinit',['manualInit',['../classNuria_1_1HttpClient.html#a67a179f62fb8df02b5d8aefa42a3c134',1,'Nuria::HttpClient']]],
   ['map',['map',['../classNuria_1_1MemoryTemplateLoader.html#ad232bef2acfda9e794e376ae8ffe9ffe',1,'Nuria::MemoryTemplateLoader']]],
   ['markclean',['markClean',['../classNuria_1_1Session.html#a7b8891058002eb6458a6e000fb6123b7',1,'Nuria::Session']]],
   ['markdirty',['markDirty',['../classNuria_1_1Session.html#a33816533070de81314199220ec60b532',1,'Nuria::Session']]],
   ['maxbodylength',['maxBodyLength',['../classNuria_1_1SlotInfo.html#ad4d38204b8980ab8ce7a355d4711f851',1,'Nuria::SlotInfo']]],
   ['maxcachesize',['maxCacheSize',['../classNuria_1_1TemplateEngine.html#a56b648f64778beabf5248cbe813e8337',1,'Nuria::TemplateEngine']]],
+  ['maxconcurrentconnections',['maxConcurrentConnections',['../classNuria_1_1FastCgiBackend.html#a778b8476f84b053400a7df1cc9c3650a',1,'Nuria::FastCgiBackend']]],
+  ['maxconcurrentrequests',['maxConcurrentRequests',['../classNuria_1_1FastCgiBackend.html#af73ff86c8033acce3b3c7ec41d819572',1,'Nuria::FastCgiBackend']]],
   ['maximummemorysize',['maximumMemorySize',['../classNuria_1_1TemporaryBufferDevice.html#af0450defc7696ccb2d85fe1e96a18081',1,'Nuria::TemporaryBufferDevice']]],
   ['maxrequests',['maxRequests',['../classNuria_1_1HttpTransport.html#ae40f9780b7dad362d3c6a1b79a5e844c',1,'Nuria::HttpTransport']]],
   ['maxsessions',['maxSessions',['../classNuria_1_1SessionManager.html#a640b5d9784a35abadd6e9a5f57939411',1,'Nuria::SessionManager']]],

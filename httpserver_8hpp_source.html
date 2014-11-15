@@ -174,30 +174,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        </div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordtype">bool</span> invokeByPath (<a class="code" href="classNuria_1_1HttpClient.html">HttpClient</a> *client, <span class="keyword">const</span> QString &amp;path);</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordtype">bool</span> addTcpServerBackend (Internal::TcpServer *server, <span class="keyword">const</span> QHostAddress &amp;interface, quint16 port);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordtype">bool</span> addTransport(<a class="code" href="classNuria_1_1HttpTransport.html">HttpTransport</a> *transport);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordtype">bool</span> addTransport (<a class="code" href="classNuria_1_1HttpTransport.html">HttpTransport</a> *transport);</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordtype">void</span> startProcessingThreads (<span class="keywordtype">int</span> amount);</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordtype">void</span> stopProcessingThreads (<span class="keywordtype">int</span> lastN);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordtype">int</span> chooseThreadCount ();</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordtype">void</span> threadStopped (QObject *obj);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="comment">// </span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        HttpServerPrivate *d_ptr;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        </div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;};</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">#endif // NURIA_HTTPSERVER_HPP</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordtype">void</span> notifyBackendsOfNewThread (QThread *serverThread);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordtype">void</span> notifyBackendOfThreads (<a class="code" href="classNuria_1_1HttpBackend.html">HttpBackend</a> *backend);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordtype">int</span> chooseThreadCount ();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="keywordtype">void</span> threadStopped (QObject *obj);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="comment">// </span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        HttpServerPrivate *d_ptr;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;};</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;}</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#endif // NURIA_HTTPSERVER_HPP</span></div>
 <div class="ttc" id="classNuria_1_1HttpServer_html_a0741111f60388cbc27e102384b686889"><div class="ttname"><a href="classNuria_1_1HttpServer.html#a0741111f60388cbc27e102384b686889">Nuria::HttpServer::ThreadingMode</a></div><div class="ttdeci">ThreadingMode</div><div class="ttdef"><b>Definition:</b> httpserver.hpp:77</div></div>
 <div class="ttc" id="namespaceNuria_html"><div class="ttname"><a href="namespaceNuria.html">Nuria</a></div><div class="ttdef"><b>Definition:</b> abstractsessionmanager.hpp:25</div></div>
 <div class="ttc" id="classNuria_1_1HttpTransport_html"><div class="ttname"><a href="classNuria_1_1HttpTransport.html">Nuria::HttpTransport</a></div><div class="ttdoc">Abstract data transport for HttpClient. </div><div class="ttdef"><b>Definition:</b> httptransport.hpp:54</div></div>
 <div class="ttc" id="classNuria_1_1HttpServer_html"><div class="ttname"><a href="classNuria_1_1HttpServer.html">Nuria::HttpServer</a></div><div class="ttdoc">Server for the HyperText Transfer Protocol. </div><div class="ttdef"><b>Definition:</b> httpserver.hpp:72</div></div>
 <div class="ttc" id="classNuria_1_1HttpNode_html"><div class="ttname"><a href="classNuria_1_1HttpNode.html">Nuria::HttpNode</a></div><div class="ttdoc">Virtual directory for HttpServer. </div><div class="ttdef"><b>Definition:</b> httpnode.hpp:177</div></div>
-<div class="ttc" id="classNuria_1_1HttpBackend_html"><div class="ttname"><a href="classNuria_1_1HttpBackend.html">Nuria::HttpBackend</a></div><div class="ttdoc">Base class for HttpServer back-ends. </div><div class="ttdef"><b>Definition:</b> httpbackend.hpp:33</div></div>
+<div class="ttc" id="classNuria_1_1HttpBackend_html"><div class="ttname"><a href="classNuria_1_1HttpBackend.html">Nuria::HttpBackend</a></div><div class="ttdoc">Base class for HttpServer back-ends. </div><div class="ttdef"><b>Definition:</b> httpbackend.hpp:35</div></div>
 <div class="ttc" id="classNuria_1_1HttpClient_html"><div class="ttname"><a href="classNuria_1_1HttpClient.html">Nuria::HttpClient</a></div><div class="ttdoc">The HttpClient class represents a connection to a client. </div><div class="ttdef"><b>Definition:</b> httpclient.hpp:116</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 26 2014 15:36:52 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 15 2014 17:21:37 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

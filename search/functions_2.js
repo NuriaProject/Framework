@@ -10,6 +10,8 @@ var searchData=
   ['completed',['completed',['../classNuria_1_1HttpPostBodyReader.html#a5ff1442807cdc78abfb5708a85cb7f6f',1,'Nuria::HttpPostBodyReader']]],
   ['component',['component',['../classNuria_1_1TemplateError.html#a69ef7ea690bc179b65b3833b8a4166e4',1,'Nuria::TemplateError']]],
   ['componentname',['componentName',['../classNuria_1_1TemplateError.html#a99213de60d17255236cb40a5810aae9c',1,'Nuria::TemplateError::componentName() const '],['../classNuria_1_1TemplateError.html#aac18705d650935a35ae736b424a8fa9d',1,'Nuria::TemplateError::componentName(Component component)']]],
+  ['connectionadded',['connectionAdded',['../classNuria_1_1FastCgiBackend.html#a324cc6b320410dc52454c6cff6877a25',1,'Nuria::FastCgiBackend']]],
+  ['connectionclosed',['connectionClosed',['../classNuria_1_1FastCgiBackend.html#adf77b875f006b8ef2ac056c8db835924',1,'Nuria::FastCgiBackend']]],
   ['connectionlost',['connectionLost',['../classNuria_1_1HttpTransport.html#a06b008ce4b5b3db6c8583e7831306fc4',1,'Nuria::HttpTransport']]],
   ['connectionmode',['connectionMode',['../classNuria_1_1HttpClient.html#a25ec43fecf5355ba334843aafb547748',1,'Nuria::HttpClient']]],
   ['connectslot',['connectSlot',['../classNuria_1_1HttpNode.html#ae8166db7665717e8fa2e9d62dbeba31d',1,'Nuria::HttpNode::connectSlot(const QString &amp;name, const Callback &amp;callback)'],['../classNuria_1_1HttpNode.html#a504b4d95315b07b7ee85eaa124c8ad47',1,'Nuria::HttpNode::connectSlot(const QString &amp;name, QObject *receiver, const char *slot)']]],
@@ -25,9 +27,11 @@ var searchData=
   ['createsession',['createSession',['../classNuria_1_1AbstractSessionManager.html#ac3bace64f5a260a23aef17cd1238e936',1,'Nuria::AbstractSessionManager']]],
   ['currentcachesize',['currentCacheSize',['../classNuria_1_1TemplateEngine.html#a3f519c2a4be9aff55fe7b3d10bf5c831',1,'Nuria::TemplateEngine']]],
   ['currentcolumn',['currentColumn',['../classNuria_1_1Tokenizer.html#ab28c3b1b9abe7f233d96b78709f98a97',1,'Nuria::Tokenizer']]],
+  ['currentconnectioncount',['currentConnectionCount',['../classNuria_1_1FastCgiBackend.html#ad1d17411b3fb9cf33880c9559fa18d36',1,'Nuria::FastCgiBackend']]],
   ['currentposition',['currentPosition',['../classNuria_1_1Tokenizer.html#a388b83de9c1f6ef0ddec610d5e29e825',1,'Nuria::Tokenizer']]],
   ['currentrequestcount',['currentRequestCount',['../classNuria_1_1HttpTransport.html#ad5d617f2e79c6d0370b481f48f6280bd',1,'Nuria::HttpTransport']]],
   ['currentrow',['currentRow',['../classNuria_1_1Tokenizer.html#abc6722a0eb567ff7cb104268ec8564d0',1,'Nuria::Tokenizer']]],
   ['currenttokenizerrules',['currentTokenizerRules',['../classNuria_1_1Tokenizer.html#a4ccfc2d78afeb1f609dfeec71883d84b',1,'Nuria::Tokenizer']]],
+  ['customconfiguration',['customConfiguration',['../classNuria_1_1FastCgiBackend.html#a1aa0776601951c3210c118f35ff274d3',1,'Nuria::FastCgiBackend']]],
   ['customtype',['customType',['../classNuria_1_1Field.html#a6f0befa100e6030839c848cb810b0fd9',1,'Nuria::Field']]]
 ];

@@ -265,6 +265,8 @@ qint64&#160;</td><td class="memItemRight" valign="bottom"><b>bytesAvailable</b> 
 <tr class="separator:a44d0bf63f957ca51344ce69d7c50f541"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a516d7c6eff5288de198d7f8cb0193f34"><td class="memItemLeft" align="right" valign="top">quint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a516d7c6eff5288de198d7f8cb0193f34">localPort</a> () const </td></tr>
 <tr class="separator:a516d7c6eff5288de198d7f8cb0193f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a179f62fb8df02b5d8aefa42a3c134"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a67a179f62fb8df02b5d8aefa42a3c134">manualInit</a> (<a class="el" href="classNuria_1_1HttpClient.html#a47878d81d933a0f4b50c97a11c343456">HttpVerb</a> <a class="el" href="classNuria_1_1HttpClient.html#ad0118450368717733f0013faa8276884">verb</a>, <a class="el" href="classNuria_1_1HttpClient.html#a57e08632db08dd28f009b84fda78ec83">HttpVersion</a> version, const QByteArray &amp;<a class="el" href="classNuria_1_1HttpClient.html#a100d7d7358f37d593af5de46633bea1e">path</a>, const <a class="el" href="classNuria_1_1HttpClient.html#a8c08e3a1bb7911fd79adaadfc8e38e26">HeaderMap</a> &amp;headers)</td></tr>
+<tr class="separator:a67a179f62fb8df02b5d8aefa42a3c134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a100d7d7358f37d593af5de46633bea1e"><td class="memItemLeft" align="right" valign="top">QUrl&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a100d7d7358f37d593af5de46633bea1e">path</a> () const </td></tr>
 <tr class="separator:a100d7d7358f37d593af5de46633bea1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74db3cdf0597a2784e1079d595d979a3"><td class="memItemLeft" align="right" valign="top">QHostAddress&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpClient.html#a74db3cdf0597a2784e1079d595d979a3">peerAddress</a> () const </td></tr>
@@ -1238,6 +1240,48 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpTransport</b></t
       </table>
 </div><div class="memdoc">
 <p>See QAbstractSocket::localPort. </p>
+
+</div>
+</div>
+<a class="anchor" id="a67a179f62fb8df02b5d8aefa42a3c134"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Nuria::HttpClient::manualInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNuria_1_1HttpClient.html#a47878d81d933a0f4b50c97a11c343456">HttpVerb</a>&#160;</td>
+          <td class="paramname"><em>verb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNuria_1_1HttpClient.html#a57e08632db08dd28f009b84fda78ec83">HttpVersion</a>&#160;</td>
+          <td class="paramname"><em>version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classNuria_1_1HttpClient.html#a8c08e3a1bb7911fd79adaadfc8e38e26">HeaderMap</a> &amp;&#160;</td>
+          <td class="paramname"><em>headers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initializes the <a class="el" href="classNuria_1_1HttpClient.html" title="The HttpClient class represents a connection to a client. ">HttpClient</a> instance.</p>
+<p>This function is only intended for use within HttpTransports which get the HTTP header in a already parsed fashion to initialize <a class="el" href="classNuria_1_1HttpClient.html" title="The HttpClient class represents a connection to a client. ">HttpClient</a> instances without having to assemble new ones.</p>
+<p>If you're not implementing a <a class="el" href="classNuria_1_1HttpTransport.html" title="Abstract data transport for HttpClient. ">HttpTransport</a>, then you'll probably never need this function.</p>
+<p>Returns <code>true</code> on success. On failure, the client will be closed. The <a class="el" href="classNuria_1_1HttpTransport.html" title="Abstract data transport for HttpClient. ">HttpTransport</a> must be able to receive data through its sendToRemote() function already when this function is called, as the <a class="el" href="classNuria_1_1HttpClient.html" title="The HttpClient class represents a connection to a client. ">HttpClient</a> will start to process the data right away. </p>
 
 </div>
 </div>
@@ -2258,7 +2302,7 @@ Do not combine this with pipe(). </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 26 2014 15:36:53 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 15 2014 17:21:37 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

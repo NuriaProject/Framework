@@ -17,7 +17,7 @@ var searchData=
   ['pipetoclient',['pipeToClient',['../classNuria_1_1HttpClient.html#a6baf918508447630a43fa6b4fb8a7841',1,'Nuria::HttpClient']]],
   ['pointermetatypeid',['pointerMetaTypeId',['../classNuria_1_1MetaObject.html#a8aa263fb8fd03c6a644066478f71d235',1,'Nuria::MetaObject']]],
   ['populate',['populate',['../classNuria_1_1Serializer.html#a51b8bf9ee40f67d498939c50da8f50e6',1,'Nuria::Serializer::populate(void *object, MetaObject *meta, const QVariantMap &amp;data)'],['../classNuria_1_1Serializer.html#a1ffd2422a30737b8fec99d14107acace',1,'Nuria::Serializer::populate(void *object, const QByteArray &amp;typeName, const QVariantMap &amp;data)'],['../classNuria_1_1Serializer.html#a8a6805b2039608cc2f41279efc297eae',1,'Nuria::Serializer::populate(T *object, const QVariantMap &amp;data)']]],
-  ['port',['port',['../classNuria_1_1HttpBackend.html#a20f089bb9731ba2eddc195398ffb0a2d',1,'Nuria::HttpBackend']]],
+  ['port',['port',['../classNuria_1_1FastCgiBackend.html#a8481c869e75be87dfc4fa634da16bd9d',1,'Nuria::FastCgiBackend::port()'],['../classNuria_1_1HttpBackend.html#a20f089bb9731ba2eddc195398ffb0a2d',1,'Nuria::HttpBackend::port()']]],
   ['postbodycomplete',['postBodyComplete',['../classNuria_1_1HttpClient.html#a2b29644200468143f00ed0a8f4b098f7',1,'Nuria::HttpClient']]],
   ['postbodylength',['postBodyLength',['../classNuria_1_1HttpClient.html#a64f1bd2c215b041eaed6e5c4520b4dbf',1,'Nuria::HttpClient']]],
   ['postbodyreader',['postBodyReader',['../classNuria_1_1HttpClient.html#ae87f7ee41e8e45f3740dacb71bf76ac9',1,'Nuria::HttpClient']]],

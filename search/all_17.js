@@ -3,6 +3,7 @@ var searchData=
   ['_7ecallback',['~Callback',['../classNuria_1_1Callback.html#a4442cd596a983564756fab1629da40a7',1,'Nuria::Callback']]],
   ['_7edebug',['~Debug',['../classNuria_1_1Debug.html#afb6f576cdacc85e81b76a227f26f5872',1,'Nuria::Debug']]],
   ['_7edependencymanager',['~DependencyManager',['../classNuria_1_1DependencyManager.html#ac9c74a4e71746c54bc410eb2be6dfe9c',1,'Nuria::DependencyManager']]],
+  ['_7efastcgibackend',['~FastCgiBackend',['../classNuria_1_1FastCgiBackend.html#a935268d8bef9e76ccdd670b4ec25febe',1,'Nuria::FastCgiBackend']]],
   ['_7efiletemplateloader',['~FileTemplateLoader',['../classNuria_1_1FileTemplateLoader.html#a62e3e81254ed95a5e502ab5a16c36b21',1,'Nuria::FileTemplateLoader']]],
   ['_7ehttpbackend',['~HttpBackend',['../classNuria_1_1HttpBackend.html#a96f858ddb75ace1c45543d14c4de3a68',1,'Nuria::HttpBackend']]],
   ['_7ehttpclient',['~HttpClient',['../classNuria_1_1HttpClient.html#a12e6dba2987d54d0110f383881c169c3',1,'Nuria::HttpClient']]],

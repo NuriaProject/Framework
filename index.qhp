@@ -185,6 +185,29 @@
                 <section title="storeObject" ref="classNuria_1_1DependencyManager.html#a801034cc66a22f7669cc97a61dadc958" />
                 <section title="storeObject" ref="classNuria_1_1DependencyManager.html#a48365c0ee9bb1d4c932226b386e80c0e" />
               </section>
+              <section title="FastCgiBackend" ref="classNuria_1_1FastCgiBackend.html">
+                <section title="FastCgiBackend" ref="classNuria_1_1FastCgiBackend.html#a86cc3a11cc96b46c5607c3d630a8414d" />
+                <section title="~FastCgiBackend" ref="classNuria_1_1FastCgiBackend.html#a935268d8bef9e76ccdd670b4ec25febe" />
+                <section title="connectionAdded" ref="classNuria_1_1FastCgiBackend.html#a324cc6b320410dc52454c6cff6877a25" />
+                <section title="connectionClosed" ref="classNuria_1_1FastCgiBackend.html#adf77b875f006b8ef2ac056c8db835924" />
+                <section title="currentConnectionCount" ref="classNuria_1_1FastCgiBackend.html#ad1d17411b3fb9cf33880c9559fa18d36" />
+                <section title="customConfiguration" ref="classNuria_1_1FastCgiBackend.html#a1aa0776601951c3210c118f35ff274d3" />
+                <section title="isListening" ref="classNuria_1_1FastCgiBackend.html#a7b86a8a45cb4c6cff24004d48d7255e1" />
+                <section title="isSecure" ref="classNuria_1_1FastCgiBackend.html#a7687e752dec02635017c7c4ba3e2f18c" />
+                <section title="listen" ref="classNuria_1_1FastCgiBackend.html#a247b9318fab058cdb69ad30627706c0c" />
+                <section title="listen" ref="classNuria_1_1FastCgiBackend.html#a78eafc659399d6a15489c6d44a010ba9" />
+                <section title="listenLocal" ref="classNuria_1_1FastCgiBackend.html#a3816258a686847bed3fcd1f6db5535a1" />
+                <section title="listenLocal" ref="classNuria_1_1FastCgiBackend.html#a7c66415c82f064922cbc604ac17e4df3" />
+                <section title="maxConcurrentConnections" ref="classNuria_1_1FastCgiBackend.html#a778b8476f84b053400a7df1cc9c3650a" />
+                <section title="maxConcurrentRequests" ref="classNuria_1_1FastCgiBackend.html#af73ff86c8033acce3b3c7ec41d819572" />
+                <section title="port" ref="classNuria_1_1FastCgiBackend.html#a8481c869e75be87dfc4fa634da16bd9d" />
+                <section title="serverThreadCreated" ref="classNuria_1_1FastCgiBackend.html#a44732f1db39a7885e1f9ac5bfbb74008" />
+                <section title="setCustomConfiguration" ref="classNuria_1_1FastCgiBackend.html#a6b2b68a1708dc5f23d0b345169f850d7" />
+                <section title="setMaxConcurrentConnections" ref="classNuria_1_1FastCgiBackend.html#a24f434cad4c9fcdab329453983401fca" />
+                <section title="setMaxConcurrentRequests" ref="classNuria_1_1FastCgiBackend.html#af58d165dc0a113fa546715a3b1ba565a" />
+                <section title="stop" ref="classNuria_1_1FastCgiBackend.html#ac056f1ab0bc7f0811aedb62564e2134f" />
+                <section title="Internal::FastCgiThreadObject" ref="classNuria_1_1FastCgiBackend.html#a6083662df24ab8be20f992332f986c00" />
+              </section>
               <section title="Field" ref="classNuria_1_1Field.html">
                 <section title="Type" ref="classNuria_1_1Field.html#afe6c0594f89ed17062718dbeccd940b0">
                   <section title="Empty" ref="classNuria_1_1Field.html#afe6c0594f89ed17062718dbeccd940b0a3de1ad43a4da3fb2bc6c32f133214fb7" />
@@ -234,6 +257,8 @@
                 <section title="isListening" ref="classNuria_1_1HttpBackend.html#a8e2a59dc095341477846f36df398b60b" />
                 <section title="isSecure" ref="classNuria_1_1HttpBackend.html#a1a364e72b8e3daba7f2c7dbe8493cfbc" />
                 <section title="port" ref="classNuria_1_1HttpBackend.html#a20f089bb9731ba2eddc195398ffb0a2d" />
+                <section title="serverThreadCreated" ref="classNuria_1_1HttpBackend.html#a78b5da463f0109a4efab5b6662f93616" />
+                <section title="HttpServer" ref="classNuria_1_1HttpBackend.html#a7ef68af4cc3915e661d6bb0255d265d2" />
               </section>
               <section title="HttpClient" ref="classNuria_1_1HttpClient.html">
                 <section title="Cookies" ref="classNuria_1_1HttpClient.html#a4b0b5b19ed35ad7f46eb15584623fea7" />
@@ -329,6 +354,7 @@
                 <section title="killConnection" ref="classNuria_1_1HttpClient.html#a5a2dcb3e316f492bcfe43b62a6d34f1c" />
                 <section title="localAddress" ref="classNuria_1_1HttpClient.html#a44d0bf63f957ca51344ce69d7c50f541" />
                 <section title="localPort" ref="classNuria_1_1HttpClient.html#a516d7c6eff5288de198d7f8cb0193f34" />
+                <section title="manualInit" ref="classNuria_1_1HttpClient.html#a67a179f62fb8df02b5d8aefa42a3c134" />
                 <section title="path" ref="classNuria_1_1HttpClient.html#a100d7d7358f37d593af5de46633bea1e" />
                 <section title="peerAddress" ref="classNuria_1_1HttpClient.html#a74db3cdf0597a2784e1079d595d979a3" />
                 <section title="peerPort" ref="classNuria_1_1HttpClient.html#acee90d36547040405038231c389c3d44" />
@@ -1275,7 +1301,9 @@
               </section>
               <section title="Nuria::ArgumentManager" ref="classNuria_1_1ArgumentManager.html" />
               <section title="Nuria::DependencyManager" ref="classNuria_1_1DependencyManager.html" />
-              <section title="Nuria::HttpBackend" ref="classNuria_1_1HttpBackend.html" />
+              <section title="Nuria::HttpBackend" ref="classNuria_1_1HttpBackend.html">
+                <section title="Nuria::FastCgiBackend" ref="classNuria_1_1FastCgiBackend.html" />
+              </section>
               <section title="Nuria::HttpFilter" ref="classNuria_1_1HttpFilter.html" />
               <section title="Nuria::HttpNode" ref="classNuria_1_1HttpNode.html">
                 <section title="Nuria::RestfulHttpNode" ref="classNuria_1_1RestfulHttpNode.html" />
@@ -1378,6 +1406,7 @@
             <section title="debug.hpp" ref="debug_8hpp_source.html" />
             <section title="dependencymanager.hpp" ref="dependencymanager_8hpp_source.html" />
             <section title="essentials.hpp" ref="essentials_8hpp_source.html" />
+            <section title="fastcgibackend.hpp" ref="fastcgibackend_8hpp_source.html" />
             <section title="filetemplateloader.hpp" ref="filetemplateloader_8hpp_source.html" />
             <section title="httpbackend.hpp" ref="httpbackend_8hpp_source.html" />
             <section title="httpclient.hpp" ref="httpclient_8hpp_source.html" />
@@ -1546,6 +1575,31 @@
       <keyword name="ApplicationGlobal" id="Nuria::DependencyManager::ApplicationGlobal" ref="classNuria_1_1DependencyManager.html#a651e3284e1dd41891b4b9fb26233468dafca1d23d25b7d1e567f562b4fb2ec628" />
       <keyword name="SingleThread" id="Nuria::DependencyManager::SingleThread" ref="classNuria_1_1DependencyManager.html#a651e3284e1dd41891b4b9fb26233468da0fbd7a11d7198e35d3f05e6af60e52d4" />
       <keyword name="ThreadLocal" id="Nuria::DependencyManager::ThreadLocal" ref="classNuria_1_1DependencyManager.html#a651e3284e1dd41891b4b9fb26233468dab03329620e41ecaac1c0a0912317067c" />
+      <keyword name="Nuria::FastCgiBackend" id="Nuria::FastCgiBackend" ref="classNuria_1_1FastCgiBackend.html" />
+      <keyword name="connectionAdded" id="Nuria::FastCgiBackend::connectionAdded" ref="classNuria_1_1FastCgiBackend.html#a324cc6b320410dc52454c6cff6877a25" />
+      <keyword name="connectionClosed" id="Nuria::FastCgiBackend::connectionClosed" ref="classNuria_1_1FastCgiBackend.html#adf77b875f006b8ef2ac056c8db835924" />
+      <keyword name="FastCgiBackend" id="Nuria::FastCgiBackend::FastCgiBackend" ref="classNuria_1_1FastCgiBackend.html#a86cc3a11cc96b46c5607c3d630a8414d" />
+      <keyword name="~FastCgiBackend" id="Nuria::FastCgiBackend::~FastCgiBackend" ref="classNuria_1_1FastCgiBackend.html#a935268d8bef9e76ccdd670b4ec25febe" />
+      <keyword name="currentConnectionCount" id="Nuria::FastCgiBackend::currentConnectionCount" ref="classNuria_1_1FastCgiBackend.html#ad1d17411b3fb9cf33880c9559fa18d36" />
+      <keyword name="customConfiguration" id="Nuria::FastCgiBackend::customConfiguration" ref="classNuria_1_1FastCgiBackend.html#a1aa0776601951c3210c118f35ff274d3" />
+      <keyword name="isListening" id="Nuria::FastCgiBackend::isListening" ref="classNuria_1_1FastCgiBackend.html#a7b86a8a45cb4c6cff24004d48d7255e1" />
+      <keyword name="isSecure" id="Nuria::FastCgiBackend::isSecure" ref="classNuria_1_1FastCgiBackend.html#a7687e752dec02635017c7c4ba3e2f18c" />
+      <keyword name="listen" id="Nuria::FastCgiBackend::listen" ref="classNuria_1_1FastCgiBackend.html#a247b9318fab058cdb69ad30627706c0c" />
+      <keyword name="listen" id="Nuria::FastCgiBackend::listen" ref="classNuria_1_1FastCgiBackend.html#a78eafc659399d6a15489c6d44a010ba9" />
+      <keyword name="listenLocal" id="Nuria::FastCgiBackend::listenLocal" ref="classNuria_1_1FastCgiBackend.html#a3816258a686847bed3fcd1f6db5535a1" />
+      <keyword name="listenLocal" id="Nuria::FastCgiBackend::listenLocal" ref="classNuria_1_1FastCgiBackend.html#a7c66415c82f064922cbc604ac17e4df3" />
+      <keyword name="maxConcurrentConnections" id="Nuria::FastCgiBackend::maxConcurrentConnections" ref="classNuria_1_1FastCgiBackend.html#a778b8476f84b053400a7df1cc9c3650a" />
+      <keyword name="maxConcurrentRequests" id="Nuria::FastCgiBackend::maxConcurrentRequests" ref="classNuria_1_1FastCgiBackend.html#af73ff86c8033acce3b3c7ec41d819572" />
+      <keyword name="port" id="Nuria::FastCgiBackend::port" ref="classNuria_1_1FastCgiBackend.html#a8481c869e75be87dfc4fa634da16bd9d" />
+      <keyword name="setCustomConfiguration" id="Nuria::FastCgiBackend::setCustomConfiguration" ref="classNuria_1_1FastCgiBackend.html#a6b2b68a1708dc5f23d0b345169f850d7" />
+      <keyword name="setMaxConcurrentConnections" id="Nuria::FastCgiBackend::setMaxConcurrentConnections" ref="classNuria_1_1FastCgiBackend.html#a24f434cad4c9fcdab329453983401fca" />
+      <keyword name="setMaxConcurrentRequests" id="Nuria::FastCgiBackend::setMaxConcurrentRequests" ref="classNuria_1_1FastCgiBackend.html#af58d165dc0a113fa546715a3b1ba565a" />
+      <keyword name="stop" id="Nuria::FastCgiBackend::stop" ref="classNuria_1_1FastCgiBackend.html#ac056f1ab0bc7f0811aedb62564e2134f" />
+      <keyword name="HttpBackend" id="Nuria::HttpBackend::HttpBackend" ref="classNuria_1_1HttpBackend.html#ad68f457304668b80c1f646084b2e0187" />
+      <keyword name="~HttpBackend" id="Nuria::HttpBackend::~HttpBackend" ref="classNuria_1_1HttpBackend.html#a96f858ddb75ace1c45543d14c4de3a68" />
+      <keyword name="httpServer" id="Nuria::HttpBackend::httpServer" ref="classNuria_1_1HttpBackend.html#aa2a90a6f88af4dad22fe59963330f8bb" />
+      <keyword name="serverThreadCreated" id="Nuria::FastCgiBackend::serverThreadCreated" ref="classNuria_1_1FastCgiBackend.html#a44732f1db39a7885e1f9ac5bfbb74008" />
+      <keyword name="Internal::FastCgiThreadObject" id="Nuria::FastCgiBackend::Internal::FastCgiThreadObject" ref="classNuria_1_1FastCgiBackend.html#a6083662df24ab8be20f992332f986c00" />
       <keyword name="Nuria::Field" id="Nuria::Field" ref="classNuria_1_1Field.html" />
       <keyword name="Field" id="Nuria::Field::Field" ref="classNuria_1_1Field.html#ab172301e2fbc937845e023ac31b047f2" />
       <keyword name="Field" id="Nuria::Field::Field" ref="classNuria_1_1Field.html#ad90040a3c9f87ce67d449a69a75b556d" />
@@ -1595,6 +1649,8 @@
       <keyword name="isListening" id="Nuria::HttpBackend::isListening" ref="classNuria_1_1HttpBackend.html#a8e2a59dc095341477846f36df398b60b" />
       <keyword name="isSecure" id="Nuria::HttpBackend::isSecure" ref="classNuria_1_1HttpBackend.html#a1a364e72b8e3daba7f2c7dbe8493cfbc" />
       <keyword name="port" id="Nuria::HttpBackend::port" ref="classNuria_1_1HttpBackend.html#a20f089bb9731ba2eddc195398ffb0a2d" />
+      <keyword name="serverThreadCreated" id="Nuria::HttpBackend::serverThreadCreated" ref="classNuria_1_1HttpBackend.html#a78b5da463f0109a4efab5b6662f93616" />
+      <keyword name="HttpServer" id="Nuria::HttpBackend::HttpServer" ref="classNuria_1_1HttpBackend.html#a7ef68af4cc3915e661d6bb0255d265d2" />
       <keyword name="Nuria::HttpClient" id="Nuria::HttpClient" ref="classNuria_1_1HttpClient.html" />
       <keyword name="Cookies" id="Nuria::HttpClient::Cookies" ref="classNuria_1_1HttpClient.html#a4b0b5b19ed35ad7f46eb15584623fea7" />
       <keyword name="HeaderMap" id="Nuria::HttpClient::HeaderMap" ref="classNuria_1_1HttpClient.html#a8c08e3a1bb7911fd79adaadfc8e38e26" />
@@ -1628,6 +1684,7 @@
       <keyword name="keepConnectionOpen" id="Nuria::HttpClient::keepConnectionOpen" ref="classNuria_1_1HttpClient.html#a3bb476269342fde3ab8085507c479eea" />
       <keyword name="localAddress" id="Nuria::HttpClient::localAddress" ref="classNuria_1_1HttpClient.html#a44d0bf63f957ca51344ce69d7c50f541" />
       <keyword name="localPort" id="Nuria::HttpClient::localPort" ref="classNuria_1_1HttpClient.html#a516d7c6eff5288de198d7f8cb0193f34" />
+      <keyword name="manualInit" id="Nuria::HttpClient::manualInit" ref="classNuria_1_1HttpClient.html#a67a179f62fb8df02b5d8aefa42a3c134" />
       <keyword name="path" id="Nuria::HttpClient::path" ref="classNuria_1_1HttpClient.html#a100d7d7358f37d593af5de46633bea1e" />
       <keyword name="peerAddress" id="Nuria::HttpClient::peerAddress" ref="classNuria_1_1HttpClient.html#a74db3cdf0597a2784e1079d595d979a3" />
       <keyword name="peerPort" id="Nuria::HttpClient::peerPort" ref="classNuria_1_1HttpClient.html#acee90d36547040405038231c389c3d44" />
@@ -2564,6 +2621,7 @@
       <file>debug_8hpp_source.html</file>
       <file>dependencymanager_8hpp_source.html</file>
       <file>essentials_8hpp_source.html</file>
+      <file>fastcgibackend_8hpp_source.html</file>
       <file>filetemplateloader_8hpp_source.html</file>
       <file>httpbackend_8hpp_source.html</file>
       <file>httpclient_8hpp_source.html</file>
@@ -2637,6 +2695,9 @@
       <file>classNuria_1_1DependencyManager.html</file>
       <file>classNuria_1_1DependencyManager.png</file>
       <file>classNuria_1_1DependencyManager-members.html</file>
+      <file>classNuria_1_1FastCgiBackend.html</file>
+      <file>classNuria_1_1FastCgiBackend.png</file>
+      <file>classNuria_1_1FastCgiBackend-members.html</file>
       <file>classNuria_1_1Field.html</file>
       <file>classNuria_1_1Field-members.html</file>
       <file>classNuria_1_1FileTemplateLoader.html</file>
@@ -2765,12 +2826,12 @@
       <file>dir_5fdd3c20ae17bb33a6cac4c5b081e7fb.html</file>
       <file>dir_356d85c7fe3a31f6238a1e4b453e8aed.html</file>
       <file>dir_f0b40c81b8c708e64864ab3bc6f7fb2c.html</file>
-      <file>dir_4837702c091dd86f4d011f36950efec0.html</file>
       <file>dir_4f2f28395902459d2d62b1159371f95d.html</file>
+      <file>dir_4837702c091dd86f4d011f36950efec0.html</file>
       <file>dir_9862018f116817b3888bd9273847c37c.html</file>
       <file>dir_fac47a210e0af8a3b708bd543b43c48e.html</file>
-      <file>dir_4bb62adb9b72408a64637345ff5c2e7c.html</file>
       <file>dir_30f6c7aaaa7d18ff8a7f76981a710c98.html</file>
+      <file>dir_4bb62adb9b72408a64637345ff5c2e7c.html</file>
       <file>dir_6635075fd29d94b1e79ef2060fed20a6.html</file>
       <file>dir_e6572c2c8d6eeed6aaed60800a7ebfd3.html</file>
       <file>index.html</file>

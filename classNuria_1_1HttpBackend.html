@@ -91,6 +91,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classNuria_1_1HttpBackend-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Nuria::HttpBackend Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -107,6 +109,7 @@ Inheritance diagram for Nuria::HttpBackend:</div>
  <div class="center">
   <img src="classNuria_1_1HttpBackend.png" usemap="#Nuria::HttpBackend_map" alt=""/>
   <map id="Nuria::HttpBackend_map" name="Nuria::HttpBackend_map">
+<area href="classNuria_1_1FastCgiBackend.html" title="FastCGI integration for HttpServer. " alt="Nuria::FastCgiBackend" shape="rect" coords="0,112,141,136"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -124,10 +127,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1a364e72b8e3daba7f2c7dbe8493cfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20f089bb9731ba2eddc195398ffb0a2d"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpBackend.html#a20f089bb9731ba2eddc195398ffb0a2d">port</a> () const =0</td></tr>
 <tr class="separator:a20f089bb9731ba2eddc195398ffb0a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a78b5da463f0109a4efab5b6662f93616"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNuria_1_1HttpBackend.html#a78b5da463f0109a4efab5b6662f93616">serverThreadCreated</a> (QThread *thread)</td></tr>
+<tr class="separator:a78b5da463f0109a4efab5b6662f93616"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a7ef68af4cc3915e661d6bb0255d265d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ef68af4cc3915e661d6bb0255d265d2"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>HttpServer</b></td></tr>
+<tr class="separator:a7ef68af4cc3915e661d6bb0255d265d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a> back-ends. </p>
-<p>A <a class="el" href="classNuria_1_1HttpBackend.html" title="Base class for HttpServer back-ends. ">HttpBackend</a> is the bridge between a (probably low-level) connection medium, like a TCP listen socket, and the <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a> this back-end is registered to. </p>
+<p>A <a class="el" href="classNuria_1_1HttpBackend.html" title="Base class for HttpServer back-ends. ">HttpBackend</a> is the bridge between a (probably low-level) connection medium, like a TCP listen socket, and the <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a> this back-end is registered to.</p>
+<p>For usage see <a class="el" href="classNuria_1_1HttpServer.html#a51eb1ea41db2b31e4cdc86d614798ddd">HttpServer::addBackend()</a> and <a class="el" href="classNuria_1_1HttpTransport.html#ac9d5f866f1b6a250da0934bf9702147c">HttpTransport::addToServer()</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad68f457304668b80c1f646084b2e0187"></a>
 <div class="memitem">
@@ -201,6 +216,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns <code>true</code> if the server is currently listening for connections. </p>
 
+<p>Implemented in <a class="el" href="classNuria_1_1FastCgiBackend.html#a7b86a8a45cb4c6cff24004d48d7255e1">Nuria::FastCgiBackend</a>.</p>
+
 </div>
 </div>
 <a class="anchor" id="a1a364e72b8e3daba7f2c7dbe8493cfbc"></a>
@@ -224,6 +241,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns <code>true</code> if this back-end uses secure connections. The default implementation returns <code>false</code>. </p>
+
+<p>Reimplemented in <a class="el" href="classNuria_1_1FastCgiBackend.html#a7687e752dec02635017c7c4ba3e2f18c">Nuria::FastCgiBackend</a>.</p>
 
 </div>
 </div>
@@ -249,6 +268,41 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the port this server is listening on, or <code>-1</code> if it's not listening. </p>
 
+<p>Implemented in <a class="el" href="classNuria_1_1FastCgiBackend.html#a8481c869e75be87dfc4fa634da16bd9d">Nuria::FastCgiBackend</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a78b5da463f0109a4efab5b6662f93616"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Nuria::HttpBackend::serverThreadCreated </td>
+          <td>(</td>
+          <td class="paramtype">QThread *&#160;</td>
+          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Called by the <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a> when a new server thread has been created. This lets back-ends register their own thread-specific bookkeeping routines.</p>
+<p>This function will also be called by the <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a> if no multi-threading is used. In this case, the function will be called once with <em>thread</em> being the one the server is associated with.</p>
+<p>To run some kind of initialization after the <em>thread</em> has been started, use one of: </p><div class="fragment"><div class="line">QTimer::singleShot (0, <span class="keywordtype">object</span>, SLOT(...)); <span class="comment">// Pre Qt5.4</span></div>
+<div class="line">QTimer::singleShot (0, <span class="keywordtype">object</span>, &amp;Object::...); <span class="comment">// Qt5.4 and up</span></div>
+<div class="line">QTimer::singleShot (0, []() { ... }); <span class="comment">// Qt5.4 and up</span></div>
+</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>The function is called in the thread the <a class="el" href="classNuria_1_1HttpServer.html" title="Server for the HyperText Transfer Protocol. ">HttpServer</a> lives in.</dd></dl>
+<p>The default implementation does nothing. </p>
+
+<p>Reimplemented in <a class="el" href="classNuria_1_1FastCgiBackend.html#a44732f1db39a7885e1f9ac5bfbb74008">Nuria::FastCgiBackend</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -257,7 +311,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 26 2014 15:36:53 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 15 2014 17:21:37 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
