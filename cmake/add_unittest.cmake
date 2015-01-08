@@ -35,6 +35,10 @@ function(add_unittest)
   
   # Include directories
   get_target_property(NURIA_INC_DIRS ${add_unittest_NAME} INCLUDE_DIRECTORIES)
+  if(NOT NURIA_INC_DIRS)
+    SET(NURIA_INC_DIRS "")
+  endif()
+  
   list(APPEND NURIA_INC_DIRS ${CMAKE_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/src)
   set_target_properties(${add_unittest_NAME} PROPERTIES INCLUDE_DIRECTORIES "${NURIA_INC_DIRS}")
   
