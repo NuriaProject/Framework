@@ -885,6 +885,7 @@
                 <section title="annotationLowerBound" ref="classNuria_1_1MetaObject.html#a4f686e172af11d3e8ccc9d959a00e0be" />
                 <section title="annotationUpperBound" ref="classNuria_1_1MetaObject.html#ae66fb8a6b9d5cbdfc42e011422034ec3" />
                 <section title="byName" ref="classNuria_1_1MetaObject.html#ab6f34c4719bc3244ab349f4d2f125077" />
+                <section title="byTypeId" ref="classNuria_1_1MetaObject.html#ad2c36294d3e53be63133deadbfb53fd6" />
                 <section title="className" ref="classNuria_1_1MetaObject.html#a05a11cc0f6ffc6137977072b43044035" />
                 <section title="destroyInstance" ref="classNuria_1_1MetaObject.html#ab3f9be58b3abf55cab4cf648c46729d0" />
                 <section title="enumAt" ref="classNuria_1_1MetaObject.html#abb8cbbe2b15788ca8559382c12cbe5de" />
@@ -976,15 +977,17 @@
               <section title="Serializer" ref="classNuria_1_1Serializer.html">
                 <section title="InstanceCreator" ref="classNuria_1_1Serializer.html#ae4f3fbbf8b734bbb9b69b0fa63d97f2a" />
                 <section title="MetaObjectFinder" ref="classNuria_1_1Serializer.html#a1a9efcf928e98b0ccaa22856c36589ed" />
+                <section title="ValueConverter" ref="classNuria_1_1Serializer.html#ab1b22aa6a5b04374c31ecbbbb74fbb71" />
                 <section title="RecursionDepth" ref="classNuria_1_1Serializer.html#a5b09227942101239aed81e0c07a5b800">
                   <section title="NoRecursion" ref="classNuria_1_1Serializer.html#a5b09227942101239aed81e0c07a5b800a881bd6381203b0cceae1d68e75f8cacd" />
                   <section title="InfiniteRecursion" ref="classNuria_1_1Serializer.html#a5b09227942101239aed81e0c07a5b800a42e8a80661f966aa933863b31268cd34" />
                 </section>
-                <section title="Serializer" ref="classNuria_1_1Serializer.html#ad6aed52d1abb5d0ea05b29c35dadd5fb" />
+                <section title="Serializer" ref="classNuria_1_1Serializer.html#ae38e1f07c1022fbb85e1d655cf45c318" />
                 <section title="~Serializer" ref="classNuria_1_1Serializer.html#a4ffaf9fe1b88306f2569f7a0fab319fb" />
                 <section title="allowedTypes" ref="classNuria_1_1Serializer.html#a9c45d919ac43378d67ac92515087192c" />
                 <section title="defaultInstanceCreator" ref="classNuria_1_1Serializer.html#a6192f6396c8235bd1dd1b5e510132f26" />
                 <section title="defaultMetaObjectFinder" ref="classNuria_1_1Serializer.html#a9e696233d2048535df8dcecdd41a00fb" />
+                <section title="defaultValueConverter" ref="classNuria_1_1Serializer.html#aa9617a8243ebb7761e377a42c4360477" />
                 <section title="deserialize" ref="classNuria_1_1Serializer.html#a838b6f7a15937fffc6a635291e62b7cf" />
                 <section title="deserialize" ref="classNuria_1_1Serializer.html#a4200a905a762d5d6a9cbc6b632aad766" />
                 <section title="deserialize" ref="classNuria_1_1Serializer.html#a601f5b4979cc2f8e2ea0854d8ad281cb" />
@@ -1255,6 +1258,7 @@
               </section>
               <section title="Variant" ref="classNuria_1_1Variant.html">
                 <section title="buildList" ref="classNuria_1_1Variant.html#aa24cb6d31b27a72eca7fb0f1b98424d6" />
+                <section title="getPointer" ref="classNuria_1_1Variant.html#a41cf0c4d811b34b5db37897a72222052" />
                 <section title="stealPointer" ref="classNuria_1_1Variant.html#accd28ea0460136806f47b3e0f069f0c4" />
               </section>
             </section>
@@ -2147,6 +2151,7 @@
       <keyword name="pointerMetaTypeId" id="Nuria::MetaObject::pointerMetaTypeId" ref="classNuria_1_1MetaObject.html#a8aa263fb8fd03c6a644066478f71d235" />
       <keyword name="allTypes" id="Nuria::MetaObject::allTypes" ref="classNuria_1_1MetaObject.html#a6680515e961a9a0ea29d4fd11a381f5f" />
       <keyword name="byName" id="Nuria::MetaObject::byName" ref="classNuria_1_1MetaObject.html#ab6f34c4719bc3244ab349f4d2f125077" />
+      <keyword name="byTypeId" id="Nuria::MetaObject::byTypeId" ref="classNuria_1_1MetaObject.html#ad2c36294d3e53be63133deadbfb53fd6" />
       <keyword name="of" id="Nuria::MetaObject::of" ref="classNuria_1_1MetaObject.html#ade66b77ef77f1ab14e781f83f9a4d7e9" />
       <keyword name="registerMetaObject" id="Nuria::MetaObject::registerMetaObject" ref="classNuria_1_1MetaObject.html#a0a040b67e33606502888aef355c3e180" />
       <keyword name="typesInheriting" id="Nuria::MetaObject::typesInheriting" ref="classNuria_1_1MetaObject.html#ab8a8102c4180899b445653e4e8628a29" />
@@ -2200,6 +2205,7 @@
       <keyword name="InvokeCreator" id="Nuria::RuntimeMetaObject::InvokeCreator" ref="classNuria_1_1RuntimeMetaObject.html#aad052b7d1f7465be0952a2e27f1c4d03" />
       <keyword name="allTypes" id="Nuria::MetaObject::allTypes" ref="classNuria_1_1MetaObject.html#a6680515e961a9a0ea29d4fd11a381f5f" />
       <keyword name="byName" id="Nuria::MetaObject::byName" ref="classNuria_1_1MetaObject.html#ab6f34c4719bc3244ab349f4d2f125077" />
+      <keyword name="byTypeId" id="Nuria::MetaObject::byTypeId" ref="classNuria_1_1MetaObject.html#ad2c36294d3e53be63133deadbfb53fd6" />
       <keyword name="of" id="Nuria::MetaObject::of" ref="classNuria_1_1MetaObject.html#ade66b77ef77f1ab14e781f83f9a4d7e9" />
       <keyword name="registerMetaObject" id="Nuria::MetaObject::registerMetaObject" ref="classNuria_1_1MetaObject.html#a0a040b67e33606502888aef355c3e180" />
       <keyword name="typesInheriting" id="Nuria::MetaObject::typesInheriting" ref="classNuria_1_1MetaObject.html#ab8a8102c4180899b445653e4e8628a29" />
@@ -2301,6 +2307,7 @@
       <keyword name="gateCall" id="Nuria::RuntimeMetaObject::gateCall" ref="classNuria_1_1RuntimeMetaObject.html#ac3e939041d12f407a1d01d45bde0faeb" />
       <keyword name="allTypes" id="Nuria::MetaObject::allTypes" ref="classNuria_1_1MetaObject.html#a6680515e961a9a0ea29d4fd11a381f5f" />
       <keyword name="byName" id="Nuria::MetaObject::byName" ref="classNuria_1_1MetaObject.html#ab6f34c4719bc3244ab349f4d2f125077" />
+      <keyword name="byTypeId" id="Nuria::MetaObject::byTypeId" ref="classNuria_1_1MetaObject.html#ad2c36294d3e53be63133deadbfb53fd6" />
       <keyword name="of" id="Nuria::MetaObject::of" ref="classNuria_1_1MetaObject.html#ade66b77ef77f1ab14e781f83f9a4d7e9" />
       <keyword name="registerMetaObject" id="Nuria::MetaObject::registerMetaObject" ref="classNuria_1_1MetaObject.html#a0a040b67e33606502888aef355c3e180" />
       <keyword name="typesInheriting" id="Nuria::MetaObject::typesInheriting" ref="classNuria_1_1MetaObject.html#ab8a8102c4180899b445653e4e8628a29" />
@@ -2311,7 +2318,8 @@
       <keyword name="Nuria::Serializer" id="Nuria::Serializer" ref="classNuria_1_1Serializer.html" />
       <keyword name="InstanceCreator" id="Nuria::Serializer::InstanceCreator" ref="classNuria_1_1Serializer.html#ae4f3fbbf8b734bbb9b69b0fa63d97f2a" />
       <keyword name="MetaObjectFinder" id="Nuria::Serializer::MetaObjectFinder" ref="classNuria_1_1Serializer.html#a1a9efcf928e98b0ccaa22856c36589ed" />
-      <keyword name="Serializer" id="Nuria::Serializer::Serializer" ref="classNuria_1_1Serializer.html#ad6aed52d1abb5d0ea05b29c35dadd5fb" />
+      <keyword name="ValueConverter" id="Nuria::Serializer::ValueConverter" ref="classNuria_1_1Serializer.html#ab1b22aa6a5b04374c31ecbbbb74fbb71" />
+      <keyword name="Serializer" id="Nuria::Serializer::Serializer" ref="classNuria_1_1Serializer.html#ae38e1f07c1022fbb85e1d655cf45c318" />
       <keyword name="~Serializer" id="Nuria::Serializer::~Serializer" ref="classNuria_1_1Serializer.html#a4ffaf9fe1b88306f2569f7a0fab319fb" />
       <keyword name="allowedTypes" id="Nuria::Serializer::allowedTypes" ref="classNuria_1_1Serializer.html#a9c45d919ac43378d67ac92515087192c" />
       <keyword name="deserialize" id="Nuria::Serializer::deserialize" ref="classNuria_1_1Serializer.html#a838b6f7a15937fffc6a635291e62b7cf" />
@@ -2330,6 +2338,7 @@
       <keyword name="setRecursionDepth" id="Nuria::Serializer::setRecursionDepth" ref="classNuria_1_1Serializer.html#a6c8158a64c84ba856811493abdcb6fa8" />
       <keyword name="defaultInstanceCreator" id="Nuria::Serializer::defaultInstanceCreator" ref="classNuria_1_1Serializer.html#a6192f6396c8235bd1dd1b5e510132f26" />
       <keyword name="defaultMetaObjectFinder" id="Nuria::Serializer::defaultMetaObjectFinder" ref="classNuria_1_1Serializer.html#a9e696233d2048535df8dcecdd41a00fb" />
+      <keyword name="defaultValueConverter" id="Nuria::Serializer::defaultValueConverter" ref="classNuria_1_1Serializer.html#aa9617a8243ebb7761e377a42c4360477" />
       <keyword name="Nuria::Session" id="Nuria::Session" ref="classNuria_1_1Session.html" />
       <keyword name="Session" id="Nuria::Session::Session" ref="classNuria_1_1Session.html#a65c58afc1439a1019c15e795a5d97965" />
       <keyword name="Session" id="Nuria::Session::Session" ref="classNuria_1_1Session.html#a28f7277729bfe225f432c407e781ad79" />
@@ -2558,6 +2567,7 @@
       <keyword name="get" id="Nuria::UnixSignalHandler::get" ref="classNuria_1_1UnixSignalHandler.html#aa488c9c46c341ddf9f951288cc3804bf" />
       <keyword name="Nuria::Variant" id="Nuria::Variant" ref="classNuria_1_1Variant.html" />
       <keyword name="buildList" id="Nuria::Variant::buildList" ref="classNuria_1_1Variant.html#aa24cb6d31b27a72eca7fb0f1b98424d6" />
+      <keyword name="getPointer" id="Nuria::Variant::getPointer" ref="classNuria_1_1Variant.html#a41cf0c4d811b34b5db37897a72222052" />
       <keyword name="stealPointer" id="Nuria::Variant::stealPointer" ref="classNuria_1_1Variant.html#accd28ea0460136806f47b3e0f069f0c4" />
       <keyword name="Nuria::CallbackHelper" id="Nuria::CallbackHelper" ref="namespaceNuria_1_1CallbackHelper.html" />
       <keyword name="buildIndexTuple" id="Nuria::CallbackHelper::buildIndexTuple" ref="namespaceNuria_1_1CallbackHelper.html#a4570d7d94db1f073c16abb8c5cf1c59c" />
@@ -2592,25 +2602,18 @@
       <file>bdwn.png</file>
       <file>sync_on.png</file>
       <file>sync_off.png</file>
-      <file>ftv2blank.png</file>
-      <file>ftv2doc.png</file>
-      <file>ftv2folderclosed.png</file>
-      <file>ftv2folderopen.png</file>
-      <file>ftv2lastnode.png</file>
-      <file>ftv2link.png</file>
-      <file>ftv2mlastnode.png</file>
-      <file>ftv2mnode.png</file>
-      <file>ftv2node.png</file>
-      <file>ftv2plastnode.png</file>
-      <file>ftv2pnode.png</file>
-      <file>ftv2vertline.png</file>
-      <file>ftv2splitbar.png</file>
+      <file>doc.png</file>
+      <file>folderopen.png</file>
+      <file>folderclosed.png</file>
+      <file>arrowdown.png</file>
+      <file>arrowright.png</file>
+      <file>splitbar.png</file>
       <file>doxygen.css</file>
-      <file>/search/mag_sel.png</file>
-      <file>/search/search_l.png</file>
-      <file>/search/search_m.png</file>
-      <file>/search/search_r.png</file>
-      <file>/search/close.png</file>
+      <file>search/search_l.png</file>
+      <file>search/search_m.png</file>
+      <file>search/search_r.png</file>
+      <file>search/close.png</file>
+      <file>search/mag_sel.png</file>
       <file>search/search.css</file>
       <file>search/search.js</file>
       <file>abstractsessionmanager_8hpp_source.html</file>
@@ -2892,6 +2895,7 @@
       <file>functions_vars.html</file>
       <file>functions_vars.html</file>
       <file>functions_vars.html</file>
+      <file>functions_type.html</file>
       <file>functions_type.html</file>
       <file>functions_type.html</file>
       <file>functions_type.html</file>

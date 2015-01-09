@@ -9,5 +9,6 @@ var searchData=
   ['buildlist',['buildList',['../classNuria_1_1Variant.html#aa24cb6d31b27a72eca7fb0f1b98424d6',1,'Nuria::Variant']]],
   ['buildrangeheader',['buildRangeHeader',['../classNuria_1_1HttpWriter.html#a07a4fe39d10b3d880e051c17c3a053e6',1,'Nuria::HttpWriter']]],
   ['byname',['byName',['../classNuria_1_1MetaObject.html#ab6f34c4719bc3244ab349f4d2f125077',1,'Nuria::MetaObject']]],
-  ['bytessent',['bytesSent',['../classNuria_1_1HttpTransport.html#a8a760cf6eae3aeb0b6d0bd063f115349',1,'Nuria::HttpTransport']]]
+  ['bytessent',['bytesSent',['../classNuria_1_1HttpTransport.html#a8a760cf6eae3aeb0b6d0bd063f115349',1,'Nuria::HttpTransport']]],
+  ['bytypeid',['byTypeId',['../classNuria_1_1MetaObject.html#ad2c36294d3e53be63133deadbfb53fd6',1,'Nuria::MetaObject']]]
 ];
