@@ -91,77 +91,76 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">lazyconditionwalker.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (c) 2014, The Nuria Project</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * This software is provided &#39;as-is&#39;, without any express or implied</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * warranty. In no event will the authors be held liable for any damages</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * arising from the use of this software.</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Permission is granted to anyone to use this software for any purpose,</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * including commercial applications, and to alter it and redistribute it</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * freely, subject to the following restrictions:</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *    1. The origin of this software must not be misrepresented; you must not</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *       claim that you wrote the original software. If you use this software</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *       in a product, an acknowledgment in the product documentation would be</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *       appreciated but is not required.</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *    2. Altered source versions must be plainly marked as such, and must not be</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *       misrepresented as being the original software.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *    3. This notice may not be removed or altered from any source</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *       distribution.</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef NURIA_LAZYCONDITIONWALKER_HPP</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define NURIA_LAZYCONDITIONWALKER_HPP</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;QSharedData&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;lazyevaluation.hpp&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;essentials.hpp&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;callback.hpp&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceNuria.html">Nuria</a> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>LazyConditionWalkerPrivate;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classNuria_1_1LazyConditionWalker.html">   46</a></span>&#160;<span class="keyword">class </span>NURIA_CORE_EXPORT <a class="code" href="classNuria_1_1LazyConditionWalker.html">LazyConditionWalker</a> {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classNuria_1_1LazyConditionWalker.html">LazyConditionWalker</a> ();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classNuria_1_1LazyConditionWalker.html">LazyConditionWalker</a> (<span class="keyword">const</span> <a class="code" href="classNuria_1_1LazyConditionWalker.html">LazyConditionWalker</a> &amp;other);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        ~<a class="code" href="classNuria_1_1LazyConditionWalker.html">LazyConditionWalker</a> ();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classNuria_1_1LazyConditionWalker.html">LazyConditionWalker</a> &amp;operator= (<span class="keyword">const</span> <a class="code" href="classNuria_1_1LazyConditionWalker.html">LazyConditionWalker</a> &amp;other);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">void</span> onCondition (<a class="code" href="classNuria_1_1LazyCondition.html#a46ebbf6b7225c66c74519f5ac3a58b7d">LazyCondition::Type</a> type, <span class="keyword">const</span> <a class="code" href="classNuria_1_1Callback.html">Callback</a> &amp;method);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">void</span> onField (<span class="keywordtype">int</span> fieldType, <span class="keyword">const</span> <a class="code" href="classNuria_1_1Callback.html">Callback</a> &amp;method);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">void</span> onVariant (<span class="keywordtype">int</span> userType, <span class="keyword">const</span> <a class="code" href="classNuria_1_1Callback.html">Callback</a> &amp;method);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="classNuria_1_1LazyCondition.html">LazyCondition</a> walk (<span class="keyword">const</span> <a class="code" href="classNuria_1_1LazyCondition.html">LazyCondition</a> &amp;condition, <span class="keywordtype">bool</span> walkArguments = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">bool</span> walkVariant (QVariant &amp;variant, QVariantList &amp;stack, <span class="keywordtype">bool</span> walkArguments);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordtype">bool</span> walkCondition (QVariant &amp;conditionVariant, QVariantList &amp;stack, <span class="keywordtype">bool</span> walkArguments);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">bool</span> walkField (QVariant &amp;fieldVariant, QVariantList &amp;stack, <span class="keywordtype">bool</span> walkArguments);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordtype">bool</span> walkTestCall (QVariant &amp;callVariant, QVariantList &amp;stack, <span class="keywordtype">bool</span> walkArguments);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        QSharedDataPointer&lt; LazyConditionWalkerPrivate &gt; d;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif // NURIA_LAZYCONDITIONWALKER_HPP</span></div>
-<div class="ttc" id="classNuria_1_1LazyConditionWalker_html"><div class="ttname"><a href="classNuria_1_1LazyConditionWalker.html">Nuria::LazyConditionWalker</a></div><div class="ttdoc">The LazyConditionWalker class lets you walk over a LazyCondition tree to make modifications to it...</div><div class="ttdef"><b>Definition:</b> lazyconditionwalker.hpp:46</div></div>
-<div class="ttc" id="classNuria_1_1Callback_html"><div class="ttname"><a href="classNuria_1_1Callback.html">Nuria::Callback</a></div><div class="ttdoc">A modern style callback mechanism which can be bound to various method types including slots...</div><div class="ttdef"><b>Definition:</b> callback.hpp:141</div></div>
-<div class="ttc" id="namespaceNuria_html"><div class="ttname"><a href="namespaceNuria.html">Nuria</a></div><div class="ttdef"><b>Definition:</b> abstractsessionmanager.hpp:25</div></div>
-<div class="ttc" id="classNuria_1_1LazyCondition_html_a46ebbf6b7225c66c74519f5ac3a58b7d"><div class="ttname"><a href="classNuria_1_1LazyCondition.html#a46ebbf6b7225c66c74519f5ac3a58b7d">Nuria::LazyCondition::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> lazyevaluation.hpp:69</div></div>
-<div class="ttc" id="classNuria_1_1LazyCondition_html"><div class="ttname"><a href="classNuria_1_1LazyCondition.html">Nuria::LazyCondition</a></div><div class="ttdoc">LazyCondition offers lazily evaluated conditions for C++. </div><div class="ttdef"><b>Definition:</b> lazyevaluation.hpp:63</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (c) 2014-2015, The Nuria Project</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * The NuriaProject Framework is free software: you can redistribute it and/or</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * modify it under the terms of the GNU Lesser General Public License as</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * published by the Free Software Foundation, either version 3 of the License,</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * or (at your option) any later version.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * The NuriaProject Framework is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * GNU Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * You should have received a copy of the GNU Lesser General Public License</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * along with The NuriaProject Framework.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifndef NURIA_LAZYCONDITIONWALKER_HPP</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define NURIA_LAZYCONDITIONWALKER_HPP</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;QSharedData&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;lazyevaluation.hpp&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;essentials.hpp&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;callback.hpp&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceNuria.html">Nuria</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span>LazyConditionWalkerPrivate;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classNuria_1_1LazyConditionWalker.html">   45</a></span>&#160;<span class="keyword">class </span>NURIA_CORE_EXPORT <a class="code" href="classNuria_1_1LazyConditionWalker.html">LazyConditionWalker</a> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classNuria_1_1LazyConditionWalker.html">LazyConditionWalker</a> ();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classNuria_1_1LazyConditionWalker.html">LazyConditionWalker</a> (<span class="keyword">const</span> <a class="code" href="classNuria_1_1LazyConditionWalker.html">LazyConditionWalker</a> &amp;other);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        ~<a class="code" href="classNuria_1_1LazyConditionWalker.html">LazyConditionWalker</a> ();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="classNuria_1_1LazyConditionWalker.html">LazyConditionWalker</a> &amp;operator= (<span class="keyword">const</span> <a class="code" href="classNuria_1_1LazyConditionWalker.html">LazyConditionWalker</a> &amp;other);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">void</span> onCondition (<a class="code" href="classNuria_1_1LazyCondition.html#a46ebbf6b7225c66c74519f5ac3a58b7d">LazyCondition::Type</a> type, <span class="keyword">const</span> <a class="code" href="classNuria_1_1Callback.html">Callback</a> &amp;method);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">void</span> onField (<span class="keywordtype">int</span> fieldType, <span class="keyword">const</span> <a class="code" href="classNuria_1_1Callback.html">Callback</a> &amp;method);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordtype">void</span> onVariant (<span class="keywordtype">int</span> userType, <span class="keyword">const</span> <a class="code" href="classNuria_1_1Callback.html">Callback</a> &amp;method);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="classNuria_1_1LazyCondition.html">LazyCondition</a> walk (<span class="keyword">const</span> <a class="code" href="classNuria_1_1LazyCondition.html">LazyCondition</a> &amp;condition, <span class="keywordtype">bool</span> walkArguments = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">bool</span> walkVariant (QVariant &amp;variant, QVariantList &amp;stack, <span class="keywordtype">bool</span> walkArguments);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordtype">bool</span> walkCondition (QVariant &amp;conditionVariant, QVariantList &amp;stack, <span class="keywordtype">bool</span> walkArguments);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordtype">bool</span> walkField (QVariant &amp;fieldVariant, QVariantList &amp;stack, <span class="keywordtype">bool</span> walkArguments);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">bool</span> walkTestCall (QVariant &amp;callVariant, QVariantList &amp;stack, <span class="keywordtype">bool</span> walkArguments);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        QSharedDataPointer&lt; LazyConditionWalkerPrivate &gt; d;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif // NURIA_LAZYCONDITIONWALKER_HPP</span></div>
+<div class="ttc" id="classNuria_1_1LazyConditionWalker_html"><div class="ttname"><a href="classNuria_1_1LazyConditionWalker.html">Nuria::LazyConditionWalker</a></div><div class="ttdoc">The LazyConditionWalker class lets you walk over a LazyCondition tree to make modifications to it...</div><div class="ttdef"><b>Definition:</b> lazyconditionwalker.hpp:45</div></div>
+<div class="ttc" id="classNuria_1_1Callback_html"><div class="ttname"><a href="classNuria_1_1Callback.html">Nuria::Callback</a></div><div class="ttdoc">A modern style callback mechanism which can be bound to various method types including slots...</div><div class="ttdef"><b>Definition:</b> callback.hpp:140</div></div>
+<div class="ttc" id="namespaceNuria_html"><div class="ttname"><a href="namespaceNuria.html">Nuria</a></div><div class="ttdef"><b>Definition:</b> abstractsessionmanager.hpp:24</div></div>
+<div class="ttc" id="classNuria_1_1LazyCondition_html_a46ebbf6b7225c66c74519f5ac3a58b7d"><div class="ttname"><a href="classNuria_1_1LazyCondition.html#a46ebbf6b7225c66c74519f5ac3a58b7d">Nuria::LazyCondition::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> lazyevaluation.hpp:68</div></div>
+<div class="ttc" id="classNuria_1_1LazyCondition_html"><div class="ttname"><a href="classNuria_1_1LazyCondition.html">Nuria::LazyCondition</a></div><div class="ttdoc">LazyCondition offers lazily evaluated conditions for C++. </div><div class="ttdef"><b>Definition:</b> lazyevaluation.hpp:62</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 8 2015 23:48:41 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 9 2015 18:03:55 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

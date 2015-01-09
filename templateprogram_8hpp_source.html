@@ -91,98 +91,97 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">templateprogram.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (c) 2014, The Nuria Project</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * This software is provided &#39;as-is&#39;, without any express or implied</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * warranty. In no event will the authors be held liable for any damages</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * arising from the use of this software.</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Permission is granted to anyone to use this software for any purpose,</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * including commercial applications, and to alter it and redistribute it</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * freely, subject to the following restrictions:</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *    1. The origin of this software must not be misrepresented; you must not</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *       claim that you wrote the original software. If you use this software</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *       in a product, an acknowledgment in the product documentation would be</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *       appreciated but is not required.</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *    2. Altered source versions must be plainly marked as such, and must not be</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *       misrepresented as being the original software.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *    3. This notice may not be removed or altered from any source</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *       distribution.</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef NURIA_TEMPLATEPROGRAM_HPP</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define NURIA_TEMPLATEPROGRAM_HPP</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;nuria/callback.hpp&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;templateerror.hpp&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;twig_global.hpp&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;QSharedData&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;QStringList&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceNuria.html">Nuria</a> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>TemplateProgramPrivate;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span>TemplateEngine;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classNuria_1_1TemplateProgram.html">   71</a></span>&#160;<span class="keyword">class </span>NURIA_TWIG_EXPORT <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> ();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> (<span class="keyword">const</span> <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> &amp;other);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> &amp;operator= (<span class="keyword">const</span> <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> &amp;other);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        ~<a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> ();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">bool</span> isValid () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        QStringList dependencies () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        QStringList neededVariables () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        QVariant value (<span class="keyword">const</span> QString &amp;variable) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordtype">bool</span> setValue (<span class="keyword">const</span> QString &amp;variable, <span class="keyword">const</span> QVariant &amp;value);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        QLocale locale () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordtype">void</span> setLocale (<span class="keyword">const</span> QLocale &amp;locale);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordtype">void</span> addFunction (<span class="keyword">const</span> QString &amp;name, <span class="keyword">const</span> <a class="code" href="classNuria_1_1Callback.html">Callback</a> &amp;<span class="keyword">function</span>);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordtype">bool</span> hasFunction (<span class="keyword">const</span> QString &amp;name);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordtype">bool</span> canRender () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        QString render ();</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <a class="code" href="classNuria_1_1TemplateError.html">TemplateError</a> lastError () <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classNuria_1_1TemplateEngine.html">TemplateEngine</a>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> (TemplateProgramPrivate *dptr);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordtype">void</span> refNode ();</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordtype">void</span> derefNode ();</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordtype">bool</span> checkVariable (<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        QSharedDataPointer&lt; TemplateProgramPrivate &gt; d;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;};</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classNuria_1_1TemplateProgram.html">Nuria::TemplateProgram</a>)</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">#endif // NURIA_TEMPLATEPROGRAM_HPP</span></div>
-<div class="ttc" id="classNuria_1_1Callback_html"><div class="ttname"><a href="classNuria_1_1Callback.html">Nuria::Callback</a></div><div class="ttdoc">A modern style callback mechanism which can be bound to various method types including slots...</div><div class="ttdef"><b>Definition:</b> callback.hpp:141</div></div>
-<div class="ttc" id="classNuria_1_1TemplateError_html"><div class="ttname"><a href="classNuria_1_1TemplateError.html">Nuria::TemplateError</a></div><div class="ttdoc">Container for exposing Twig errors to user code. </div><div class="ttdef"><b>Definition:</b> templateerror.hpp:76</div></div>
-<div class="ttc" id="namespaceNuria_html"><div class="ttname"><a href="namespaceNuria.html">Nuria</a></div><div class="ttdef"><b>Definition:</b> abstractsessionmanager.hpp:25</div></div>
-<div class="ttc" id="classNuria_1_1TemplateEngine_html"><div class="ttname"><a href="classNuria_1_1TemplateEngine.html">Nuria::TemplateEngine</a></div><div class="ttdoc">Templating engine for rendering Twig code. </div><div class="ttdef"><b>Definition:</b> templateengine.hpp:175</div></div>
-<div class="ttc" id="classNuria_1_1TemplateProgram_html"><div class="ttname"><a href="classNuria_1_1TemplateProgram.html">Nuria::TemplateProgram</a></div><div class="ttdoc">Represents a compiled Twig code program. </div><div class="ttdef"><b>Definition:</b> templateprogram.hpp:71</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* Copyright (c) 2014-2015, The Nuria Project</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * The NuriaProject Framework is free software: you can redistribute it and/or</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * modify it under the terms of the GNU Lesser General Public License as</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * published by the Free Software Foundation, either version 3 of the License,</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * or (at your option) any later version.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * The NuriaProject Framework is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * GNU Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * You should have received a copy of the GNU Lesser General Public License</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * along with The NuriaProject Framework.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifndef NURIA_TEMPLATEPROGRAM_HPP</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define NURIA_TEMPLATEPROGRAM_HPP</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;nuria/callback.hpp&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;templateerror.hpp&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;twig_global.hpp&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;QSharedData&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;QStringList&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceNuria.html">Nuria</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span>TemplateProgramPrivate;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>TemplateEngine;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classNuria_1_1TemplateProgram.html">   70</a></span>&#160;<span class="keyword">class </span>NURIA_TWIG_EXPORT <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> ();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> (<span class="keyword">const</span> <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> &amp;other);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> &amp;operator= (<span class="keyword">const</span> <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> &amp;other);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        ~<a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> ();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordtype">bool</span> isValid () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        QStringList dependencies () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        QStringList neededVariables () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        QVariant value (<span class="keyword">const</span> QString &amp;variable) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordtype">bool</span> setValue (<span class="keyword">const</span> QString &amp;variable, <span class="keyword">const</span> QVariant &amp;value);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        QLocale locale () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordtype">void</span> setLocale (<span class="keyword">const</span> QLocale &amp;locale);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordtype">void</span> addFunction (<span class="keyword">const</span> QString &amp;name, <span class="keyword">const</span> <a class="code" href="classNuria_1_1Callback.html">Callback</a> &amp;<span class="keyword">function</span>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordtype">bool</span> hasFunction (<span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordtype">bool</span> canRender () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        QString render ();</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <a class="code" href="classNuria_1_1TemplateError.html">TemplateError</a> lastError () <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classNuria_1_1TemplateEngine.html">TemplateEngine</a>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <a class="code" href="classNuria_1_1TemplateProgram.html">TemplateProgram</a> (TemplateProgramPrivate *dptr);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordtype">void</span> refNode ();</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordtype">void</span> derefNode ();</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordtype">bool</span> checkVariable (<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        QSharedDataPointer&lt; TemplateProgramPrivate &gt; d;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;};</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classNuria_1_1TemplateProgram.html">Nuria::TemplateProgram</a>)</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">#endif // NURIA_TEMPLATEPROGRAM_HPP</span></div>
+<div class="ttc" id="classNuria_1_1Callback_html"><div class="ttname"><a href="classNuria_1_1Callback.html">Nuria::Callback</a></div><div class="ttdoc">A modern style callback mechanism which can be bound to various method types including slots...</div><div class="ttdef"><b>Definition:</b> callback.hpp:140</div></div>
+<div class="ttc" id="classNuria_1_1TemplateError_html"><div class="ttname"><a href="classNuria_1_1TemplateError.html">Nuria::TemplateError</a></div><div class="ttdoc">Container for exposing Twig errors to user code. </div><div class="ttdef"><b>Definition:</b> templateerror.hpp:75</div></div>
+<div class="ttc" id="namespaceNuria_html"><div class="ttname"><a href="namespaceNuria.html">Nuria</a></div><div class="ttdef"><b>Definition:</b> abstractsessionmanager.hpp:24</div></div>
+<div class="ttc" id="classNuria_1_1TemplateEngine_html"><div class="ttname"><a href="classNuria_1_1TemplateEngine.html">Nuria::TemplateEngine</a></div><div class="ttdoc">Templating engine for rendering Twig code. </div><div class="ttdef"><b>Definition:</b> templateengine.hpp:174</div></div>
+<div class="ttc" id="classNuria_1_1TemplateProgram_html"><div class="ttname"><a href="classNuria_1_1TemplateProgram.html">Nuria::TemplateProgram</a></div><div class="ttdoc">Represents a compiled Twig code program. </div><div class="ttdef"><b>Definition:</b> templateprogram.hpp:70</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 8 2015 23:48:41 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 9 2015 18:03:55 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>

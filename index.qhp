@@ -1446,7 +1446,6 @@
             <section title="templateloader.hpp" ref="templateloader_8hpp_source.html" />
             <section title="templateprogram.hpp" ref="templateprogram_8hpp_source.html" />
             <section title="temporarybufferdevice.hpp" ref="temporarybufferdevice_8hpp_source.html" />
-            <section title="test.hpp" ref="test_8hpp_source.html" />
             <section title="threadlocal.hpp" ref="threadlocal_8hpp_source.html" />
             <section title="tokenizer.hpp" ref="tokenizer_8hpp_source.html" />
             <section title="twig_global.hpp" ref="twig__global_8hpp_source.html" />
@@ -2660,7 +2659,6 @@
       <file>templateloader_8hpp_source.html</file>
       <file>templateprogram_8hpp_source.html</file>
       <file>temporarybufferdevice_8hpp_source.html</file>
-      <file>test_8hpp_source.html</file>
       <file>threadlocal_8hpp_source.html</file>
       <file>tokenizer_8hpp_source.html</file>
       <file>twig__global_8hpp_source.html</file>

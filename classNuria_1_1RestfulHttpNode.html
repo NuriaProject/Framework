@@ -205,7 +205,8 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classNuria_1_1RestfulHttpNode.html" title="The RestfulHttpNode class makes it easy to write RESTful APIs. ">RestfulHttpNode</a> class makes it easy to write RESTful APIs. </p>
 <p>This class was designed to be as flexible as possible when it comes to convenience from a remote API standpoint. You use this just like a <a class="el" href="classNuria_1_1HttpNode.html" title="Virtual directory for HttpServer. ">HttpNode</a>, with the exception that slots are allowed to return something.</p>
-<dl class="section user"><dt>Usage of this class</dt><dd>To expose your own service in a RESTful manner, all you need to do is to sub-class this class and tag it with NURIA_INTROSPECT as usual for Tria to pick up annotations.</dd></dl>
+<dl class="section user"><dt>Usage of this class</dt><dd>To expose your own service in a RESTful manner, all you need to do is to sub-class this class and tag it with NURIA_INTROSPECT as usual for Tria to pick up annotations. Also make sure that the Q_OBJECT macro is in place.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Not doing so will output an error message and likely crash the application.</dd></dl>
 <p>If you don't want to sub-class <a class="el" href="classNuria_1_1RestfulHttpNode.html" title="The RestfulHttpNode class makes it easy to write RESTful APIs. ">RestfulHttpNode</a>, you can use the constructor which takes a object pointer and a <a class="el" href="classNuria_1_1MetaObject.html" title="The MetaObject class provides access to meta-data of types at run-time. ">MetaObject</a> instance.</p>
 <p>Regardless which option you choose, you can then annotate methods you want to expose using NURIA_RESTFUL() (and optionally with NURIA_RESTFUL_VERBS()). When using this route all handlers (i.e. NURIA_RESTFUL methods) are registered automatically when the first invocation on the node happens.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classNuria_1_1RestfulHttpNode.html#aedb5a1c50a300320c6c13df80c0e6d0a">setRestfulHandler()</a></dd></dl>
@@ -599,7 +600,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 8 2015 23:48:42 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jan 9 2015 18:03:55 for NuriaProject Framework by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.9.1
 </small></address>
