@@ -1,11 +1,15 @@
 First make sure that you've also pulled the modules:
-$ git submodule init
-$ git submodule update
+$ git submodule update --init
 
-To compile the project use the shipped 'configure' script:
-$ mkdir build
-$ ../configure <Your options here>
+To prepare the project use CMake. Note that you can configure some aspects
+when calling cmake itself.
+$ mkdir build; cd build
+$ cmake .. # -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/usr
+
+And now, compile everything (Replace the 'X' with your CPU core count), run the
+tests and if everything is fine, install it!
 $ make -jX
-$ sudo make install
+$ make test
+$ make install
 
-That's pretty much it. Having problems? Read the README for contct details!
+That's pretty much it. Having problems? Read the README for contact details!

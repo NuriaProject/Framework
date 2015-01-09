@@ -69,7 +69,10 @@ on linux, and are not further touched on other OSes.
 License
 -------
 
-The framework itself uses the zlib license. Please see the LICENSE file for
-further information. LICENSE_TEMPLATE contains a ready-to-use comment for you
-to use when creating new files.
-**Contributed code must be licensed under the zlib license.**
+The framework itself is available under the terms of the GPLv3 or LGPLv3.
+Please make sure to understand the terms of the (L)GPL license. If you're not
+sure if you can use the NuriaProject Framework in your project under these
+licenses, please consult a lawyer. For other requests on this matter you can
+also message Papierkorb on GitHub.
+
+**All code must be licensed under the terms of the (L)GPL.**
